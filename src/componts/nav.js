@@ -38,12 +38,14 @@ export default function DemaggNavbar() {
   ]
 
   const mainNavItems = [
+    {title:"Home", href:"/"},
+    {title:"About", href:"/about"},
+    {title:"Contact", href:"/contact"},
     { title: "Cranes", hasSubmenu: true },
     { title: "Hoist Units", hasSubmenu: true },
     { title: "Drives", hasSubmenu: true },
     { title: "Components & Parts", hasSubmenu: true },
     { title: "Services", hasSubmenu: true },
-    { title: "Configurators", hasSubmenu: false },
   ]
 
   const importantLinks = [
@@ -110,10 +112,22 @@ export default function DemaggNavbar() {
           <div className="hidden md:flex items-center">
             {mainNavItems.map((item, index) => (
               <div key={index} className="relative group">
-                <button className="px-4 py-6 border-b-4 border-white flex     items-center hover:border-b-4 hover:border-[#003366]">
-                  {item.title}
-                  {item.hasSubmenu && <ChevronDown className="ml-1 h-4 w-4" />}
-                </button>
+              {item.href ? (
+  <Link
+    href={item.href}
+    className="px-4 py-6 border-b-4 border-white flex items-center hover:border-[#003366]"
+  >
+    {item.title}
+  </Link>
+) : (
+  <button
+    onClick={() => toggleSubmenu(item.title)}
+    className="px-4 py-6 border-b-4 border-white flex items-center hover:border-[#003366]"
+  >
+    {item.title}
+    {item.hasSubmenu && <ChevronDown className="ml-1 h-4 w-4" />}
+  </button>
+)}
               </div>
             ))}
           </div>

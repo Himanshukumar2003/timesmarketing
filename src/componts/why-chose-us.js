@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPlayCircle } from "react-icons/fa";
+import { FiChevronRight } from "react-icons/fi";
 
 const OilGasSection = () => {
   return (
@@ -63,12 +64,16 @@ const OilGasSection = () => {
         </div>
 
         <div className="flex items-center gap-4 mt-4">
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded shadow">
-            More Info
-          </button>
+         <a className="flex rounded-sm mt-4 items-center  btn">
+                                        <span className="shadow-lg items-center  bg-blue-700 hover:bg-blue-800 text-white font-bold  px-4 py-2 ">
+                                          <span className="flex-1 text-center mr-2">READ MORE</span>
+                                        </span>
+                                        <span className="bg-blue-500  shadow-lg py-2 px-2  ">
+                                        <FiChevronRight className=" text-white  text-2xl  font-bold"/>
+                                      </span>
+                                      </a>
           <div>
-            <p className="text-sm text-gray-600">Call 24 hrs / 7 Days</p>
-            <p className="font-bold text-gray-800">+00 123 456 789</p>
+           
           </div>
         </div>
       </div>
