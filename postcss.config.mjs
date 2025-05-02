@@ -1,8 +1,6 @@
-const config = {
-  plugins: ["@tailwindcss/postcss"],
-};
+// tailwind.config.js
+const animate = require("tailwindcss-animate");
 
-export default config;
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -87,5 +85,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [animate],
+};
