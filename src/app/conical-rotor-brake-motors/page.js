@@ -118,7 +118,7 @@ const OffsetGearedMotors = () => {
               aria-controls="panel2-content"
               id="panel2-header"
             >
-              <h2 className="text-2xl font-bold  text-[#676f77] mb-4">
+              <h2 className="text-2xl font-bold  text-[#676f77] ">
                 {data.productInformation.tabHeading}
               </h2>
             </AccordionSummary>
@@ -341,7 +341,9 @@ const OffsetGearedMotors = () => {
             </AccordionSummary>
             <AccordionDetails>
               <section className="my-4">
-              <h4 className="text-xl font-bold  mb-4 text-[#676f77]">Motors</h4>
+                <h4 className="text-xl font-bold  mb-4 text-[#676f77]">
+                  Motors
+                </h4>
 
                 <table className="table-auto w-full border border-gray-300 mt-4 text-sm text-left shadow-sm rounded-lg overflow-hidden">
                   <thead className="bg-gray-100 text-gray-700 uppercase tracking-wide">
@@ -398,7 +400,9 @@ const OffsetGearedMotors = () => {
                 </table>
               </section>
               <section className="my-4">
-              <h4 className="text-xl font-bold  mb-4 text-[#676f77]">Brakes</h4>
+                <h4 className="text-xl font-bold  mb-4 text-[#676f77]">
+                  Brakes
+                </h4>
                 <table className="table-auto w-full border border-gray-300 mt-4 text-sm text-left shadow-sm rounded-lg overflow-hidden">
                   <thead className="bg-gray-100 text-gray-700 uppercase tracking-wide">
                     <tr>

@@ -27,6 +27,7 @@ export default function Navbar() {
     { title: "KBK", hasSubmenu: true },
     { title: "Drives", hasSubmenu: true },
     { title: "Jib Cranes", hasSubmenu: false, href: "jib-crane" },
+    { title: "Jib Cranes", hasSubmenu: false, href: "jib-crane" },
     { title: "Underslung Crane", hasSubmenu: false, href: "underslung-crane" },
   ];
 
@@ -205,14 +206,14 @@ export default function Navbar() {
                 {item.href ? (
                   <Link
                     href={item.href}
-                    className="px-4 py-6 border-b-4 border-white flex items-center hover:border-[#003366]"
+                    className="px-4 py-6 border-b-4 text-gray-600 font-semibold border-white flex items-center hover:border-[#003366]"
                   >
                     {item.title}
                   </Link>
                 ) : (
                   <button
                     onClick={() => toggleSubmenu(item.title)}
-                    className="px-4 py-6 border-b-4 border-white flex items-center hover:border-[#003366]"
+                    className="px-4 py-6 border-b-4 border-white text-gray-600 font-semibold flex items-center hover:border-[#003366]"
                   >
                     {item.title}
                     {item.hasSubmenu && (
