@@ -89,7 +89,7 @@ export default function KbkCard() {
                 <ChevronRight size={18} className="text-white" />
               </div>
               <div className="relative h-48 w-full overflow-hidden">
-                <div className="absolute inset-0  opacity-0 transition-opacity duration-300 group-hover:opacity-30"></div>
+                <div className="absolute inset-0 bg-blue-900 opacity-0 transition-opacity duration-300 group-hover:opacity-30"></div>
                 <Image src={card.image || "/placeholder.svg"} alt={card.title} fill className="object-cover" />
               </div>
               <div className="p-4">
