@@ -24,12 +24,11 @@ export default function Navbar() {
 
   const sidebarItems = [
     { title: "Eot Cranes", hasSubmenu: true },
-    { title: "KBK", hasSubmenu: true,  },
-    { title: "Drives", hasSubmenu: true,  },
-    { title: "Jib Cranes", hasSubmenu: false, href:"jib-crane" },
-    { title: "Jib Cranes", hasSubmenu: false, href:"jib-crane" },
-    { title: "Underslung Crane", hasSubmenu: false, href:"underslung-crane" },
-
+    { title: "KBK", hasSubmenu: true },
+    { title: "Drives", hasSubmenu: true },
+    { title: "Jib Cranes", hasSubmenu: false, href: "jib-crane" },
+    { title: "Jib Cranes", hasSubmenu: false, href: "jib-crane" },
+    { title: "Underslung Crane", hasSubmenu: false, href: "underslung-crane" },
   ];
 
   const mainNavItems = [
@@ -41,35 +40,29 @@ export default function Navbar() {
     { title: "Services", hasSubmenu: true },
   ];
 
-
-
   const drive = [
     {
       id: 1,
       title: "Geared motors",
       description: "The perfect combination of tried and tested components",
       image: "/img/geared_motors.png",
-      slug:"sraaes/geared-motors"
+      slug: "/sraaes/geared-motors",
     },
     {
       id: 2,
       title: "Motors",
       description: "Reliable drive units",
       image: "/img/Motors .png",
-      slug:"sraaes/motors"
-  
+      slug: "/sraaes/motors",
     },
     {
       id: 3,
       title: "Wheel range",
       description: "The right wheel for every application",
       image: "/img/Wheels.png",
-      slug:"sraaes/wheel-range"
-  
+      slug: "/sraaes/wheel-range",
     },
-  
-  
-  ]
+  ];
 
   const renderContent = () => {
     switch (contentType) {
@@ -98,50 +91,54 @@ export default function Navbar() {
           </div>
         );
       case "KBK":
-        return       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-center">
-        {craneCards.slice(0, 6).map((item, index) => (
-          <div key={index}>
-            <Link href={`/eot-cranes/${item.slug}`}>
-              <div className="product-card">
-                <Image
-                  src={item.image}
-                  width={500}
-                  height={500}
-                  className="h-30 object-cover"
-                  alt=""
-                />
-                <h4 className="mt-2 font-medium">{item.title}</h4>
-                <p className="mt-2 line-clamp-2 text-gray-500">
-                  {item.description}
-                </p>
+        return (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-center">
+            {craneCards.slice(0, 6).map((item, index) => (
+              <div key={index}>
+                <Link href={`${item.slug}`}>
+                  <div className="product-card">
+                    <Image
+                      src={item.image}
+                      width={500}
+                      height={500}
+                      className="h-30 object-cover"
+                      alt=""
+                    />
+                    <h4 className="mt-2 font-medium">{item.title}</h4>
+                    <p className="mt-2 line-clamp-2 text-gray-500">
+                      {item.description}
+                    </p>
+                  </div>
+                </Link>
               </div>
-            </Link>
+            ))}
           </div>
-        ))}
-      </div>
-      
+        );
+
       case "Drives":
-        return  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-center">
-        {drive.map((item, index) => (
-          <div key={index}>
-            <Link href={`/eot-cranes/${item.slug}`}>
-              <div className="product-card">
-                <Image
-                  src={item.image}
-                  width={500}
-                  height={500}
-                  className="h-30 overflow-hidden object-cover max-w-[200px]"
-                  alt=""
-                />
-                <h4 className="mt-2 font-medium">{item.title}</h4>
-                <p className="mt-2 line-clamp-2 text-gray-500">
-                  {item.description}
-                </p>
+        return (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-center">
+            {drive.map((item, index) => (
+              <div key={index}>
+                <Link href={`${item.slug}`}>
+                  <div className="product-card">
+                    <Image
+                      src={item.image}
+                      width={500}
+                      height={500}
+                      className="h-30 overflow-hidden object-cover max-w-[200px]"
+                      alt=""
+                    />
+                    <h4 className="mt-2 font-medium">{item.title}</h4>
+                    <p className="mt-2 line-clamp-2 text-gray-500">
+                      {item.description}
+                    </p>
+                  </div>
+                </Link>
               </div>
-            </Link>
+            ))}
           </div>
-        ))}
-      </div>;
+        );
       default:
         return <div>Select a tab to view content</div>;
     }
@@ -157,13 +154,22 @@ export default function Navbar() {
             <span>English</span>
           </div>
           <div className="flex flex-wrap gap-2 md:gap-4">
-            <Link href="#" className="flex items-center px-3 py-1 text-[14px] font-bold">
+            <Link
+              href="#"
+              className="flex items-center px-3 py-1 text-[14px] font-bold"
+            >
               <MdEmail className="text-blue-500 mr-2" /> Get in touch
             </Link>
-            <Link href="#" className="flex items-center border border-white px-3 py-1 text-[14px] font-bold">
+            <Link
+              href="#"
+              className="flex items-center border border-white px-3 py-1 text-[14px] font-bold"
+            >
               <FaHandshake className="mr-2" /> Demag Shop
             </Link>
-            <Link href="#" className="flex items-center bg-[#ffcc00] text-[#003366] px-3 py-1 text-[14px] font-bold">
+            <Link
+              href="#"
+              className="flex items-center bg-[#ffcc00] text-[#003366] px-3 py-1 text-[14px] font-bold"
+            >
               <TbUserSearch className="mr-2" /> Your worldwide Demag contacts
             </Link>
           </div>
@@ -210,7 +216,9 @@ export default function Navbar() {
                     className="px-4 py-6 border-b-4 border-white flex items-center hover:border-[#003366]"
                   >
                     {item.title}
-                    {item.hasSubmenu && <ChevronDown className="ml-1 h-4 w-4" />}
+                    {item.hasSubmenu && (
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    )}
                   </button>
                 )}
               </div>
@@ -231,7 +239,9 @@ export default function Navbar() {
             style={{ clipPath: "polygon(0 0, 100% 0, 85% 100%, 0% 100%)" }}
             className={cn(
               "fixed md:static gap-0 w-[33vw] top-0 left-0 bg-[#003366] text-white z-50",
-              isSidebarOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
+              isSidebarOpen
+                ? "translate-x-0"
+                : "-translate-x-full md:translate-x-0"
             )}
           >
             {sidebarItems.map((item, index) => (
@@ -268,7 +278,9 @@ export default function Navbar() {
           </div>
 
           {/* Main Content Area */}
-          <div className="flex-1 p-8 border-t-1 border-gray-200">{renderContent()}</div>
+          <div className="flex-1 p-8 border-t-1 border-gray-200">
+            {renderContent()}
+          </div>
         </div>
       )}
     </div>
