@@ -238,8 +238,14 @@ background-size: cover;
 }
 
 
+
 .bg-two{
   background: linear-gradient(to right, #091B3C 30%, white 21%);
+}
+@media (max-width: 991px) {
+  .bg-two{
+    background: transparent !important;
+  }
 }
 
 li{

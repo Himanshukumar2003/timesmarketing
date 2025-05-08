@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { ChevronRight } from "lucide-react"
+import Link from "next/link"
 
 export default function KbkCard() {
   const craneCards = [
@@ -8,18 +9,21 @@ export default function KbkCard() {
       title: "DHR rope hoist",
       description: "Innovative. Smart. Lifting to the next level.",
       image: "/img/chain-host-1.webp",
+      slug:"dhr-rope-hoist"
     },
     {
       id: 2,
       title: "DVR rope hoist",
       description: "The DVR rope hoist offers customisable solutions for the various requirements of crane and lifting technology.",
       image: "/img/chain-host-3.webp",
+      slug:"dvr-rope-hoist"
     },
     {
       id: 3,
       title: "DH hoist units",
       description: "Demag DH. The hoist unit: Beyond classic crane applications",
       image: "/img/chian-host-2.webp",
+      slug:"dh-hoist-units"
     },
    
   ]
@@ -39,6 +43,8 @@ export default function KbkCard() {
               key={card.id}
               className="group relative overflow-hidden rounded-md bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
             >
+                        <Link href={`/eot-cranes/${card.slug}`}>
+            
              <div className="absolute right-4 top-4 z-10 rounded-full bg-yellow-400 p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
                 <ChevronRight size={18} className="text-white" />
               </div>
@@ -58,6 +64,7 @@ export default function KbkCard() {
                 </div>
               </div>
               <div className="absolute bottom-0 left-0 h-1 w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></div>
+           </Link>
             </div>
           ))}
         </div>
