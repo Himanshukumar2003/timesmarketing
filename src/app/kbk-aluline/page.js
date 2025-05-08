@@ -132,10 +132,6 @@ export default function Home() {
                 <section className=" bg-white">
                   <div className="">
                     <div className="">
-                      <h2 className="text-2xl md:text-3xl font-bold mb-8">
-                        Other features
-                      </h2>
-
                       <div className="mb-10">
                         <h3 className="text-xl font-semibold mb-4">
                           Profile sections
@@ -184,7 +180,7 @@ export default function Home() {
                       </div>
 
                       <div className="mb-10">
-                        <h3 className="text-xl font-semibold mb-4">
+                        <h3 className="text-xl font-bold  text-[#676f77] mb-4">
                           Profile sections at a glance
                         </h3>
                         <ul className="space-y-2">
@@ -240,7 +236,7 @@ export default function Home() {
                       </div>
 
                       <div>
-                        <h3 className="text-xl font-semibold mb-4">
+                        <h3 className="text-xl  mb-4  font-bold  text-[#676f77]">
                           Suspension variants
                         </h3>
                         <ul className="space-y-2">
