@@ -18,11 +18,9 @@ export default function KbkLight(params) {
     <>
       <Navbar></Navbar>
       <Breadcrumb
-        title="KBK light crane system"
+        title="Rope hoists"
         backgroundImage="/img/header1.webp"
-        items={[
-          { label: "KBK light crane system", href: "/", isCurrent: true },
-        ]}
+        items={[{ label: "Rope hoists", href: "/", isCurrent: true }]}
       ></Breadcrumb>
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
