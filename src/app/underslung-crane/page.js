@@ -1,4 +1,5 @@
 import { Breadcrumb } from "@/componts/breadcrumb";
+import ContactPopupForm from "@/componts/btn";
 import Footer from "@/componts/footer";
 import DemaggNavbar from "@/componts/nav";
 import Container from "@mui/material/Container";
@@ -58,14 +59,7 @@ function UnderslungCrane(params) {
                 </p>
               </div>
 
-              <a className="flex rounded-sm mt-4 items-center btn">
-                <span className="shadow-lg items-center bg-blue-700 hover:bg-blue-800 text-white font-bold px-4 py-2">
-                  <span className="flex-1 text-center mr-2">READ MORE</span>
-                </span>
-                <span className="bg-blue-500 shadow-lg py-2 px-2">
-                  <FiChevronRight className="text-white text-2xl font-bold" />
-                </span>
-              </a>
+             <ContactPopupForm></ContactPopupForm>
             </div>
           </div>
         </Container>
