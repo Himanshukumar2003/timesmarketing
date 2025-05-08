@@ -33,7 +33,7 @@ export default function Footer() {
                 alt="Blue vacuum cleaner"
                 width={200}
                 height={200}
-                className="object-contain absolute bottom-0"
+                className="object-contain relative md:absolute bottom-0"
               />
             </div>
             <div className="text-white">
