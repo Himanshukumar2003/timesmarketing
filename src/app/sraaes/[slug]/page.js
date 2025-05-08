@@ -7,6 +7,7 @@ import { Container } from "@mui/system";
 import Navbar from "@/componts/nav";
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Footer from "@/componts/footer";
+import Link from "next/link";
 
 const allCards = [
   {
@@ -20,16 +21,19 @@ const allCards = [
         title: "Offset geared motors",
         description: "Full drive performance, also in a small space",
         image: "/img/sraes/geared-motors.webp",
+        slug: "/geared-motors/offset-geared-motors",
       },
       {
         id: 2,
         title: "Angular geared motors",
+        slug: "/geared-motors/angular-geared-motors",
         description: "Compact drive solutions tailored to meet your needs",
         image: "/img/sraes/geared-motors1.webp",
       },
       {
         id: 3,
         title: "Helical geared motors",
+        slug: "/geared-motors/helical-geared-motors",
         description: "Rugged drive solutions tailored to meet your needs",
         image: "/img/sraes/geared-motors2.webp",
       },
@@ -66,6 +70,7 @@ const allCards = [
         title: "DRS wheel block system",
         description: "DRS and DRS-M wheel block systems",
         image: "/img/sraes/wheel-range1.webp",
+        slug: "helical-geared-motors",
       },
       {
         id: 7,
@@ -99,68 +104,69 @@ export default function ProductPage({ params }) {
   }
 
   return (
-    <><Navbar></Navbar>
-          <Breadcrumb
-            title= {selectedItem.title}
-            backgroundImage="/img/header1.webp"
-            items={[
-              { label: `${selectedItem.title}`, href: "/", isCurrent: true },
-            ]}
-          />
-    <div className="section">
-      <Container maxWidth="xl">
-        <h2 className="text-center text-5xl font-bold text-gray-700">
-          {selectedItem.title}
-        </h2>
-        <div className="mx-auto mt-2 mb-6 h-1 w-12 bg-yellow-400"></div>
-        <p className="mx-auto max-w-3xl text-center text-gray-600 mb-10">
-          {selectedItem.description}
-        </p>
-      </Container>
-
-      <div className="section bg-gray-100">
-        <Container maxWidth="lg">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {selectedItem.cards.map((card) => (
-              <div
-                key={card.id}
-                className="group relative overflow-hidden rounded-md bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
-              >
-                <div className="absolute right-4 top-4 z-10 rounded-full bg-yellow-400 p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
-                  <ChevronRight size={18} className="text-white" />
-                </div>
-                <div className="relative h-48 w-full overflow-hidden">
-                  <div className="absolute inset-0 bg-blue-900 opacity-0 transition-opacity duration-300 group-hover:opacity-30"></div>
-                  <Image
-                    src={card.image || "/placeholder.svg"}
-                    alt={card.title}
-                    fill
-                    className="object-cover w-100"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold">{card.title}</h3>
-                  <div className="my-2 h-1 w-12 bg-yellow-400"></div>
-                  <p className="mb-4 text-sm text-gray-600">
-                    {card.description}
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-medium text-gray-400">
-                      Learn more
-                    </span>
-                    <button className="flex h-8 w-8 items-center justify-center rounded-sm bg-gray-200 text-gray-600 transition-all duration-300 group-hover:bg-blue-500 group-hover:text-white">
-                      <ChevronRight size={18} />
-                    </button>
-                  </div>
-                </div>
-                <div className="absolute bottom-0 left-0 h-1 w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></div>
-              </div>
-            ))}
-          </div>
+    <>
+      <Navbar></Navbar>
+      <Breadcrumb
+        title={selectedItem.title}
+        backgroundImage="/img/header1.webp"
+        items={[{ label: `${selectedItem.title}`, href: "/", isCurrent: true }]}
+      />
+      <div className="section">
+        <Container maxWidth="xl">
+          <h2 className="text-center text-5xl font-bold text-gray-700">
+            {selectedItem.title}
+          </h2>
+          <div className="mx-auto mt-2 mb-6 h-1 w-12 bg-yellow-400"></div>
+          <p className="mx-auto max-w-3xl text-center text-gray-600 mb-10">
+            {selectedItem.description}
+          </p>
         </Container>
+
+        <div className="section bg-gray-100">
+          <Container maxWidth="lg">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {selectedItem.cards.map((card) => (
+                <div
+                  key={card.id}
+                  className="group relative overflow-hidden rounded-md bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
+                >
+                  <Link href={`${card.slug}`}>
+                    <div className="absolute right-4 top-4 z-10 rounded-full bg-yellow-400 p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
+                      <ChevronRight size={18} className="text-white" />
+                    </div>
+                    <div className="relative h-48 w-full overflow-hidden">
+                      <div className="absolute inset-0 bg-blue-900 opacity-0 transition-opacity duration-300 group-hover:opacity-30"></div>
+                      <Image
+                        src={card.image || "/placeholder.svg"}
+                        alt={card.title}
+                        fill
+                        className="object-cover w-100"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h3 className="text-lg font-semibold">{card.title}</h3>
+                      <div className="my-2 h-1 w-12 bg-yellow-400"></div>
+                      <p className="mb-4 text-sm text-gray-600">
+                        {card.description}
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-medium text-gray-400">
+                          Learn more
+                        </span>
+                        <button className="flex h-8 w-8 items-center justify-center rounded-sm bg-gray-200 text-gray-600 transition-all duration-300 group-hover:bg-blue-500 group-hover:text-white">
+                          <ChevronRight size={18} />
+                        </button>
+                      </div>
+                    </div>
+                    <div className="absolute bottom-0 left-0 h-1 w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></div>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </Container>
+        </div>
       </div>
-    </div>
-    <Footer></Footer>
+      <Footer></Footer>
     </>
   );
 }
