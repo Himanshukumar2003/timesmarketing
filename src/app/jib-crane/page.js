@@ -17,7 +17,7 @@ export default function JibCrane() {
       description:
         "Manually handling and moving relatively light loads are often not only time-consuming, but also an ergonomic burden for employees. With a wide selection of hoist units, our pillar mounted slewing jib cranes installed direct at the workplace enable all types of work pieces to be lifted and transported easily and deposited gently and precisely. By this setting up and waiting times can be reduced and for workshop cranes to become available. Furthermore strengths of our pillar mounted slewing jibs include light and fast load handling and ease of operation and high operating safety and reliability.",
 
-      image: "/img/pilar.jpg",
+      image: "/img/jib.jpg",
     },
     {
       id: "wall-mounted",
@@ -49,9 +49,9 @@ export default function JibCrane() {
     <>
       <Navbar />
       <Breadcrumb
-        title="Jib Cran"
+        title="Jib Cranes"
         backgroundImage="/img/header1.webp"
-        items={[{ label: "Jib Cran", href: "/", isCurrent: true }]}
+        items={[{ label: "Jib Cranes", href: "/", isCurrent: true }]}
       />
       <div className="section">
         <Container maxWidth="lg">
