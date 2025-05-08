@@ -2,7 +2,14 @@ import { Breadcrumb } from "@/componts/breadcrumb";
 import Footer from "@/componts/footer";
 import Navbar from "@/componts/nav";
 import Container from "@mui/material/Container";
-import { ChevronLeft, ChevronRight, Image, Maximize2, Play, Volume2 } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Image,
+  Maximize2,
+  Play,
+  Volume2,
+} from "lucide-react";
 import { FiChevronRight } from "react-icons/fi";
 import KbkCard from "./crads";
 
@@ -23,21 +30,17 @@ export default function KbkLight(params) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full    items-center">
               <div>
                 <div className="rounded-lg">
-                  <Image
-                  height={100}
-                  width={100}
-                  
-                    src="/img/kbk.webp"
+                  <img
+                    src="/img/kbk1.webp"
                     alt="Oil Sealed Vane Pump"
-                   
                     className="w-full h-100 rounded-lg shadow-lg h-auto object-contain"
                     priority
                   />
                 </div>
               </div>
 
-              <div className="p-6 md:p-8 lg:p-12 flex flex-col justify-center">
-                <h1 className="text-3xl md:text-4xl text-center font-bold text-slate-800 leading-tight mb-4">
+              <div className="flex flex-col justify-center">
+                <h1 className="text-3xl md:text-4xl font-bold text-slate-800 leading-tight mb-4">
                   Proven innovations since 1963
                 </h1>
 
@@ -82,7 +85,7 @@ export default function KbkLight(params) {
         </div>
       </div>
       <div className="section  bg-gray-100">
-      <Container maxWidth="sm">
+        <Container maxWidth="sm">
           <div className="overflow-hidden  rounded-xl bg-gray-900 shadow-xl">
             <div className="relative">
               <div className="relative aspect-video w-full bg-black">
@@ -93,16 +96,13 @@ export default function KbkLight(params) {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
-              </div>           
+              </div>
             </div>
-
           </div>
         </Container>
-
-        </div>
+      </div>
 
       <KbkCard />
-      
 
       <Footer></Footer>
     </>
