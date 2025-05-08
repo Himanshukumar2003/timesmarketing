@@ -14,7 +14,8 @@ export default function Products() {
     },
     {
       title: "Underslung Crane",
-      description: "Underslung Crane",
+      description:
+        "Times Marketing Pvt. Ltd. utilize an advanced design system and meticulously evaluate all mechanical.",
       imagePath: "/img/products.webp",
       href: "/underslung-crane",
       id: "2",

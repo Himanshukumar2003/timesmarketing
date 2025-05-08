@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, use} from "react";
+import { useState, useEffect, use } from "react";
 import Link from "next/link";
 import { FiChevronRight, FiChevronsRight } from "react-icons/fi";
 import eotCranesData from "@/app/apis/eot-cranes";
@@ -10,12 +10,12 @@ import Container from "@mui/material/Container";
 import Navbar from "@/componts/nav";
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Footer from "@/componts/footer";
-const EotCranes = ({params}) => {
-  const { slug } = use(params); 
+const EotCranes = ({ params }) => {
+  const { slug } = use(params);
   const [selectedItem, setSelectedItem] = useState(null);
   const [error, setError] = useState(null);
   useEffect(() => {
-    const fetchInner = eotCranesData.find((val) => val.slug === slug); 
+    const fetchInner = eotCranesData.find((val) => val.slug === slug);
     if (fetchInner) {
       setSelectedItem(fetchInner);
     } else {
@@ -25,61 +25,57 @@ const EotCranes = ({params}) => {
 
   if (error) return <p>{error}</p>;
   if (!selectedItem) return <p>Loading...</p>;
-  console.log(selectedItem, "sdvvjhs")
+  console.log(selectedItem, "sdvvjhs");
 
   return (
     <>
-     
+      <Navbar></Navbar>
 
-<Navbar></Navbar>
-
-<Breadcrumb
+      <Breadcrumb
         title={selectedItem.title}
         backgroundImage="/img/header1.webp"
-        items={[
-          { label: `${selectedItem.title}`, href: "/", isCurrent: true },
-        ]}
+        items={[{ label: `${selectedItem.title}`, href: "/", isCurrent: true }]}
       />
       <div className="section bg-two mt-10">
-      <Container maxWidth="lg">
+        <Container maxWidth="lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full items-center">
+            <div>
+              <Image
+                src={selectedItem.mainImage}
+                alt={selectedItem.title}
+                width={600}
+                layout="responsive"
+                height={400}
+                className="w-full rounded-lg shadow-lg h-auto object-contain"
+              />
+            </div>
+            <div className="flex flex-col justify-center">
+              <h1 className="text-3xl md:text-4xl font-bold text-slate-800 leading-tight mb-4">
+                {selectedItem.title}
+              </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full items-center">
-          <div>
-            <img
-              src={selectedItem.mainImage}
-              alt={selectedItem.title}
-              width={600}
-              height={400}
-              className="w-full rounded-lg shadow-lg h-auto object-contain"
-            />
-          </div>
-          <div className="p-6 md:p-8 lg:p-12 flex flex-col justify-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-slate-800 leading-tight mb-4">
-              {selectedItem.title}
-            </h1>
-            <p className="text-justify text-gray-600">
-              {selectedItem.description}
-            </p>
+              <p className="text-justify text-gray-600">
+                {selectedItem.description}
+              </p>
 
-            <button className="flex rounded-sm mt-4 items-center  btn">
-              <span className="shadow-lg items-center  bg-blue-700 hover:bg-blue-800 text-white font-bold  px-4 py-2 ">
-                <span className="flex-1 text-center mr-2">READ MORE</span>
-              </span>
-              <span className="bg-blue-500  shadow-lg py-2 px-2  ">
-                <FiChevronRight className=" text-white  text-2xl  font-bold" />
-              </span>
-            </button>
+              <button className="flex rounded-sm mt-4 items-center  btn">
+                <span className="shadow-lg items-center  bg-blue-700 hover:bg-blue-800 text-white font-bold  px-4 py-2 ">
+                  <span className="flex-1 text-center mr-2">READ MORE</span>
+                </span>
+                <span className="bg-blue-500  shadow-lg py-2 px-2  ">
+                  <FiChevronRight className=" text-white  text-2xl  font-bold" />
+                </span>
+              </button>
+            </div>
           </div>
-        </div>
         </Container>
       </div>
       <div className="section">
         <Container maxWidth="xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {selectedItem.cranes.map((item, index) => (
-              <Link
+              <div
                 key={index}
-                href={`/eot-cranes/${selectedItem.slug}/${item.slug}`} // Adjust path based on routing setup
                 className="rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]"
               >
                 <div className="relative group w-full card">
@@ -101,7 +97,7 @@ const EotCranes = ({params}) => {
                     {/* {item.capacity || "20 Ton"} */}
                   </div>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </Container>

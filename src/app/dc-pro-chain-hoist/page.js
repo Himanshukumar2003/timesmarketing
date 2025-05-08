@@ -52,6 +52,9 @@ export default function Home() {
               <h1 className="text-3xl md:text-3xl text-center font-bold text-[#676f77]  mb-6">
                 The industry benchmark
               </h1>
+              <div className="flex justify-center">
+                <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
+              </div>
               <p className="text-lg text-gray-700 mb-8 ">
                 With our DC-Pro chain hoist, we meet our own high standards in
                 terms of quality and innovation.The DC-Pro chain hoist is a
@@ -83,7 +86,7 @@ export default function Home() {
                 layout="responsive"
                 className="w-100 max-w-lg"
               ></Image>
-              
+
               <div>
                 <h2 className="text-2xl md:text-3xl text-[#676f77] font-bold text-center mb-10 mt-10">
                   Product information
@@ -100,13 +103,12 @@ export default function Home() {
                       className="text-xl font-bold my-4 text-[#676f77]"
                     >
                       <span className="text-xl font-bold my-4 text-[#676f77]">
-                      The benefits at a glance
+                        The benefits at a glance
                       </span>
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                 <ProductInformation></ProductInformation>
-                  
+                    <ProductInformation></ProductInformation>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion>
@@ -118,7 +120,7 @@ export default function Home() {
                     <Typography component="span">
                       {" "}
                       <span className="text-xl font-bold my-4 text-[#676f77]">
-                      Customer benefits at a glance
+                        Customer benefits at a glance
                       </span>
                     </Typography>
                   </AccordionSummary>
@@ -126,8 +128,6 @@ export default function Home() {
                     <FeaturesSection></FeaturesSection>
                   </AccordionDetails>
                 </Accordion>
-
-             
               </div>
             </div>
           </div>

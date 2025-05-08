@@ -50,6 +50,10 @@ export default function Home() {
               <h1 className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
                 Demag DH. The hoist unit: Beyond classic crane applications
               </h1>
+              <div className="flex justify-center">
+                <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
+              </div>
+
               <p className="text-lg text-gray-700 mb-8 text-center">
                 Demag DH hoist units can be used in a wide variety of
                 applications, both as travelling hoists on cranes or monorails
@@ -425,8 +429,8 @@ export default function Home() {
                         {/* Right Column: Image */}
                         <div className="md:col-span-6">
                           <Image
-                          height={300}
-                          width={300}
+                            height={300}
+                            width={300}
                             src="/img/dh-host-grapgh.webp"
                             alt="Demag Drive Motor"
                             className="w-full h-full  rounded-lg shadow"
@@ -450,7 +454,7 @@ export default function Home() {
                         </li>
                       </ul>
 
-                      <RopeGuideSection/>
+                      <RopeGuideSection />
                     </Container>
                   </AccordionDetails>
                 </Accordion>
@@ -464,17 +468,23 @@ export default function Home() {
                     <Typography component="span">
                       {" "}
                       <span className="text-xl font-bold my-4 text-[#676f77]">
-                      Rope reeving arrangements
-
+                        Rope reeving arrangements
                       </span>
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                  <h6 className="text-lg font-bold  text-[#676f77] mb-4">The right variant for every application</h6>
-                  <Image src="/img/dh-host-13.webp" height={300} width={300} alt="" className="w-100"></Image>
+                    <h6 className="text-lg font-bold  text-[#676f77] mb-4">
+                      The right variant for every application
+                    </h6>
+                    <Image
+                      src="/img/dh-host-13.webp"
+                      height={300}
+                      width={300}
+                      alt=""
+                      className="w-100"
+                    ></Image>
                   </AccordionDetails>
                 </Accordion>
-
               </div>
             </div>
           </div>

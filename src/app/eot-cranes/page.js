@@ -39,7 +39,9 @@ function EotCranes(params) {
               <h1 className="text-3xl md:text-4xl font-bold text-slate-800 leading-tight mb-4">
                 Double Girder Crane
               </h1>
-
+              <div className="flex justify-center">
+                <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
+              </div>
               <div className="space-y-4 text-gray-600">
                 <p className="    text-justify">
                   Times Marketing Pvt. Ltd. utilize an advanced design system
@@ -71,8 +73,8 @@ function EotCranes(params) {
               // key={crane.id}
               className=" rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]"
             >
-              <div className="relative   group  w-full  card" >
-              <div className="absolute inset-0 overlay "></div>
+              <div className="relative   group  w-full  card">
+                <div className="absolute inset-0 overlay "></div>
 
                 <Image
                   src="/img/double-ginder-1.jpg"
@@ -83,18 +85,16 @@ function EotCranes(params) {
                 />
 
                 <div className="">
-              
-                    <h4 className="absolute bottom-[20px] text-white text-center font-bold  text-[21px]   text-shadow-lg group-hover:text-blue-900">
-                      20 Ton ZKKE Double Girder Overhead Travelling Crane
-                    </h4>
-                 
+                  <h4 className="absolute bottom-[20px] text-white text-center font-bold  text-[21px]   text-shadow-lg group-hover:text-blue-900">
+                    20 Ton ZKKE Double Girder Overhead Travelling Crane
+                  </h4>
+
                   <div className="absolute top-0 left-0 bg-yellow-500 text-white px-4 py-1 rounded-br-lg font-medium z-10">
                     20 Ton
                   </div>
                 </div>
               </div>
             </div>
-         
           </div>
         </Container>
       </div>

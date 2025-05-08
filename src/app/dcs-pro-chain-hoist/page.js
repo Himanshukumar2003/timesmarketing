@@ -50,21 +50,31 @@ export default function Home() {
           <div className="container mx-auto">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-3xl md:text-3xl text-center font-bold text-[#676f77]  mb-6">
-              Convenient operation and load handling with one hand
-
+                Convenient operation and load handling with one hand
               </h1>
+              <div className="flex justify-center">
+                <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
+              </div>
               <p className="text-lg text-gray-700 mb-8 ">
-              The DCM-Pro Manulift was developed for handling loads quickly and safely with only one hand. The DCM-Pro is based on the lifting unit of the DC-Pro chain hoist and the DSM-C control unit. Thanks to the control unit which is rigidly connected to the load handling attachment, the operator only needs one hand to operate the hoist and guide the load. Further strengths:
-
-
+                The DCM-Pro Manulift was developed for handling loads quickly
+                and safely with only one hand. The DCM-Pro is based on the
+                lifting unit of the DC-Pro chain hoist and the DSM-C control
+                unit. Thanks to the control unit which is rigidly connected to
+                the load handling attachment, the operator only needs one hand
+                to operate the hoist and guide the load. Further strengths:
               </p>
               <ul className="list-disc list-inside mt-2 space-y-1">
-              <li>convenient operation and load guidance with one hand</li>
-              <li>for all Manulift load handling attachments or specially developed load handling attachments</li>
-              <li>simple replacement thanks to quick-change coupling</li>
-              <li>suitable for right-hand and left-hand operation</li>
+                <li>convenient operation and load guidance with one hand</li>
+                <li>
+                  for all Manulift load handling attachments or specially
+                  developed load handling attachments
+                </li>
+                <li>simple replacement thanks to quick-change coupling</li>
+                <li>suitable for right-hand and left-hand operation</li>
               </ul>
-<h4 className="text-xl text-center font-bold text-[#676f77] ">DemagcranesTV</h4>
+              <h4 className="text-xl text-center font-bold text-[#676f77] ">
+                DemagcranesTV
+              </h4>
               <Image
                 src="/img/chain-hoist/02_DC-Pro_EN.gif"
                 height={300}
@@ -73,7 +83,7 @@ export default function Home() {
                 layout="responsive"
                 className="w-100 max-w-lg"
               ></Image>
-              
+
               <div>
                 <h2 className="text-2xl md:text-3xl text-[#676f77] font-bold text-center mb-10 mt-10">
                   Product information
@@ -90,13 +100,12 @@ export default function Home() {
                       className="text-xl font-bold my-4 text-[#676f77]"
                     >
                       <span className="text-xl font-bold my-4 text-[#676f77]">
-                      The benefits at a glance
+                        The benefits at a glance
                       </span>
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                 <ProductInformation></ProductInformation>
-                  
+                    <ProductInformation></ProductInformation>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion>
@@ -108,7 +117,7 @@ export default function Home() {
                     <Typography component="span">
                       {" "}
                       <span className="text-xl font-bold my-4 text-[#676f77]">
-                      Customer benefits at a glance
+                        Customer benefits at a glance
                       </span>
                     </Typography>
                   </AccordionSummary>
@@ -116,8 +125,6 @@ export default function Home() {
                     <FeaturesSection></FeaturesSection>
                   </AccordionDetails>
                 </Accordion>
-
-             
               </div>
             </div>
           </div>

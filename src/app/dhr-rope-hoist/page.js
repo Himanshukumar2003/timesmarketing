@@ -51,6 +51,9 @@ export default function Home() {
               <h1 className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
                 Innovative. Smart. Lifting to the next level.
               </h1>
+              <div className="flex justify-center">
+                <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
+              </div>
               <p className="text-lg text-gray-700 mb-8 text-center">
                 Innovative lifting solutions for safe and forward-looking
                 operation: The new DHR rope hoist offers a high level of
@@ -376,8 +379,8 @@ export default function Home() {
                           <hr />
                           <div class="flex items-start space-x-4">
                             <Image
-                            height={50}
-                            width={50}
+                              height={50}
+                              width={50}
                               src="/img/dhr-rope-hoist-icon3.webp"
                               alt="Tandem Icon"
                               class="w-10 h-10"
@@ -401,9 +404,9 @@ export default function Home() {
 
                           {/* <!-- Follow-me Card --> */}
                           <div class="flex items-start space-x-4">
-                            <Image 
-                            width={50}
-                            height={50}
+                            <Image
+                              width={50}
+                              height={50}
                               src="/img/dhr-rope-hoist-icon5.webp"
                               alt="Follow-me Icon"
                               class="w-10 h-10"
@@ -422,8 +425,8 @@ export default function Home() {
                           {/* <!-- Hook Centering Card --> */}
                           <div class="flex items-start space-x-4">
                             <Image
-                            height={30}
-                            width={30}
+                              height={30}
+                              width={30}
                               src="/img/dhr-rope-hoist-icon6.webp"
                               alt="Hook Centering Icon"
                               class="w-10 h-10"
@@ -443,8 +446,8 @@ export default function Home() {
                           {/* <!-- Diagonal Pull Prevention Card --> */}
                           <div class="flex items-start space-x-4">
                             <Image
-                            height={50}
-                            width={50}
+                              height={50}
+                              width={50}
                               src="/img/dhr-rope-hoist-icon7.webp"
                               alt="Diagonal Pull Icon"
                               class="w-10 h-10"
