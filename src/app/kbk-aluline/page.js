@@ -23,9 +23,9 @@ export default function Home() {
     <>
       <Navbar />
       <Breadcrumb
-        title="Jib Cran"
+        title="KBK Aluline"
         backgroundImage="/img/header1.webp"
-        items={[{ label: "Jib Cran", href: "/", isCurrent: true }]}
+        items={[{ label: "KBK Aluline", href: "/", isCurrent: true }]}
       />
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
@@ -52,7 +52,6 @@ export default function Home() {
                   height="315"
                   src="https://www.youtube.com/embed/W5gmjITGpCk?si=c9EGsdtGR7l7bLjN"
                   title="YouTube video player"
-                 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 ></iframe>
@@ -87,7 +86,6 @@ export default function Home() {
           </div>
         </section>
 
-       
         <ProductInformation></ProductInformation>
 
         <section className="py-12 bg-white">
