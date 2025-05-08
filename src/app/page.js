@@ -8,6 +8,9 @@ import UniqueFeatures from "@/componts/why-chose-us";
 import Footer from "@/componts/footer";
 import ServiceCards from "@/componts/services";
 import Testimonials from "@/componts/testimonials ";
+import { FiChevronsRight } from "react-icons/fi";
+import Link from "next/link";
+import eotCranesData from "./apis/eot-cranes";
 export default function Home() {
   return (
 <>
@@ -19,8 +22,6 @@ export default function Home() {
   <ServiceCards ></ServiceCards>
   <Testimonials></Testimonials>
   <Footer/>
-
-  
 </>
   );
 }

@@ -2,6 +2,7 @@
 
 import React from "react"
 import { ChevronRight, Home } from "lucide-react"
+import Link from "next/link"
 
 
 
@@ -29,10 +30,10 @@ export function Breadcrumb({
         <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>
 
         <nav className="flex items-center space-x-2">
-          <a href="/" className="flex items-center hover:text-orange-500 text-lg transition-colors">
+          <Link href="/" className="flex items-center hover:text-orange-500 text-lg transition-colors">
             <Home className="h-4 w-4 mr-1" />
             Home
-          </a>
+          </Link>
 
           {items.map((item, index) => (
             <React.Fragment key={index}>

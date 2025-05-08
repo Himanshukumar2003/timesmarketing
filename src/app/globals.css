@@ -190,8 +190,30 @@
 }
 
 
+
+/* .bg-three{ background: linear-gradient(135deg, #00acc3 0%, #007a8a 50%, #004d56 100%)} */
+  /* --gradient-primary: linear-gradient(135deg, #00acc3 0%, #007a8a 50%, #004d56 100%);
+  ;
+  --gradient-secondary: linear-gradient(135deg, #ffd2b2 0%, #ffb999 100%); */
+
 .section {
   padding: 60px 0;
+}
+
+
+/* .card:hover .overlay{
+background: transparent;
+} */
+
+.overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(246, 212, 27, 0.7);  /* Yellow with transparency */
+  pointer-events: none;  /* Allow interactions with content beneath */
 }
 
 .btn span i {
@@ -214,3 +236,40 @@ padding-bottom: 0px !important;
   background: url("/img/tab_bg.jpg") no-repeat;
 background-size: cover;
 }
+
+
+.bg-two{
+  background: linear-gradient(to right, #091B3C 30%, white 21%);
+}
+
+li{
+  margin-bottom: 4px;
+}
+
+li::marker {
+  color: blue;
+  font-weight: 16px;
+}
+
+
+.css-1f1pi2l-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded{
+margin: 0;
+}
+
+.css-yfrx4k-MuiAccordionSummary-content{
+  margin: 0;
+}
+
+
+
+/* ul li{
+  position: relative;
+}
+.Two li::before{content: " ";
+display: block;
+width: 0.4375rem;
+height: 0.375rem;
+position: absolute;
+top: 0.5rem;
+left: -20px;
+background: url(/img/download.png);} */
