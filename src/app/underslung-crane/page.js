@@ -15,9 +15,7 @@ function UnderslungCrane(params) {
       <Breadcrumb
         title="Underslung Crane"
         backgroundImage="/img/header1.webp"
-        items={[
-          { label: "Underslung Crane", href: "/", isCurrent: true },
-        ]}
+        items={[{ label: "Underslung Crane", href: "/", isCurrent: true }]}
       />
       <div className="section bg-two">
         <Container maxWidth="xl">
@@ -25,7 +23,7 @@ function UnderslungCrane(params) {
             <div>
               <div className="rounded-lg">
                 <Image
-                  src="/img/Underslung.jpg"
+                  src="/img/underslung.jpg"
                   alt="Oil Sealed Vane Pump"
                   width={600}
                   height={400}
@@ -37,7 +35,7 @@ function UnderslungCrane(params) {
 
             <div className="p-6 md:p-8 lg:p-12 flex flex-col justify-center">
               <h1 className="text-3xl md:text-4xl font-bold text-slate-800 leading-tight mb-4">
-              Underslung Crane
+                Underslung Crane
               </h1>
 
               <div className="space-y-4 text-gray-600">
@@ -59,7 +57,7 @@ function UnderslungCrane(params) {
                 </p>
               </div>
 
-             <ContactPopupForm></ContactPopupForm>
+              <ContactPopupForm></ContactPopupForm>
             </div>
           </div>
         </Container>
@@ -71,8 +69,8 @@ function UnderslungCrane(params) {
               // key={crane.id}
               className=" rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]"
             >
-              <div className="relative   group  w-full  card" >
-              <div className="absolute inset-0 overlay "></div>
+              <div className="relative   group  w-full  card">
+                <div className="absolute inset-0 overlay "></div>
 
                 <Image
                   src="/img/double-ginder-1.jpg"
@@ -83,18 +81,16 @@ function UnderslungCrane(params) {
                 />
 
                 <div className="">
-              
-                    <h4 className="absolute bottom-[20px] text-white text-center font-bold  text-[21px]   text-shadow-lg group-hover:text-blue-900">
-                      20 Ton ZKKE Double Girder Overhead Travelling Crane
-                    </h4>
-                 
+                  <h4 className="absolute bottom-[20px] text-white text-center font-bold  text-[21px]   text-shadow-lg group-hover:text-blue-900">
+                    20 Ton ZKKE Double Girder Overhead Travelling Crane
+                  </h4>
+
                   <div className="absolute top-0 left-0 bg-yellow-500 text-white px-4 py-1 rounded-br-lg font-medium z-10">
                     20 Ton
                   </div>
                 </div>
               </div>
             </div>
-         
           </div>
         </Container>
       </div>
