@@ -43,7 +43,9 @@ export default function KbkLight(params) {
                 <h1 className="text-3xl md:text-4xl font-bold text-slate-800 leading-tight mb-4">
                   Proven innovations since 1963
                 </h1>
-
+                <div className="flex justify-center">
+                  <div className=" mt-2 mb-6 text-center h-1 w-12 bg-yellow-400"></div>
+                </div>
                 <div className="space-y-4 text-gray-600">
                   <p>
                     We launched our Demag KBK light crane system more than 60

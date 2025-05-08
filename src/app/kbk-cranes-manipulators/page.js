@@ -43,6 +43,9 @@ export default function Home() {
                 <h1 className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
                   Ergonomic and efficient
                 </h1>
+                <div className="flex justify-center">
+                  <div className=" mt-2 mb-6 text-center h-1 w-12 bg-yellow-400"></div>
+                </div>
                 <p className="text-lg text-gray-700 mb-8 text-center">
                   Our KBK cranes for manipulators are an outstanding example for
                   the versatility of our KBK light crane system. They can be

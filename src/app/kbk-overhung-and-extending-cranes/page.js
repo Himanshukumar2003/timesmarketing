@@ -46,6 +46,9 @@ export default function Home() {
               <h1 className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
                 Large overhang – constant or variable
               </h1>
+              <div className="flex justify-center">
+                <div className=" mt-2 mb-6 text-center h-1 w-12 bg-yellow-400"></div>
+              </div>
               <p className="text-lg text-gray-700 mb-8 text-center">
                 Loads can also be moved beyond the crane runway using overhung
                 and extending cranes from our KBK light crane system. These

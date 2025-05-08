@@ -40,6 +40,9 @@ export default function Home() {
               <h1 className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
                 Demag KBK Aluline Light Crane System
               </h1>
+              <div className="flex justify-center">
+                <div className=" mt-2 mb-6 text-center h-1 w-12 bg-yellow-400"></div>
+              </div>
               <p className="text-lg text-gray-700 mb-8 text-center">
                 International studies prove that ergonomic workplace design has
                 an immediate impact on productivity. Benefit from the
@@ -122,7 +125,6 @@ export default function Home() {
                 id="panel2-header"
               >
                 <Typography component="span">
-                  {" "}
                   <span className="text-2xl font-bold  text-[#676f77]">
                     Other features
                   </span>

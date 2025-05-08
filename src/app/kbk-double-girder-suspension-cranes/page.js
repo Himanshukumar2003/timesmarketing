@@ -47,6 +47,9 @@ export default function Home() {
               <h1 className="text-3xl md:text-3xl font-bold text-[#676f77] text-center mb-6">
                 Reliable transport also for large spans and high load capacities
               </h1>
+              <div className="flex justify-center">
+                <div className=" mt-2 mb-6 text-center h-1 w-12 bg-yellow-400"></div>
+              </div>
               <p className="text-lg text-gray-700 mb-8 text-center">
                 Double-girder suspension cranes from our KBK light crane system
                 enable goods of all kinds to be transported with ease. They
