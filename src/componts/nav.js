@@ -149,22 +149,16 @@ export default function Navbar() {
       {/* Top Bar */}
       <div className="bg-[#003366] text-white">
         <div className="container mx-auto flex flex-wrap justify-between items-center px-4 py-2">
-          <div className="flex items-center">
+          <div className="  hidden md:flex items-center">
             <Globe className="h-5 w-5 mr-2" />
             <span>English</span>
           </div>
           <div className="flex flex-wrap gap-2 md:gap-4">
             <Link
-              href="#"
-              className="flex items-center px-3 py-1 text-[14px] font-bold"
-            >
-              <MdEmail className="text-blue-500 mr-2" /> Get in touch
-            </Link>
-            <Link
-              href="#"
+              href="/contact"
               className="flex items-center border border-white px-3 py-1 text-[14px] font-bold"
             >
-              <FaHandshake className="mr-2" /> Demag Shop
+              <FaHandshake className="mr-2" /> Get Enquiry
             </Link>
             <Link
               href="#"

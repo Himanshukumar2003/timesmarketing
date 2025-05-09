@@ -81,7 +81,7 @@ const menuItems = [
       {
         id: "chain-hoists",
         title: "Chain hoists",
-        slug: "/sraaes/chain-hoists",
+        slug: "/chain-hoists",
       },
       { id: "rope-hoists", title: "Rope hoists", slug: "/rope-hoists" },
     ],
