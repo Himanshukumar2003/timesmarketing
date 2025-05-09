@@ -78,9 +78,12 @@ const menuItems = [
     id: "hoist-units",
     title: "Hoist Units",
     items: [
-      { id: "chain-hoists", title: "Chain hoists" },
-      { id: "rope-hoists", title: "Rope hoists" },
-      { id: "lifting-devices", title: "Lifting devices" },
+      {
+        id: "chain-hoists",
+        title: "Chain hoists",
+        slug: "/sraaes/chain-hoists",
+      },
+      { id: "rope-hoists", title: "Rope hoists", slug: "/rope-hoists" },
     ],
   },
 
