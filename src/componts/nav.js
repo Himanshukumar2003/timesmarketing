@@ -28,7 +28,6 @@ export default function Navbar() {
     { title: "KBK", hasSubmenu: true },
     { title: "Drives", hasSubmenu: true },
     { title: "Jib Cranes", hasSubmenu: false, href: "jib-crane" },
-    { title: "Jib Cranes", hasSubmenu: false, href: "jib-crane" },
     { title: "Underslung Crane", hasSubmenu: false, href: "underslung-crane" },
   ];
 

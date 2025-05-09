@@ -1,108 +1,122 @@
-"use client"
+"use client";
 
-import { useState } from "react"
+import { useState } from "react";
 
 export default function ContactPopupForm() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
     city: "",
     phone: "",
     email: "",
-  })
+  });
 
   const [errors, setErrors] = useState({
     name: "",
     city: "",
     phone: "",
     email: "",
-  })
+  });
 
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [showSuccess, setShowSuccess] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
-    })
+    });
 
     if (errors[name]) {
       setErrors({
         ...errors,
         [name]: "",
-      })
+      });
     }
-  }
+  };
 
   const validateForm = () => {
-    let isValid = true
+    let isValid = true;
     const newErrors = {
       name: "",
       city: "",
       phone: "",
       email: "",
-    }
+    };
 
     if (!formData.name.trim() || formData.name.length < 2) {
-      newErrors.name = "Name must be at least 2 characters"
-      isValid = false
+      newErrors.name = "Name must be at least 2 characters";
+      isValid = false;
     }
 
     if (!formData.city.trim() || formData.city.length < 2) {
-      newErrors.city = "City must be at least 2 characters"
-      isValid = false
+      newErrors.city = "City must be at least 2 characters";
+      isValid = false;
     }
 
     if (!/^\d{10}$/.test(formData.phone)) {
-      newErrors.phone = "Phone number must be 10 digits"
-      isValid = false
+      newErrors.phone = "Phone number must be 10 digits";
+      isValid = false;
     }
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Please enter a valid email address"
-      isValid = false
+      newErrors.email = "Please enter a valid email address";
+      isValid = false;
     }
 
-    setErrors(newErrors)
-    return isValid
-  }
+    setErrors(newErrors);
+    return isValid;
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     if (validateForm()) {
-      setIsSubmitting(true)
+      setIsSubmitting(true);
 
       setTimeout(() => {
-        console.log("Form submitted:", formData)
-        setIsSubmitting(false)
-        setShowSuccess(true)
+        console.log("Form submitted:", formData);
+        setIsSubmitting(false);
+        setShowSuccess(true);
 
         setTimeout(() => {
-          setShowSuccess(false)
-          setIsOpen(false)
+          setShowSuccess(false);
+          setIsOpen(false);
           setFormData({
             name: "",
             city: "",
             phone: "",
             email: "",
-          })
-        }, 2000)
-      }, 1000)
+          });
+        }, 2000);
+      }, 1000);
     }
-  }
+  };
 
   return (
     <div className="">
-      <a className="flex rounded-sm mt-4 items-center btn" onClick={() => setIsOpen(true)}>
+      <a
+        className="flex rounded-sm mt-4 items-center btn"
+        onClick={() => setIsOpen(true)}
+      >
         <span className="shadow-lg items-center bg-blue-700 hover:bg-blue-800 text-white font-bold px-4 py-2">
-          <span className="flex-1 text-center mr-2">Quick Details</span>
+          <span className="flex-1 text-center mr-2">Sand Enquiry</span>
         </span>
         <span className="bg-blue-500 shadow-lg py-2 px-2">
-          <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" className="text-white text-2xl font-bold" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            stroke="currentColor"
+            fill="none"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="text-white text-2xl font-bold"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
         </span>
@@ -120,7 +134,9 @@ export default function ContactPopupForm() {
             </button>
 
             <h2 className="text-2xl font-bold mb-1">Contact Form</h2>
-            <p className="text-gray-600 mb-4">Please fill out the form below to get in touch with us.</p>
+            <p className="text-gray-600 mb-4">
+              Please fill out the form below to get in touch with us.
+            </p>
 
             {showSuccess ? (
               <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
@@ -129,59 +145,95 @@ export default function ContactPopupForm() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Name
+                  </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`w-full px-3 py-2 border rounded-md ${errors.name ? "border-red-500" : "border-gray-300"}`}
+                    className={`w-full px-3 py-2 border rounded-md ${
+                      errors.name ? "border-red-500" : "border-gray-300"
+                    }`}
                     placeholder="Enter your name"
                   />
-                  {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name}</p>}
+                  {errors.name && (
+                    <p className="mt-1 text-sm text-red-600">{errors.name}</p>
+                  )}
                 </div>
 
                 <div>
-                  <label htmlFor="city" className="block text-sm font-medium text-gray-700 mb-1">City</label>
+                  <label
+                    htmlFor="city"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    City
+                  </label>
                   <input
                     type="text"
                     id="city"
                     name="city"
                     value={formData.city}
                     onChange={handleChange}
-                    className={`w-full px-3 py-2 border rounded-md ${errors.city ? "border-red-500" : "border-gray-300"}`}
+                    className={`w-full px-3 py-2 border rounded-md ${
+                      errors.city ? "border-red-500" : "border-gray-300"
+                    }`}
                     placeholder="Enter your city"
                   />
-                  {errors.city && <p className="mt-1 text-sm text-red-600">{errors.city}</p>}
+                  {errors.city && (
+                    <p className="mt-1 text-sm text-red-600">{errors.city}</p>
+                  )}
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Phone Number
+                  </label>
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className={`w-full px-3 py-2 border rounded-md ${errors.phone ? "border-red-500" : "border-gray-300"}`}
+                    className={`w-full px-3 py-2 border rounded-md ${
+                      errors.phone ? "border-red-500" : "border-gray-300"
+                    }`}
                     placeholder="Enter your 10-digit phone number"
                   />
-                  {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone}</p>}
+                  {errors.phone && (
+                    <p className="mt-1 text-sm text-red-600">{errors.phone}</p>
+                  )}
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Email
+                  </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`w-full px-3 py-2 border rounded-md ${errors.email ? "border-red-500" : "border-gray-300"}`}
+                    className={`w-full px-3 py-2 border rounded-md ${
+                      errors.email ? "border-red-500" : "border-gray-300"
+                    }`}
                     placeholder="Enter your email address"
                   />
-                  {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
+                  {errors.email && (
+                    <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+                  )}
                 </div>
 
                 <div className="flex justify-end gap-2 pt-2">
@@ -207,5 +259,5 @@ export default function ContactPopupForm() {
         </div>
       )}
     </div>
-  )
+  );
 }

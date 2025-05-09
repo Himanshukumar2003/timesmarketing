@@ -8,6 +8,7 @@ import { FiChevronRight } from "react-icons/fi";
 import Navbar from "@/componts/nav";
 import Footer from "@/componts/footer";
 import { Breadcrumb } from "@/componts/breadcrumb";
+import ContactPopupForm from "@/componts/btn";
 export default function JibCrane() {
   const cranes = [
     {
@@ -94,16 +95,7 @@ export default function JibCrane() {
                     </ul>
                   )}
 
-                  <a className="flex rounded-sm mt-4 items-center  btn">
-                    <span className="shadow-lg items-center  bg-blue-700 hover:bg-blue-800 text-white font-bold  px-4 py-2 ">
-                      <span className="flex-1 text-center mr-2">
-                        Sand Enquiry
-                      </span>
-                    </span>
-                    <span className="bg-blue-500  shadow-lg py-2 px-2  ">
-                      <FiChevronRight className=" text-white  text-2xl  font-bold" />
-                    </span>
-                  </a>
+                  <ContactPopupForm />
                 </div>
               </div>
             ))}
