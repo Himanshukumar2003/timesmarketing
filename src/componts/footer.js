@@ -38,42 +38,25 @@ export default function Footer() {
             </div>
             <div className="text-white">
               <h3 className="text-xl font-semibold mb-2">
-                Subscribe to our newsletter to get updates to our latest
-                collections
+                Need a Custom Lifting Solution? <br /> Let&#39; s Talk!
               </h3>
               <p className="text-sm mb-4">
-                Get 20% off on your first order just by subscribing to our
-                newsletter.
+                Looking for a reliable partner for your next industrial or
+                construction project?
               </p>
+              <ul className="   list-disc white-bullets list-inside text-white mb-4">
+                <li> Connect with Us for Expert Consultation</li>
+                <li>
+                  Pan-India Service | Customized Solutions | Timely Delivery
+                </li>
+              </ul>
 
-              <form onSubmit={handleSubscribe} className="flex gap-2 mb-2">
-                <div className="relative flex-grow">
-                  <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                    <Mail className="h-4 w-4 text-gray-400" />
-                  </div>
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="bg-white text-gray-900 rounded-md pl-10 pr-4 py-2 w-full text-sm"
-                    placeholder="Enter your email"
-                    required
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="bg-white text-[#E3BC17] px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-100"
-                >
-                  Subscribe
-                </button>
-              </form>
-
-              <p className="text-xs">
-                You can be able to unsubscribe at any time.
-                <Link href="/privacy-policy" className="underline ml-1">
-                  Read our privacy policy here
-                </Link>
-              </p>
+              <Link
+                href="/contact"
+                className="bg-white mt-4 text-[#E3BC17] px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-100"
+              >
+                Get in Touch
+              </Link>
             </div>
           </div>
         </div>
@@ -92,8 +75,9 @@ export default function Footer() {
                 ></Image>
               </div>
               <p className="text-white text-sm    font-semibold mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit et
-                aliquam, purus sit amet luctus venenatis.
+                Delivering reliable industrial solutions since 1988. Authorized
+                Distributor for Demag Cranes & Components, and trusted makers of
+                TK Crane.
               </p>
               <div className="flex gap-4">
                 <Link href="#" className="text-white hover:text-blue-500">
@@ -228,11 +212,12 @@ export default function Footer() {
           </div>
 
           {/* Bottom Footer */}
-          <div className="border-t mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-white text-sm mb-4    font-semibold md:mb-0">
-              © Copyright by Colorlib. All rights reserved.
+          <div className="border-t mt-8 pt-6 flex flex-col md:flex-row justify-center items-center">
+            <p className="text-white text-sm mb-4  text-center   font-semibold md:mb-0">
+              2025 Copyright Times Industrial Engineers Private Limited. All
+              rights reserved.
             </p>
-            <div className="flex gap-4 text-sm">
+            {/* <div className="flex gap-4 text-sm">
               <Link
                 href="#"
                 className="text-white font-semibold  hover:text-blue-500"
@@ -257,7 +242,7 @@ export default function Footer() {
               >
                 Site Map
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>

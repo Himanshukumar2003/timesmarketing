@@ -16,21 +16,24 @@ export default function About() {
               through the power of video.
             </h1>
             <p className="mt-2 text-slate-600">
-              In VS Code if I type lorem and then press enter it will generate a
-              paragraph of lorem ipsum. The only problem is that the paragraph
-              comes out as one very long line of text as opposed to several
-              lines in the text editor. Is there a setting I can change so that
-              it automatically generates my lorem ipsum on multiple lines?
+              With a rich legacy dating back to 1988, we have been committed to
+              delivering innovative and reliable industrial products. In 2012,
+              we took a significant leap forward by launching TK Crane, our
+              specialized brand for manufacturing state-of-the-art EOT (Electric
+              Overhead Travel) cranes. Driven by cutting-edge technology and a
+              highly experienced team, every TK Crane is engineered to meet the
+              highest standards of safety, efficiency, and durability. Over the
+              years, we have established ourselves as a trusted name across the
+              manufacturing, engineering, and construction sectors.
             </p>
-            <a className="flex rounded-sm mt-4 items-center  btn">
+            <a href="/about" className="flex rounded-sm mt-4 items-center  btn">
               <span className="shadow-lg items-center  bg-blue-700 hover:bg-blue-800 text-white font-bold  px-4 py-2 ">
                 <span className="flex-1 text-center mr-2">READ MORE</span>
               </span>
               <span className="bg-blue-500  shadow-lg py-2 px-2  ">
-              <FiChevronRight className=" text-white  text-2xl  font-bold"/>
-            </span>
+                <FiChevronRight className=" text-white  text-2xl  font-bold" />
+              </span>
             </a>
-            
           </div>
           <div>{/* Optional: Add an image or SVG here */}</div>
         </div>

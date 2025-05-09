@@ -35,21 +35,29 @@ function About(params) {
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl font-bold mb-4">About us</h2>
             <p className="text-gray-700 mb-4 border-l-4 border-yellow-500 pl-4">
-              Times Industrial Engineers Private Limited is a company to trust
-              upon because we always listen to our customers, understand their
-              needs and then work hard to fulfill those needs. Based in
-              Faridabad (Haryana, India); we have our infrastructure that is
-              spread over a large piece of land and is equipped with all the
-              resources that we require to cater the demands of our customers.
-              We are a recognized as reliable supplier of Chain Hoist, KBK
-              Suspension Monorails, Motors, EOT Crane Spare Parts, JIB Crane
-              Spares, etc., because of their excellent quality. The people of
-              our company persistently work to cater our customer &#39; s
-              demands in the every possible way.
+              With a rich legacy dating back to 1988, we have been committed to
+              delivering innovative and reliable industrial products. In 2012,
+              we took a significant leap forward by launching TK Crane, our
+              specialized brand for manufacturing state-of-the-art EOT (Electric
+              Overhead Travel) cranes.
+            </p>
+            <p className="text-gray-700 mb-4  pl-4">
+              Driven by cutting-edge technology and a highly experienced team,
+              every TK Crane is engineered to meet the highest standards of
+              safety, efficiency, and durability. Over the years, we have
+              established ourselves as a trusted name across the manufacturing,
+              engineering, and construction sectors.
+            </p>
+            <p className="text-gray-700 mb-4  pl-4">
+              Our unwavering focus on excellence, innovation, and sustainability
+              enables us to provide high-quality products and customized
+              solutions that cater to the evolving needs of our diverse
+              clientele. At TK Crane, we don’t just build cranes — we build
+              long-lasting partnerships based on performance, precision, and
+              trust.
             </p>
 
-            {/* Feature Highlights */}
-            <div className="flex flex-col sm:flex-row gap-6">
+            {/* <div className="flex flex-col sm:flex-row gap-6">
               <div className="flex items-start gap-3">
                 <FaBuilding className="text-yellow-500 mt-1 text-4xl" />
                 <div>
@@ -69,7 +77,7 @@ function About(params) {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

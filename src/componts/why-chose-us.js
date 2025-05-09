@@ -18,7 +18,9 @@ const OilGasSection = () => {
               <FaPlayCircle fontSize="inherit" />
             </button>
           </div>
-          <h2 className="text-white text-2xl font-bold">Watch Our Industry Tour</h2>
+          <h2 className="text-white text-2xl font-bold">
+            Watch Our Industry Tour
+          </h2>
         </div>
       </div>
 
@@ -26,55 +28,61 @@ const OilGasSection = () => {
       <div className="flex flex-col justify-center space-y-6">
         <div>
           <p className="text-sm tracking-widest uppercase text-gray-500 mb-2">
-            Get to know us
+            GET TO KNOW US
           </p>
           <h2 className="text-3xl font-bold text-gray-800 leading-snug">
-            Achieving Outcomes With Trust And Oil Gas Reliability
+            Engineering Excellence, Lifting Trust
           </h2>
         </div>
 
         <p className="text-gray-600">
-          Tincidunt ornare massa eget egestas purus viverra accumsan in nisl.
-          Varius quam quisque id diam vel quam. Cras pulvinar mattis nunc sed blandit.
+          With over three decades of industrial legacy and a decade of crane
+          manufacturing expertise under the TK Crane brand, we are dedicated to
+          delivering superior lifting solutions across manufacturing,
+          engineering, and construction sectors.
         </p>
 
         <div className="grid grid-cols-2 gap-4 text-sm text-gray-700">
           <ul className="space-y-2">
             <li className="flex items-start gap-2">
-              <span className="text-yellow-500">◆</span> Ullamcorper nulla litora donec
+              <span className="text-yellow-500">◆</span> Over 35 Years of
+              Industrial Experience
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-yellow-500">◆</span> Rhoncus urna neque viverra
+              <span className="text-yellow-500">◆</span> Advanced EOT Cranes
+              Tailored to Your Needs
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-yellow-500">◆</span> Maecenas pharetra convallis
+              <span className="text-yellow-500">◆</span> Precision Engineering
+              with Safety & Efficiency
             </li>
           </ul>
           <ul className="space-y-2">
             <li className="flex items-start gap-2">
-              <span className="text-yellow-500">◆</span> Purus faucibus ornare suspendisse
+              <span className="text-yellow-500">◆</span> Trusted by Industry
+              Leaders Across India
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-yellow-500">◆</span> Eros in cursus turpis massa tincidunt
+              <span className="text-yellow-500">◆</span> Cutting-Edge Technology
+              & Sustainable Solutions
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-yellow-500">◆</span> Sagittis purus sit amet volutpat
+              <span className="text-yellow-500">◆</span> A Team Committed to
+              Excellence & Innovation
             </li>
           </ul>
         </div>
 
         <div className="flex items-center gap-4 mt-4">
-         <a className="flex rounded-sm mt-4 items-center  btn">
-                                        <span className="shadow-lg items-center  bg-blue-700 hover:bg-blue-800 text-white font-bold  px-4 py-2 ">
-                                          <span className="flex-1 text-center mr-2">READ MORE</span>
-                                        </span>
-                                        <span className="bg-blue-500  shadow-lg py-2 px-2  ">
-                                        <FiChevronRight className=" text-white  text-2xl  font-bold"/>
-                                      </span>
-                                      </a>
-          <div>
-           
-          </div>
+          <a className="flex rounded-sm mt-4 items-center  btn">
+            <span className="shadow-lg items-center  bg-blue-700 hover:bg-blue-800 text-white font-bold  px-4 py-2 ">
+              <span className="flex-1 text-center mr-2">READ MORE</span>
+            </span>
+            <span className="bg-blue-500  shadow-lg py-2 px-2  ">
+              <FiChevronRight className=" text-white  text-2xl  font-bold" />
+            </span>
+          </a>
+          <div></div>
         </div>
       </div>
     </div>

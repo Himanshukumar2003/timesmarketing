@@ -155,16 +155,17 @@ export default function Navbar() {
           </div>
           <div className="flex flex-wrap gap-2 md:gap-4">
             <Link
-              href="/contact"
-              className="flex items-center border border-white px-3 py-1 text-[14px] font-bold"
+              href="#"
+              className="flex items-center px-3 py-1 text-[14px] font-bold"
             >
-              <FaHandshake className="mr-2" /> Get Enquiry
+              <MdEmail className="text-blue-500 mr-2" /> Get in touch
             </Link>
+
             <Link
               href="#"
               className="flex items-center bg-[#ffcc00] text-[#003366] px-3 py-1 text-[14px] font-bold"
             >
-              <TbUserSearch className="mr-2" /> Your worldwide Demag contacts
+              <TbUserSearch className="mr-2" /> Enquire Now
             </Link>
           </div>
         </div>
@@ -195,7 +196,7 @@ export default function Navbar() {
                 width={300}
                 height={200}
                 alt="Logo"
-                className="ml-5"
+                className="ml-5 bg-white p-2   rounded-sm"
               />
             </Link>
           </div>
@@ -225,9 +226,9 @@ export default function Navbar() {
             ))}
           </div>
 
-          <button className="p-4">
+          {/* <button className="p-4">
             <Search size={24} />
-          </button>
+          </button> */}
         </div>
       </div>
 

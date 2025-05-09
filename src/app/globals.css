@@ -283,5 +283,9 @@ background: url(/img/download.png);} */
 
 
 table {
-  overflow-x: auto;
+  overflow-x: scroll;
+}
+
+.white-bullets li::marker {
+  color: white !important;
 }

@@ -49,7 +49,7 @@ export default function Home() {
         <section className="bg-gray-50 p-4 py-16">
           <div className="container mx-auto">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-3xl md:text-3xl text-center font-bold text-[#676f77]  mb-6">
+              <h1 className="text-2xl md:text-3xl text-center font-bold text-[#676f77]  mb-6">
                 Convenient operation and load handling with one hand
               </h1>
               <div className="flex justify-center">
