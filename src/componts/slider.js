@@ -128,7 +128,7 @@ export default function SlickSlider() {
         {/* Progress Bar */}
 
         {/* Thumbnail Slider */}
-        <div className="absolute bottom-10 w-[500px] flex justify-center items-center  left-10 z-20  ">
+        <div className="    hidden absolute bottom-10 w-[500px]  md:flex justify-center items-center  left-10 z-20  ">
           <div className="">
             <div className="flex justify-center items-center">
               <Slider

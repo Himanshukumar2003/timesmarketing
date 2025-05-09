@@ -3,18 +3,70 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 // Menu data
 const menuItems = [
   {
-    id: "cranes",
-    title: "Cranes",
+    id: "EOT",
+    title: "EOT Cranes",
     items: [
-      { id: "kbk-light", title: "KBK light crane system" },
-      { id: "kbk-pillar", title: "KBK Pillar and wall-mounted slewing jibs" },
-      { id: "crane-sets", title: "Crane sets for universal cranes" },
+      {
+        id: "double-girder-crane",
+        title: "Double Girder Crane",
+        slug: "double-girder-crane",
+      },
+
+      {
+        id: "single-girder-crane",
+        title: "Single Girder Crane",
+        slug: "single-girder-crane",
+      },
     ],
   },
+  {
+    id: "KBK",
+    title: "KBk",
+    items: [
+      { id: "kbk-aluline", title: "KBK Aluline", slug: "/kbk-aluline" },
+      {
+        id: "kbk-single-girder",
+        title: "KBK single-girder suspension cranes",
+        slug: "/kbk-single-girder-suspension-cranes",
+      },
+      {
+        id: "kbk-double-girder",
+        title: "KBK double-girder suspension cranes",
+        slug: "/kbk-double-girder-suspension-cranes",
+      },
+      {
+        id: "kbk-overhung",
+        title: "KBK overhung and extending cranes",
+        slug: "/kbk-overhung-and-extending-cranes",
+      },
+      {
+        id: "kbk-manipulators",
+        title: "KBK cranes for manipulators",
+        slug: "/kbk-cranes-manipulators",
+      },
+      {
+        id: "kbk-monorails",
+        title: "KBK suspension monorails",
+        slug: "/kbk-suspension-monorails",
+      },
+      {
+        id: "kbk-stacker",
+        title: "KBK stacker cranes",
+        slug: "/kbk-stacker-cranes",
+      },
+      {
+        id: "kbk-portal",
+        title: "KBK portal cranes",
+        slug: "/kbk-portal-cranes",
+      },
+    ],
+  },
+
   {
     id: "hoist-units",
     title: "Hoist Units",
@@ -24,13 +76,18 @@ const menuItems = [
       { id: "lifting-devices", title: "Lifting devices" },
     ],
   },
+
   {
     id: "drives",
     title: "Drives",
     items: [
-      { id: "travel-drives", title: "Travel drives" },
-      { id: "lifting-drives", title: "Lifting drives" },
-      { id: "control-systems", title: "Control systems" },
+      {
+        id: "geared-motors",
+        title: "Geared motors",
+        slug: "/sraaes/geared-motors",
+      },
+      { id: "motors", title: "Motors", slug: "/sraaes/motors" },
+      { id: "wheel-range", title: "Wheel range", slug: "/sraaes/wheel-range" },
     ],
   },
   {
@@ -65,7 +122,7 @@ export default function MobileMenu() {
   };
 
   return (
-    <div className="w-full max-w-sm mx-auto border rounded-md overflow-hidden">
+    <div className="w-full max-w-sm mx-auto  overflow-hidden">
       <AnimatePresence mode="wait">
         {activeCategory === null ? (
           // Main menu
@@ -112,12 +169,16 @@ export default function MobileMenu() {
                 .find((item) => item.id === activeCategory)
                 ?.items?.map((subItem) => (
                   <div key={subItem.id} className="border-b">
-                    <button
-                      onClick={() => console.log(`Selected: ${subItem.title}`)}
-                      className="w-full py-4 px-5 text-left"
-                    >
-                      {subItem.title}
-                    </button>
+                    <Link href={`${subItem.slug}`}>
+                      <button
+                        onClick={() =>
+                          console.log(`Selected: ${subItem.title}`)
+                        }
+                        className="w-full py-4 px-5 text-left"
+                      >
+                        {subItem.title}
+                      </button>
+                    </Link>
                   </div>
                 ))}
             </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { use, useState } from "react";
 import Link from "next/link";
 import { ChevronDown, Globe, Menu, Search, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -12,11 +12,12 @@ import Image from "next/image";
 import { MdEmail } from "react-icons/md";
 import eotCranesData from "@/app/apis/eot-cranes";
 import { craneCards } from "@/app/kbk-light-crane-system/crads";
+import MobileMenu from "./mobilemenu";
 export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState("Eot Cranes");
   const [contentType, setContentType] = useState("Eot Cranes");
-
+  const [moblieNav, setMobilenav] = useState(false);
   const toggleSubmenu = (menu) => {
     setActiveSubmenu(menu);
     setContentType(menu);
@@ -185,9 +186,15 @@ export default function Navbar() {
           >
             <button
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-              className="p-2 text-yellow-400 border-1 border-blue-200/20 hover:bg-blue-900"
+              className="  hidden md:block  p-2 text-yellow-400 border-1 border-blue-200/20 hover:bg-blue-900"
             >
               {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+            <button
+              onClick={() => setMobilenav(!moblieNav)}
+              className="block md:hidden p-2 text-yellow-400 border-1 border-blue-200/20 hover:bg-blue-900"
+            >
+              {moblieNav ? <X size={24} /> : <Menu size={24} />}
             </button>
             <Link href="/" className="py-4 pl-2 ">
               <Image
@@ -277,12 +284,15 @@ export default function Navbar() {
             ))}
           </div>
 
+          {/* Mobile Menu (separate from sidebar) */}
+
           {/* Main Content Area */}
           <div className="flex-1 p-8 border-t-1 border-gray-200">
             {renderContent()}
           </div>
         </div>
       )}
+      {moblieNav && <MobileMenu></MobileMenu>}
     </div>
   );
 }
