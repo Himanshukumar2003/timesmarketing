@@ -90,7 +90,7 @@ const OffsetGearedMotors = () => {
         backgroundImage="/img/header1.webp"
         items={[{ label: `${data.product}`, href: "/", isCurrent: true }]}
       />
-      <div className="">
+      <div className="py-12 md:py-16">
         <Container maxWidth="md">
           <h2 className=" text-5xl font-bold text-gray-700">
             {data.summary.title}
