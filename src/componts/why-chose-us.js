@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaPlayCircle } from "react-icons/fa";
 import { FiChevronRight } from "react-icons/fi";
@@ -7,12 +9,15 @@ const OilGasSection = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 py-12 bg-white">
       {/* Left Side - Image Section */}
       <div className="relative">
-        <img
-          src="your-image-path.jpg" // Replace with your actual image path
+        <Image
+          width={300}
+          height={300}
+          layout="responsive"
+          src="/img/whychoose.jpg" // Replace with your actual image path
           alt="Industry Tour"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-6">
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-6">
           <div className="mb-6">
             <button className="w-20 h-20 rounded-full bg-white/30 text-white text-5xl flex items-center justify-center hover:bg-white/50 transition">
               <FaPlayCircle fontSize="inherit" />
@@ -21,7 +26,7 @@ const OilGasSection = () => {
           <h2 className="text-white text-2xl font-bold">
             Watch Our Industry Tour
           </h2>
-        </div>
+        </div> */}
       </div>
 
       {/* Right Side - Text Content */}
@@ -74,14 +79,17 @@ const OilGasSection = () => {
         </div>
 
         <div className="flex items-center gap-4 mt-4">
-          <a className="flex rounded-sm mt-4 items-center  btn">
+          <Link
+            href="/about"
+            className="flex rounded-sm mt-4 items-center  btn"
+          >
             <span className="shadow-lg items-center  bg-blue-700 hover:bg-blue-800 text-white font-bold  px-4 py-2 ">
               <span className="flex-1 text-center mr-2">READ MORE</span>
             </span>
             <span className="bg-blue-500  shadow-lg py-2 px-2  ">
               <FiChevronRight className=" text-white  text-2xl  font-bold" />
             </span>
-          </a>
+          </Link>
           <div></div>
         </div>
       </div>
