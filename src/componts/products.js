@@ -37,7 +37,7 @@ export default function Products() {
   ];
 
   return (
-    <div className="section">
+    <div className="section" id="products">
       <main className=" w-full px-4 mx-auto ">
         <div className="grid grid-cols-12 gap-6">
           {products.map((product, index) => {

@@ -21,12 +21,12 @@ export default function SlickSlider() {
       image: "/img/slider-1.jpg",
       title: "Demag DHR rope hoist",
       subtitle: "Innovative. Smart. Lifting to the next level.",
-      buttonText: "READ MORE",
+      buttonText: "view all products",
       label: "Lifting the future",
     },
     {
       id: 2,
-      image: "/img/header1.webp",
+      image: "/img/slider2.jpg",
       title: "Demag DMR modular hoist",
       subtitle: "Versatile. Powerful. Engineered for excellence.",
       buttonText: "DISCOVER",
@@ -108,10 +108,13 @@ export default function SlickSlider() {
                   <div className="absolute top-30 left-0 p-8 text-white z-10 max-w-md">
                     <h2 className="text-4xl font-bold">{slide.title}</h2>
                     <p className="text-xl mt-2">{slide.subtitle}</p>
-                    <a className="flex rounded-sm mt-4 items-center  btn">
+                    <a
+                      href="#products"
+                      className="flex rounded-sm mt-4 items-center  btn"
+                    >
                       <span className="shadow-lg items-center  bg-blue-700 hover:bg-blue-800 text-white font-bold  px-4 py-2 ">
                         <span className="flex-1 text-center mr-2">
-                          Viwe All Products
+                          View All Products
                         </span>
                       </span>
                       <span className="bg-blue-500  shadow-lg py-2 px-2  ">
