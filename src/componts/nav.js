@@ -157,7 +157,7 @@ export default function Navbar() {
           </div>
           <div className="flex flex-wrap gap-2 md:gap-4">
             <Link
-              href="#"
+              href="/contact"
               className="flex items-center px-3 py-1 text-[14px] font-bold"
             >
               <MdEmail className="text-blue-500 mr-2" /> Get in touch
