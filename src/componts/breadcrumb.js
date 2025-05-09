@@ -1,10 +1,8 @@
-"use client"
+"use client";
 
-import React from "react"
-import { ChevronRight, Home } from "lucide-react"
-import Link from "next/link"
-
-
+import React from "react";
+import { ChevronRight, Home } from "lucide-react";
+import Link from "next/link";
 
 export function Breadcrumb({
   items,
@@ -27,10 +25,15 @@ export function Breadcrumb({
 
       {/* Content */}
       <div className="absolute inset-0 flex  flex-col items-center justify-center text-white">
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>
+        <h1 className="text-3xl md:text-5xl text-center font-bold mb-4">
+          {title}
+        </h1>
 
         <nav className="flex items-center space-x-2">
-          <Link href="/" className="flex items-center hover:text-orange-500 text-lg transition-colors">
+          <Link
+            href="/"
+            className="flex items-center hover:text-orange-500 text-lg transition-colors"
+          >
             <Home className="h-4 w-4 mr-1" />
             Home
           </Link>
@@ -41,7 +44,10 @@ export function Breadcrumb({
               {item.isCurrent ? (
                 <span className="text-[#F4CC07] font-medium">{item.label}</span>
               ) : (
-                <a href={item.href} className="hover:text-[#f4cd07d7] text-lg transition-colors">
+                <a
+                  href={item.href}
+                  className="hover:text-[#f4cd07d7] text-lg transition-colors"
+                >
                   {item.label}
                 </a>
               )}
@@ -50,5 +56,5 @@ export function Breadcrumb({
         </nav>
       </div>
     </div>
-  )
+  );
 }
