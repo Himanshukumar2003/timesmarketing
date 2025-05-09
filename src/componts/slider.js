@@ -18,7 +18,7 @@ export default function SlickSlider() {
   const slides = [
     {
       id: 1,
-      image: "/img/header1.webp",
+      image: "/img/slider-1.jpg",
       title: "Demag DHR rope hoist",
       subtitle: "Innovative. Smart. Lifting to the next level.",
       buttonText: "READ MORE",
@@ -111,7 +111,7 @@ export default function SlickSlider() {
                     <a className="flex rounded-sm mt-4 items-center  btn">
                       <span className="shadow-lg items-center  bg-blue-700 hover:bg-blue-800 text-white font-bold  px-4 py-2 ">
                         <span className="flex-1 text-center mr-2">
-                          READ MORE
+                          Viwe All Products
                         </span>
                       </span>
                       <span className="bg-blue-500  shadow-lg py-2 px-2  ">
@@ -128,7 +128,7 @@ export default function SlickSlider() {
         {/* Progress Bar */}
 
         {/* Thumbnail Slider */}
-        <div className="    hidden absolute bottom-10 w-[500px]  md:flex justify-center items-center  left-10 z-20  ">
+        {/* <div className=" hidden absolute bottom-10 w-[500px]  md:flex justify-center items-center  left-10 z-20  ">
           <div className="">
             <div className="flex justify-center items-center">
               <Slider
@@ -160,14 +160,13 @@ export default function SlickSlider() {
                       <div className="text-white text-xs font-bold mt-4  text-center">
                         {slide.label}
                       </div>
-                      {/* <div className="h-full bg-blue-500 transition-all duration-100 ease-linear" style={{ width: `${progress}%` }} /> */}
                     </div>
                   </div>
                 ))}
               </Slider>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

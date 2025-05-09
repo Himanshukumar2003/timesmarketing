@@ -35,7 +35,16 @@ export default function About() {
               </span>
             </a>
           </div>
-          <div>{/* Optional: Add an image or SVG here */}</div>
+          <div>
+            <Image
+              src="/img/about.jpg"
+              layout="responsive"
+              width={100}
+              height={100}
+              alt="about "
+              className="w-100 rounded-lg shadow-lg"
+            ></Image>
+          </div>
         </div>
       </Container>
     </div>
