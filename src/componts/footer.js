@@ -63,8 +63,8 @@ export default function Footer() {
       </div>
       <footer className=" bg-[#091B3C] shadow-2xl pt-[120px]">
         <div className="max-w-6xl  mx-auto px-4 py-8">
-          <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
-            <div className="md:col-span-3">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
                 <Image
                   src="/img/logo.png"
@@ -190,34 +190,27 @@ export default function Footer() {
               <h4 className="font-semibold mb-4 text-white">Contact Us</h4>
               <div className="space-y-2">
                 <a
-                  href="tel:9810040296"
+                  href="tel:"
                   target="_blank"
-                  className="flex text-white font-semibold items-center gap-2"
+                  className="flex text-white  gap-2"
                 >
                   Sales:
                   <span className="text-white font-semibold text-sm">
                     +91 9810040296
                   </span>
                 </a>
-                <a
-                  href="tel:98109 01759"
-                  target="_blank"
-                  className="flex items-center gap-2"
-                >
+                <div className="flex text-white  font-semibold gap-2">
                   Services:
                   <span className="text-white font-semibold text-sm">
                     +91 98109 01759
                   </span>
-                </a>
-                <a
-                  href="mailto:gauravmehta@timeskrance.com"
-                  className="flex items-center gap-2"
-                >
-                  <Mail size={16} className="text-white" />
+                </div>
+                <div className="flex text-white  font-semibold items-center gap-2">
+                  Inquiry:
                   <span className="text-white  font-semibold text-sm">
                     gauravmehta@timeskrance.com
                   </span>
-                </a>
+                </div>
               </div>
             </div>
           </div>
