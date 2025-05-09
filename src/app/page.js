@@ -1,129 +1,27 @@
-"use client";
-
-import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { AnimatePresence, motion } from "framer-motion";
-
-// Menu data
-const menuItems = [
-  {
-    id: "cranes",
-    title: "Cranes",
-    items: [
-      { id: "kbk-light", title: "KBK light crane system" },
-      { id: "kbk-pillar", title: "KBK Pillar and wall-mounted slewing jibs" },
-      { id: "crane-sets", title: "Crane sets for universal cranes" },
-    ],
-  },
-  {
-    id: "hoist-units",
-    title: "Hoist Units",
-    items: [
-      { id: "chain-hoists", title: "Chain hoists" },
-      { id: "rope-hoists", title: "Rope hoists" },
-      { id: "lifting-devices", title: "Lifting devices" },
-    ],
-  },
-  {
-    id: "drives",
-    title: "Drives",
-    items: [
-      { id: "travel-drives", title: "Travel drives" },
-      { id: "lifting-drives", title: "Lifting drives" },
-      { id: "control-systems", title: "Control systems" },
-    ],
-  },
-  {
-    id: "components",
-    title: "Components & Parts",
-    items: [
-      { id: "wheels", title: "Wheels and rollers" },
-      { id: "rails", title: "Rails and tracks" },
-      { id: "electrical", title: "Electrical components" },
-    ],
-  },
-  {
-    id: "services",
-    title: "Services",
-    items: [
-      { id: "maintenance", title: "Maintenance" },
-      { id: "repair", title: "Repair" },
-      { id: "installation", title: "Installation" },
-    ],
-  },
-];
-
-export default function MobileMenu() {
-  // State to track active category
-  const [activeCategory, setActiveCategory] = useState(null);
-
-  // Animation variants for sliding effect
-  const slideVariants = {
-    hidden: { x: "100%" },
-    visible: { x: 0, transition: { type: "tween", duration: 0.3 } },
-    exit: { x: "100%", transition: { type: "tween", duration: 0.3 } },
-  };
-
+import Navbar from "@/componts/nav";
+import SlickSlider from "@/componts/slider";
+import Image from "next/image";
+import CardsSection from "@/componts/products";
+import About from "./about";
+import WhychooseUs from "@/componts/why-chose-us";
+import UniqueFeatures from "@/componts/why-chose-us";
+import Footer from "@/componts/footer";
+import ServiceCards from "@/componts/services";
+import Testimonials from "@/componts/testimonials ";
+import { FiChevronsRight } from "react-icons/fi";
+import Link from "next/link";
+import eotCranesData from "./apis/eot-cranes";
+export default function Home() {
   return (
-    <div className="w-full max-w-sm mx-auto border rounded-md overflow-hidden">
-      <AnimatePresence mode="wait">
-        {activeCategory === null ? (
-          // Main menu
-          <motion.div
-            key="main-menu"
-            initial={{ x: 0 }}
-            animate={{ x: 0 }}
-            exit={{ x: "-100%" }}
-            className="bg-white"
-          >
-            {menuItems.map((item) => (
-              <div key={item.id} className="border-b">
-                <button
-                  onClick={() => setActiveCategory(item.id)}
-                  className="w-full py-4 px-5 flex justify-between items-center text-left font-medium"
-                >
-                  {item.title}
-                  <ChevronRight className="h-5 w-5 text-blue-500" />
-                </button>
-              </div>
-            ))}
-          </motion.div>
-        ) : (
-          // Submenu for the selected category
-          <motion.div
-            key="sub-menu"
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            variants={slideVariants}
-            className="bg-white"
-          >
-            <div className="border-b sticky top-0 bg-white z-10">
-              <button
-                onClick={() => setActiveCategory(null)}
-                className="w-full py-4 px-5 flex items-center text-left font-medium"
-              >
-                <ChevronLeft className="h-5 w-5 text-blue-500 mr-2" />
-                {menuItems.find((item) => item.id === activeCategory)?.title}
-              </button>
-            </div>
-            <div>
-              {menuItems
-                .find((item) => item.id === activeCategory)
-                ?.items?.map((subItem) => (
-                  <div key={subItem.id} className="border-b">
-                    <button
-                      onClick={() => console.log(`Selected: ${subItem.title}`)}
-                      className="w-full py-4 px-5 text-left"
-                    >
-                      {subItem.title}
-                    </button>
-                  </div>
-                ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
+    <>
+      <Navbar></Navbar>
+      <SlickSlider></SlickSlider>
+      <About></About>
+      <UniqueFeatures />
+      <CardsSection />
+      <ServiceCards></ServiceCards>
+      <Testimonials></Testimonials>
+      <Footer />
+    </>
   );
 }
