@@ -29,7 +29,7 @@ export default function KbkSuspension() {
 
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="py-12 md:py-16">
+        <section className="py-12 p-4 md:py-16">
           <div className="container ">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-6">
