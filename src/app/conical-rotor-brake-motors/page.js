@@ -90,7 +90,7 @@ const OffsetGearedMotors = () => {
         backgroundImage="/img/header1.webp"
         items={[{ label: `${data.product}`, href: "/", isCurrent: true }]}
       />
-      <div className="p-6">
+      <div className="">
         <Container maxWidth="md">
           <h2 className=" text-5xl font-bold text-gray-700">
             {data.summary.title}
@@ -118,7 +118,7 @@ const OffsetGearedMotors = () => {
               aria-controls="panel2-content"
               id="panel2-header"
             >
-              <h2 className="text-2xl font-bold  text-[#676f77] ">
+              <h2 className="text-2xl font-bold  text-[#676f77] mb-4">
                 {data.productInformation.tabHeading}
               </h2>
             </AccordionSummary>
