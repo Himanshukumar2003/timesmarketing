@@ -117,6 +117,31 @@ export default function Navbar() {
           </div>
         );
 
+      case "Cranes":
+        return (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-center">
+            {craneCards.slice(0, 6).map((item, index) => (
+              <div key={index}>
+                <Link href={`${item.slug}`}>
+                  <div className="product-card">
+                    <Image
+                      src={item.image}
+                      width={500}
+                      height={500}
+                      className="h-30 object-cover"
+                      alt=""
+                    />
+                    <h4 className="mt-2 font-medium">{item.title}</h4>
+                    <p className="mt-2 line-clamp-2 text-gray-500">
+                      {item.description}
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+        );
+
       case "Drives":
         return (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-center">
