@@ -29,7 +29,7 @@ export function Breadcrumb({
           {title}
         </h1>
 
-        <nav className="flex items-center space-x-2">
+        <nav className="flex flex-wrap justify-center items-center space-x-2">
           <Link
             href="/"
             className="flex items-center hover:text-orange-500 text-lg transition-colors"
