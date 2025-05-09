@@ -76,10 +76,10 @@ const EotCranes = ({ params }) => {
             {selectedItem.cranes.map((item, index) => (
               <div
                 key={index}
-                className="rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]"
+                className=" overflow-hidden  transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]"
               >
-                <div className="relative group w-full card">
-                  <div className="absolute inset-0 overlay"></div>
+                <div className="relative group w-full ">
+                  {/* <div className="absolute inset-0 overlay"></div> */}
 
                   <Image
                     src={item.image}
@@ -87,15 +87,12 @@ const EotCranes = ({ params }) => {
                     height={300}
                     layout="responsive"
                     alt={item.title}
+                    className="rounded-xl"
                   />
 
-                  <h4 className="absolute bottom-[20px] text-white text-center font-bold text-[21px] text-shadow-lg group-hover:text-blue-900 w-full">
+                  <h4 className=" text-center text-yellow-500 font-bold text-[21px]  group-hover:text-blue-900 w-full">
                     {item.title}
                   </h4>
-
-                  <div className="absolute top-0 left-0 bg-yellow-500 text-white px-4 py-1 rounded-br-lg font-medium z-10">
-                    {/* {item.capacity || "20 Ton"} */}
-                  </div>
                 </div>
               </div>
             ))}

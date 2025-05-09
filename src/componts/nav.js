@@ -13,12 +13,14 @@ import { MdEmail } from "react-icons/md";
 import eotCranesData from "@/app/apis/eot-cranes";
 import { craneCards } from "@/app/kbk-light-crane-system/crads";
 import MobileMenu from "./mobilemenu";
+import GetInTouch from "./getInqarry";
 export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState("Eot Cranes");
   const [contentType, setContentType] = useState("Eot Cranes");
   const [moblieNav, setMobilenav] = useState(false);
   const toggleSubmenu = (menu) => {
+    setIsSidebarOpen(true);
     setActiveSubmenu(menu);
     setContentType(menu);
   };
@@ -161,12 +163,7 @@ export default function Navbar() {
               <MdEmail className="text-blue-500 mr-2" /> Get in touch
             </Link>
 
-            <Link
-              href="#"
-              className="flex items-center bg-[#ffcc00] text-[#003366] px-3 py-1 text-[14px] font-bold"
-            >
-              <TbUserSearch className="mr-2" /> Enquire Now
-            </Link>
+            <GetInTouch></GetInTouch>
           </div>
         </div>
       </div>

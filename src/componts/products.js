@@ -9,7 +9,7 @@ export default function Products() {
       description:
         "Single-girder suspension cranes from our KBK light crane system enable you to achieve.",
       imagePath: "/img/products.webp",
-      href: "/cranes",
+      href: "/kbk-single-girder-suspension-cranes",
       id: "1",
     },
     {

@@ -189,11 +189,6 @@ const ContactForm = () => {
                       Privacy Policy
                     </a>
                     .
-                    <br />
-                    I consent to data processing in accordance with the privacy
-                    policy.
-                    <br />I can revoke consent anytime and understand my data
-                    may be shared with external partners.
                   </p>
                   {errors.termsAccepted && (
                     <p className="text-red-500 text-sm mt-1">

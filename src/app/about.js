@@ -12,8 +12,9 @@ export default function About() {
               About Us
             </h2>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-800 leading-tight mb-4">
-              Helping businesses <span className="text-blue-700">succeed</span>{" "}
-              through the power of video.
+              Powering{" "}
+              <span className="text-blue-700">Industrial Success </span> with
+              Innovation and Expertise
             </h1>
             <p className="mt-2 text-slate-600">
               With a rich legacy dating back to 1988, we have been committed to

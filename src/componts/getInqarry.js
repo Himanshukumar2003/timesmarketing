@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { TbUserSearch } from "react-icons/tb";
 
-export default function ContactPopupForm() {
+export default function GetInTouch() {
   const [isOpen, setIsOpen] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -106,30 +107,12 @@ export default function ContactPopupForm() {
 
   return (
     <div>
-      <a
-        className="flex rounded-sm mt-4 items-center btn cursor-pointer"
+      <button
         onClick={() => setIsOpen(true)}
+        className="flex items-center bg-[#ffcc00] text-[#003366] px-3 py-1 text-[14px] font-bold"
       >
-        <span className="shadow-lg items-center bg-blue-700 hover:bg-blue-800 text-white font-bold px-4 py-2">
-          <span className="flex-1 text-center mr-2">Send Enquiry</span>
-        </span>
-        <span className="bg-blue-500 shadow-lg py-2 px-2">
-          <svg
-            stroke="currentColor"
-            fill="none"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="text-white text-2xl font-bold"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polyline points="9 18 15 12 9 6"></polyline>
-          </svg>
-        </span>
-      </a>
+        <TbUserSearch className="mr-2" /> Enquire Now
+      </button>
 
       {isOpen && (
         <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50">
@@ -166,7 +149,7 @@ export default function ContactPopupForm() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`w-full px-3 py-2 border rounded-md  text-black ${
+                    className={`w-full px-3 py-2 border rounded-md text-black ${
                       errors.name ? "border-red-500" : "border-gray-300"
                     }`}
                     placeholder="Enter your name"
@@ -260,7 +243,7 @@ export default function ContactPopupForm() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`w-full px-3 py-2 border rounded-md  text-black ${
+                    className={`w-full px-3 py-2 border rounded-md ${
                       errors.email ? "border-red-500" : "border-gray-300"
                     }`}
                     placeholder="Enter your email address"

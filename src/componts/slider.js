@@ -19,16 +19,16 @@ export default function SlickSlider() {
     {
       id: 1,
       image: "/img/slider-1.jpg",
-      title: "Demag DHR rope hoist",
-      subtitle: "Innovative. Smart. Lifting to the next level.",
+      title: "Your Lifting Partner",
+      subtitle: "Reliable, Durable, and Energy Efficient",
       buttonText: "view all products",
       label: "Lifting the future",
     },
     {
       id: 2,
       image: "/img/slider2.jpg",
-      title: "Demag DMR modular hoist",
-      subtitle: "Versatile. Powerful. Engineered for excellence.",
+      title: "Your Lifting Partner",
+      subtitle: "Reliable, Durable, and Energy Efficient",
       buttonText: "DISCOVER",
       label: "Demag DMR hoist unit",
     },
@@ -86,7 +86,7 @@ export default function SlickSlider() {
 
   return (
     <>
-      <div className="relative w-full h-[100vh] overflow-hidden">
+      <div className="relative w-full h-auto md:h-[80vh] overflow-hidden">
         {/* Main Slider */}
         <div className="h-full">
           <Slider
@@ -95,7 +95,7 @@ export default function SlickSlider() {
             asNavFor={thumbnailSlider || undefined}
           >
             {slides.map((slide) => (
-              <div key={slide.id} className="relative  h-[100vh]">
+              <div key={slide.id} className="relative h-auto md:h-[80vh] ">
                 <Image
                   src={slide.image || "/placeholder.svg"}
                   alt={slide.title}
@@ -106,8 +106,11 @@ export default function SlickSlider() {
                 <div className="contaneir">
                   <div className="absolute inset-0 bg-black/40" />
                   <div className="absolute top-30 left-0 p-8 text-white z-10 max-w-md">
-                    <h2 className="text-4xl font-bold">{slide.title}</h2>
-                    <p className="text-xl mt-2">{slide.subtitle}</p>
+                    <h2 className="text-2xl lg:text-6xl font-bold">
+                      {" "}
+                      {slide.title}
+                    </h2>
+                    <p className="text-2xl mt-2">{slide.subtitle}</p>
                     <a
                       href="#products"
                       className="flex rounded-sm mt-4 items-center  btn"

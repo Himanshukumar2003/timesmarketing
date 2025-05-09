@@ -67,10 +67,10 @@ function UnderslungCrane(params) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div
               // key={crane.id}
-              className=" rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]"
+              className="  overflow-hidden  transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]"
             >
               <div className="relative   group  w-full  card">
-                <div className="absolute inset-0 overlay "></div>
+                {/* <div className="absolute inset-0 overlay "></div> */}
 
                 <Image
                   src="/img/double-ginder-1.jpg"
@@ -78,16 +78,13 @@ function UnderslungCrane(params) {
                   height={300}
                   layout="responsive"
                   alt="relative img"
+                  className="rounded-lg"
                 />
 
                 <div className="">
-                  <h4 className="absolute bottom-[20px] text-white text-center font-bold  text-[21px]   text-shadow-lg group-hover:text-blue-900">
+                  <h4 className=" text-yellow-500 text-center font-bold  text-[21px]    group-hover:text-blue-900">
                     20 Ton ZKKE Double Girder Overhead Travelling Crane
                   </h4>
-
-                  <div className="absolute top-0 left-0 bg-yellow-500 text-white px-4 py-1 rounded-br-lg font-medium z-10">
-                    20 Ton
-                  </div>
                 </div>
               </div>
             </div>

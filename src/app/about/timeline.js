@@ -81,7 +81,7 @@ export default function Timeline() {
   return (
     <div className="section bg-img">
       <div className="mx-auto max-w-4xl px-4 md:p-8 ">
-        <h2 className="mb-8 text-center text-3xl font-bold">Our Journey</h2>
+        <h2 className=" text-center text-3xl mb-12 font-bold">Our Journey</h2>
         <div className="relative">
           {/* Vertical line */}
           <div className="absolute left-[28px] top-0 h-full w-1 bg-gradient-to-b from-blue-900  via-blue-500 to-yellow-500 md:left-1/2 md:-ml-0.5"></div>

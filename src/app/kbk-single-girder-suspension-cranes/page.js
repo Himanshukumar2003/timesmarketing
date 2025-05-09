@@ -337,9 +337,12 @@ export default function Home() {
 
                   <div className="flex justify-center mb-6 items-center">
                     <div className="max-w-8xl mx-auto">
-                      <img
+                      <Image
                         src="/img/singelgriderAc1.webp"
                         alt="Trolley Limit Stop"
+                        width={300}
+                        height={300}
+                        layout="responsive"
                         className="w-full max-w-md mx-auto"
                       />
                       <p className="text-justify leading-relaxed">

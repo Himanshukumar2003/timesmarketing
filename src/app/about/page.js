@@ -7,6 +7,7 @@ import Footer from "@/componts/footer";
 import { IoMdBuild } from "react-icons/io";
 import { FaBuilding } from "react-icons/fa";
 import Image from "next/image";
+import CertificateImageGallery from "./certificates";
 
 function About(params) {
   return (
@@ -84,7 +85,7 @@ function About(params) {
       <Timeline></Timeline>
 
       <CompanyValuesCards></CompanyValuesCards>
-
+      <CertificateImageGallery></CertificateImageGallery>
       <Footer></Footer>
     </>
   );

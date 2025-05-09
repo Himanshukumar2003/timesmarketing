@@ -44,11 +44,9 @@ export default function Footer() {
                 Looking for a reliable partner for your next industrial or
                 construction project?
               </p>
-              <ul className="   list-disc white-bullets  text-white mb-4">
+              <ul className="   list-disc white-bullets list-inside  text-white mb-4">
                 <li> Connect with Us for Expert Consultation</li>
-                <li>
-                  Pan-India Service | Customized Solutions | Timely Delivery
-                </li>
+                <li>Pan-India Service | Customized Solutions</li>
               </ul>
 
               <Link
@@ -71,7 +69,7 @@ export default function Footer() {
                   alt=""
                   width={300}
                   height={300}
-                  className="    object-contain"
+                  className=" bg-white p-2   rounded-sm   object-contain"
                 ></Image>
               </div>
               <p className="text-white text-sm    font-semibold mb-4">
@@ -218,8 +216,8 @@ export default function Footer() {
           {/* Bottom Footer */}
           <div className="border-t mt-8 pt-6 flex flex-col md:flex-row justify-center items-center">
             <p className="text-white text-sm mb-4  text-center   font-semibold md:mb-0">
-              2025 Copyright Times Industrial Engineers Private Limited. All
-              rights reserved.
+              &copy; 2025 Copyright Times Industrial Engineers Private Limited.
+              All rights reserved.
             </p>
             {/* <div className="flex gap-4 text-sm">
               <Link
