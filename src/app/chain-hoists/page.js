@@ -22,7 +22,7 @@ export default function KbkLight(params) {
         backgroundImage="/img/header1.webp"
         items={[{ label: "Chain hoists", href: "/", isCurrent: true }]}
       ></Breadcrumb>
-      <div className="p-4">
+      <div className="px-4">
         <section className="bg-gray-50 py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
