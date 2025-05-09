@@ -36,6 +36,9 @@ export default function KbkSuspension() {
                 DRS and DRS-M wheel block systems: Modular system for
                 tailor-made solutions
               </h1>
+              <div className="flex justify-center">
+                <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
+              </div>
               <p className="text-base md:text-lg text-gray-700 mb-8 ">
                 Our DRS wheel block system is a versatile travel wheel system
                 for heavy-load handling applications. With the DRS-M, we have
@@ -190,7 +193,9 @@ export default function KbkSuspension() {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <h4>Exact configuration</h4>
+                <h4 className="text-xl font-bold my-4 text-[#676f77]">
+                  Exact configuration
+                </h4>
                 <ul className="   list-disc list-inside">
                   <li>
                     {" "}
@@ -203,7 +208,6 @@ export default function KbkSuspension() {
                     Hydropur tyres
                   </li>
                 </ul>
-
                 <Image
                   src="/img/wheel/four.jpg"
                   alt=""
@@ -212,7 +216,6 @@ export default function KbkSuspension() {
                   layout="responsive"
                   className="w-100 object-contain"
                 ></Image>
-
                 <div className="">
                   <p className="py-2 text-lg">
                     <strong>A:</strong> Guided on both sides by flanges for rail
@@ -245,7 +248,10 @@ export default function KbkSuspension() {
                     quiet operation that is kind to the runway
                   </p>
                 </div>
-                <h4> Many connection options</h4>
+                <h4 className="text-xl font-bold my-4 text-[#676f77]">
+                  {" "}
+                  Many connection options
+                </h4>
                 <p>
                   Prepared mounting surfaces for virtually any connection: from
                   top and end connection arrangements with bolted and welded
@@ -262,19 +268,100 @@ export default function KbkSuspension() {
                 <p className="py-2 text-lg">
                   <strong>K:</strong> Top connection
                 </p>
-
                 <p className="py-2 text-lg">
                   <strong>B:</strong> Pin connection
                 </p>
-
                 <p className="py-2 text-lg">
                   <strong>S:</strong> End connection
                 </p>
-
                 <p className="py-2 text-lg">
                   <strong>W:</strong> Side connection
                 </p>
-
+                <h4> Custom solutions</h4>
+                <Image
+                  src="/img/weel-block-chart.webp"
+                  width={300}
+                  height={300}
+                  layout="responsive "
+                  className="w-100"
+                  alt="chart"
+                ></Image>
+                <ul className="">
+                  <li>
+                    Complete travel units with precisely matching geared motors
+                    from the Demag modular drive system
+                  </li>
+                  <li>High rigidity thanks to special stiffeners</li>
+                  <li>
+                    High ground clearance for wheel blocks thanks to compact
+                    system design – also for complete drive units with gearboxes
+                    designed to match the wheel load Horizontal guide roller
+                    arrangements and buffers in various sizes and designs
+                    (optional)
+                  </li>
+                </ul>
+                <h4 className="text-xl font-bold my-4 text-[#676f77]">
+                  Easy to install
+                </h4>
+                <ul>
+                  <li>
+                    Housings ready for direct connection to superstructures
+                  </li>
+                  <li>
+                    Easy connection to superstructures thanks to tight housing
+                    design and position tolerances and high dimensional accuracy
+                    in all planes
+                  </li>
+                  <li>
+                    Laser alignment system for simple and precise alignment of
+                    wheel blocks (DRS) Fixed alignment (DRS-M)
+                  </li>
+                  <li>
+                    Simple wheel replacement without the need for re-alignment
+                    of top connection thanks to asymmetrical housing
+                  </li>
+                  <li>
+                    Wheel blocks can also be moved and aligned laterally after
+                    they have been installed in hollow sections and beams (for
+                    top, end and pin connection arrangements)
+                  </li>
+                </ul>
+                <h4 className="text-xl font-bold my-4 text-[#676f77]">
+                  {" "}
+                  Minimum maintenance
+                </h4>
+                <ul>
+                  <li>
+                    Cast housing enclosed on five sides reliably protects the
+                    travel wheels against any mechanical influence
+                  </li>
+                  <li>
+                    Generously dimensioned grooved ball bearings which are
+                    lubricated for life, tapered roller bearings from size DRS
+                    250
+                  </li>
+                  <li>
+                    Travel wheels made of self-lubricating spheroidal-graphite
+                    cast iron (GGG 70) for low friction and high resistance to
+                    wear Integrated wear indicator on wheels with flanges for
+                    remote visual diagnosis
+                  </li>
+                  <li>
+                    Optional travel wheel wear indicator based on colour scale
+                    (DRS-M)
+                  </li>
+                </ul>
+                <h4 className="text-xl font-bold my-4 text-[#676f77]">
+                  Optimal design support
+                </h4>
+                Optimum support for project
+                <ul>
+                  <li>
+                    engineering and design work – e.g. with CAD files in various
+                    formats – thanks to our web-based planning tool
+                    www.drives.demag-designer.com
+                  </li>
+                </ul>
                 {/* <ProductInformation /> */}
               </AccordionDetails>
             </Accordion>
@@ -292,15 +379,16 @@ export default function KbkSuspension() {
               </AccordionSummary>
               <AccordionDetails>
                 <section className=" ">
-                  <div className="container mx-auto px-4 md:px-6">
+                  <div className="container mx-auto">
                     <div className="max-w-5xl mx-auto">
-                      <h3 className="text-xl font-bold my-4  text-[#676f77]">
-                        EVP-KBK single-girder full-portal crane
-                      </h3>
+                      <p>
+                        Dimensions (DRS with spheroidal-graphite cast iron
+                        travel wheel with two flanges)
+                      </p>
 
                       <div className="mb-8">
                         <Image
-                          src="/img/kbk-portal-cranes.webp"
+                          src="/img/w-block-chart-2.webp"
                           height={400}
                           width={400}
                           alt="KBK suspension monorails diagram"
@@ -309,249 +397,143 @@ export default function KbkSuspension() {
                       </div>
 
                       <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm bg-white">
-                        <table className="min-w-full border border-gray-300 text-sm mt-6">
+                        <table className="min-w-full border border-gray-300 text-sm ">
                           <thead className="bg-gray-100">
                             <tr>
                               <th className="px-4 py-2 border text-left">
-                                Load capacity [kg]
+                                Size
                               </th>
                               <th className="px-4 py-2 border text-center">
-                                Track gauge
+                                Max. load capacity
                                 <br />
-                                lKr [mm]
+                                [t]
                               </th>
                               <th className="px-4 py-2 border text-center">
-                                Girder length
+                                Travel wheel dia.
                                 <br />
-                                lHT [mm]
+                                [mm]
                               </th>
                               <th className="px-4 py-2 border text-center">
-                                Max. lifting height
-                                <br />H [mm]
+                                Weight
+                                <br />
+                                [kg]
+                              </th>
+                              <th className="px-4 py-2 border text-center">
+                                a1
+                                <br />
+                                [mm]
+                              </th>
+                              <th className="px-4 py-2 border text-center">
+                                b1
+                                <br />
+                                [mm]
+                              </th>
+                              <th className="px-4 py-2 border text-center">
+                                b2
+                                <br />
+                                [mm]
+                              </th>
+                              <th className="px-4 py-2 border text-center">
+                                c1
+                                <br />
+                                [mm]
+                              </th>
+                              <th className="px-4 py-2 border text-center">
+                                h1
+                                <br />
+                                [mm]
                               </th>
                             </tr>
                           </thead>
                           <tbody>
                             {[
                               [
-                                "250",
-                                "2,300 – 5,300",
-                                "3,000 – 6,000",
-                                "2,671",
+                                "DRS-M 112",
+                                "2.75",
+                                "112",
+                                "7.3",
+                                "190",
+                                "47",
+                                "80",
+                                "96",
+                                "131",
                               ],
                               [
+                                "DRS-M 125",
+                                "5",
+                                "125",
+                                "9.9",
+                                "220",
+                                "60",
+                                "80",
+                                "98",
+                                "147.5",
+                              ],
+                              [
+                                "DRS-M 160",
+                                "7",
+                                "160",
+                                "18.3",
+                                "275",
+                                "65",
+                                "89",
+                                "110",
+                                "187",
+                              ],
+                              [
+                                "DRS-M 200",
+                                "10",
+                                "200",
+                                "35.7",
+                                "340",
+                                "65",
+                                "101",
+                                "130",
+                                "238",
+                              ],
+                              [
+                                "DRS 250",
+                                "16",
+                                "250",
+                                "62",
+                                "385",
+                                "75",
+                                "110",
+                                "150",
+                                "281",
+                              ],
+                              [
+                                "DRS 315",
+                                "22",
                                 "315",
-                                "2,300 – 5,300",
-                                "3,000 – 6,000",
-                                "2,619",
+                                "117",
+                                "470",
+                                "90",
+                                "130",
+                                "180",
+                                "349.5",
                               ],
                               [
+                                "DRS 400",
+                                "30",
                                 "400",
-                                "2,300 – 5,300",
-                                "3,000 – 6,000",
-                                "2,619",
+                                "201",
+                                "580",
+                                "110",
+                                "155",
+                                "210",
+                                "440",
                               ],
                               [
+                                "DRS 500",
+                                "40",
                                 "500",
-                                "2,300 – 4,300",
-                                "3,000 – 5,000",
-                                "2,619",
-                              ],
-                            ].map((row, index) => (
-                              <tr
-                                key={index}
-                                className={
-                                  index % 2 === 0 ? "bg-white" : "bg-gray-50"
-                                }
-                              >
-                                {row.map((cell, i) => (
-                                  <td
-                                    key={i}
-                                    className={`px-4 py-2 border text-center ${
-                                      i === 0 ? "font-medium text-left" : ""
-                                    }`}
-                                  >
-                                    {cell}
-                                  </td>
-                                ))}
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-                      <h3 className="text-xl font-bold  text-[#676f77] my-4">
-                        ZVP-KBK double-girder full-portal crane
-                      </h3>
-
-                      <div className="mb-8">
-                        <Image
-                          src="/img/kbk-portal-cranes2.webp"
-                          height={400}
-                          width={400}
-                          alt="KBK suspension monorails diagram"
-                          className=" object-contain"
-                        />
-                      </div>
-
-                      <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm bg-white">
-                        <table className="min-w-full border border-gray-300 text-sm mt-6">
-                          <thead className="bg-gray-100">
-                            <tr>
-                              <th className="px-4 py-2 border text-left">
-                                Load capacity [kg]
-                              </th>
-                              <th className="px-4 py-2 border text-center">
-                                Track gauge
-                                <br />
-                                lKr [mm]
-                              </th>
-                              <th className="px-4 py-2 border text-center">
-                                Girder length
-                                <br />
-                                lHT [mm]
-                              </th>
-                              <th className="px-4 py-2 border text-center">
-                                Max. lifting height
-                                <br />H [mm]
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {[
-                              [
-                                "400",
-                                "2,300 – 5,300",
-                                "3,000 – 6,000",
-                                "2,844",
-                              ],
-                              [
-                                "500",
-                                "2,300 – 5,300",
-                                "3,000 – 6,000",
-                                "2,844",
-                              ],
-                              [
-                                "630",
-                                "2,300 – 5,300",
-                                "3,000 – 6,000",
-                                "2,755",
-                              ],
-                              [
-                                "800",
-                                "2,300 – 4,300",
-                                "3,000 – 5,000",
-                                "2,755",
-                              ],
-                              [
-                                "1,000",
-                                "2,300 – 4,300",
-                                "3,000 – 5,000",
-                                "2,755",
-                              ],
-                            ].map((row, index) => (
-                              <tr
-                                key={index}
-                                className={
-                                  index % 2 === 0 ? "bg-white" : "bg-gray-50"
-                                }
-                              >
-                                {row.map((cell, i) => (
-                                  <td
-                                    key={i}
-                                    className={`px-4 py-2 border text-center ${
-                                      i === 0 ? "font-medium text-left" : ""
-                                    }`}
-                                  >
-                                    {cell}
-                                  </td>
-                                ))}
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-                      <h3 className="text-xl  my-4 font-bold  text-[#676f77]">
-                        Single-girder full-portal crane with I-beam girder
-                      </h3>
-                      <div className="mb-8">
-                        <Image
-                          src="/img/kbk-portal-cranes3.webp"
-                          height={400}
-                          width={400}
-                          alt="KBK suspension monorails diagram"
-                          className=" object-contain"
-                        />
-                        <h3 className="mt-4 text-xl font-bold  text-[#676f77]">
-                          D-IVP single-girder full-portal crane with I-beam
-                          girder
-                        </h3>
-                      </div>
-                      <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm bg-white">
-                        <table className="min-w-full border border-gray-300 text-sm mt-6">
-                          <thead className="bg-gray-100">
-                            <tr>
-                              <th className="px-4 py-2 border text-left">
-                                Load capacity [kg]
-                              </th>
-                              <th className="px-4 py-2 border text-center">
-                                Track gauge
-                                <br />
-                                lKr [mm]
-                              </th>
-                              <th className="px-4 py-2 border text-center">
-                                Girder length
-                                <br />
-                                lHT [mm]
-                              </th>
-                              <th className="px-4 py-2 border text-center">
-                                Max. lifting height
-                                <br />H [mm]
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {[
-                              [
-                                "250",
-                                "3,105 - 6,105",
-                                "3,445 - 6,445",
-                                "2,584",
-                              ],
-                              [
-                                "500",
-                                "3,105 - 6,105",
-                                "3,445 - 6,445",
-                                "2,532",
-                              ],
-                              [
-                                "1,000",
-                                "3,140 - 6,140",
-                                "3,510 - 6,510",
-                                "2,443",
-                              ],
-                              [
-                                "1,600",
-                                "3,160 - 6,160",
-                                "3,690 - 6,690",
-                                "2,339",
-                              ],
-                              [
-                                "2,000",
-                                "3,160 - 6,160",
-                                "3,690 - 6,690",
-                                "2,339",
-                              ],
-                              [
-                                "2,500",
-                                "3,200 - 6,200",
-                                "3,770 - 6,770",
-                                "2,339",
-                              ],
-                              [
-                                "3,200",
-                                "3,200 - 6,200",
-                                "3,770 - 6,770",
-                                "2,248",
+                                "352",
+                                "700",
+                                "110",
+                                "170",
+                                "240",
+                                "566",
                               ],
                             ].map((row, index) => (
                               <tr
@@ -578,6 +560,31 @@ export default function KbkSuspension() {
                     </div>
                   </div>
                 </section>
+              </AccordionDetails>
+            </Accordion>
+
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2-content"
+                id="panel2-header"
+              >
+                <span className="text-2xl font-bold  text-[#676f77]">
+                  Options and accessories{" "}
+                </span>
+              </AccordionSummary>
+              <AccordionDetails>
+                <ul className="  list-disc list-inside">
+                  <li>
+                    Torque brackets for connection to offset and angular geared
+                    motors
+                  </li>
+                  <li>Horizontal guide rollers</li>
+                  <li>Buffers in various sizes and designs</li>
+                  <li>Rail sweeping system</li>
+                  <li>Solutions for high-temperature applications</li>
+                  <li>Hardened travel wheels</li>
+                </ul>
               </AccordionDetails>
             </Accordion>
           </Container>

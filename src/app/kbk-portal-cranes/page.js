@@ -120,7 +120,7 @@ export default function KbkSuspension() {
                       </div>
 
                       <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm bg-white">
-                        <table className="min-w-full border border-gray-300 text-sm mt-6">
+                        <table className="min-w-full border border-gray-300 text-sm ">
                           <thead className="bg-gray-100">
                             <tr>
                               <th className="px-4 py-2 border text-left">
@@ -205,7 +205,7 @@ export default function KbkSuspension() {
                       </div>
 
                       <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm bg-white">
-                        <table className="min-w-full border border-gray-300 text-sm mt-6">
+                        <table className="min-w-full border border-gray-300 text-sm ">
                           <thead className="bg-gray-100">
                             <tr>
                               <th className="px-4 py-2 border text-left">
@@ -298,7 +298,7 @@ export default function KbkSuspension() {
                         </h3>
                       </div>
                       <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm bg-white">
-                        <table className="min-w-full border border-gray-300 text-sm mt-6">
+                        <table className="min-w-full border border-gray-300 text-sm ">
                           <thead className="bg-gray-100">
                             <tr>
                               <th className="px-4 py-2 border text-left">

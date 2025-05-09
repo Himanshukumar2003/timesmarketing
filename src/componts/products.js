@@ -50,7 +50,7 @@ export default function Products() {
               >
                 <Link
                   href={product.href}
-                  className="group relative block overflow-hidden h-[300px] transition-all duration-300 hover:shadow-xl"
+                  className="group relative block overflow-hidden h-[400px] transition-all duration-300 hover:shadow-xl"
                 >
                   {/* Overlay */}
                   <div

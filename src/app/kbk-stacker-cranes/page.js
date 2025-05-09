@@ -119,7 +119,7 @@ export default function KbkSuspension() {
                           <p>table Stacker trolley crane data</p>
                         </div>
 
-                        <table className="min-w-full border border-gray-300 text-sm mt-6">
+                        <table className="min-w-full border border-gray-300 text-sm ">
                           <thead className="bg-gray-100">
                             <tr>
                               <th className="px-4 py-2 border text-left">
@@ -599,7 +599,7 @@ export default function KbkSuspension() {
                           <p>lw = Distance between supports</p>
                         </div>
 
-                        <table className="min-w-full border border-gray-300 text-sm mt-6">
+                        <table className="min-w-full border border-gray-300 text-sm ">
                           <thead className="bg-gray-100">
                             <tr>
                               <th className="px-4 py-2 border text-left">
