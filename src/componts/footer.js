@@ -189,24 +189,35 @@ export default function Footer() {
             <div className="md:col-span-1">
               <h4 className="font-semibold mb-4 text-white">Contact Us</h4>
               <div className="space-y-2">
-                <div className="flex items-center gap-2">
-                  <Phone size={16} className="text-white" />
+                <a
+                  href="tel:9810040296"
+                  target="_blank"
+                  className="flex text-white font-semibold items-center gap-2"
+                >
+                  Sales:
                   <span className="text-white font-semibold text-sm">
-                    0129-4050169
+                    +91 9810040296
                   </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Phone size={16} className="text-white" />
+                </a>
+                <a
+                  href="tel:98109 01759"
+                  target="_blank"
+                  className="flex items-center gap-2"
+                >
+                  Services:
                   <span className="text-white font-semibold text-sm">
-                    011-29942370
+                    +91 98109 01759
                   </span>
-                </div>
-                <div className="flex items-center gap-2">
+                </a>
+                <a
+                  href="mailto:gauravmehta@timeskrance.com"
+                  className="flex items-center gap-2"
+                >
                   <Mail size={16} className="text-white" />
                   <span className="text-white  font-semibold text-sm">
-                    info@timesmarketing.com
+                    gauravmehta@timeskrance.com
                   </span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
