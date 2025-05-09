@@ -15,7 +15,7 @@ const OilGasSection = () => {
           layout="responsive"
           src="/img/whychoose.jpg" // Replace with your actual image path
           alt="Industry Tour"
-          className="w-full h-full object-cover"
+          className="w-full rounded-lg shadow-md h-full object-cover"
         />
         {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-6">
           <div className="mb-6">
