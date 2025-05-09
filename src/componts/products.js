@@ -44,8 +44,8 @@ export default function Products() {
             return (
               <div
                 key={index}
-                className={`${
-                  product.id % 2 == 0 ? "col-span-8" : "col-span-4"
+                className={`col-span-12 ${
+                  product.id % 2 == 0 ? "md:col-span-8" : "md:col-span-4"
                 }`}
               >
                 <Link
