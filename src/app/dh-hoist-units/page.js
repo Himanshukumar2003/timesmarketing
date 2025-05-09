@@ -44,7 +44,7 @@ export default function Home() {
       />
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="bg-gray-50 py-16">
+        <section className="bg-gray-50 px-4 py-16">
           <div className="container mx-auto">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
