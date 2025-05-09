@@ -32,14 +32,14 @@ export default function SlickSlider() {
       buttonText: "DISCOVER",
       label: "Demag DMR hoist unit",
     },
-    {
-      id: 3,
-      image: "/img/header1.webp",
-      title: "Demag DWS crane system",
-      subtitle: "Precise. Reliable. Maximum efficiency.",
-      buttonText: "EXPLORE",
-      label: "Demag DWS crane hoist",
-    },
+    // {
+    //   id: 3,
+    //   image: "/img/header1.webp",
+    //   title: "Demag DWS crane system",
+    //   subtitle: "Precise. Reliable. Maximum efficiency.",
+    //   buttonText: "EXPLORE",
+    //   label: "Demag DWS crane hoist",
+    // },
   ];
 
   useEffect(() => {
