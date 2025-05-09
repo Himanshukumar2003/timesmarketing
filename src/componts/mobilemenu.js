@@ -6,6 +6,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
 // Menu data
+const quickLinks = [
+  { title: "Home", slug: "/" },
+  { title: "About", slug: "/about" },
+  { title: "Contact", slug: "/" },
+  { title: "Services", slug: "/" },
+];
+
 const menuItems = [
   {
     id: "EOT",
@@ -14,19 +21,19 @@ const menuItems = [
       {
         id: "double-girder-crane",
         title: "Double Girder Crane",
-        slug: "double-girder-crane",
+        slug: "/eot-cranes/double-girder-crane",
       },
 
       {
         id: "single-girder-crane",
         title: "Single Girder Crane",
-        slug: "single-girder-crane",
+        slug: "/eot-cranes/single-girder-crane",
       },
     ],
   },
   {
     id: "KBK",
-    title: "KBk",
+    title: "KBK",
     items: [
       { id: "kbk-aluline", title: "KBK Aluline", slug: "/kbk-aluline" },
       {
@@ -122,7 +129,7 @@ export default function MobileMenu() {
   };
 
   return (
-    <div className="w-full max-w-sm mx-auto  overflow-hidden">
+    <div className="w-full max-w-sm mx-auto overflow-hidden">
       <AnimatePresence mode="wait">
         {activeCategory === null ? (
           // Main menu
@@ -133,6 +140,18 @@ export default function MobileMenu() {
             exit={{ x: "-100%" }}
             className="bg-white"
           >
+            {/* Quick Links */}
+            <div className="border-b">
+              {quickLinks.map((link) => (
+                <Link key={link.title} href={link.slug}>
+                  <button className="w-full py-4 px-5 text-left font-medium border-b">
+                    {link.title}
+                  </button>
+                </Link>
+              ))}
+            </div>
+
+            {/* EOT Cranes */}
             {menuItems.map((item) => (
               <div key={item.id} className="border-b">
                 <button
