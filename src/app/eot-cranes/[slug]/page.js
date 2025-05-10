@@ -10,6 +10,7 @@ import Container from "@mui/material/Container";
 import Navbar from "@/componts/nav";
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Footer from "@/componts/footer";
+import ContactPopupForm from "@/componts/btn";
 const EotCranes = ({ params }) => {
   const { slug } = use(params);
   const [selectedItem, setSelectedItem] = useState(null);
@@ -58,14 +59,7 @@ const EotCranes = ({ params }) => {
                 {selectedItem.description}
               </p>
 
-              <button className="flex rounded-sm mt-4 items-center  btn">
-                <span className="shadow-lg items-center  bg-blue-700 hover:bg-blue-800 text-white font-bold  px-4 py-2 ">
-                  <span className="flex-1 text-center mr-2">READ MORE</span>
-                </span>
-                <span className="bg-blue-500  shadow-lg py-2 px-2  ">
-                  <FiChevronRight className=" text-white  text-2xl  font-bold" />
-                </span>
-              </button>
+              <ContactPopupForm></ContactPopupForm>
             </div>
           </div>
         </Container>

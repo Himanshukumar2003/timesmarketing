@@ -35,7 +35,14 @@ export default function Navbar() {
 
   const mainNavItems = [
     { title: "Home", href: "/" },
-    { title: "About", href: "/about" },
+    {
+      title: "About",
+      hasDropdown: true,
+      submenu: [
+        { title: "About us", href: "/about" },
+        { title: "Certificated", href: "/about/#certificated" },
+      ],
+    },
     { title: "Contact", href: "/contact" },
     { title: "Cranes", hasSubmenu: true },
     { title: "Components & Parts", hasSubmenu: true },
@@ -233,6 +240,24 @@ export default function Navbar() {
                   >
                     {item.title}
                   </Link>
+                ) : item.hasDropdown ? (
+                  <>
+                    <button className="px-4 py-6 border-b-4 border-white text-gray-600 font-semibold flex items-center">
+                      {item.title}
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </button>
+                    <div className="absolute top-full left-0 w-56 bg-white shadow-lg text-black opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300 z-50">
+                      {item.submenu.map((subItem, subIndex) => (
+                        <Link
+                          key={subIndex}
+                          href={subItem.href}
+                          className="block px-4 py-2 hover:bg-gray-100"
+                        >
+                          {subItem.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </>
                 ) : (
                   <button
                     onClick={() => toggleSubmenu(item.title)}
