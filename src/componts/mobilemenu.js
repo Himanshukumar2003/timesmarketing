@@ -100,24 +100,6 @@ const menuItems = [
       { id: "wheel-range", title: "Wheel range", slug: "/sraaes/wheel-range" },
     ],
   },
-  {
-    id: "components",
-    title: "Components & Parts",
-    items: [
-      { id: "wheels", title: "Wheels and rollers" },
-      { id: "rails", title: "Rails and tracks" },
-      { id: "electrical", title: "Electrical components" },
-    ],
-  },
-  {
-    id: "services",
-    title: "Services",
-    items: [
-      { id: "maintenance", title: "Maintenance" },
-      { id: "repair", title: "Repair" },
-      { id: "installation", title: "Installation" },
-    ],
-  },
 ];
 
 export default function MobileMenu() {
