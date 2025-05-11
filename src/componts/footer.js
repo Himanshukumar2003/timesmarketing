@@ -142,7 +142,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="#"
+                    href="/"
                     className="text-white font-semibold hover:text-blue-500 text-sm"
                   >
                     Eot Cranes
@@ -150,7 +150,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/underslung-crane"
                     className="text-white font-semibold hover:text-blue-500 text-sm"
                   >
                     Underslung Crane
@@ -158,7 +158,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/kbk-light-crane-system"
                     className="text-white font-semibold hover:text-blue-500 text-sm"
                   >
                     KBK
@@ -166,19 +166,19 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/chain-hoists"
                     className="text-white font-semibold hover:text-blue-500 text-sm"
                   >
-                    HoIst
+                    Chain hoists
                   </Link>
                 </li>
                 <li>
-                  {/* <Link
-                    href="#"
+                  <Link
+                    href="/rope-hoists"
                     className="text-white font-semibold hover:text-blue-500 text-sm"
                   >
-                   
-                  </Link> */}
+                    Rope Hoists
+                  </Link>
                 </li>
               </ul>
             </div>
