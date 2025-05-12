@@ -40,7 +40,7 @@ export default function Navbar() {
       hasDropdown: true,
       submenu: [
         { title: "About us", href: "/about" },
-        { title: "Certificated", href: "/about/#certificated" },
+        { title: "Certificates", href: "/about/#certificated" },
       ],
     },
     { title: "Contact", href: "/contact" },

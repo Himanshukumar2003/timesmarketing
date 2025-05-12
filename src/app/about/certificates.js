@@ -13,7 +13,7 @@ export default function CertificateImageGallery() {
   return (
     <div className="section mb-[60px] bg-gray-100" id="certificated">
       <div className="container mx-auto px-4 ">
-        <h1 className="text-3xl font-bold text-center mb-12">Certificated</h1>
+        <h1 className="text-3xl font-bold text-center mb-12">Certificates</h1>
         <div className="mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center">
             {images.map((image, index) => (

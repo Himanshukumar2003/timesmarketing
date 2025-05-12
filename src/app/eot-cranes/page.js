@@ -14,11 +14,9 @@ function EotCranes(params) {
     <>
       <DemaggNavbar></DemaggNavbar>
       <Breadcrumb
-        title="SinDouble Girder Crane"
+        title="Eot Crenes"
         backgroundImage="/img/header1.webp"
-        items={[
-          { label: "SinDouble Girder Crane", href: "/", isCurrent: true },
-        ]}
+        items={[{ label: "Eot Crenes", href: "/", isCurrent: true }]}
       />
       <div className="section bg-two">
         <Container maxWidth="xl"></Container>
