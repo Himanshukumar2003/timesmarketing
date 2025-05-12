@@ -57,7 +57,7 @@ export const craneCards = [
     title: "KBK portal cranes",
     description: "Mobile workplace units",
     image: "/img/kbk8.webp",
-    sulg: "/kbk-portal-cranes",
+    slug: "/kbk-portal-cranes",
   },
 ];
 
