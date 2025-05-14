@@ -268,6 +268,30 @@ li::marker {
 }
 
 
+.product-card {
+  min-height: 200px;
+}
+
+.product-card img {
+  height: 120px !important;
+  border-radius: 8px;
+}
+
+.product-card h4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-card:hover h4 {
+  color: #ffcc00 !important;
+
+}
+
+.product-card:hover p {
+  color: #0042d7 !important;
+}
 
 /* ul li{
   position: relative;

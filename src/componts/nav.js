@@ -55,14 +55,14 @@ export default function Navbar() {
       id: 1,
       title: "Geared motors",
       description: "The perfect combination of tried and tested components",
-      image: "/img/geared_motors.png",
+      image: "/img/geared-motors.png",
       slug: "/sraaes/geared-motors",
     },
     {
       id: 2,
       title: "Motors",
       description: "Reliable drive units",
-      image: "/img/Motors .png",
+      image: "/img/motors.png",
       slug: "/sraaes/motors",
     },
     {
@@ -105,7 +105,7 @@ export default function Navbar() {
                       src={item.mainImage}
                       width={500}
                       height={500}
-                      className="h-30 object-cover"
+                      className="h-[200px] object-cover"
                       alt=""
                     />
                     <h4 className="mt-2 font-medium">{item.title}</h4>
@@ -129,7 +129,7 @@ export default function Navbar() {
                       src={item.image}
                       width={500}
                       height={500}
-                      className="h-30 object-cover"
+                      className=" object-cover"
                       alt=""
                     />
                     <h4 className="mt-2 font-medium">{item.title}</h4>
