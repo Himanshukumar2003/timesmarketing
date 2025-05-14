@@ -155,7 +155,7 @@ export default function Navbar() {
                       width={500}
                       height={500}
                       className="h-30 object-cover"
-                      alt=""
+                      alt={item.title}
                     />
                     <h4 className="mt-2 font-medium">{item.title}</h4>
                     <p className="mt-2 line-clamp-2 text-gray-500">
@@ -204,7 +204,7 @@ export default function Navbar() {
                       src={item.image}
                       width={500}
                       height={500}
-                      className="h-30 overflow-hidden object-cover max-w-[200px]"
+                      className="h-30 overflow-hidden object-cover "
                       alt=""
                     />
                     <h4 className="mt-2 font-medium">{item.title}</h4>
