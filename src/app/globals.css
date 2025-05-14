@@ -275,6 +275,7 @@ li::marker {
 .product-card img {
   height: 120px !important;
   border-radius: 8px;
+  width: 100%;
 }
 
 .product-card h4 {
