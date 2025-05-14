@@ -26,8 +26,8 @@ export default function Footer() {
     <>
       <div>
         <div className="bg-[#E3BC17]  rounded-lg mx-auto max-w-3xl p-8  shadow-lg mb-[-110px] z-20  relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-            <div className="flex justify-center md:justify-start items-end ">
+          <div className="grid grid-cols-12   gap-4 items-center">
+            <div className="flex justify-center md:justify-start items-end col-span-12 md:col-span-5 ">
               <Image
                 src="/img/footer-img.png"
                 alt="Blue vacuum cleaner"
@@ -36,7 +36,7 @@ export default function Footer() {
                 className="object-contain relative md:absolute bottom-0"
               />
             </div>
-            <div className="text-white">
+            <div className="text-white col-span-12 md:col-span-7">
               <h3 className="text-xl font-semibold mb-2">
                 Need a Custom Lifting Solution? <br /> Let&#39; s Talk!
               </h3>
