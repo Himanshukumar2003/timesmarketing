@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
       </div>
       <footer className=" bg-[#091B3C] shadow-2xl pt-[120px]">
-        <div className="max-w-6xl  mx-auto px-4 py-8">
+        <div className="max-w-6xl  mx-auto px-6 py-12">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
@@ -100,7 +100,9 @@ export default function Footer() {
 
             {/* Company Links */}
             <div>
-              <h4 className="font-semibold mb-4 text-white">Quick Links</h4>
+              <h4 className="font-semibold mb-4 text-white text-lg ">
+                Quick Links
+              </h4>
               <ul className="space-y-2">
                 <li>
                   <Link
@@ -138,7 +140,9 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-semibold text-white mb-4">Our Products</h4>
+              <h4 className="font-semibold text-white mb-4 text-lg">
+                Our Products
+              </h4>
               <ul className="space-y-2">
                 <li>
                   <Link
@@ -185,7 +189,9 @@ export default function Footer() {
 
             {/* Contact Us */}
             <div className="md:col-span-1">
-              <h4 className="font-semibold mb-4 text-white">Contact Us</h4>
+              <h4 className="font-semibold mb-4 text-white text-lg">
+                Contact Us
+              </h4>
               <div className="space-y-2">
                 <a
                   href="tel:"
