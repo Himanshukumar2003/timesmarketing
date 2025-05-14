@@ -6,8 +6,8 @@ export default function About() {
   return (
     <div className="section bg-gray-100">
       <Container maxWidth="2xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-          <div>
+        <div className="grid grid-cols-12 items-center gap-8">
+          <div className="col-span-12 md:col-span-7">
             <h2 className="text-sm font-medium tracking-widest text-yellow-600 uppercase">
               About Us
             </h2>
@@ -36,7 +36,7 @@ export default function About() {
               </span>
             </a>
           </div>
-          <div>
+          <div className="col-span-12 md:col-span-5">
             <Image
               src="/img/about.jpg"
               layout="responsive"
