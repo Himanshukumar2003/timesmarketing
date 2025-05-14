@@ -6,9 +6,9 @@ import { FiChevronRight } from "react-icons/fi";
 
 const OilGasSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 py-12 bg-white">
+    <div className="grid grid-cols-12 gap-6 px-6 py-12 bg-white">
       {/* Left Side - Image Section */}
-      <div className="relative">
+      <div className="col-span-12 md:col-span-5 relative">
         <Image
           width={300}
           height={300}
@@ -17,20 +17,11 @@ const OilGasSection = () => {
           alt="Industry Tour"
           className="w-full rounded-lg shadow-md h-full object-cover"
         />
-        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-6">
-          <div className="mb-6">
-            <button className="w-20 h-20 rounded-full bg-white/30 text-white text-5xl flex items-center justify-center hover:bg-white/50 transition">
-              <FaPlayCircle fontSize="inherit" />
-            </button>
-          </div>
-          <h2 className="text-white text-2xl font-bold">
-            Watch Our Industry Tour
-          </h2>
-        </div> */}
+        {/* You can uncomment the overlay section here if needed */}
       </div>
 
       {/* Right Side - Text Content */}
-      <div className="flex flex-col justify-center space-y-6">
+      <div className="col-span-12 md:col-span-7 flex flex-col justify-center space-y-6">
         <div>
           <p className="text-sm tracking-widest uppercase text-gray-500 mb-2">
             GET TO KNOW US
@@ -49,48 +40,44 @@ const OilGasSection = () => {
 
         <div className="grid grid-cols-2 gap-4 text-sm text-gray-700">
           <ul className="space-y-2">
-            <li className="flex items-start gap-2">
+            <li className="flex items-start gap-2 font-semibold text-sm">
               <span className="text-yellow-500">◆</span> Over 35 Years of
               Industrial Experience
             </li>
-            <li className="flex items-start gap-2">
+            <li className="flex items-start gap-2 font-semibold text-sm">
               <span className="text-yellow-500">◆</span> Advanced EOT Cranes
               Tailored to Your Needs
             </li>
-            <li className="flex items-start gap-2">
+            <li className="flex items-start gap-2 font-semibold text-sm">
               <span className="text-yellow-500">◆</span> Precision Engineering
               with Safety & Efficiency
             </li>
           </ul>
           <ul className="space-y-2">
-            <li className="flex items-start gap-2">
+            <li className="flex items-start gap-2 font-semibold text-sm">
               <span className="text-yellow-500">◆</span> Trusted by Industry
               Leaders Across India
             </li>
-            <li className="flex items-start gap-2">
+            <li className="flex items-start gap-2 font-semibold text-sm">
               <span className="text-yellow-500">◆</span> Cutting-Edge Technology
               & Sustainable Solutions
             </li>
-            <li className="flex items-start gap-2">
+            <li className="flex items-start gap-2 font-semibold text-sm">
               <span className="text-yellow-500">◆</span> A Team Committed to
               Excellence & Innovation
             </li>
           </ul>
         </div>
 
-        <div className="flex items-center gap-4 mt-4">
-          <Link
-            href="/about"
-            className="flex rounded-sm mt-4 items-center  btn"
-          >
-            <span className="shadow-lg items-center  bg-blue-700 hover:bg-blue-800 text-white font-bold  px-4 py-2 ">
+        <div className="flex items-center gap-4 ">
+          <Link href="/about" className="flex rounded-sm items-center btn">
+            <span className="shadow-lg items-center bg-blue-700 hover:bg-blue-800 text-white font-bold px-4 py-2">
               <span className="flex-1 text-center mr-2">READ MORE</span>
             </span>
-            <span className="bg-blue-500  shadow-lg py-2 px-2  ">
-              <FiChevronRight className=" text-white  text-2xl  font-bold" />
+            <span className="bg-blue-500 shadow-lg py-2 px-2">
+              <FiChevronRight className="text-white text-2xl font-bold" />
             </span>
           </Link>
-          <div></div>
         </div>
       </div>
     </div>
