@@ -23,9 +23,6 @@ const OilGasSection = () => {
       {/* Right Side - Text Content */}
       <div className="col-span-12 md:col-span-7 flex flex-col justify-center space-y-6">
         <div>
-          <p className="text-sm tracking-widest uppercase text-gray-500 mb-2">
-            GET TO KNOW US
-          </p>
           <h2 className="text-3xl font-bold text-gray-800 leading-snug">
             Engineering Excellence, Lifting Trust
           </h2>
