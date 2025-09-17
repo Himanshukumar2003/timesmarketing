@@ -5,7 +5,7 @@ import { NextResponse } from "next/server"
 export async function POST(request) {
   try {
     const { formData, craneType } = await request.json()
-
+// 
     // Create transporter using environment variables
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || "smtp.gmail.com",
