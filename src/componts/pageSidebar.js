@@ -108,7 +108,6 @@ export default function PageSidebar() {
       { key: "CROSS_TRAVEL", label: "Cross Travel", placeholder: "e.g., 80 meters", type: "text", required: true },
       { key: "LONG_TRAVEL", label: "Long Travel", placeholder: "e.g., 40 meters", type: "text", required: true },
       { key: "HOOK_PATH", label: "Hook Path", placeholder: "e.g., 6 meters", type: "text", required: true },
-      { key: "RAIL_TYPE", label: "Rail Type", placeholder: "e.g., I-beam, Box beam", type: "text", required: true },
       {
         key: "APPLICATION",
         label: "Application",
@@ -139,7 +138,6 @@ export default function PageSidebar() {
       { key: "CROSS_TRAVEL", label: "Cross Travel", placeholder: "e.g., 200 meters", type: "text", required: true },
       { key: "LONG_TRAVEL", label: "Long Travel", placeholder: "e.g., 100 meters", type: "text", required: true },
       { key: "HOOK_PATH", label: "Hook Path", placeholder: "e.g., 15 meters", type: "text", required: true },
-      { key: "LEG_HEIGHT", label: "Leg Height", placeholder: "e.g., 20 meters", type: "text", required: true },
       {
         key: "APPLICATION",
         label: "Application",
@@ -170,13 +168,7 @@ export default function PageSidebar() {
       { key: "CROSS_TRAVEL", label: "Cross Travel", placeholder: "e.g., 30 meters", type: "text", required: true },
       { key: "LONG_TRAVEL", label: "Long Travel", placeholder: "e.g., 25 meters", type: "text", required: true },
       { key: "HOOK_PATH", label: "Hook Path", placeholder: "e.g., 4 meters", type: "text", required: true },
-      {
-        key: "RAIL_SYSTEM",
-        label: "Rail System",
-        placeholder: "e.g., Enclosed track, I-beam",
-        type: "text",
-        required: true,
-      },
+      
       {
         key: "APPLICATION",
         label: "Application",
