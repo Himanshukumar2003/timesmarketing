@@ -198,13 +198,7 @@ export default function PageSidebar() {
       { key: "OUTREACH", label: "Outreach", placeholder: "e.g., 5 meters", type: "text", required: true },
       { key: "SWIVEL_ANGLE", label: "Swivel Angle", placeholder: "e.g., 270°", type: "text", required: true },
       { key: "HOOK_PATH", label: "Hook Path", placeholder: "e.g., 4 meters", type: "text", required: true },
-      {
-        key: "MOUNTING_TYPE",
-        label: "Mounting Type",
-        placeholder: "e.g., Floor mounted, Wall mounted",
-        type: "text",
-        required: true,
-      },
+    
       {
         key: "APPLICATION",
         label: "Application",
@@ -215,18 +209,34 @@ export default function PageSidebar() {
       
     ],
     "TRANSFER CART": [
+   {
+        key: "CUSTOMER_NAME",
+        label: "Customer Name",
+        placeholder: "Enter your full name",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "CONTACT_NUMBER",
+        label: "Contact Number",
+        placeholder: "Enter your phone number",
+        type: "tel",
+        required: true,
+      },
+      { key: "EMAIL", label: "Email", placeholder: "Enter your email address", type: "email", required: true },
+
       { key: "SWL", label: "Safe Working Load (SWL)", placeholder: "e.g., 10000 kg", type: "text", required: true },
       { key: "BED_SIZE", label: "Bed Size", placeholder: "e.g., 4m x 2m", type: "text", required: true },
       { key: "LONG_TRAVEL", label: "Long Travel", placeholder: "e.g., 50 meters", type: "text", required: true },
-      {
+     
+     
+       {
         key: "APPLICATION",
         label: "Application",
         placeholder: "Describe your specific use case",
         type: "textarea",
         required: true,
       },
-     
-      { key: "EMAIL", label: "Email", placeholder: "Enter your email address", type: "email", required: true },
     ],
   }
 
