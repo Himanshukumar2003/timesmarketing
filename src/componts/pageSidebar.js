@@ -77,7 +77,6 @@ export default function PageSidebar() {
       { key: "CROSS_TRAVEL", label: "Cross Travel", placeholder: "e.g., 100 meters", type: "text", required: true },
       { key: "LONG_TRAVEL", label: "Long Travel", placeholder: "e.g., 50 meters", type: "text", required: true },
       { key: "HOOK_PATH", label: "Hook Path", placeholder: "e.g., 8 meters", type: "text", required: true },
-      { key: "LIFT_HEIGHT", label: "Lift Height", placeholder: "e.g., 12 meters", type: "text", required: true },
       {
 
         key: "APPLICATION",
