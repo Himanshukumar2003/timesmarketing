@@ -229,10 +229,7 @@ export default function Navbar() {
 
       {/* Main Navigation */}
       <div className="bg-header px-4 mx-auto flex justify-between ">
-        <div
-          className="flex items-center bg-white pr-0   md:pr-[150px]"
-          style={{ clipPath: "polygon(0 0, 100% 0, 85% 100%, 0% 100%)" }}
-        >
+        <div className="flex items-center bg-white pr-0   md:pr-[150px]  lg:clip-path-[polygon(0_0,_100%_0,_85%_100%,_0%_100%)] ">
           <button
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             className="  hidden md:block  p-2 text-blue-900 border-1 border-blue-500 hover:bg-white"

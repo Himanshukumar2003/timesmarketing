@@ -35,7 +35,7 @@ function About(params) {
           {/* Content Section */}
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl font-bold mb-4">About us</h2>
-            <p className="text-gray-700 mb-4 border-l-4 border-yellow-500 pl-4">
+            <p className="text-gray-700 mb-4 border-l-4 border-blue-500 pl-4">
               With a rich legacy dating back to 1988, we have been committed to
               delivering innovative and reliable industrial products. In 2012,
               we took a significant leap forward by launching TK Crane, our
@@ -60,7 +60,7 @@ function About(params) {
 
             {/* <div className="flex flex-col sm:flex-row gap-6">
               <div className="flex items-start gap-3">
-                <FaBuilding className="text-yellow-500 mt-1 text-4xl" />
+                <FaBuilding className="text-blue-500 mt-1 text-4xl" />
                 <div>
                   <h4 className="font-bold text-black">Parts and systems</h4>
                   <p className="text-sm text-gray-600">
@@ -70,7 +70,7 @@ function About(params) {
               </div>
 
               <div className="flex items-start gap-3">
-                <IoMdBuild className="text-yellow-500 mt-1 text-4xl" />
+                <IoMdBuild className="text-blue-500 mt-1 text-4xl" />
                 <div>
                   <h4 className="font-bold text-black">Maintenance</h4>
                   <p className="text-sm text-gray-600">
