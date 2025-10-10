@@ -357,3 +357,14 @@ button {
   scrollbar-width: thin;
   scrollbar-color: #3b82f6 #f1f1f1;
 }
+
+
+.custom-clip {
+  clip-path: polygon(0 0, 100% 0%, 83% 100%, 0% 100%);
+}
+
+@media (max-width: 991px) {
+  .custom-clip {
+    clip-path: none !important;
+  }
+}
