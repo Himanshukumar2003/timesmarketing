@@ -203,7 +203,7 @@ export default function Footer() {
                 <div className="flex text-white  font-semibold items-center gap-2">
                   Inquiry:
                   <span className="text-white  font-semibold text-sm">
-                    gauravmehta@timeskrance.com
+                    gauravmehta@timesmarketing.com
                   </span>
                 </div>
               </div>

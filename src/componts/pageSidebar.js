@@ -1,62 +1,72 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Users, X, Settings, CheckCircle, ArrowRight, AlertCircle } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { FaFilePdf } from "react-icons/fa"
+import { useState } from "react";
+import {
+  Users,
+  X,
+  Settings,
+  CheckCircle,
+  ArrowRight,
+  AlertCircle,
+} from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { FaFilePdf } from "react-icons/fa";
+import Image from "next/image";
 
 export default function PageSidebar() {
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const [selectedCraneType, setSelectedCraneType] = useState("")
-  const [formData, setFormData] = useState({})
-  const [currentStep, setCurrentStep] = useState(1)
-  const [errors, setErrors] = useState({})
-  const [submitStatus, setSubmitStatus] = useState({ type: "", message: "" })
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCraneType, setSelectedCraneType] = useState("");
+  const [formData, setFormData] = useState({});
+  const [currentStep, setCurrentStep] = useState(1);
+  const [errors, setErrors] = useState({});
+  const [submitStatus, setSubmitStatus] = useState({ type: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const craneTypes = [
     {
       value: "EOT CRANE",
       label: "EOT Crane",
-      description: "Electric overhead traveling cranes for heavy-duty operations",
-      icon: "🏗️",
+      description:
+        "Electric overhead traveling cranes for heavy-duty operations",
+      icon: "/img/single.jpg",
     },
     {
       value: "UNDERSLUNG CRANE",
       label: "Underslung Crane",
       description: "Suspended cranes for maximum headroom utilization",
-      icon: "🚛",
+      icon: "/img/underslung.jpg",
     },
     {
       value: "PORTAL CRANE",
       label: "Portal Crane",
       description: "Outdoor cranes for heavy lifting in ports and yards",
-      icon: "🏭",
+      icon: "/img/portalcrane.jpg",
     },
     {
       value: "KBK/X-Y RAIL",
       label: "KBK/X-Y Rail",
       description: "Modular rail systems for flexible material handling",
-      icon: "⚙️",
+      icon: "/img/kbk1.webp",
     },
     {
       value: "JIB CRANE",
       label: "Jib Crane",
-      description: "Ideal for localized lifting in workshops and production areas",
-      icon: "🔧",
+      description:
+        "Ideal for localized lifting in workshops and production areas",
+      icon: "/img/jib.jpg",
     },
     {
       value: "TRANSFER CART",
       label: "Transfer Cart",
       description: "Material handling carts for horizontal transportation",
-      icon: "🚚",
+      icon: "/img/transfer-cart.jpg",
     },
-  ]
+  ];
 
   const fieldsByType = {
     "EOT CRANE": [
-        {
+      {
         key: "CUSTOMER_NAME",
         label: "Customer Name",
         placeholder: "Enter your full name",
@@ -70,15 +80,50 @@ export default function PageSidebar() {
         type: "tel",
         required: true,
       },
-      { key: "EMAIL", label: "Email", placeholder: "Enter your email address", type: "email", required: true },
-    
-      { key: "SWL", label: "Safe Working Load (SWL)", placeholder: "e.g., 10000 kg", type: "text", required: true },
-      { key: "SPAN", label: "Span", placeholder: "e.g., 20 meters", type: "text", required: true },
-      { key: "CROSS_TRAVEL", label: "Cross Travel", placeholder: "e.g., 100 meters", type: "text", required: true },
-      { key: "LONG_TRAVEL", label: "Long Travel", placeholder: "e.g., 50 meters", type: "text", required: true },
-      { key: "HOOK_PATH", label: "Hook Path", placeholder: "e.g., 8 meters", type: "text", required: true },
       {
+        key: "EMAIL",
+        label: "Email",
+        placeholder: "Enter your email address",
+        type: "email",
+        required: true,
+      },
 
+      {
+        key: "SWL",
+        label: "Safe Working Load (SWL)",
+        placeholder: "e.g., 10000 kg",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "SPAN",
+        label: "Span",
+        placeholder: "e.g., 20 meters",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "CROSS_TRAVEL",
+        label: "Cross Travel",
+        placeholder: "e.g., 100 meters",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "LONG_TRAVEL",
+        label: "Long Travel",
+        placeholder: "e.g., 50 meters",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "HOOK_PATH",
+        label: "Hook Path",
+        placeholder: "e.g., 8 meters",
+        type: "text",
+        required: true,
+      },
+      {
         key: "APPLICATION",
         label: "Application",
         placeholder: "Describe your specific use case",
@@ -87,7 +132,7 @@ export default function PageSidebar() {
       },
     ],
     "UNDERSLUNG CRANE": [
-          {
+      {
         key: "CUSTOMER_NAME",
         label: "Customer Name",
         placeholder: "Enter your full name",
@@ -101,13 +146,49 @@ export default function PageSidebar() {
         type: "tel",
         required: true,
       },
-      { key: "EMAIL", label: "Email", placeholder: "Enter your email address", type: "email", required: true },
-  
-      { key: "SWL", label: "Safe Working Load (SWL)", placeholder: "e.g., 5000 kg", type: "text", required: true },
-      { key: "SPAN", label: "Span", placeholder: "e.g., 15 meters", type: "text", required: true },
-      { key: "CROSS_TRAVEL", label: "Cross Travel", placeholder: "e.g., 80 meters", type: "text", required: true },
-      { key: "LONG_TRAVEL", label: "Long Travel", placeholder: "e.g., 40 meters", type: "text", required: true },
-      { key: "HOOK_PATH", label: "Hook Path", placeholder: "e.g., 6 meters", type: "text", required: true },
+      {
+        key: "EMAIL",
+        label: "Email",
+        placeholder: "Enter your email address",
+        type: "email",
+        required: true,
+      },
+
+      {
+        key: "SWL",
+        label: "Safe Working Load (SWL)",
+        placeholder: "e.g., 5000 kg",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "SPAN",
+        label: "Span",
+        placeholder: "e.g., 15 meters",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "CROSS_TRAVEL",
+        label: "Cross Travel",
+        placeholder: "e.g., 80 meters",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "LONG_TRAVEL",
+        label: "Long Travel",
+        placeholder: "e.g., 40 meters",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "HOOK_PATH",
+        label: "Hook Path",
+        placeholder: "e.g., 6 meters",
+        type: "text",
+        required: true,
+      },
       {
         key: "APPLICATION",
         label: "Application",
@@ -117,7 +198,7 @@ export default function PageSidebar() {
       },
     ],
     "PORTAL CRANE": [
-         {
+      {
         key: "CUSTOMER_NAME",
         label: "Customer Name",
         placeholder: "Enter your full name",
@@ -131,13 +212,49 @@ export default function PageSidebar() {
         type: "tel",
         required: true,
       },
-      { key: "EMAIL", label: "Email", placeholder: "Enter your email address", type: "email", required: true },
-   
-      { key: "SWL", label: "Safe Working Load (SWL)", placeholder: "e.g., 50000 kg", type: "text", required: true },
-      { key: "SPAN", label: "Span", placeholder: "e.g., 30 meters", type: "text", required: true },
-      { key: "CROSS_TRAVEL", label: "Cross Travel", placeholder: "e.g., 200 meters", type: "text", required: true },
-      { key: "LONG_TRAVEL", label: "Long Travel", placeholder: "e.g., 100 meters", type: "text", required: true },
-      { key: "HOOK_PATH", label: "Hook Path", placeholder: "e.g., 15 meters", type: "text", required: true },
+      {
+        key: "EMAIL",
+        label: "Email",
+        placeholder: "Enter your email address",
+        type: "email",
+        required: true,
+      },
+
+      {
+        key: "SWL",
+        label: "Safe Working Load (SWL)",
+        placeholder: "e.g., 50000 kg",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "SPAN",
+        label: "Span",
+        placeholder: "e.g., 30 meters",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "CROSS_TRAVEL",
+        label: "Cross Travel",
+        placeholder: "e.g., 200 meters",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "LONG_TRAVEL",
+        label: "Long Travel",
+        placeholder: "e.g., 100 meters",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "HOOK_PATH",
+        label: "Hook Path",
+        placeholder: "e.g., 15 meters",
+        type: "text",
+        required: true,
+      },
       {
         key: "APPLICATION",
         label: "Application",
@@ -161,14 +278,50 @@ export default function PageSidebar() {
         type: "tel",
         required: true,
       },
-      { key: "EMAIL", label: "Email", placeholder: "Enter your email address", type: "email", required: true },
+      {
+        key: "EMAIL",
+        label: "Email",
+        placeholder: "Enter your email address",
+        type: "email",
+        required: true,
+      },
 
-      { key: "SWL", label: "Safe Working Load (SWL)", placeholder: "e.g., 2000 kg", type: "text", required: true },
-      { key: "SPAN", label: "Span", placeholder: "e.g., 10 meters", type: "text", required: true },
-      { key: "CROSS_TRAVEL", label: "Cross Travel", placeholder: "e.g., 30 meters", type: "text", required: true },
-      { key: "LONG_TRAVEL", label: "Long Travel", placeholder: "e.g., 25 meters", type: "text", required: true },
-      { key: "HOOK_PATH", label: "Hook Path", placeholder: "e.g., 4 meters", type: "text", required: true },
-      
+      {
+        key: "SWL",
+        label: "Safe Working Load (SWL)",
+        placeholder: "e.g., 2000 kg",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "SPAN",
+        label: "Span",
+        placeholder: "e.g., 10 meters",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "CROSS_TRAVEL",
+        label: "Cross Travel",
+        placeholder: "e.g., 30 meters",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "LONG_TRAVEL",
+        label: "Long Travel",
+        placeholder: "e.g., 25 meters",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "HOOK_PATH",
+        label: "Hook Path",
+        placeholder: "e.g., 4 meters",
+        type: "text",
+        required: true,
+      },
+
       {
         key: "APPLICATION",
         label: "Application",
@@ -176,9 +329,9 @@ export default function PageSidebar() {
         type: "textarea",
         required: true,
       },
-          ],
+    ],
     "JIB CRANE": [
-       {
+      {
         key: "CUSTOMER_NAME",
         label: "Customer Name",
         placeholder: "Enter your full name",
@@ -192,13 +345,43 @@ export default function PageSidebar() {
         type: "tel",
         required: true,
       },
-            { key: "EMAIL", label: "Email", placeholder: "Enter your email address", type: "email", required: true },
+      {
+        key: "EMAIL",
+        label: "Email",
+        placeholder: "Enter your email address",
+        type: "email",
+        required: true,
+      },
 
-      { key: "SWL", label: "Safe Working Load (SWL)", placeholder: "e.g., 2000 kg", type: "text", required: true },
-      { key: "OUTREACH", label: "Outreach", placeholder: "e.g., 5 meters", type: "text", required: true },
-      { key: "SWIVEL_ANGLE", label: "Swivel Angle", placeholder: "e.g., 270°", type: "text", required: true },
-      { key: "HOOK_PATH", label: "Hook Path", placeholder: "e.g., 4 meters", type: "text", required: true },
-    
+      {
+        key: "SWL",
+        label: "Safe Working Load (SWL)",
+        placeholder: "e.g., 2000 kg",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "OUTREACH",
+        label: "Outreach",
+        placeholder: "e.g., 5 meters",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "SWIVEL_ANGLE",
+        label: "Swivel Angle",
+        placeholder: "e.g., 270°",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "HOOK_PATH",
+        label: "Hook Path",
+        placeholder: "e.g., 4 meters",
+        type: "text",
+        required: true,
+      },
+
       {
         key: "APPLICATION",
         label: "Application",
@@ -206,10 +389,9 @@ export default function PageSidebar() {
         type: "textarea",
         required: true,
       },
-      
     ],
     "TRANSFER CART": [
-   {
+      {
         key: "CUSTOMER_NAME",
         label: "Customer Name",
         placeholder: "Enter your full name",
@@ -223,14 +405,37 @@ export default function PageSidebar() {
         type: "tel",
         required: true,
       },
-      { key: "EMAIL", label: "Email", placeholder: "Enter your email address", type: "email", required: true },
+      {
+        key: "EMAIL",
+        label: "Email",
+        placeholder: "Enter your email address",
+        type: "email",
+        required: true,
+      },
 
-      { key: "SWL", label: "Safe Working Load (SWL)", placeholder: "e.g., 10000 kg", type: "text", required: true },
-      { key: "BED_SIZE", label: "Bed Size", placeholder: "e.g., 4m x 2m", type: "text", required: true },
-      { key: "LONG_TRAVEL", label: "Long Travel", placeholder: "e.g., 50 meters", type: "text", required: true },
-     
-     
-       {
+      {
+        key: "SWL",
+        label: "Safe Working Load (SWL)",
+        placeholder: "e.g., 10000 kg",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "BED_SIZE",
+        label: "Bed Size",
+        placeholder: "e.g., 4m x 2m",
+        type: "text",
+        required: true,
+      },
+      {
+        key: "LONG_TRAVEL",
+        label: "Long Travel",
+        placeholder: "e.g., 50 meters",
+        type: "text",
+        required: true,
+      },
+
+      {
         key: "APPLICATION",
         label: "Application",
         placeholder: "Describe your specific use case",
@@ -238,36 +443,39 @@ export default function PageSidebar() {
         required: true,
       },
     ],
-  }
+  };
 
-  const fieldsToShow = selectedCraneType ? fieldsByType[selectedCraneType] : []
+  const fieldsToShow = selectedCraneType ? fieldsByType[selectedCraneType] : [];
 
   const validateForm = () => {
-    const newErrors = {}
-    const fields = fieldsToShow
+    const newErrors = {};
+    const fields = fieldsToShow;
 
     fields.forEach((field) => {
-      if (field.required && (!formData[field.key] || formData[field.key].trim() === "")) {
-        newErrors[field.key] = `${field.label} is required`
+      if (
+        field.required &&
+        (!formData[field.key] || formData[field.key].trim() === "")
+      ) {
+        newErrors[field.key] = `${field.label} is required`;
       }
-    })
+    });
 
     // Email validation
     if (formData.EMAIL && !/\S+@\S+\.\S+/.test(formData.EMAIL)) {
-      newErrors.EMAIL = "Please enter a valid email address"
+      newErrors.EMAIL = "Please enter a valid email address";
     }
 
-    setErrors(newErrors)
-    return Object.keys(newErrors).length === 0
-  }
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleInputChange = (field, value) => {
-    setFormData((prev) => ({ ...prev, [field]: value }))
+    setFormData((prev) => ({ ...prev, [field]: value }));
     // Clear error when user starts typing
     if (errors[field]) {
-      setErrors((prev) => ({ ...prev, [field]: "" }))
+      setErrors((prev) => ({ ...prev, [field]: "" }));
     }
-  }
+  };
 
   const sendEmail = async (formData, craneType) => {
     try {
@@ -280,102 +488,109 @@ export default function PageSidebar() {
           formData,
           craneType,
         }),
-      })
+      });
 
-      const result = await response.json()
+      const result = await response.json();
 
       if (response.ok && result.success) {
-        return true
+        return true;
       } else {
-        console.error("Email API error:", result.message)
-        return false
+        console.error("Email API error:", result.message);
+        return false;
       }
     } catch (error) {
-      console.error("Email sending failed:", error)
-      return false
+      console.error("Email sending failed:", error);
+      return false;
     }
-  }
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    setSubmitStatus({ type: "", message: "" })
+    setSubmitStatus({ type: "", message: "" });
 
     if (!validateForm()) {
       setSubmitStatus({
         type: "error",
         message: "Please fill in all required fields correctly.",
-      })
-      return
+      });
+      return;
     }
 
-    setIsSubmitting(true)
+    setIsSubmitting(true);
 
     try {
-      const emailSent = await sendEmail(formData, selectedCraneType)
+      const emailSent = await sendEmail(formData, selectedCraneType);
 
       if (emailSent) {
         setSubmitStatus({
           type: "success",
-          message: "Specification request submitted successfully! Our team will contact you shortly.",
-        })
+          message:
+            "Specification request submitted successfully! Our team will contact you shortly.",
+        });
 
         // Reset form after a delay to show success message
         setTimeout(() => {
-          setIsModalOpen(false)
-          setCurrentStep(1)
-          setFormData({})
-          setSelectedCraneType("")
-          setErrors({})
-          setSubmitStatus({ type: "", message: "" })
-        }, 3000)
+          setIsModalOpen(false);
+          setCurrentStep(1);
+          setFormData({});
+          setSelectedCraneType("");
+          setErrors({});
+          setSubmitStatus({ type: "", message: "" });
+        }, 3000);
       } else {
         setSubmitStatus({
           type: "error",
           message: "There was an error sending your request. Please try again.",
-        })
+        });
       }
     } catch (error) {
       setSubmitStatus({
         type: "error",
-        message: "There was an error submitting your request. Please try again.",
-      })
+        message:
+          "There was an error submitting your request. Please try again.",
+      });
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
-  }
+  };
 
   const handleContactClick = () => {
-    window.location.href = "/contact"
-  }
+    window.location.href = "/contact";
+  };
 
   const handlePdfDownload = () => {
-    const link = document.createElement("a")
-    link.href = "/pdf/TK-CATALOGUE.pdf"
-    link.download = "TK-CATALOGUE.pdf"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
+    const link = document.createElement("a");
+    link.href = "/pdf/TK-CATALOGUE.pdf";
+    link.download = "TK-CATALOGUE.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const nextStep = () => {
     if (currentStep === 1 && !selectedCraneType) {
       setSubmitStatus({
         type: "error",
         message: "Please select a crane type to continue.",
-      })
-      return
+      });
+      return;
     }
-    setSubmitStatus({ type: "", message: "" })
-    if (currentStep < 2) setCurrentStep(currentStep + 1)
-  }
+    setSubmitStatus({ type: "", message: "" });
+    if (currentStep < 2) setCurrentStep(currentStep + 1);
+  };
 
   const prevStep = () => {
-    setSubmitStatus({ type: "", message: "" })
-    if (currentStep > 1) setCurrentStep(currentStep - 1)
-  }
+    setSubmitStatus({ type: "", message: "" });
+    if (currentStep > 1) setCurrentStep(currentStep - 1);
+  };
 
-  const canProceedToStep2 = selectedCraneType !== ""
+  const canProceedToStep2 = selectedCraneType !== "";
+
+  function handleClick(type) {
+    setSelectedCraneType(type.value);
+    nextStep();
+  }
 
   return (
     <>
@@ -419,21 +634,23 @@ export default function PageSidebar() {
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center py-2 px-4 z-50">
           <Card className="custom-scrollbar w-full max-w-5xl max-h-[90vh]     overflow-y-auto border-0 shadow-2xl p-0">
-<CardHeader className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white p-6 flex-shrink-0 shadow-lg rounded-t-2xl">
+            <CardHeader className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white p-6 flex-shrink-0 shadow-lg rounded-t-2xl">
               <div className="flex items-center justify-between">
                 <div>
-                  <CardTitle className="text-2xl font-bold text-balance">Crane Specification Configurator</CardTitle>
+                  <CardTitle className="text-2xl font-bold text-balance">
+                    Crane Specification Configurator
+                  </CardTitle>
                 </div>
                 <Button
                   variant="ghost"
                   size="sm"
                   onClick={() => {
-                    setIsModalOpen(false)
-                    setCurrentStep(1)
-                    setFormData({})
-                    setSelectedCraneType("")
-                    setErrors({})
-                    setSubmitStatus({ type: "", message: "" })
+                    setIsModalOpen(false);
+                    setCurrentStep(1);
+                    setFormData({});
+                    setSelectedCraneType("");
+                    setErrors({});
+                    setSubmitStatus({ type: "", message: "" });
                   }}
                   className="text-white hover:bg-white/20 h-8 w-8 p-0"
                 >
@@ -449,16 +666,22 @@ export default function PageSidebar() {
                         step < currentStep
                           ? "bg-gradient-to-r from-blue-800 to-blue-900 text-white"
                           : step === currentStep
-                            ? "bg-white text-slate-800"
-                            : "bg-white/20 text-white/60"
+                          ? "bg-white text-slate-800"
+                          : "bg-white/20 text-white/60"
                       }`}
                     >
-                      {step < currentStep ? <CheckCircle className="w-4 h-4" /> : step}
+                      {step < currentStep ? (
+                        <CheckCircle className="w-4 h-4" />
+                      ) : (
+                        step
+                      )}
                     </div>
                     {step < 2 && (
                       <div
                         className={`w-12 h-0.5 mx-2 transition-all ${
-                          step < currentStep ? "bg-gradient-to-r from-blue-800 to-blue-900" : "bg-white/20"
+                          step < currentStep
+                            ? "bg-gradient-to-r from-blue-800 to-blue-900"
+                            : "bg-white/20"
                         }`}
                       />
                     )}
@@ -467,8 +690,22 @@ export default function PageSidebar() {
               </div>
 
               <div className="flex gap-6 mt-3 text-sm">
-                <span className={currentStep === 1 ? "text-white font-medium" : "text-slate-300"}>Select Type</span>
-                <span className={currentStep === 2 ? "text-white font-medium" : "text-slate-300"}>
+                <span
+                  className={
+                    currentStep === 1
+                      ? "text-white font-medium"
+                      : "text-slate-300"
+                  }
+                >
+                  Select Type
+                </span>
+                <span
+                  className={
+                    currentStep === 2
+                      ? "text-white font-medium"
+                      : "text-slate-300"
+                  }
+                >
                   Specifications & Contact
                 </span>
               </div>
@@ -493,7 +730,6 @@ export default function PageSidebar() {
                   {/* Step 1: Crane Type Selection */}
                   {currentStep === 1 && (
                     <div className="space-y-6">
-                     
                       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                         {craneTypes.map((type) => (
                           <Card
@@ -503,12 +739,24 @@ export default function PageSidebar() {
                                 ? "border-blue-500 bg-blue-50 shadow-md"
                                 : "border-gray-200 hover:border-blue-300"
                             }`}
-                            onClick={() => setSelectedCraneType(type.value)}
+                            onClick={function () {
+                              handleClick(type);
+                            }}
                           >
-                            <CardContent className="p-0 text-center">
-                              <div className="text-3xl mb-3">{type.icon}</div>
-                              <h4 className="font-semibold text-lg mb-2 text-slate-800">{type.label}</h4>
-                              <p className="text-sm text-slate-600 text-pretty">{type.description}</p>
+                            <CardContent className="p-0 text-center  ">
+                              <Image
+                                src={type.icon}
+                                alt={type.icon}
+                                className="text-3xl w-full h-40 object-cover  rounded-xl mb-3"
+                                width={200}
+                                height={200}
+                              ></Image>
+                              <h4 className="font-semibold text-lg mb-2 text-slate-800">
+                                {type.label}
+                              </h4>
+                              <p className="text-sm text-slate-600 text-pretty">
+                                {type.description}
+                              </p>
                               {/* {selectedCraneType === type.value && (
                                 <Badge className="mt-3 bg-blue-500 text-white hover:bg-blue-600">
                                   <CheckCircle className="w-3 h-3 mr-1" />
@@ -536,7 +784,12 @@ export default function PageSidebar() {
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {fieldsToShow.map((field) => (
-                          <div key={field.key} className={field.type === "textarea" ? "md:col-span-2" : ""}>
+                          <div
+                            key={field.key}
+                            className={
+                              field.type === "textarea" ? "md:col-span-2" : ""
+                            }
+                          >
                             <div className="space-y-2">
                               <label
                                 htmlFor={field.key}
@@ -549,10 +802,14 @@ export default function PageSidebar() {
                                   id={field.key}
                                   placeholder={field.placeholder}
                                   value={formData[field.key] || ""}
-                                  onChange={(e) => handleInputChange(field.key, e.target.value)}
+                                  onChange={(e) =>
+                                    handleInputChange(field.key, e.target.value)
+                                  }
                                   rows={4}
                                   className={`w-full px-4 py-3 border rounded-lg bg-white text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none ${
-                                    errors[field.key] ? "border-red-500" : "border-gray-300"
+                                    errors[field.key]
+                                      ? "border-red-500"
+                                      : "border-gray-300"
                                   }`}
                                 />
                               ) : (
@@ -561,13 +818,21 @@ export default function PageSidebar() {
                                   id={field.key}
                                   placeholder={field.placeholder}
                                   value={formData[field.key] || ""}
-                                  onChange={(e) => handleInputChange(field.key, e.target.value)}
+                                  onChange={(e) =>
+                                    handleInputChange(field.key, e.target.value)
+                                  }
                                   className={`w-full px-4 py-3 border rounded-lg bg-white text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all ${
-                                    errors[field.key] ? "border-red-500" : "border-gray-300"
+                                    errors[field.key]
+                                      ? "border-red-500"
+                                      : "border-gray-300"
                                   }`}
                                 />
                               )}
-                              {errors[field.key] && <p className="text-red-500 text-sm">{errors[field.key]}</p>}
+                              {errors[field.key] && (
+                                <p className="text-red-500 text-sm">
+                                  {errors[field.key]}
+                                </p>
+                              )}
                             </div>
                           </div>
                         ))}
@@ -596,15 +861,7 @@ export default function PageSidebar() {
 
                   <div className="flex gap-3">
                     {currentStep < 2 ? (
-                      <Button
-                        type="button"
-                        onClick={nextStep}
-                        disabled={!canProceedToStep2}
-                        className="px-6 bg-blue-600 hover:bg-blue-700 text-white disabled:bg-gray-300 disabled:text-gray-500"
-                      >
-                        Next Step
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </Button>
+                      ""
                     ) : (
                       <Button
                         type="submit"
@@ -624,5 +881,5 @@ export default function PageSidebar() {
         </div>
       )}
     </>
-  )
+  );
 }

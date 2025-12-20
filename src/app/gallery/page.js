@@ -28,7 +28,7 @@ export const images = [
   { id: 29, src: "/img/gallery/29.jpeg", alt: "Image 29" },
   { id: 30, src: "/img/gallery/30.jpeg", alt: "Image 30" },
   { id: 31, src: "/img/gallery/31.jpeg", alt: "Image 31" },
-  { id: 32, src: "/img/gallery/32.jpeg", alt: "Image 32" },
+  // { id: 32, src: "/img/gallery/32.jpeg", alt: "Image 32" },
   { id: 33, src: "/img/gallery/33.jpeg", alt: "Image 33" },
   { id: 34, src: "/img/gallery/34.jpeg", alt: "Image 34" },
   { id: 35, src: "/img/gallery/35.jpeg", alt: "Image 35" },
