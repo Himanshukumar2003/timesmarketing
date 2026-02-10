@@ -58,9 +58,9 @@ export default function Footer() {
                 <Image
                   src="/img/logo.png"
                   alt=""
-                  width={300}
-                  height={300}
-                  className=" bg-white p-2   rounded-sm   object-contain"
+                  width={200}
+                  height={150}
+                  className=" bg-white p-2    rounded-sm   object-contain"
                 ></Image>
               </div>
               <p className="text-white text-sm    font-semibold mb-4">
