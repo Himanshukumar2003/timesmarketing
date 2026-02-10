@@ -1,20 +1,11 @@
 import { Breadcrumb } from "@/componts/breadcrumb";
-import ContactPopupForm from "@/componts/btn";
 import Footer from "@/componts/footer";
 import DemaggNavbar from "@/componts/nav";
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import Link from "next/link";
-import { FiChevronRight } from "react-icons/fi";
 import eotCranesData from "../apis/eot-cranes";
-import {
-  ChevronRight,
-  ChevronRightCircle,
-  ChevronRightCircleIcon,
-  ChevronRightIcon,
-} from "lucide-react";
-// import pumpImage from './img/double-ginder-1.jpg';
+import { ChevronRightCircleIcon, ChevronRightIcon } from "lucide-react";
 
 function EotCranes(params) {
   return (

@@ -1,18 +1,5 @@
-"use client";
-
 import Image from "next/image";
-import {
-  CheckCircle,
-  Package,
-  Anchor,
-  Truck,
-  Cable,
-  Cog,
-  PenToolIcon as Tool,
-  Ruler,
-  Wrench,
-  ArrowRight,
-} from "lucide-react";
+
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Navbar from "@/componts/nav";
 import Footer from "@/componts/footer";

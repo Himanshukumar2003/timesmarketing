@@ -1,13 +1,13 @@
 import { Breadcrumb } from "@/componts/breadcrumb";
 import DemaggNavbar from "@/componts/nav";
 import ServiceCards from "@/componts/services";
-import CompanyValuesCards from "./company-values-cards";
-import Timeline from "./timeline";
+import CompanyValuesCards from "./_componts/company-values-cards";
+import Timeline from "./_componts/timeline";
 import Footer from "@/componts/footer";
 import { IoMdBuild } from "react-icons/io";
 import { FaBuilding } from "react-icons/fa";
 import Image from "next/image";
-import CertificateImageGallery from "./certificates";
+import CertificateImageGallery from "./_componts/certificates";
 
 function About(params) {
   return (

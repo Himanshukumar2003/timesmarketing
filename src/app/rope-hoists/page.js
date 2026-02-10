@@ -1,16 +1,6 @@
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Footer from "@/componts/footer";
 import Navbar from "@/componts/nav";
-import Container from "@mui/material/Container";
-import {
-  ChevronLeft,
-  ChevronRight,
-  Image,
-  Maximize2,
-  Play,
-  Volume2,
-} from "lucide-react";
-import { FiChevronRight } from "react-icons/fi";
 import KbkCard from "./cards";
 
 export default function KbkLight(params) {

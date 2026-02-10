@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Navbar from "@/componts/nav";
@@ -9,7 +7,6 @@ import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Container from "@mui/material/Container";
 export default function KbkSuspension() {

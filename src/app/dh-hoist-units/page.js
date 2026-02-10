@@ -7,25 +7,12 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Button from "@mui/material/Button";
-import {
-  CheckCircle,
-  Package,
-  Anchor,
-  Truck,
-  Cable,
-  Cog,
-  PenToolIcon as Tool,
-  Ruler,
-  Wrench,
-  ArrowRight,
-} from "lucide-react";
+
 // import ProductInformation from "./tabs";
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Navbar from "@/componts/nav";
 import Footer from "@/componts/footer";
 import Container from "@mui/material/Container";
-import { px } from "framer-motion";
 import RopeGuideSection from "./tabs";
 export default function Home() {
   return (

@@ -248,7 +248,7 @@ export default function Navbar() {
               width={200}
               height={200}
               alt="Logo"
-              className="ml-5 bg-white p-2  max-h-[120px] rounded-sm transform scale-120"
+              className="ml-7 bg-white   max-w-[120px] rounded-sm transform scale-120"
             />
           </Link>
         </div>

@@ -1,10 +1,11 @@
-import Container from '@mui/material/Container';
+import Container from "@mui/material/Container";
 import Image from "next/image";
 
 const data = {
   image_position_note: "DMU and OWL have image on the left side",
   DHR_Rope_Hoist: {
-    description: "DHR units offer variable-speed drive solutions for lifting and travel motions at different technology levels.",
+    description:
+      "DHR units offer variable-speed drive solutions for lifting and travel motions at different technology levels.",
     advantages: [
       "Variable speeds: 1:10, 1:25, ESR 1:37",
       "Less wear: gentle lifting/travel motions relieve the load on the crane installation",
@@ -75,41 +76,47 @@ const data = {
 export default function CraneSystemDetails() {
   return (
     <Container maxWidth="lg">
-    <div className=" space-y-12 ">
-      {/* DHR Rope Hoist */}
-      <section>
-        <h2 className="text-xl font-bold my-4 text-[#676f77]">DHR Rope Hoist</h2>
-        <p className="mb-4">{data.DHR_Rope_Hoist.description}</p>
-        <h3 className="text-xl font-bold my-4 text-[#676f77]">Advantages:</h3>
-        <ul className="list-disc list-inside mb-4">
-          {data.DHR_Rope_Hoist.advantages.map((item, idx) => (
-            <li key={idx}>{item}</li>
-          ))}
-        </ul>
-        <h3 className="text-xl font-bold my-4 text-[#676f77]">Load-Dependent Speeds:</h3>
-        <ul className="list-disc list-inside">
-          {data.DHR_Rope_Hoist.load_dependent_speeds.map((item, idx) => (
-            <li key={idx}>{item}</li>
-          ))}
-        </ul>
-      </section>
+      <div className=" space-y-12 ">
+        {/* DHR Rope Hoist */}
+        <section>
+          <h2 className="text-xl font-bold my-4 text-[#676f77]">
+            DHR Rope Hoist
+          </h2>
+          <p className="mb-4">{data.DHR_Rope_Hoist.description}</p>
+          <h3 className="text-xl font-bold my-4 text-[#676f77]">Advantages:</h3>
+          <ul className="list-disc list-inside mb-4">
+            {data.DHR_Rope_Hoist.advantages.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
+          <h3 className="text-xl font-bold my-4 text-[#676f77]">
+            Load-Dependent Speeds:
+          </h3>
+          <ul className="list-disc list-inside">
+            {data.DHR_Rope_Hoist.load_dependent_speeds.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
+        </section>
 
-      {/* OWL */}
-      <SectionWithImage data={data.OWL} imageSrc="/img/owl.webp" />
+        {/* OWL */}
+        <SectionWithImage data={data.OWL} imageSrc="/img/owl.webp" />
 
-      {/* DMU */}
-      <SectionWithImage data={data.DMU} imageSrc="/img/dmu.webp" />
+        {/* DMU */}
+        <SectionWithImage data={data.DMU} imageSrc="/img/dmu.webp" />
 
-      {/* Further Options */}
-      <section>
-        <h2 className="text-xl font-bold my-4 text-[#676f77]">Further Options</h2>
-        <ul className="list-disc list-inside">
-          {data.further_options.map((item, idx) => (
-            <li key={idx}>{item}</li>
-          ))}
-        </ul>
-      </section>
-    </div>
+        {/* Further Options */}
+        <section>
+          <h2 className="text-xl font-bold my-4 text-[#676f77]">
+            Further Options
+          </h2>
+          <ul className="list-disc list-inside">
+            {data.further_options.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
+        </section>
+      </div>
     </Container>
   );
 }
@@ -118,10 +125,16 @@ export function SectionWithImage({ data, imageSrc }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
       <div className="md:order-1">
-        <Image src={imageSrc} alt={data.title} width={500} height={300} className="rounded shadow max-w-[250px]" />
+        <Image
+          src={imageSrc}
+          alt={data.title}
+          width={500}
+          height={300}
+          className="rounded shadow max-w-[250px]"
+        />
       </div>
       <div>
-      <h4 className="text-xl font-bold my-4 text-[#676f77]">{data.title}</h4>
+        <h4 className="text-xl font-bold my-4 text-[#676f77]">{data.title}</h4>
         <p className="mb-4">{data.description}</p>
         <h3 className="text-xl font-bold my-4 text-[#676f77]">Features:</h3>
         <ul className="list-disc list-inside">

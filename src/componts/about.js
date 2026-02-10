@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Container from "@mui/material/Container";
 import { FiChevronRight } from "react-icons/fi";

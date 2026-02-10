@@ -1,10 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Navbar from "@/componts/nav";
 import Footer from "@/componts/footer";
-// import ProductInformation from "./tabs";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";

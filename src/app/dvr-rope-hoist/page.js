@@ -2,30 +2,15 @@
 
 import Image from "next/image";
 import Accordion from "@mui/material/Accordion";
-// import AccordionActions from "@mui/material/AccordionActions";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Button from "@mui/material/Button";
-import {
-  CheckCircle,
-  Package,
-  Anchor,
-  Truck,
-  Cable,
-  Cog,
-  PenToolIcon as Tool,
-  Ruler,
-  Wrench,
-  ArrowRight,
-} from "lucide-react";
-// import ProductInformation from "./tabs";
+
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Navbar from "@/componts/nav";
 import Footer from "@/componts/footer";
-// import ProductInformation from "./tabs";
-// import CraneSystemDetails from "./CraneSystemDetails";
+
 import Container from "@mui/material/Container";
 import { px } from "framer-motion";
 import ProductInformation from "./tabs";
@@ -34,8 +19,7 @@ export default function Home() {
     <>
       <Navbar />
       <Breadcrumb
-        title="DVR rope hoist
-"
+        title="DVR rope hoist"
         backgroundImage="/img/header1.webp"
         items={[
           {

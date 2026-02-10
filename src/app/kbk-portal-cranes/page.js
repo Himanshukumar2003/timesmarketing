@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Navbar from "@/componts/nav";
