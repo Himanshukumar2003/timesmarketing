@@ -2,20 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { blogs } from "./[slug]/data";
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Navbar from "@/componts/nav";
 import Footer from "@/componts/footer";
 import { FiChevronRight } from "react-icons/fi";
-export const metadata = {
-  title: " MACK EV Blog – Electric Vehicle & E-Rickshaw Insights",
-  description:
-    " Read the MACK EV Blog for inspiring EV stories, e-rickshaw insights, and clean mobility ideas driving a blueer, better future for India.",
-  alternates: {
-    canonical: `/blog`,
-  },
-};
+
 export default function BlogMainPage() {
   // Format date for display
   const formatDate = (dateString) => {
