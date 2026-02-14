@@ -10,6 +10,26 @@ import Footer from "@/componts/footer";
 import { Breadcrumb } from "@/componts/breadcrumb";
 import ContactPopupForm from "@/componts/btn";
 import Feachers from "../_feachers";
+
+export const metadata = {
+  title: "Industrial Jib Crane Manufacturer in India | Timeskrane",
+  description:
+    "Timeskrane is a trusted jib crane manufacturer in India. We offer quality systems at the best prices for all industries.",
+  keywords: [
+    "Jib Crane price in India",
+    "Jib crane manufacturers in India",
+    "Jib cranes india",
+    "jib crane hoist",
+    "jib crane suppliers",
+    "Gantry crane manufacturers in India",
+    "EOT Crane manufacturers in India",
+    "Jib Cranes Supplier in India",
+  ],
+  alternates: {
+    canonical: "https://www.timeskrane.com/eot-cranes/jib-crane",
+  },
+};
+
 export default function JibCrane() {
   const cranes = [
     {
