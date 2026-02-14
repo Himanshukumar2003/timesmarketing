@@ -43,7 +43,7 @@ export default async function Blogs() {
   };
 
   return (
-    <>
+    <div className="section">
       {blogs?.length > 0 ? (
         <div className="grid gap-8  justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {blogs.map((blog) => (
@@ -110,6 +110,6 @@ export default async function Blogs() {
           </p>
         </div>
       )}
-    </>
+    </div>
   );
 }
