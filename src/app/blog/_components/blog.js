@@ -9,7 +9,9 @@ const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 async function getBlogs() {
   try {
-    const res = await fetch(`${BASE_URL}/blogs`);
+    const res = await fetch(`${BASE_URL}/blogs`, {
+      cache: "no-store",
+    });
 
     if (!res.ok) {
       throw new Error("Failed to fetch blogs");
