@@ -6,9 +6,12 @@ import Footer from "@/componts/footer";
 import ServiceCards from "@/componts/services";
 import GridGallery from "@/componts/gallery";
 import About from "@/componts/about";
-import { Container } from "@mui/material";
-import Blogs from "./blog/_components/blog";
-import Script from "next/script";
+
+export const metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (
