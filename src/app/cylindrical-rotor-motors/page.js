@@ -347,130 +347,133 @@ const OffsetGearedMotors = () => {
                   <thead className="bg-gray-100 text-gray-700 uppercase tracking-wide">
                     <tr>
                       <th className="border border-gray-300 px-4 py-2">
-                        Designation<span class="font-normal">ZBA = braked</span>
+                        Designation
+                        <span className="font-normal">ZBA = braked</span>
                       </th>
                       <th className="border border-gray-300 px-4 py-2">
                         Output [kW]
-                        <span class="font-normal">60% CDF / 60 °C temp.</span>
+                        <span className="font-normal">
+                          60% CDF / 60 °C temp.
+                        </span>
                       </th>
                     </tr>
                   </thead>
-                  <tbody class="divide-y divide-gray-200 text-gray-700">
-                    <tr class="hover:bg-blue-50">
+                  <tbody className="divide-y divide-gray-200 text-gray-700">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 63 B4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">0.18</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 71 A4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">0.25</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 71 B4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">0.37</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 80 A4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">0.55</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 80 B4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">0.75</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 90 A4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">1.1</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 90 B4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">1.5</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA100 AL4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">2.2</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 100 B4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">3</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 112 A4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">4</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 132 AL4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">5.5</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 132 B4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">7.5</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 132 B4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">9.5</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 160 AL4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">11</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 160 B4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">15</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 180 A4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">18.5</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 180 B4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">22</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 200 A4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">30</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 225 AL4
                       </td>
                       <td className="border border-gray-300 px-4 py-2">37</td>
                     </tr>
-                    <tr class="hover:bg-blue-50">
+                    <tr className="hover:bg-blue-50">
                       <td className="border border-gray-300 px-4 py-2">
                         ZBA 225 B4
                       </td>

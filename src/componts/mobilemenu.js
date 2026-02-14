@@ -11,6 +11,8 @@ const quickLinks = [
   { title: "About", slug: "/about" },
   { title: "Contact", slug: "/contact" },
   { title: "Gallery", slug: "/gallery" },
+  { title: "Blogs", slug: "/blog" },
+
   {
     title: "Portal Cranes",
     slug: "/portal-cranes",

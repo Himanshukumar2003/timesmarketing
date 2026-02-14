@@ -6,6 +6,25 @@ import Image from "next/image";
 import Link from "next/link";
 import eotCranesData from "../apis/eot-cranes";
 import { ChevronRightCircleIcon, ChevronRightIcon } from "lucide-react";
+export const metadata = {
+  title: "EOT Cranes Manufacturer in India | Timeskrane",
+  description:
+    "As a leading EOT cranes manufacturer in India, Timeskrane provides dependable and high-performance lifting equipment for efficient industrial material handling solutions.",
+
+  keywords: [
+    "EOT crane manufacturer India",
+    "Electric Overhead Travelling crane",
+    "Single girder EOT crane",
+    "Double girder EOT crane",
+    "Industrial overhead crane",
+    "Material handling crane system",
+    "EOT crane supplier India",
+  ],
+
+  alternates: {
+    canonical: "/eot-cranes",
+  },
+};
 
 function EotCranes(params) {
   return (

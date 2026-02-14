@@ -275,27 +275,27 @@ export default function Home() {
                   <AccordionDetails>
                     <Container maxWidth="lg">
                       <div className=" ">
-                        <ul class="list-disc ">
+                        <ul className="list-disc ">
                           <li>Shorter cycle times</li>
                           <li>More cost-effective</li>
                           <li>Improved workplace safety</li>
                         </ul>
 
-                        <div class="space-y-6 py-6 ">
+                        <div className="space-y-6 py-6 ">
                           {/* <!-- Tandem Control Card --> */}
-                          <div class="flex items-start space-x-4">
+                          <div className="flex items-start space-x-4">
                             <Image
                               src="/img/dhr-rope-hoist-icon1.webp"
                               alt="Tandem Icon"
                               height={50}
                               width={50}
-                              class="w-13 h-13"
+                              className="w-13 h-13"
                             />
                             <div>
-                              <h3 class="text-lg font-semibold">
+                              <h3 className="text-lg font-semibold">
                                 Load-sway reduction
                               </h3>
-                              <p class="text-sm text-gray-600">
+                              <p className="text-sm text-gray-600">
                                 Prevents increased load sway by active
                                 counter-movements of the crane. Active system
                                 based on rope angle measurement.
@@ -303,19 +303,19 @@ export default function Home() {
                             </div>
                           </div>
                           <hr />
-                          <div class="flex items-start space-x-4">
+                          <div className="flex items-start space-x-4">
                             <Image
                               height={50}
                               width={50}
                               src="/img/dhr-rope-hoist-icon1.webp"
                               alt="Tandem Icon"
-                              class="w-10 h-10"
+                              className="w-10 h-10"
                             />
                             <div>
-                              <h3 class="text-lg font-semibold">
+                              <h3 className="text-lg font-semibold">
                                 Slack rope protection
                               </h3>
-                              <p class="text-sm text-gray-600">
+                              <p className="text-sm text-gray-600">
                                 Continuous monitoring of rope tension: Automatic
                                 cut-off of the hoist motor when slack rope is
                                 detected.
@@ -323,38 +323,38 @@ export default function Home() {
                             </div>
                           </div>
                           <hr />
-                          <div class="flex items-start space-x-4">
+                          <div className="flex items-start space-x-4">
                             <Image
                               src="/img/dhr-rope-hoist-icon3.webp"
                               alt="Tandem Icon"
                               height={50}
                               width={50}
-                              class="w-10 h-10"
+                              className="w-10 h-10"
                             />
                             <div>
-                              <h3 class="text-lg font-semibold">
+                              <h3 className="text-lg font-semibold">
                                 Area-dependent load reduction
                               </h3>
-                              <p class="text-sm text-gray-600">
+                              <p className="text-sm text-gray-600">
                                 Defined areas that the trolley may only enter
                                 when the load does not exceed a reference value.
                               </p>
                             </div>
                           </div>
                           <hr />
-                          <div class="flex items-start space-x-4">
+                          <div className="flex items-start space-x-4">
                             <Image
                               height={50}
                               width={50}
                               src="/img/dhr-rope-hoist-icon5.webp"
                               alt="Tandem Icon"
-                              class="w-13 h-13"
+                              className="w-13 h-13"
                             />
                             <div>
-                              <h3 class="text-lg font-semibold">
+                              <h3 className="text-lg font-semibold">
                                 By-pass control
                               </h3>
-                              <p class="text-sm text-gray-600">
+                              <p className="text-sm text-gray-600">
                                 Defined restricted areas (e.g. structures,
                                 machines) that must not be approached by the
                                 trolley.
@@ -362,19 +362,19 @@ export default function Home() {
                             </div>
                           </div>
                           <hr />
-                          <div class="flex items-start space-x-4">
+                          <div className="flex items-start space-x-4">
                             <Image
                               height={50}
                               width={50}
                               src="/img/dhr-rope-hoist-icon3.webp"
                               alt="Tandem Icon"
-                              class="w-10 h-10"
+                              className="w-10 h-10"
                             />
                             <div>
-                              <h3 class="text-lg font-semibold">
+                              <h3 className="text-lg font-semibold">
                                 Tandem control
                               </h3>
-                              <p class="text-sm text-gray-600">
+                              <p className="text-sm text-gray-600">
                                 Loads can be transported safely with two DHR
                                 rope hoists – all from a single control unit.
                               </p>
@@ -383,22 +383,24 @@ export default function Home() {
                           <hr />
 
                           {/* <!-- Section Title --> */}
-                          <h4 class="text-md font-semibold text-gray-800 mt-4">
+                          <h4 className="text-md font-semibold text-gray-800 mt-4">
                             With Demag Modular Control:
                           </h4>
 
                           {/* <!-- Follow-me Card --> */}
-                          <div class="flex items-start space-x-4">
+                          <div className="flex items-start space-x-4">
                             <Image
                               width={50}
                               height={50}
                               src="/img/dhr-rope-hoist-icon5.webp"
                               alt="Follow-me Icon"
-                              class="w-10 h-10"
+                              className="w-10 h-10"
                             />
                             <div>
-                              <h3 class="text-lg font-semibold">Follow-me</h3>
-                              <p class="text-sm text-gray-600">
+                              <h3 className="text-lg font-semibold">
+                                Follow-me
+                              </h3>
+                              <p className="text-sm text-gray-600">
                                 Crane can be moved over the load by simply
                                 guiding the hook by hand. (Recommended for
                                 cranes up to 10 t).
@@ -408,19 +410,19 @@ export default function Home() {
                           <hr />
 
                           {/* <!-- Hook Centering Card --> */}
-                          <div class="flex items-start space-x-4">
+                          <div className="flex items-start space-x-4">
                             <Image
                               height={30}
                               width={30}
                               src="/img/dhr-rope-hoist-icon6.webp"
                               alt="Hook Centering Icon"
-                              class="w-10 h-10"
+                              className="w-10 h-10"
                             />
                             <div>
-                              <h3 class="text-lg font-semibold">
+                              <h3 className="text-lg font-semibold">
                                 Hook centring
                               </h3>
-                              <p class="text-sm text-gray-600">
+                              <p className="text-sm text-gray-600">
                                 Automatically positions the crane hook directly
                                 above the load. The advantages: faster load
                                 cycles and improved ease of operation.
@@ -429,19 +431,19 @@ export default function Home() {
                           </div>
                           <hr />
                           {/* <!-- Diagonal Pull Prevention Card --> */}
-                          <div class="flex items-start space-x-4">
+                          <div className="flex items-start space-x-4">
                             <Image
                               height={50}
                               width={50}
                               src="/img/dhr-rope-hoist-icon7.webp"
                               alt="Diagonal Pull Icon"
-                              class="w-10 h-10"
+                              className="w-10 h-10"
                             />
                             <div>
-                              <h3 class="text-lg font-semibold">
+                              <h3 className="text-lg font-semibold">
                                 Diagonal pull prevention
                               </h3>
-                              <p class="text-sm text-gray-600">
+                              <p className="text-sm text-gray-600">
                                 Rope angle monitoring, automatic cut-off in the
                                 event of diagonal pull (&gt; 4°) to avoid
                                 dangerous situations.
@@ -450,12 +452,12 @@ export default function Home() {
                           </div>
                         </div>
 
-                        <div class="">
+                        <div className="">
                           <div>
-                            <h3 class="text-lg font-semibold text-gray-800">
+                            <h3 className="text-lg font-semibold text-gray-800">
                               Diagonal pull prevention
                             </h3>
-                            <p class="text-sm text-gray-600 pb-4">
+                            <p className="text-sm text-gray-600 pb-4">
                               Rope angle monitoring, automatic cut-off in the
                               event of diagonal pull (&gt; 4°) to avoid
                               dangerous situations.
@@ -463,20 +465,20 @@ export default function Home() {
                           </div>
                           <hr />
 
-                          <div class="grid md:grid-cols-2 gap-6 items-start">
+                          <div className="grid md:grid-cols-2 gap-6 items-start">
                             {/* <!-- Left Text Content --> */}
-                            <div class="space-y-4">
+                            <div className="space-y-4">
                               <div>
-                                <h3 class="text-lg font-semibold text-gray-800">
+                                <h3 className="text-lg font-semibold text-gray-800">
                                   Full control – from anywhere:
                                   <a
                                     href="#"
-                                    class="text-blue-600 hover:underline"
+                                    className="text-blue-600 hover:underline"
                                   >
                                     Demag StatusControl 2.0
                                   </a>
                                 </h3>
-                                <p class="text-sm text-gray-600">
+                                <p className="text-sm text-gray-600">
                                   With Demag StatusControl 2.0, smart system
                                   management, you have full control of your rope
                                   hoist at all times and from anywhere. Our
@@ -492,16 +494,16 @@ export default function Home() {
 
                               {/* <!-- Real-time Operating Data --> */}
                               <div>
-                                <h3 class="text-lg font-semibold text-gray-800">
+                                <h3 className="text-lg font-semibold text-gray-800">
                                   Real-time operating data:
                                   <a
                                     href="#"
-                                    class="text-blue-600 hover:underline"
+                                    className="text-blue-600 hover:underline"
                                   >
                                     Demag Equipment App (DEA)
                                   </a>
                                 </h3>
-                                <p class="text-sm text-gray-600">
+                                <p className="text-sm text-gray-600">
                                   Do you only find out the usage and user data
                                   for your DHR rope hoist once a year during
                                   inspection and maintenance? This is a thing of
@@ -515,14 +517,14 @@ export default function Home() {
                             </div>
 
                             {/* <!-- Right Image --> */}
-                            <div class="flex justify-center md:justify-end">
+                            <div className="flex justify-center md:justify-end">
                               <Image
                                 width={300}
                                 height={200}
                                 layout="responsive"
                                 src="/img/dhr-rope-hoist6.webp"
                                 alt="Status Control and DEA"
-                                class="max-w-full h-auto"
+                                className="max-w-full h-auto"
                               />
                             </div>
                           </div>

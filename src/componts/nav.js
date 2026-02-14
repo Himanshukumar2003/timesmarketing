@@ -52,6 +52,7 @@ export default function Navbar() {
     },
 
     { title: "Cranes", hasSubmenu: true },
+    { title: "Blogs", href: "/blog" },
     { title: "Gallery", href: "/gallery" },
     { title: "Contact", href: "/contact" },
     // { title: "Services", hasSubmenu: true },

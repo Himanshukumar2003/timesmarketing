@@ -1,13 +1,36 @@
 import { Breadcrumb } from "@/componts/breadcrumb";
 import DemaggNavbar from "@/componts/nav";
-import ServiceCards from "@/componts/services";
 import CompanyValuesCards from "./_componts/company-values-cards";
 import Timeline from "./_componts/timeline";
 import Footer from "@/componts/footer";
-import { IoMdBuild } from "react-icons/io";
-import { FaBuilding } from "react-icons/fa";
+
 import Image from "next/image";
 import CertificateImageGallery from "./_componts/certificates";
+export const metadata = {
+  title: "About Timeskrane | Industrial Crane Experts Since 1988",
+  description:
+    "Timeskrane has been a trusted industrial crane expert since 1988, offering EOT cranes, hoists, and reliable lifting solutions across India.",
+
+  keywords: [
+    "hoist crane",
+    "hoist for crane",
+    "hoisting lift",
+    "eot crane single girder",
+    "single girder eot crane",
+    "hoist wire rope",
+    "single girder eot crane manufacturer",
+    "material lifting equipment",
+    "Tower Crane Rental Services in India",
+    "Crane Rental Services in India",
+    "best crane services for rental purpose in India",
+    "Loading And Unloading Crane Service",
+    "Affordable Crane Rental Services",
+  ],
+
+  alternates: {
+    canonical: "/about",
+  },
+};
 
 function About(params) {
   return (
