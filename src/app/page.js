@@ -19,14 +19,7 @@ export default function Home() {
       <UniqueFeatures />
       <CardsSection />
       <ServiceCards></ServiceCards>
-      <div className=" bg-gray-50 section">
-        <Container maxWidth="xl">
-          <h2 className="text-3xl md:text-4xl text-center font-bold text-slate-800 leading-tight mb-10">
-            Our Blogs
-          </h2>
-          <Blogs></Blogs>
-        </Container>
-      </div>
+
       <GridGallery></GridGallery>
       <Footer />
     </>

@@ -73,7 +73,7 @@ export default async function Page({ params }) {
       />
 
       <div className="mx-auto  max-w-6xl  space-y-4">
-        <div className="col-span-4 space-y-4 rounded-lg bg-white p-8 lg:col-span-3">
+        <div className="col-span-4 space-y-4 rounded-lg bg-white lg:col-span-3">
           <div className="  shadow-2xl p-5">
             <Image
               src={`${process.env.NEXT_PUBLIC_API}/${blog.pictures[0]}`}

@@ -113,16 +113,7 @@ export default function RootLayout({ children }) {
                   },
                   "description": "Industrial crane solutions including EOT cranes, KBK light crane systems, hoists, and customized lifting equipment for industries."
                 },
-                {
-                  "@type": "Product",
-                  "name": "EOT Crane System",
-                  "brand": {
-                    "@type": "Brand",
-                    "name": "Timeskrane"
-                  },
-                  "description": "Electric Overhead Travelling (EOT) cranes designed for heavy industrial lifting and material handling.",
-                  "category": "Industrial Crane"
-                },
+             
                 {
                   "@type": "BreadcrumbList",
                   "itemListElement": [
