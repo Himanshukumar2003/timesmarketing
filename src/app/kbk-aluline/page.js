@@ -12,7 +12,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Container from "@mui/material/Container";
 
 export const metadata = {
-  title: "KBK Aluline Systems in India | KBK Light Crane Systems - Timeskrane",
+  title: "KBK Aluline Systems in India",
   description:
     "Timeskrane is a trusted provider of KBK Aluline systems in India. We offer reliable KBK Aluline light crane systems for efficient and flexible material handling applications across industries.",
   keywords: [

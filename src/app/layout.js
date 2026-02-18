@@ -11,9 +11,7 @@ export const metadata = {
   },
   keywords:
     "hoist crane, hoist for crane, hoisting lift, eot crane single girder, single girder eot crane, hoist wire rope, single girder eot crane manufacturer, material lifting equipment, Tower Crane Rental Services in India, Crane Rental Services in India, best crane services for rental purpose in India, Loading And Unloading Crane Service, Affordable Crane Rental Services",
-  alternates: {
-    canonical: "/",
-  },
+
   openGraph: {
     title:
       "Timeskrane | Your Trusted Lifting Partner for Safe and Reliable Crane Solutions",
