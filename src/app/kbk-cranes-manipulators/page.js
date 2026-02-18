@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export const metadata = {
-  title: "KBK Cranes for Manipulators in India | Timeskrane",
+  title: "KBK Cranes for Manipulators in India",
   description:
     "Timeskrane offers KBK cranes for manipulators in India, designed for smooth movement, precise handling, and safe operations to improve productivity and workflow.",
   keywords: [

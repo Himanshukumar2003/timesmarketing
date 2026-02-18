@@ -58,17 +58,9 @@ export default function Footer() {
                 <Image
                   src="/img/logo.png"
                   alt=""
-                  width={200}
-                  height={80}
-                  className=" bg-white p-2    rounded-sm md:w-[]   object-contain"
-                ></Image>
-                <div className="  border-dashed h-[120px] border-1 "></div>
-                <Image
-                  src="/img/demag.jpeg"
-                  alt=""
-                  width={200}
-                  height={150}
-                  className=" bg-white p-2    rounded-sm   object-contain"
+                  width={300}
+                  height={100}
+                  className=" bg-white p-2   rounded-sm md:w-[]   object-contain"
                 ></Image>
               </div>
               <p className="text-white text-sm    font-semibold mb-4">

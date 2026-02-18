@@ -11,7 +11,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Container from "@mui/material/Container";
 
 export const metadata = {
-  title: "KBK Suspension Monorails in India | Timeskrane",
+  title: "KBK Suspension Monorails in India ",
   description:
     "Timeskrane provides KBK suspension monorails in India along with KBK single girder suspension crane solutions. This setup ensures smooth and efficient material handling across industries.",
   keywords: [

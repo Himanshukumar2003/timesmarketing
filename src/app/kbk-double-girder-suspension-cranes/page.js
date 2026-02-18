@@ -13,7 +13,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Container from "@mui/material/Container";
 
 export const metadata = {
-  title: "KBK Double-Girder Suspension Cranes in India | Timeskrane",
+  title: "KBK Single Girder Suspension Cranes in India | Timeskrane",
   description:
     "Timeskrane provides KBK Double-Girder Suspension Cranes in India. This system ensures smooth movement, increased load capacity, and safe material handling.",
   keywords: [

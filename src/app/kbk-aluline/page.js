@@ -12,19 +12,18 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Container from "@mui/material/Container";
 
 export const metadata = {
-  title: "KBK Aluline Systems in India",
+  title: "KBK Aluline Systems in India | Timeskrane",
   description:
-    "Timeskrane is a trusted provider of KBK Aluline systems in India. We offer reliable KBK Aluline light crane systems for efficient and flexible material handling applications across industries.",
+    "Timeskrane is a trusted provider of KBK Aluline systems in India. We offer reliable KBK Aluline light crane systems for effective material handling.",
   keywords: [
-    "KBK Aluline systems in India",
+    "Kone",
     "KBK Light Crane Systems",
     "KBK Aluline price",
     "KBK light crane system in India",
-    "KBK manual system",
+    "KBK manual",
     "KBK parts in India",
     "KBK modular system",
-    "KBK light crane in India",
-    "Kone KBK systems",
+    "KBK light Crane in India",
   ],
   alternates: {
     canonical: "https://www.timeskrane.com/kbk-aluline",
@@ -32,7 +31,7 @@ export const metadata = {
   openGraph: {
     title: "KBK Aluline Systems in India | Timeskrane",
     description:
-      "High-performance KBK Aluline light crane systems in India designed for flexible and efficient material handling.",
+      "Reliable KBK Aluline light crane systems in India designed for flexible and efficient material handling.",
     url: "https://www.timeskrane.com/kbk-aluline",
     siteName: "Timeskrane",
     locale: "en_IN",

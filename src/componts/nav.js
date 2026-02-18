@@ -64,21 +64,21 @@ export default function Navbar() {
       title: "Geared motors",
       description: "The perfect combination of tried and tested components",
       image: "/img/geared-motors.png",
-      slug: "/drives/geared-motors",
+      slug: "/sraaes/geared-motors",
     },
     {
       id: 2,
       title: "Motors",
       description: "Reliable drive units",
       image: "/img/motors.png",
-      slug: "/drives/motors",
+      slug: "/sraaes/motors",
     },
     {
       id: 3,
       title: "Wheel range",
       description: "The right wheel for every application",
       image: "/img/Wheels.webp",
-      slug: "/drives/wheel-range",
+      slug: "/sraaes/wheel-range",
     },
   ];
 
@@ -244,13 +244,15 @@ export default function Navbar() {
             {moblieNav ? <X size={24} /> : <Menu size={24} />}
           </button>
           <Link href="/" className="py-4 pl-2 ">
-            <Image
-              src="/img/logo.png"
-              width={200}
-              height={200}
-              alt="Logo"
-              className="ml-7 bg-white   max-w-[120px] rounded-sm transform scale-120"
-            />
+            <div className="flex pl-2  justify-center items-center">
+              <Image
+                src="/img/logo.png"
+                width={250}
+                height={200}
+                alt="Logo"
+                className="ml-7 bg-white  rounded-sm transform scale-120"
+              />
+            </div>
           </Link>
         </div>
 
