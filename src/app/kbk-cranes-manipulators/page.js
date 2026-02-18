@@ -9,6 +9,34 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
+export const metadata = {
+  title: "KBK Cranes for Manipulators in India | Timeskrane",
+  description:
+    "Timeskrane offers KBK cranes for manipulators in India, designed for smooth movement, precise handling, and safe operations to improve productivity and workflow.",
+  keywords: [
+    "Crane manipulators in India",
+    "Manipulator crane",
+    "Material manipulators",
+    "KBK Manipulator Cranes in India",
+    "KBK light crane system",
+    "KBK Aluline light crane system",
+    "KBK cranes for manipulators India",
+  ],
+  alternates: {
+    canonical: "https://www.timeskrane.com/kbk-cranes-manipulators",
+  },
+  openGraph: {
+    title: "KBK Cranes for Manipulators in India | Timeskrane",
+    description:
+      "High-performance KBK cranes for manipulators in India ensuring precise handling, smooth movement, and improved industrial productivity.",
+    url: "https://www.timeskrane.com/kbk-cranes-manipulators",
+    siteName: "Timeskrane",
+    locale: "en_IN",
+    type: "website",
+  },
+};
+
 export default function Home() {
   return (
     <>

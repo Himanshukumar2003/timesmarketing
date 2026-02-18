@@ -4,6 +4,34 @@ import Footer from "@/componts/footer";
 import Navbar from "@/componts/nav";
 import Container from "@mui/material/Container";
 import Image from "next/image";
+export const metadata = {
+  title: "Industrial Portal Cranes in India | Timeskrane",
+  description:
+    "Timeskrane provides industrial portal cranes in India, built for smooth outdoor lifting, strong performance, and safe material handling across industries.",
+  keywords: [
+    "Gantry cranes",
+    "Cranes and components",
+    "Portal cranes",
+    "Portal crane manufacturers in India",
+    "Portal Crane Supplier & Manufacturer",
+    "Semi Portal Crane",
+    "Gantry Crane Manufacturers",
+    "Gantry crane suppliers in India",
+    "Crane manufacturer in India",
+  ],
+  alternates: {
+    canonical: "https://www.timeskrane.com/portal-cranes",
+  },
+  openGraph: {
+    title: "Industrial Portal Cranes in India | Timeskrane",
+    description:
+      "High-performance industrial portal cranes designed for efficient outdoor lifting and safe material handling applications.",
+    url: "https://www.timeskrane.com/portal-cranes",
+    siteName: "Timeskrane",
+    locale: "en_IN",
+    type: "website",
+  },
+};
 
 export default function PotalCranes(params) {
   return (

@@ -9,6 +9,36 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Container from "@mui/material/Container";
+
+export const metadata = {
+  title: "KBK Suspension Monorails in India | Timeskrane",
+  description:
+    "Timeskrane provides KBK suspension monorails in India along with KBK single girder suspension crane solutions. This setup ensures smooth and efficient material handling across industries.",
+  keywords: [
+    "KBK Modular Monorail Conveyor",
+    "KBK single-girder suspension cranes",
+    "KBK Suspension Monorails",
+    "KBK light crane system",
+    "KBK suspension monorails cost",
+    "KBK Light Crane",
+    "Single girder KBK crane",
+    "KBK suspension configurator",
+    "KBK Suspension Crane Configurator",
+  ],
+  alternates: {
+    canonical: "https://www.timeskrane.com/kbk-suspension-monorails",
+  },
+  openGraph: {
+    title: "KBK Suspension Monorails in India | Timeskrane",
+    description:
+      "Reliable KBK suspension monorail systems designed for smooth, flexible and efficient material handling applications.",
+    url: "https://www.timeskrane.com/kbk-suspension-monorails",
+    siteName: "Timeskrane",
+    locale: "en_IN",
+    type: "website",
+  },
+};
+
 export default function KbkSuspension() {
   return (
     <>

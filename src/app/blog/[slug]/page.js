@@ -2,8 +2,7 @@ import FAQAccordion from "@/components/ui/FAQAccordion";
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Footer from "@/componts/footer";
 import Navbar from "@/componts/nav";
-import { Category } from "@mui/icons-material";
-import { Container } from "@mui/material";
+
 import axios from "axios";
 import { Calendar, Clock } from "lucide-react";
 import moment from "moment";

@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 import ProductInformation from "./tabs";
@@ -12,6 +10,32 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
+export const metadata = {
+  title: "KBK Single-Girder Suspension Cranes in India | Timeskrane",
+  description:
+    "Timeskrane delivers KBK light crane system solutions with KBK Single-Girder Suspension Cranes in India for smooth, flexible and efficient material handling.",
+  keywords: [
+    "Lightweight crane systems",
+    "KBK light crane system",
+    "KBK single girder suspension cranes in India",
+    "Single Girder Suspension Crane Distributor",
+    "KBK Aluline in India",
+  ],
+  alternates: {
+    canonical: "https://www.timeskrane.com/kbk-single-girder-suspension-cranes",
+  },
+  openGraph: {
+    title: "KBK Single-Girder Suspension Cranes in India | Timeskrane",
+    description:
+      "Reliable KBK Single-Girder Suspension Cranes in India designed for efficient and flexible material handling applications.",
+    url: "https://www.timeskrane.com/kbk-single-girder-suspension-cranes",
+    siteName: "Timeskrane",
+    locale: "en_IN",
+    type: "website",
+  },
+};
+
 export default function Home() {
   return (
     <>

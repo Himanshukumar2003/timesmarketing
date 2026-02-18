@@ -9,6 +9,33 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
+export const metadata = {
+  title: "KBK Overhung and Extending Cranes in India | Timeskrane",
+  description:
+    "Timeskrane provides KBK Overhung and Extending Cranes in India, helping industries handle materials smoothly with flexible design and reliable performance.",
+  keywords: [
+    "Double Girder Overhead Cranes",
+    "KBK parts in India",
+    "KBK jib crane in India",
+    "KBK light crane system in India",
+    "KBK Overhung Cranes in India",
+    "KBK Extending Cranes in India",
+  ],
+  alternates: {
+    canonical: "https://www.timeskrane.com/kbk-overhung-and-extending-cranes",
+  },
+  openGraph: {
+    title: "KBK Overhung and Extending Cranes in India | Timeskrane",
+    description:
+      "Reliable KBK Overhung and Extending Cranes designed for flexible and efficient material handling applications.",
+    url: "https://www.timeskrane.com/kbk-overhung-and-extending-cranes",
+    siteName: "Timeskrane",
+    locale: "en_IN",
+    type: "website",
+  },
+};
+
 export default function Home() {
   return (
     <>

@@ -5,7 +5,7 @@ import Footer from "@/componts/footer";
 import Blogs from "./_components/blog";
 import { Container } from "@mui/material";
 
-export default async function BlogMainPage() {
+export default function BlogMainPage() {
   return (
     <>
       <Navbar />
