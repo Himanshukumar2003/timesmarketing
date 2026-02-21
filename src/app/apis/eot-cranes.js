@@ -5,8 +5,7 @@ const eotCranesData = [
     title: "Single Girder Crane",
 
     seo: {
-      title:
-        "Single Girder EOT Crane Manufacturer in India | Times Cranes Pvt. Ltd.",
+      title: "Single Girder EOT Crane Manufacturer in India ",
 
       description:
         "Improve material handling efficiency with Single Girder EOT Cranes from Times Cranes Pvt. Ltd. Safe, reliable and cost-effective lifting solutions for industrial applications.",
@@ -84,8 +83,7 @@ const eotCranesData = [
     tag: "double Girder",
 
     seo: {
-      title:
-        "Heavy Duty Double Girder EOT Crane Manufacturer in India | Times Cranes Pvt. Ltd.",
+      title: "Heavy Duty Double Girder EOT Crane Manufacturer in India ",
 
       description:
         "Explore heavy duty Double Girder EOT Cranes designed for safe, smooth and reliable lifting. Ideal for industrial and heavy material handling applications across India.",
@@ -155,8 +153,7 @@ const eotCranesData = [
     slug: "underslung-crane",
     title: "Underslung Crane",
     seo: {
-      title:
-        "Underslung Crane Manufacturer & Service in India | Times Cranes Pvt. Ltd.",
+      title: "Underslung Crane Manufacturer & Service in India ",
 
       description:
         "High performance Underslung Crane with capacity up to 10 Ton. Ideal for low headroom industrial environments and efficient material handling applications.",
@@ -224,8 +221,7 @@ const eotCranesData = [
     slug: "jib-crane",
     title: "Jib Crane",
     seo: {
-      title:
-        "Industrial JIB Crane Manufacturer in India | Times Cranes Pvt. Ltd.",
+      title: "Industrial JIB Crane Manufacturer in India ",
 
       description:
         "Times Cranes Pvt. Ltd. is a trusted JIB Crane manufacturer in India offering wall-mounted and pillar-mounted jib cranes at competitive prices for industrial applications.",

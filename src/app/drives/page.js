@@ -52,7 +52,7 @@ const Drives = () => {
                 key={item.id}
                 className="group relative overflow-hidden rounded-md bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
               >
-                <Link href={`/drivess/${item.slug}`}>
+                <Link href={`/drives/${item.slug}`}>
                   <div className="absolute right-4 top-4 z-10 rounded-full bg-yellow-400 p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
                     <ChevronRightIcon size={18} className="text-white" />
                   </div>

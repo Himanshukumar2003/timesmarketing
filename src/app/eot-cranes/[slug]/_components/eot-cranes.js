@@ -34,9 +34,9 @@ const EotCranesComponent = ({ selectedItem }) => {
 
             {/* Right Content */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-3xl md:text-4xl font-bold text-slate-800 leading-tight mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-800 leading-tight mb-4">
                 {selectedItem.title}
-              </h1>
+              </h2>
 
               <p className="text-justify text-gray-600">
                 {selectedItem.description}

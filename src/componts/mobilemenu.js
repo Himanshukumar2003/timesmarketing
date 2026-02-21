@@ -113,10 +113,10 @@ const menuItems = [
       {
         id: "geared-motors",
         title: "Geared motors",
-        slug: "/drives/geared-motors",
+        slug: "/drive/geared-motors",
       },
-      { id: "motors", title: "Motors", slug: "/drives/motors" },
-      { id: "wheel-range", title: "Wheel range", slug: "/drives/wheel-range" },
+      { id: "motors", title: "Motors", slug: "/drive/motors" },
+      { id: "wheel-range", title: "Wheel range", slug: "/drive/wheel-range" },
     ],
   },
 ];
