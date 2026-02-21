@@ -64,21 +64,21 @@ export default function Navbar() {
       title: "Geared motors",
       description: "The perfect combination of tried and tested components",
       image: "/img/geared-motors.png",
-      slug: "/sraaes/geared-motors",
+      slug: "/drives/geared-motors",
     },
     {
       id: 2,
       title: "Motors",
       description: "Reliable drive units",
       image: "/img/motors.png",
-      slug: "/sraaes/motors",
+      slug: "/drives/motors",
     },
     {
       id: 3,
       title: "Wheel range",
       description: "The right wheel for every application",
       image: "/img/Wheels.webp",
-      slug: "/sraaes/wheel-range",
+      slug: "/drives/wheel-range",
     },
   ];
 
