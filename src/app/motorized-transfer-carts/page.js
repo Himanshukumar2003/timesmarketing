@@ -4,7 +4,32 @@ import Footer from "@/componts/footer";
 import Navbar from "@/componts/nav";
 import Container from "@mui/material/Container";
 import Image from "next/image";
-
+export const metadata = {
+  title: "Motorized Transfer Carts in India | Timeskrane",
+  description:
+    "Timeskrane provides motorized transfer carts in India for easy and safe movement of heavy loads, built to support smooth operations and better productivity.",
+  keywords: [
+    "Motorized transfer cart price",
+    "Motorized transfer cart heavy duty",
+    "Battery Operated Transfer Trolley in India",
+    "Operator-controlled rail-guided transfer carts",
+    "Electric Transfer Trolley",
+    "Motorised Transfer Trolleys Trader",
+    "motorized transfer cart in india",
+  ],
+  alternates: {
+    canonical: "https://www.timeskrane.com/motorized-transfer-carts",
+  },
+  openGraph: {
+    title: "Motorized Transfer Carts in India | Timeskrane",
+    description:
+      "Timeskrane provides motorized transfer carts in India for easy and safe movement of heavy loads, built to support smooth operations and better productivity.",
+    url: "https://www.timeskrane.com/motorized-transfer-carts",
+    siteName: "Timeskrane",
+    locale: "en_IN",
+    type: "website",
+  },
+};
 export default function PotalCranes(params) {
   return (
     <>

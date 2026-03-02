@@ -3,9 +3,10 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Your Trusted Lifting Partner for Safe and Reliable Crane Solutions",
+  title:
+    "Your Trusted Lifting Partner for Safe and Reliable Crane SolutionsEOT Crane Manufacturers in India | Timeskrane",
   description:
-    "Timeskrane provides reliable and safe lifting solutions for industrial needs. Find precision-built cranes and high-performance equipment.",
+    "Timeskrane is one of the reliable EOT crane manufacturers in India. They provide safe, long-lasting, and customized lifting solutions for various industries.",
   icons: {
     icon: "/favicon.ico",
   },

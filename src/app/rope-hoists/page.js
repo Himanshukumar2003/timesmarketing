@@ -3,6 +3,34 @@ import Footer from "@/componts/footer";
 import Navbar from "@/componts/nav";
 import KbkCard from "./cards";
 
+export const metadata = {
+  title: "Demag Wire Rope Hoists in India",
+  description:
+    "Demag Wire Rope Hoists in India from Timeskrane are designed for safe, smooth and efficient lifting, ensuring reliable performance for daily industrial operations.",
+  keywords: [
+    "Demag wire rope hoist",
+    "Demag wire rope hoist parts",
+    "Demag Wire Rope Hoists in India",
+    "Demag DH hoist Manual",
+    "Demag wire rope hoist price in India",
+    "Maintaining Your Demag DH Wire Rope Hoist",
+    "chain hoist electric",
+    "demag cranes and components corp",
+  ],
+  alternates: {
+    canonical: "https://www.timeskrane.com/rope-hoists",
+  },
+  openGraph: {
+    title: "Demag Wire Rope Hoists in India",
+    description:
+      "Demag Wire Rope Hoists in India from Timeskrane are designed for safe, smooth and efficient lifting, ensuring reliable performance for daily industrial operations.",
+    url: "https://www.timeskrane.com/rope-hoists",
+    siteName: "Timeskrane",
+    locale: "en_IN",
+    type: "website",
+  },
+};
+
 export default function KbkLight(params) {
   return (
     <>

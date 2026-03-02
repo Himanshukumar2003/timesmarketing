@@ -15,6 +15,7 @@ const data = [
   {
     product: "DC-Pro chain hoist",
     slug: "dc-pro-chain-hoist",
+
     summary: {
       title: "The industry benchmark",
       description:
@@ -97,6 +98,36 @@ const data = [
   {
     product: "DCS-Pro chain hoist",
     slug: "dcs-pro-chain-hoist",
+
+    metadata: {
+      title: "Buy Demag DCS-Pro Chain Hoist in India",
+      description:
+        "Choose Timeskrane to buy Demag DCS-Pro chain hoist in India, built for precision handling, strong safety, and dependable operations.",
+      keywords: [
+        "Demag DCS-Pro Chain",
+        "Demag DC-Pro chain hoist manual",
+        "Demag DCS-pro electric hoist",
+        "Demag dc pro 25 price in india",
+        "Demag dc pro 25 specifications",
+        "Demag DC-Pro Chain Hoist Supplier",
+        "Electric Chain Hoist manufacturer in India",
+        "Demag dc pro chain hoist supplier in india",
+      ],
+      alternates: {
+        canonical:
+          "https://www.timeskrane.com/chain-hoists/dcs-pro-chain-hoist",
+      },
+      openGraph: {
+        title: "Buy Demag DCS-Pro Chain Hoist in India",
+        description:
+          "Choose Timeskrane to buy Demag DCS-Pro chain hoist in India, built for precision handling, strong safety, and dependable operations.",
+        url: "https://www.timeskrane.com/chain-hoists/dcs-pro-chain-hoist",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
+
     summary: {
       title: "An investment with added value",
       description:
@@ -560,6 +591,35 @@ const data = [
   {
     product: "DC-Com chain hoist",
     slug: "dc-com-chain-hoist",
+
+    metadata: {
+      title: "Demag DCM-Pro Manulift Hoist in India",
+      description:
+        "Find Demag DCM-Pro Manulift hoist in India at Timeskrane, designed for easy one-hand operation, safe lifting, and smooth industrial performance.",
+      keywords: [
+        "Demag Chain Hoist DCMS-Pro Manulift",
+        "dcms pro manulift",
+        "Demag DC-Pro Chain Hoist Supplier",
+        "Demag DC Pro Electric Chain Hoist",
+        "Electric Chain Hoist manufacturer in India",
+        "Electric wire rope hoist India",
+        "electric chain hoist 1 ton",
+        "Electric Hoist manufacturers in India",
+      ],
+      alternates: {
+        canonical: "https://www.timeskrane.com/chain-hoists/dc-com-chain-hoist",
+      },
+      openGraph: {
+        title: "Demag DCM-Pro Manulift Hoist in India",
+        description:
+          "Find Demag DCM-Pro Manulift hoist in India at Timeskrane, designed for easy one-hand operation, safe lifting, and smooth industrial performance.",
+        url: "https://www.timeskrane.com/chain-hoists/dc-com-chain-hoist",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
+
     summary: {
       title: "High quality for everyday needs",
       description:
@@ -1470,6 +1530,26 @@ const data = [
   },
 ];
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+
+  const product = data.find((item) => item.slug === slug);
+
+  if (!product || !product.metadata) {
+    return {
+      title: product?.product,
+      description: product?.summary?.description ?? "",
+    };
+  }
+
+  return {
+    title: product.metadata.title,
+    description: product.metadata.description,
+    keywords: product.metadata.keywords,
+    alternates: product.metadata.alternates,
+    openGraph: product.metadata.openGraph,
+  };
+}
 const OffsetGearedMotors = ({ params }) => {
   const { slug } = use(params);
 

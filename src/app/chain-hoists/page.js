@@ -3,7 +3,33 @@ import Footer from "@/componts/footer";
 import Navbar from "@/componts/nav";
 
 import KbkCard from "./cards";
-
+export const metadata = {
+  title: "Electric Chain Hoist in India | Timeskrane",
+  description:
+    "Electric Chain Hoist in India by Timeskrane offers smooth lifting and safe performance, helping industries handle materials with ease and confidence.",
+  keywords: [
+    "electric chain hoists",
+    "chain fall hoist",
+    "electric hoist 1 ton",
+    "chain hoist for sale",
+    "Chain Hoist Manufacturer In India",
+    "electric chain hoists for sale",
+    "Industrial Crane Manufacturer",
+    "electric Chain hoist in india",
+  ],
+  alternates: {
+    canonical: "https://www.timeskrane.com/chain-hoists",
+  },
+  openGraph: {
+    title: "Electric Chain Hoist in India | Timeskrane",
+    description:
+      "Electric Chain Hoist in India by Timeskrane offers smooth lifting and safe performance, helping industries handle materials with ease and confidence.",
+    url: "https://www.timeskrane.com/chain-hoists",
+    siteName: "Timeskrane",
+    locale: "en_IN",
+    type: "website",
+  },
+};
 export default function KbkLight(params) {
   return (
     <>

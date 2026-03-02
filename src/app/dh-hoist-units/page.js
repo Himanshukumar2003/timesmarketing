@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Accordion from "@mui/material/Accordion";
 import AccordionActions from "@mui/material/AccordionActions";
@@ -14,6 +12,34 @@ import Navbar from "@/componts/nav";
 import Footer from "@/componts/footer";
 import Container from "@mui/material/Container";
 import RopeGuideSection from "./tabs";
+
+export const metadata = {
+  title: "Reliable Demag DH Hoist Units in India | Timeskrane",
+  description:
+    "Get reliable Demag DH hoist units in India from Timeskrane, built for smooth, safe, and heavy-duty lifting in demanding industrial environments.",
+  keywords: [
+    "Demag DH Hoist Units in India",
+    "Demag DH hoist configurator",
+    "DH hoist unit",
+    "DH hoist units supplier in India",
+    "Demag DH hoist price in India",
+    "Buy Demag DH hoist units in India",
+    "Industrial DH hoist units",
+    "Demag hoist dealer in India",
+  ],
+  alternates: {
+    canonical: "https://www.timeskrane.com/dh-hoist-units",
+  },
+  openGraph: {
+    title: "Reliable Demag DH Hoist Units in India | Timeskrane",
+    description:
+      "Get reliable Demag DH hoist units in India from Timeskrane, built for smooth, safe, and heavy-duty lifting in demanding industrial environments.",
+    url: "https://www.timeskrane.com/dh-hoist-units",
+    siteName: "Timeskrane",
+    locale: "en_IN",
+    type: "website",
+  },
+};
 export default function Home() {
   return (
     <>
