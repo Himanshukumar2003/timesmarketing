@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -12,8 +10,34 @@ import Navbar from "@/componts/nav";
 import Footer from "@/componts/footer";
 
 import Container from "@mui/material/Container";
-import { px } from "framer-motion";
 import ProductInformation from "./tabs";
+
+export const metadata = {
+  title: "High Performance DVR Rope Hoist in India",
+  description:
+    "DVR Rope Hoist in India by Timeskrane delivers smooth lifting, high efficiency and reliable performance, ensuring safe and easy material handling for industries.",
+  keywords: [
+    "Dvr rope hoist price",
+    "Demag DVR Rope Hoist spares",
+    "wire rope for hoist",
+    "electric wire rope hoist",
+    "wire rope electric hoist",
+    "Demag DVR rope hoists",
+    "dvr rope hoist manufacturer in india",
+  ],
+  alternates: {
+    canonical: "https://www.timeskrane.com/dvr-rope-hoist",
+  },
+  openGraph: {
+    title: "High Performance DVR Rope Hoist in India",
+    description:
+      "DVR Rope Hoist in India by Timeskrane delivers smooth lifting, high efficiency and reliable performance, ensuring safe and easy material handling for industries.",
+    url: "https://www.timeskrane.com/dvr-rope-hoist",
+    siteName: "Timeskrane",
+    locale: "en_IN",
+    type: "website",
+  },
+};
 export default function Home() {
   return (
     <>

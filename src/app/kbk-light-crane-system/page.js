@@ -12,7 +12,29 @@ import {
 } from "lucide-react";
 import { FiChevronRight } from "react-icons/fi";
 import KbkCard from "./crads";
-
+export const metadata = {
+  title: "Demag KBK Light Crane System in India | Timeskrane",
+  description:
+    "Find Demag KBK Light Crane System in India with Timeskrane. Flexible, modular and efficient lifting solutions designed for smooth industrial workflow.",
+  keywords: [
+    "Demag KBK light Crane in India",
+    "Kbk Light Crane System Manufacturer from india",
+    "KBK Aluline light crane system",
+    "KBK Light Crane System Suppliers in india",
+  ],
+  alternates: {
+    canonical: "https://www.timeskrane.com/kbk-light-crane-system",
+  },
+  openGraph: {
+    title: "Demag KBK Light Crane System in India | Timeskrane",
+    description:
+      "Find Demag KBK Light Crane System in India with Timeskrane. Flexible, modular and efficient lifting solutions designed for smooth industrial workflow.",
+    url: "https://www.timeskrane.com/kbk-light-crane-system",
+    siteName: "Timeskrane",
+    locale: "en_IN",
+    type: "website",
+  },
+};
 export default function KbkLight(params) {
   return (
     <>

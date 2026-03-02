@@ -1,18 +1,41 @@
 import Image from "next/image";
 import Accordion from "@mui/material/Accordion";
-import AccordionActions from "@mui/material/AccordionActions";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-// import ProductInformation from "./tabs";
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Navbar from "@/componts/nav";
 import Footer from "@/componts/footer";
 import ProductInformation from "./tabs";
 import CraneSystemDetails from "./CraneSystemDetails";
 import Container from "@mui/material/Container";
+
+export const metadata = {
+  title: "Demag DHR Wire Rope Hoist in India",
+  description:
+    "Timeskrane brings Demag DHR Wire Rope Hoist India with advanced safety, smooth lifting and strong performance for heavy-duty applications.",
+  keywords: [
+    "Demag DHR rope hoist",
+    "Demag wire rope hoist Manual",
+    "Best demag dhr wire rope hoist in india",
+    "Demag Crane price in india",
+    "demag crane Construction Equipments in India",
+  ],
+  alternates: {
+    canonical: "https://www.timeskrane.com/dhr-rope-hoist",
+  },
+  openGraph: {
+    title: "Demag DHR Wire Rope Hoist in India",
+    description:
+      "Timeskrane brings Demag DHR Wire Rope Hoist India with advanced safety, smooth lifting and strong performance for heavy-duty applications.",
+    url: "https://www.timeskrane.com/dhr-rope-hoist",
+    siteName: "Timeskrane",
+    locale: "en_IN",
+    type: "website",
+  },
+};
 export default function Home() {
   return (
     <>
