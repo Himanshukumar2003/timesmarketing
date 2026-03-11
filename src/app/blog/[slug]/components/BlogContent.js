@@ -24,6 +24,8 @@ export default function BlogContent({ title, content, img, className }) {
   [&_p]:text-slate-600 [&_p]:leading-relaxed [&_p]:my-4
 
   [&_ul]:pl-5 [&_ul]:my-5
+  [&_ul]:list-disc
+  [&_ol]:auto
   [&_ol]:pl-5 [&_ol]:my-5
   [&_li]:mb-1
   "
