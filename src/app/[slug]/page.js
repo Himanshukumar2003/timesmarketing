@@ -1,8 +1,8 @@
 import Navbar from "@/componts/nav";
 import Footer from "@/componts/footer";
 
-import BlogContent from "./components/BlogContent.js";
-import BlogTOC from "./components/BlogTOC.js";
+import BlogContent from "../blog/[slug]/components/BlogContent.js";
+import BlogTOC from "../blog/[slug]/components/BlogTOC.js";
 
 import axios from "axios";
 
@@ -11,14 +11,14 @@ import {
   addIdsToHeadings,
   getReadingTime,
   formatDate,
-} from "./utils/blogHelpers";
+} from "../blog/[slug]/utils/blogHelpers";
 import { Breadcrumb } from "@/componts/breadcrumb";
-import RecentPosts from "./components/relative-blog.js";
+import RecentPosts from "../blog/[slug]/components/relative-blog.js";
 import { baseUrl } from "@/lib/utils.js";
 
 export async function getRecentBlogs(currentSlug) {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/blogs`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/city-blogs`, {
       cache: "no-store",
     });
 
@@ -31,10 +31,11 @@ export async function getRecentBlogs(currentSlug) {
     const blogs = data.data.products
       .filter((blog) => blog.slug !== currentSlug)
       .sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
-      .slice(0, 4);
+      .slice(0, 7);
 
     return blogs;
   } catch (error) {
+    console.error("Blog fetch error:", error);
     return [];
   }
 }
@@ -46,7 +47,7 @@ export async function generateMetadata({ params }) {
     description: data?.meta_description,
     keywords: data?.meta_keywords,
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/blogs/${data?.slug}`,
+      canonical: `/${data?.slug}`,
     },
     openGraph: {
       title: data?.meta_title ?? data?.title,
@@ -58,7 +59,7 @@ export async function generateMetadata({ params }) {
 }
 
 const getBlog = async (slug) => {
-  const { data } = await axios.get(`${baseUrl}/blogs/get-by-slug/${slug}`);
+  const { data } = await axios.get(`${baseUrl}/city-blogs/get-by-slug/${slug}`);
   return data.data;
 };
 
@@ -66,8 +67,10 @@ export default async function BlogPage({ params }) {
   const { slug } = await params;
   const blog = await getBlog(slug);
   const recentBlogs = await getRecentBlogs(slug);
+
   const headings = extractHeadings(blog.content);
   const content = addIdsToHeadings(blog.content, headings);
+
   return (
     <>
       <Navbar />
@@ -101,6 +104,7 @@ export default async function BlogPage({ params }) {
 
             <RecentPosts
               blogs={recentBlogs}
+              href="/"
               className="order-3 lg:order-3 lg:col-span-3"
             />
           </div>

@@ -423,8 +423,12 @@ button {
 /* Lists */
 .blog-content ul,
 .blog-content ol {
-  margin-left: 20px;
-  margin-bottom: 15px;
+  padding-left: 30px !important;
+  margin:20px 0px   !important;
+}
+.blog-content ul{
+   margin:20px 0 !important;
+   list-style-type:   disc;
 }
 
 .blog-content li {
@@ -466,3 +470,6 @@ button {
 
   
 } 
+
+
+

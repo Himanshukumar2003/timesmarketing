@@ -633,7 +633,6 @@ const OffsetGearedMotors = ({ params }) => {
 
   if (error) return <p>{error}</p>;
   if (!selectedItem) return <p>Loading...</p>;
-  console.log(selectedItem, "sdvvjhs");
   return (
     <>
       <Navbar></Navbar>

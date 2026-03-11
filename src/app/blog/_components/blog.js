@@ -2,14 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-
+import { baseUrl } from "@/lib/utils";
 import { FiChevronRight } from "react-icons/fi";
-
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 async function getBlogs() {
   try {
-    const res = await fetch(`${BASE_URL}/blogs`, {
+    const res = await fetch(`${baseUrl}/blogs`, {
       cache: "no-store",
     });
 
@@ -27,7 +25,7 @@ async function getBlogs() {
 
 export default async function Blogs() {
   const blogs = await getBlogs();
-  console.log(blogs);
+
   const formatDate = (dateString) => {
     if (!dateString) return "N/A";
     return new Date(dateString).toLocaleDateString("en-US", {
@@ -51,52 +49,46 @@ export default async function Blogs() {
           {blogs.map((blog) => (
             <Card
               key={blog.id}
-              className="group pt-0 relative overflow-hidden border-0 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+              className="group pt-0 relative overflow-hidden border border-gray-100 bg-white shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="   relative">
+              {/* Image */}
+              <div className="relative overflow-hidden">
                 <Image
                   src={`${process.env.NEXT_PUBLIC_API}/${blog.pictures[0]}`}
                   alt={blog.title}
                   width={400}
                   height={250}
-                  className="w-full h-[250px] object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-[240px] object-cover transition-transform duration-500 group-hover:scale-110"
                 />
 
-                <div
-                  style={{ right: "20px", top: "20px" }}
-                  className="flex   bg-blue-700 shadow-2xl   absolute   items-center gap-1  font-medium px-3 py-1.5 rounded-full border border-gray-200"
-                >
-                  <Calendar className="h-4 w-4 text-white" />
-                  <span className="text-white">
-                    {formatDate(blog.date || blog.created_at)}
-                  </span>
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300" />
+
+                {/* Date Badge */}
+                <div className="absolute top-4 right-4 flex items-center gap-1 bg-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full shadow-lg">
+                  <Calendar className="h-3.5 w-3.5" />
+                  {formatDate(blog.date || blog.created_at)}
                 </div>
               </div>
 
               <CardContent>
                 {/* Title */}
-                <h2 className="mb-3 text-xl font-bold text-gray-900 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                <h2 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 transition-colors duration-300 group-hover:text-blue-600">
                   {blog.title}
                 </h2>
 
                 {/* Description */}
-                <p className="mb-4 text-gray-600 line-clamp-3 leading-relaxed">
+                <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-5">
                   {blog.description || "Read more about this blog..."}
                 </p>
 
-                {/* Meta */}
-
-                {/* Button */}
+                {/* Read More */}
                 <Link
                   href={`/blog/${blog.slug}`}
-                  className="flex rounded-sm mt-4 items-center"
+                  className="inline-flex items-center gap-2 text-blue-600 font-semibold group/link"
                 >
-                  <span className="bg-blue-700 hover:bg-blue-800 text-white font-bold px-4 py-2">
-                    Read More
-                  </span>
-                  <span className="bg-blue-500 py-2 px-2">
-                    <FiChevronRight className="text-white text-2xl font-bold" />
-                  </span>
+                  Read Article
+                  <FiChevronRight className="text-lg transition-transform duration-300 group-hover/link:translate-x-1" />
                 </Link>
               </CardContent>
             </Card>

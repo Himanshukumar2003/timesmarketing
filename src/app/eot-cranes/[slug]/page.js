@@ -34,7 +34,6 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
   const { slug } = await params;
-  console.log(slug);
 
   const item = eotCranesData.find((val) => val.slug === slug);
 

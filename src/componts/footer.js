@@ -1,42 +1,47 @@
 "use client";
 
-import { useState } from "react";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Mail,
-  Phone,
-} from "lucide-react";
+import { useEffect, useState } from "react";
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import axios from "axios";
+import { baseUrl } from "@/lib/utils";
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
+  const [cities, setCities] = useState([]);
 
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    // Handle subscription logic here
-    alert(`Subscribed with email: ${email}`);
-    setEmail("");
+  // Fetch Cities
+  const getAllCities = async () => {
+    const { data } = await axios.get(`${baseUrl}/city-blogs`);
+    return data.data.products;
   };
+
+  useEffect(() => {
+    async function fetchCities() {
+      const res = await getAllCities();
+      setCities(res);
+    }
+
+    fetchCities();
+  }, []);
 
   return (
     <>
+      {/* CTA Section */}
       <div>
-        <div className="bg-[#E3BC17]  rounded-lg mx-auto max-w-3xl p-8  shadow-lg mb-[-110px] z-20  relative">
-          <div className="grid grid-cols-12   gap-4 items-center">
-            <div className="text-white col-span-12  justify-center flex flex-col items-center">
+        <div className="bg-[#E3BC17] rounded-lg mx-auto max-w-3xl p-8 shadow-lg mb-[-110px] z-20 relative">
+          <div className="grid grid-cols-12 gap-4 items-center">
+            <div className="text-white col-span-12 flex flex-col items-center">
               <h3 className="text-3xl text-center font-semibold mb-2">
-                Need a Custom Lifting Solution? <br /> Let&#39; s Talk!
+                Need a Custom Lifting Solution? <br /> Let’s Talk!
               </h3>
+
               <p className="text-sm mb-4 text-center">
-                Looking for a reliable partner for your next industrial or
-                construction project?
+                Looking for a reliable partner for your next industrial project?
               </p>
-              <ul className=" text-center  list-disc white-bullets list-inside  text-white mb-4">
-                <li> Connect with Us for Expert Consultation</li>
+
+              <ul className="list-disc list-inside text-center text-white mb-4">
+                <li>Connect with Us for Expert Consultation</li>
                 <li>Pan-India Service | Customized Solutions</li>
               </ul>
 
@@ -50,24 +55,26 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <footer className=" bg-[#091B3C] shadow-2xl pt-[120px]">
-        <div className="max-w-6xl  mx-auto px-6 py-12">
+
+      {/* Footer */}
+      <footer className="bg-[#091B3C] shadow-2xl pt-[120px]">
+        <div className="max-w-6xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            {/* Company Info */}
             <div className="md:col-span-2">
-              <div className="flex    gap-2 mb-4">
-                <Image
-                  src="/img/logo.png"
-                  alt=""
-                  width={300}
-                  height={100}
-                  className=" bg-white p-2   rounded-sm md:w-[]   object-contain"
-                ></Image>
-              </div>
-              <p className="text-white text-sm    font-semibold mb-4">
+              <Image
+                src="/img/logo.png"
+                alt="logo"
+                width={300}
+                height={100}
+                className="bg-white p-2 rounded-sm object-contain mb-4"
+              />
+
+              <p className="text-white text-sm font-semibold mb-4">
                 Delivering reliable industrial solutions since 1988. Authorized
-                Distributor for Demag Cranes & Components, and trusted makers of
-                TK Crane.
+                Distributor for Demag Cranes & Components.
               </p>
+
               <div className="flex gap-4">
                 <Link href="#" className="text-white hover:text-blue-500">
                   <Facebook size={20} />
@@ -81,96 +88,101 @@ export default function Footer() {
                 <Link href="#" className="text-white hover:text-blue-500">
                   <Linkedin size={20} />
                 </Link>
-                <Link href="#" className="text-white hover:text-blue-500">
-                  <div className="w-5 h-5 flex items-center justify-center">
-                    <span className="text-lg font-bold">G</span>
-                  </div>
-                </Link>
               </div>
             </div>
 
-            {/* Company Links */}
+            {/* Quick Links */}
             <div>
-              <h4 className="font-semibold mb-4 text-white text-lg ">
+              <h4 className="font-semibold mb-4 text-white text-lg">
                 Quick Links
               </h4>
+
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/"
-                    className="text-white font-semibold hover:text-blue-500 text-sm"
+                    className="text-white hover:text-blue-500 text-sm"
                   >
                     Home
                   </Link>
                 </li>
+
                 <li>
                   <Link
                     href="/about"
-                    className="text-white font-semibold hover:text-blue-500 text-sm"
+                    className="text-white hover:text-blue-500 text-sm"
                   >
                     About Us
                   </Link>
                 </li>
+
                 <li>
                   <Link
                     href="/gallery"
-                    className="text-white font-semibold hover:text-blue-500 text-sm"
+                    className="text-white hover:text-blue-500 text-sm"
                   >
                     Gallery
                   </Link>
                 </li>
+
                 <li>
                   <Link
                     href="/contact"
-                    className="text-white font-semibold hover:text-blue-500 text-sm"
+                    className="text-white hover:text-blue-500 text-sm"
                   >
-                    Contact us
+                    Contact Us
                   </Link>
                 </li>
               </ul>
             </div>
 
+            {/* Products */}
             <div>
               <h4 className="font-semibold text-white mb-4 text-lg">
                 Our Products
               </h4>
+
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/eot-cranes/single-girder-crane"
-                    className="text-white font-semibold hover:text-blue-500 text-sm"
+                    className="text-white hover:text-blue-500 text-sm"
                   >
-                    Eot Cranes
+                    EOT Cranes
                   </Link>
                 </li>
+
                 <li>
                   <Link
                     href="/eot-cranes/underslung-crane"
-                    className="text-white font-semibold hover:text-blue-500 text-sm"
+                    className="text-white hover:text-blue-500 text-sm"
                   >
                     Underslung Crane
                   </Link>
                 </li>
+
                 <li>
                   <Link
                     href="/kbk-light-crane-system"
-                    className="text-white font-semibold hover:text-blue-500 text-sm"
+                    className="text-white hover:text-blue-500 text-sm"
                   >
-                    KBK
+                    KBK System
                   </Link>
                 </li>
+
                 <li>
                   <Link
                     href="/chain-hoists"
-                    className="text-white font-semibold hover:text-blue-500 text-sm"
+                    className="text-white hover:text-blue-500 text-sm"
                   >
-                    Chain hoists
+                    Chain Hoists
                   </Link>
                 </li>
+
                 <li>
                   <Link
                     href="/rope-hoists"
-                    className="text-white font-semibold hover:text-blue-500 text-sm"
+                    className="text-white hover:text-blue-500 text-sm"
                   >
                     Rope Hoists
                   </Link>
@@ -178,70 +190,60 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Contact Us */}
-            <div className="md:col-span-1">
+            {/* Contact */}
+            <div>
               <h4 className="font-semibold mb-4 text-white text-lg">
                 Contact Us
               </h4>
-              <div className="space-y-2">
-                <a
-                  href="tel:"
-                  target="_blank"
-                  className="flex text-white  gap-2"
-                >
+
+              <div className="space-y-2 text-white text-sm">
+                <p>
                   Sales:
-                  <span className="text-white font-semibold text-sm">
-                    +91 9810040296
-                  </span>
-                </a>
-                <div className="flex text-white  font-semibold gap-2">
+                  <span className="font-semibold"> +91 9810040296</span>
+                </p>
+
+                <p>
                   Services:
-                  <span className="text-white font-semibold text-sm">
-                    +91 98109 01759
-                  </span>
-                </div>
-                <div className="flex text-white  font-semibold items-center gap-2">
+                  <span className="font-semibold"> +91 98109 01759</span>
+                </p>
+
+                <p>
                   Inquiry:
-                  <span className="text-white  font-semibold text-sm">
+                  <span className="font-semibold">
+                    {" "}
                     gauravmehta@timesmarketing.com
                   </span>
-                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Cities Section */}
+          <div className="mt-12">
+            <div className="border-t  border-gray-700 pt-6 mt-10">
+              <div className="flex flex-wrap justify-center gap-6 gap-y-3">
+                {cities.map(function (item) {
+                  return (
+                    <Link
+                      key={item.id}
+                      href={`/${item.slug}`}
+                      className="text-gray-300 text-sm hover:text-white transition"
+                    >
+                      {item.city || item.title}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </div>
 
           {/* Bottom Footer */}
-          <div className="border-t mt-8 pt-6 flex flex-col md:flex-row justify-center items-center">
-            <p className="text-white text-sm mb-4  text-center   font-semibold md:mb-0">
-              &copy; 2025 Copyright Times Industrial Engineers Private Limited.
-              All rights reserved.
+
+          <div className="border-t mt-10 pt-6 text-center">
+            <p className="text-white text-sm font-semibold">
+              © {new Date().getFullYear()} Times Industrial Engineers Private
+              Limited. All Rights Reserved.
             </p>
-            {/* <div className="flex gap-4 text-sm">
-              <Link
-                href="#"
-                className="text-white font-semibold  hover:text-blue-500"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                href="#"
-                className="text-white font-semibold hover:text-blue-500"
-              >
-                Terms of Use
-              </Link>
-              <Link
-                href="#"
-                className="text-white font-semibold hover:text-blue-500"
-              >
-                Legal
-              </Link>
-              <Link
-                href="#"
-                className="text-white font-semibold hover:text-blue-500"
-              >
-                Site Map
-              </Link>
-            </div> */}
           </div>
         </div>
       </footer>
