@@ -4,7 +4,7 @@ import { Calendar } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { baseUrl } from "@/lib/utils";
 import { FiChevronRight } from "react-icons/fi";
-import moment from "moment";
+import moment from "moment-timezone";
 
 async function getBlogs() {
   try {
@@ -27,9 +27,9 @@ async function getBlogs() {
 export default async function Blogs() {
   const blogs = await getBlogs();
 
-  const formatDate = (dateString) => {
+  const formatDate = function (dateString) {
     if (!dateString) return "N/A";
-    return moment(dateString).format("MMMM D, YYYY");
+    return moment(dateString).tz("Asia/Kolkata").format("DD MMM YYYY");
   };
 
   const getReadingTime = (content) => {
@@ -64,7 +64,7 @@ export default async function Blogs() {
                 {/* Date Badge */}
                 <div className="absolute top-4 right-4 flex items-center gap-1 bg-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full shadow-lg">
                   <Calendar className="h-3.5 w-3.5" />
-                  {formatDate(blog.date)}
+                  {formatDate(blog.date || blog.created_at)}
                 </div>
               </div>
 
