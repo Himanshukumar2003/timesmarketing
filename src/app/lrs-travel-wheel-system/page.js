@@ -29,37 +29,45 @@ export default function KbkSuspension() {
         {/* Hero Section */}
         <section className="py-12 p-4 md:py-16">
           <div className="container ">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-6">
-                The system that is ready to install for a perfect fit
+            <div className="max-w-4xl mx-auto  text-start">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900  mb-6">
+                Ready-to-Install System for a Perfect Fit
               </div>
-              <div className="flex justify-center">
+              <div className="flex">
                 <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
               </div>
               <p className="text-base md:text-lg text-gray-700 mb-8 ">
-                Using our LRS travel wheel system, you can meet your drive
-                requirements quickly and reliably for transport, feed, transfer,
-                distribution or merge applications. We can supply you with the
-                travel wheels and drive units to suit every application. Ready
-                to install, tried-and-tested designs at extremely attractive
-                prices. What other benefits does the LRS travel wheel system
-                offer?
+                The LRS travel wheel system is designed to help you meet your
+                drive requirements quickly and reliably. It is ideal for
+                applications such as transport, feeding, transfer, distribution,
+                and merging operations.
+              </p>
+              <p>
+                We provide travel wheels and drive units that suit a wide range
+                of applications. These systems come ready to install, feature
+                proven designs, and are available at highly competitive prices.
               </p>
               <div className="">
-                <ul className=" list-disc   list-inside">
+                <h4>Key Benefits of the LRS Travel Wheel System:</h4>
+
+                <ul className=" list-disc   ml-10  mt-4">
                   <li>
-                    {" "}
                     Suitable for wheel loads up to 6.5 tonnes and travel speeds
                     up to 240 m/min
                   </li>
-                  <li>High-quality sheroidal-graphite cast-iron housing</li>
                   <li>
-                    5 connection surfaces provide for a multitude of connection
-                    variants
+                    High-quality spheroidal-graphite cast iron housing for
+                    strength and durability
                   </li>
-                  <li>Versatile thanks to the modular design</li>
-                  <li>Also ideal for OEMs</li>
-                  <li>Maintenance free</li>
+                  <li>
+                    Five connection surfaces that allow multiple mounting and
+                    connection options
+                  </li>
+                  <li>
+                    Modular design for greater flexibility and adaptability
+                  </li>
+                  <li>Ideal for OEM applications</li>
+                  <li>Maintenance-free operation for long-term reliability</li>
                 </ul>
               </div>
             </div>
@@ -89,109 +97,100 @@ export default function KbkSuspension() {
               </AccordionSummary>
               <AccordionDetails>
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  Flexibility
+                  Flexibility and Practical Design
                 </h4>
-                <ul className="   list-disc list-inside">
-                  <li>Modular system to meet practical design requirements</li>
+                <p>
+                  The LRS travel wheel system is built on a modular concept,
+                  making it easy to adapt to different design and application
+                  requirements.
+                </p>
+
+                <h4 className="text-2xl font-bold my-4 text-[#676f77]">
+                  Key Features:
+                </h4>
+
+                <ul className="list-disc ml-10">
                   <li>
-                    Three sizes available for loads up to 6.5 tonnes and travel
-                    speeds up to 240 m/min
+                    Modular system designed to meet practical engineering needs
                   </li>
                   <li>
-                    Ideal for engineers who want to build their own solutions
-                    for a wide variety of applications (simple selection of
-                    components)
+                    Available in three sizes for loads up to 6.5 tonnes and
+                    travel speeds up to 240 m/min
                   </li>
                   <li>
-                    Can also be extended quickly and cost-effectively at a later
-                    date
+                    Ideal for engineers who want to build their own customized
+                    solutions using simple component selection
                   </li>
                   <li>
-                    For push-travel operation or fitted with Demag offset and
-                    angular geared motors as individual or central drive units
+                    Can be extended later quickly and cost-effectively if system
+                    requirements change
+                  </li>
+                  <li>
+                    Suitable for push-travel operation or can be fitted with
+                    Demag offset and angular geared motors as individual or
+                    central drive units
                   </li>
                 </ul>
 
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  Cost-effective implementation
+                  Cost-Effective Solution
                 </h4>
-                <ul className="   list-disc list-inside">
+                <ul className="   list-disc ml-10">
                   <li>
-                    Attractively priced standard modules for short delivery
-                    times with high availability
+                    Attractively priced standard modules with short delivery
+                    times and high availability
                   </li>
                   <li>
                     Consistently high quality thanks to reliable series
-                    production
+                    productionConsistent high quality ensured through reliable
+                    series production
                   </li>
                 </ul>
 
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  Cost-effective implementation
+                  Wide Range of Mounting Options
                 </h4>
-                <ul className="   list-disc list-inside">
-                  <li>
-                    Attractively priced standard modules for short delivery
-                    times with high availability
-                  </li>
-                  <li>
-                    Consistently high quality thanks to reliable series
-                    production
-                  </li>
-                </ul>
-                <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  Wide range of mounting options
-                </h4>
-                <ul className="list-disc list-inside text-[#676f77] space-y-1">
+                <ul className="   list-disc ml-10">
                   <li>Horizontal guide rollers</li>
                   <li>Buffers</li>
                   <li>Pin connection set</li>
                   <li>Rail sweeping system</li>
                   <li>Laser alignment jig</li>
                 </ul>
-
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  Other features
+                  Additional Advantages
                 </h4>
-                <ul className="list-disc list-inside text-[#676f77] space-y-1">
+                <ul className="list-disc ml-10">
                   <li>
                     Maintenance-free, patented travel wheel bearing arrangement
                   </li>
                   <li>
                     Gearbox and travel wheel connected via a hollow shaft with
-                    involute splines and optimum matching torque bracket
-                  </li>
-                  <li>All travel wheels have hub splines to DIN 5480</li>
-                  <li>
-                    Travel units fitted with the LRS system offer good ground
-                    clearance for travel on rails at ground level
+                    involute splines and a perfectly matched torque bracket
                   </li>
                   <li>
-                    Included in the scope of delivery: high-tensile bolted
-                    connections with special surface protection
+                    All travel wheels include hub splines according to DIN 5480
+                  </li>
+                  <li>
+                    Travel units provide good ground clearance for rail travel
+                    at floor level
+                  </li>
+                  <li>
+                    High-tensile bolted connections with special surface
+                    protection included in the delivery
                   </li>
                 </ul>
 
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  Optimum support for project engineering and design work
+                  Engineering and Design Support
                 </h4>
-                <ul className="list-disc list-inside text-[#676f77] space-y-1">
-                  <li>
-                    Optimum support for project engineering and design work –
-                    e.g. with CAD files in various formats – thanks to web-based
-                    planning tool
-                    <a
-                      href="https://www.drives.demag-designer.com"
-                      className="text-blue-600 underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      www.drives.demag-designer.com
-                    </a>
-                  </li>
-                </ul>
 
-                {/* <ProductInformation /> */}
+                <p className="my-2">
+                  For easier planning and project engineering, our web-based
+                  planning tool provides valuable design support, including CAD
+                  files in various formats. This helps engineers and designers
+                  plan and integrate systems more efficiently.
+                </p>
               </AccordionDetails>
             </Accordion>
             <Accordion>

@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { Breadcrumb } from "@/componts/breadcrumb";
 import Navbar from "@/componts/nav";
@@ -33,38 +31,48 @@ export default function KbkSuspension() {
           <div className="container ">
             <div className="max-w-4xl mx-auto">
               <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-6">
-                Performance and versatility – also under extreme conditions
+                Performance and Versatility – Even in Extreme Conditions
               </div>
               <div className="flex justify-center">
                 <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
               </div>
               <p className="text-base md:text-lg text-gray-700 mb-8 ">
-                Our RS wheel block system is suitable for applications in which
-                a housing made of sheet steel is required, such as for impact
-                loads. The RS system is also employed in high-temperature
-                applications up to 250 °C or wherever a stainless steel housing
-                is needed. Various travel wheel designs and possible connections
-                to superstructures make the system suitable for universal
-                applications.
+                The RS wheel block system is designed for applications where a
+                sheet steel housing is required, especially in environments with
+                impact loads. It is also suitable for high-temperature
+                applications up to 250 °C or situations where a stainless steel
+                housing is needed.
+              </p>
+              <p className="text-base md:text-lg text-gray-700 mb-8 ">
+                With different travel wheel designs and multiple connection
+                options to superstructures, the RS system can be used in a wide
+                range of industrial applications.
               </p>
               <h4 className="text-3xl font-bold my-4 text-[#676f77]">
-                Further strengths include:
+                Key Advantages:
               </h4>
               <div className="">
-                <ul className="list-disc list-inside  ">
+                <ul className="list-disc pl-10  ">
                   <li>
-                    5 sizes with load capacities from 3.5 tonnes to 18 tonnes
+                    Available in 5 sizes with load capacities from 3.5 to 18
+                    tonnes
                   </li>
-                  <li>Housing made of steel or stainless steel</li>
-                  <li>Many travel wheel contours as standard</li>
                   <li>
-                    4 variants for connection to the customer`&lsquo;s
-                    superstructure
+                    Housing made of steel or stainless steel for durability and
+                    strength
                   </li>
-                  <li>Driven by Demag offset geared motors</li>
+                  <li>Various travel wheel contours available as standard</li>
                   <li>
-                    Integrated connections, e.g. for torque brackets, guide
-                    roller arrangements and buffers
+                    4 connection options for easy integration with customer
+                    superstructures
+                  </li>
+                  <li>
+                    Compatible with Demag offset geared motors for reliable
+                    drive performance
+                  </li>
+                  <li>
+                    Integrated connection points for accessories such as torque
+                    brackets, guide rollers, and buffers
                   </li>
                 </ul>
               </div>
@@ -95,71 +103,66 @@ export default function KbkSuspension() {
               </AccordionSummary>
               <AccordionDetails>
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  High performance for extreme applications
+                  High Performance for Tough Applications
                 </h4>
-                <ul className="list-disc list-inside text-[#676f77] space-y-1">
+                <ul className="list-disc pl-10">
+                  <li>Durable steel construction ensures long service life</li>
                   <li>
-                    Long service life of the steel and mechanical elements
+                    Designed for high-temperature environments up to 150 °C
                   </li>
                   <li>
-                    Special design for high-temperature applications up to 150
-                    °C
+                    With furnace carriage bearings, it can operate at
+                    temperatures up to 250 °C
                   </li>
-                  <li>Or with furnace carriage bearings up to 250 °C</li>
                   <li>
-                    Stainless design for applications in the chemical industry,
-                    the foodstuffs sector and in aggressive environments (size
-                    RS 125)
+                    Stainless steel version (RS 125) available for chemical,
+                    food, and other aggressive environments
                   </li>
                 </ul>
 
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  Versatile
+                  Versatile Design
                 </h4>
-                <ul className="list-disc list-inside text-[#676f77] space-y-1">
-                  <li>Wide variety of standard travel wheel designs</li>
-                  <li>Housing made of steel or stainless steel</li>
+                <ul className="list-disc pl-10">
+                  <li>Wide selection of standard travel wheel designs</li>
+                  <li>Housing available in steel or stainless steel</li>
                   <li>
-                    5 sizes with load capacities from 3.5 tonnes to 18 tonnes
-                    (RS 125 to RS 400)
+                    Five sizes available with load capacities from 3.5 to 18
+                    tonnes (RS 125–RS 400)
                   </li>
                 </ul>
 
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  Very easy assembly
+                  Simple Installation
                 </h4>
-                <ul className="list-disc list-inside text-[#676f77] space-y-1">
+                <ul className="list-disc pl-10">
                   <li>
-                    Load-bearing block enclosed on 5 sides with connecting
-                    surfaces featuring multiple bore holes
+                    Five-sided enclosed load-bearing block with multiple
+                    mounting holes
                   </li>
                   <li>
-                    Rapid installation and removal for all connection variants
+                    Quick installation and removal for all connection types
                   </li>
-                  <li>Reamed lateral bore holes for the pin connection</li>
+                  <li>Precision side holes for pin connections</li>
                   <li>
-                    Integrated connections for torque brackets, guide roller
-                    arrangements and buffers
+                    Built-in mounting points for torque brackets, guide rollers,
+                    and buffers
                   </li>
                 </ul>
 
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  Optimum drive
+                  Reliable Drive Performance
                 </h4>
-                <ul className="list-disc list-inside text-[#676f77] space-y-1">
+                <ul className="list-disc pl-10">
                   <li>
-                    Positive connection to the gearbox hollow shaft (involute
-                    splined profile) guarantees reliable torque transmission
+                    Direct connection to the gearbox hollow shaft with an
+                    involute spline profile for secure torque transfer
                   </li>
+                  <li>Ideal for reversing travel applications</li>
                   <li>
-                    Particularly suited for reversing operation typically found
-                    in travel applications
-                  </li>
-                  <li>
-                    The Demag modular system includes the D1 torque bracket
-                    (fitted direct to the wheel block) or D2 torque bracket
-                    (fitted to the customer’s superstructure) to accommodate the
-                    torque transmitted by the drive
+                    Supports D1 torque bracket (mounted on the wheel block) or
+                    D2 torque bracket (mounted on the customer’s structure) to
+                    handle drive torque efficiently
                   </li>
                 </ul>
                 <Image
@@ -171,28 +174,26 @@ export default function KbkSuspension() {
                   className="w-full"
                 />
                 <p>
-                  Torque brackets: D1 (fitted direct to the wheel block), D2
-                  (fitted to the customer&apos; s superstructure)
+                  <b>Torque Brackets</b>
                 </p>
 
+                <p className="py-2 text-lg">
+                  <strong>D1:</strong> Mounted directly on the wheel block
+                  Mounted on the customer’s superstructure
+                </p>
+                <p className="py-2 text-lg">
+                  <strong>D2:</strong> Mounted on the customer’s superstructure
+                </p>
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  Optimum design support
+                  Optimum Design Support
                 </h4>
-                <ul className="list-disc list-inside  text-[#676f77] space-y-1">
-                  <li>
-                    Optimum support for project engineering and design work –
-                    e.g. with CAD files in various formats – thanks to web-based
-                    planning tool
-                    <a
-                      href="https://www.drives.demag-designer.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 underline ml-1"
-                    >
-                      www.drives.demag-designer.com
-                    </a>
-                  </li>
-                </ul>
+                <p className="my-2">
+                  Our web-based planning tool provides excellent support for
+                  project engineering and design work. It offers useful
+                  resources such as CAD files in various formats, making it
+                  easier for engineers and designers to plan and integrate
+                  systems efficiently.
+                </p>
 
                 {/* <ProductInformation /> */}
               </AccordionDetails>

@@ -31,42 +31,48 @@ export default function KbkSuspension() {
           <div className="container ">
             <div className="max-w-4xl mx-auto">
               <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-6">
-                DWS wheel sets
+                DWS Wheel Sets
               </div>
               <div className="flex justify-center">
                 <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
               </div>
               <p className="text-base md:text-lg text-gray-700 mb-8 ">
-                Our DWS wheel set performs transport duties on rails, including
-                for heavier loads. We use it to build complete travel units of
-                driven and non-driven design. These are equipped with our offset
-                and angular geared motors from our modular range of industrial
-                drives.
+                The DWS wheel set is designed for transport operations on rails,
+                including applications that involve heavier loads. It can be
+                used to create complete travel units, available in both driven
+                and non-driven versions. These units are equipped with offset
+                and angular geared motors from our modular industrial drive
+                system.
               </p>
               <p className="text-base md:text-lg text-gray-700 mb-8 ">
-                The use of these proven DWS series-manufactured components
-                offers a high level of functional reliability and guarantees
-                ease of installation when the wheel is replaced. Thanks to its
-                versatility, the DWS wheel set is not only used in the crane and
-                materials handling sector, but also for related mechanical
-                engineering solutions.
+                Using the reliable DWS series components ensures strong
+                performance, high functional reliability, and easy installation,
+                especially when replacing a wheel. Because of its flexible
+                design, the DWS wheel set is widely used not only in crane and
+                material handling systems, but also in various mechanical
+                engineering applications.
               </p>
 
               <div className="">
-                <ul className="list-disc list-inside  ">
+                <h3 className="text-xl font-bold my-4 text-[#676f77]">
+                  Key Features:
+                </h3>
+
+                <ul className="list-disc pl-10">
                   <li>
-                    DWS wheel sets can be installed in hollow profile sections,
-                    box-section girders and used as corner-bearing travel units
+                    Can be installed in hollow profile sections and box-section
+                    girders, and used as corner-bearing travel units
                   </li>
                   <li>
-                    The entire wheel set can be installed without the need for
-                    complicated alignment in corner bearing arrangements
+                    The entire wheel set can be installed without complicated
+                    alignment in corner-bearing arrangements
                   </li>
-                  <li>Complete configuration with torque bracket</li>
                   <li>
-                    CAD drawings are available in various formats
-                    at www.drives.demag-designer.com to support your design
-                    process.
+                    Available as a complete configuration with a torque bracket
+                  </li>
+                  <li>
+                    CAD drawings available in various formats to support your
+                    design process
                   </li>
                 </ul>
               </div>
@@ -97,15 +103,27 @@ export default function KbkSuspension() {
               </AccordionSummary>
               <AccordionDetails>
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  High performance for extreme applications
+                  High Performance for Demanding Applications
                 </h4>
-                <ul className="list-disc list-inside text-[#676f77] space-y-1">
+
+                <p>
+                  The DWS wheel sets are designed to handle heavy-duty
+                  applications with reliable performance.
+                </p>
+
+                <ul className="list-disc pl-10 text-[#676f77] space-y-1">
                   <li>
-                    3 sizes with load capacities from 28 tonnes to 60 tonnes
+                    Available in 3 sizes with load capacities ranging from 28 to
+                    60 tonnes
                   </li>
                   <li>
-                    The wheel sets can be installed in hollow profile sections,
-                    box-section girders and used as corner-bearing travel units
+                    Can be installed in hollow profile sections and box-section
+                    girders
+                  </li>
+                  <li>
+                    {" "}
+                    Suitable for use as corner-bearing travel units for various
+                    industrial systems
                   </li>
                 </ul>
                 <Image
@@ -117,28 +135,36 @@ export default function KbkSuspension() {
                   className="w-full max-w-[400px]"
                 />
 
+                <h4 className="text-xl font-bold my-4 text-[#676f77]">
+                  DWS Wheel Set in Hollow Profile Section / Corner-Bearing
+                  Travel Unit
+                </h4>
+
                 <p className="text-bold mb-4">
-                  DWS wheel set in hollow profile <br />
-                  section/as a corner-bearing travel unit
+                  The DWS wheel set can be installed in hollow profile sections
+                  and used as a corner-bearing travel unit, making it a flexible
+                  solution for many rail-based transport systems.
                 </p>
 
-                <ul className="list-disc list-inside text-[#676f77] space-y-1">
+                <ul className="list-disc pl-10 text-[#676f77] space-y-1">
                   <li>
-                    Simple track gauge adjustment thanks to interchangeable
-                    distance washers between the anti-friction bearings and
+                    Easy track gauge adjustment using interchangeable distance
+                    washers placed between the anti-friction bearings and
                     retaining rings
                   </li>
                   <li>
-                    Rapid installation and removal of the travel wheel from the
-                    travel unit using conventional tools
+                    Quick installation and removal of the travel wheel from the
+                    travel unit with standard tools
                   </li>
                   <li>
-                    Long service life thanks to standard re-lubrication facility
+                    Long service life thanks to the built-in standard
+                    re-lubrication facility
                   </li>
 
                   <li>
-                    Perfect match with Demag offset or angular geared motors
-                    with the corresponding torque bracket
+                    Perfectly matched with Demag offset or angular geared motors
+                    using the appropriate torque bracket for reliable
+                    performance
                   </li>
                 </ul>
                 <Image
@@ -150,65 +176,49 @@ export default function KbkSuspension() {
                   className="w-full max-w-[400px]"
                 />
 
-                <ul className="list-disc list-inside text-[#676f77] space-y-1">
+                <ul className="list-disc pl-10 text-[#676f77] space-y-1">
                   <li>
-                    Flange-wear indicator on travel wheels that have a flange
+                    Flange wear indicator provided on travel wheels with flanges
+                    for easy inspection
                   </li>
                   <li>
-                    Flange bearings provided with recesses to attach extractors
+                    Flange bearings designed with recesses to allow simple
+                    attachment of extractors
                   </li>
                   <li>
-                    Also available without a flange bearing for direct
-                    connection to a corresponding prepared superstructure
+                    Option available without flange bearings for direct mounting
+                    to a prepared superstructure
                   </li>
                   <li>
-                    Optimum support for project engineering and design work –
-                    e.g. with CAD files in various formats – thanks to web-based
-                    planning tool www.drives.demag-designer.com
+                    Engineering support tools available, including CAD files in
+                    multiple formats through the web-based planning platform
                   </li>
                 </ul>
 
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  Optimum drive
+                  Optimum Drive
                 </h4>
-                <ul className="list-disc list-inside text-[#676f77] space-y-1">
+                <ul className="list-disc pl-10 text-[#676f77] space-y-1">
                   <li>
-                    Positive connection to the gearbox hollow shaft (involute
-                    splined profile) guarantees reliable torque transmission
+                    Secure connection to the gearbox hollow shaft with an
+                    involute splined profile for dependable torque transfer
                   </li>
+                  <li>Ideal for reversing travel applications</li>
                   <li>
-                    Particularly suited for reversing operation typically found
-                    in travel applications
-                  </li>
-                  <li>
-                    The Demag modular system includes the D1 torque bracket
-                    (fitted direct to the wheel block) or D2 torque bracket
-                    (fitted to the customer’s superstructure) to accommodate the
-                    torque transmitted by the drive
+                    Supports D1 torque bracket (mounted on the wheel block) or
+                    D2 torque bracket (mounted on the customer’s superstructure)
+                    to manage drive torque efficiently
                   </li>
                 </ul>
 
-                <p>
-                  Torque brackets: D1 (fitted direct to the wheel block), D2
-                  (fitted to the customer&apos; s superstructure)
-                </p>
-
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  Optimum design support
+                  Optimum Design Support
                 </h4>
-                <ul className="list-disc list-inside  text-[#676f77] space-y-1">
+                <ul className="list-disc pl-10  text-[#676f77] space-y-1">
                   <li>
-                    Optimum support for project engineering and design work –
-                    e.g. with CAD files in various formats – thanks to web-based
-                    planning tool
-                    <a
-                      href="https://www.drives.demag-designer.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 underline ml-1"
-                    >
-                      www.drives.demag-designer.com
-                    </a>
+                    Provides strong support for project planning and design,
+                    with CAD files in various formats available through the
+                    online planning tool.
                   </li>
                 </ul>
 

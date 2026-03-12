@@ -14,56 +14,67 @@ import { Breadcrumb } from "@/componts/breadcrumb";
 import Navbar from "@/componts/nav";
 import Footer from "@/componts/footer";
 const data = {
-  product: "Starting and stopping with maximum performance",
+  product: "Built on a Simple Idea: Power Meets Reliabilitys",
   slug: "starting-and-stopping-with-maximum-performance",
   summary: {
-    title: "Starting and stopping with maximum performance",
-    description:
-      "Simple, robust and reliable – these are the key characteristics of our KB conical-rotor brake motors. Their unique brake operating principle eliminates the need for separate control or additional switching elements. This is due to the mechanical connection between the brake and rotor. The result:",
-    benefits: [
-      " particularly high braking performance",
-      " approval for operation with extremely high switching frequencies",
-      " two-speed pole-changing motors",
-      " drives for starting-and-stopping applications and for direct line-fed travel motions",
-      " resistance to temporary overload",
-      " KB motors can be connected to gearboxes via a coupling.",
+    title: "Built on a Simple Idea: Power Meets Reliability",
+    description: [
+      "Some of the best engineering is beautifully simple. Our KB conical-rotor brake motors are a perfect example. We've designed them to be straightforward, tough, and utterly dependable. so you can focus on the job, not the motor.",
+      "The magic is in the mechanics. The brake and rotor are connected as one. So, when the motor starts and stops, the brake follows along naturally. This clever design means you don't need extra controls or add-ons. It's all built-in.",
     ],
+    benefits: [
+      " Incredible stopping power: You get high braking performance you can count on.",
+      " Built for the hustle: Perfect for operations with constant starting and stopping, standing up to extreme switching frequencies without breaking a sweat.",
+      " Flexible speed options: Available as two-speed, pole-changing motors for more control",
+      " Ready for motion: Ideal for starting-and-stopping applications and direct line-fed travel motions.",
+      " Tough when it counts: Handles temporary overloads with ease, keeping your line moving.",
+    ],
+    description:
+      "Need to connect it to a gearbox? No problem, the KB motor adapts easily via a coupling.",
   },
   productInformation: {
-    description: "",
-    heading: "High-performance motor",
+    description:
+      "Our KB conical-rotor brake motors are known for their simple design, strong construction, and reliable performance. One of their key advantages is a unique braking principle where the brake is mechanically connected to the rotor. Because of this design, there is no need for separate control systems or additional switching components.",
+    heading: "Starting and Stopping with Maximum Performance",
     tabHeading: "The benefits at a glance",
-    maximumFlexibility: [
-      " Motor output up to 55 kW (at 40% CDF)",
-      " 2, 4, 6 or 8 poles",
-      " Two-speed pole-changing motors",
-      " KBA for starting-and-stopping drives",
-      " KBF for direct line-fed travel motions",
-    ],
+
+    maximumFlexibility: {
+      heading: "This smart design offers several important benefits:",
+      list: [
+        "Very high braking performance",
+        "Suitable for extremely high switching frequencies",
+        "Available as two-speed pole-changing motors",
+        "Ideal for starting-and-stopping applications and direct line-fed travel motions",
+        "Resistant to temporary overload, ensuring reliable operation even under demanding conditions",
+      ],
+      description:
+        "For flexible drive solutions, KB motors can also be connected to gearboxes using a coupling, making them suitable for a wide range of industrial applications.",
+    },
 
     accessories: {
-      heading: "Convenient online configuration with Demag Drive Designer",
+      heading: "Advanced Design Benefits:",
+      description: "",
       features: [
-        " View technical data",
-        " Design support by means of 2D and 3D geometries in all standard file formats",
-        " Provision of electrical circuit diagrams",
-        " Delivery time indicator",
-        " Transfer selected configuration to Demag Shop",
-        "  www.drives.demag-designer.com",
+        " Long brake lining service life due to effective heat dissipation through the large brake cover surface",
+        "Short overall motor length with excellent heat dissipation, as the brake disc also functions as the motor fan",
+        " Two brake disc options:Light design for KBA motors Heavy design with higher moment of inertia for KBF motors",
+        " Allows extremely high switching frequency",
+        " Resistant to temporary overload, ensuring reliable performance in demanding conditions",
       ],
-      link: "https://www.drives.demag-designer.com",
     },
 
     onlineConfiguration: {
-      heading: "Extremely robust brake",
+      heading: "High-Performance Motor",
+      description:
+        "Our KB conical-rotor brake motors are designed to deliver powerful performance, durability, and reliable braking for demanding industrial applications. With their compact design and strong braking system, these motors are ideal for applications that require frequent starting and stopping.",
       features: [
-        " No switching elements needed",
-        " No separate control needed",
-        " Long brake lining service life thanks to effective dissipation of heat generated by the brake (through large surface area of brake cover) ",
-        " Short overall length and good heat dissipation (brake disc simultaneously forms the motor fan)",
-        " Two brake disc designs – light for KBA motors, heavy and with increased moment of inertia for KBF motors",
-        " Extremely high switching frequency permitted",
-        " Resistance to temporary overload",
+        "Motor output up to 55 kW (at 40% CDF)",
+        "Available with 2, 4, 6, or 8 poles",
+        "Two-speed pole-changing motors for flexible operation",
+        "KBA models designed for starting-and-stopping drives",
+        "KBF models suitable for direct line-fed travel motions",
+        "Extremely robust brake system",
+        "No switching elements or separate control systems required",
       ],
       link: "https://www.drives.demag-designer.com",
     },
@@ -72,9 +83,12 @@ const data = {
     tabHeading: "Motor and gearbox combinations",
     combineData: [
       {
-        heading: "Coupling connection",
-        description:
-          "Gearbox and motor combinations with Demag coupling shaft end (Z cylindrical-rotor motors or KB conical-rotor brake motors) using intermediate flange and roller spider coupling",
+        heading: "Coupling Connection",
+        description: [
+          "Gearbox and motor combinations can be connected using a Demag coupling shaft end, which works with both Z cylindrical-rotor motors and KB conical-rotor brake motors.",
+          "In this setup, the motor and gearbox are joined using an intermediate flange along with a roller spider coupling. This connection helps ensure smooth and efficient power transmission between the motor and gearbox.",
+          "The coupling design also helps absorb minor misalignments and reduces vibration, which improves the overall reliability and service life of the drive system. It provides a flexible and practical solution for many industrial drive applications while making installation and maintenance easier.",
+        ],
         img: "/img/chain-hoist/Kupplungsanbau_EN.jpg.webp",
       },
     ],
@@ -97,7 +111,7 @@ const ConicalRotor = () => {
           </h2>
           <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
           <p className=" text-gray-600 mb-10">{data.summary.description}</p>
-          <ul className="list-disc list-inside mt-2">
+          <ul className="list-disc pl-10 mt-2">
             {data.summary.benefits.map((item, i) => (
               <li key={i} className="text-lg">
                 {item}
@@ -128,11 +142,20 @@ const ConicalRotor = () => {
                   {data.productInformation.heading}
                 </h2>
                 <p className="mb-4"> {data.productInformation.description}</p>
-                <ul className="list-disc list-inside">
-                  {data.productInformation.maximumFlexibility.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
+                <h6 className="text-lg font-bold text-[#676f77]   mb-4">
+                  {data.productInformation.maximumFlexibility.heading}
+                </h6>
+                <ul className="list-disc pl-10">
+                  {data.productInformation.maximumFlexibility.list.map(
+                    (item, i) => (
+                      <li key={i}>{item}</li>
+                    )
+                  )}
                 </ul>
+                <p className="my-4">
+                  {" "}
+                  {data.productInformation.maximumFlexibility.description}
+                </p>
 
                 {data.productInformation.list &&
                   data.productInformation.list.map((item, index) => (
@@ -140,12 +163,12 @@ const ConicalRotor = () => {
                       <h4 className="text-xl font-bold mt-4 text-[#676f77] mb-4">
                         {item.heading}
                       </h4>
-                      <ul className="   list-disc list-inside">
+                      <ul className="   list-disc pl-10">
                         <li>{item.features}</li>
                       </ul>
                     </div>
                   ))}
-                {/* <ul className="list-disc list-inside">
+                {/* <ul className="list-disc pl-10">
             {data.productInformation.list.features.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
@@ -155,13 +178,19 @@ const ConicalRotor = () => {
                     {data.productInformation.onlineConfiguration &&
                       data.productInformation.onlineConfiguration.heading}
                   </h3>
-                  <ul className="list-disc list-inside">
+
+                  {data.productInformation.onlineConfiguration && (
+                    <p className=" mb-4">
+                      {data.productInformation.onlineConfiguration.description}
+                    </p>
+                  )}
+                  <ul className="list-disc pl-10">
                     {data.productInformation.onlineConfiguration &&
                       data.productInformation.onlineConfiguration.features.map(
                         (item, i) => <li key={i}>{item}</li>
                       )}
                   </ul>
-                  <ul className="list-disc list-inside">
+                  <ul className="list-disc pl-10">
                     <h4 className="text-xl font-bold my-4 text-[#676f77] mb-4">
                       {data.productInformation.accessories.heading}
                     </h4>
@@ -192,7 +221,11 @@ const ConicalRotor = () => {
                     <h4 className="text-xl font-bold my-4 text-[#676f77]">
                       {item.heading}
                     </h4>
-                    <p className="mb-4">{item.description}</p>
+                    {item.description.map((des, index) => (
+                      <p className="  mb-2" key={index}>
+                        {des}
+                      </p>
+                    ))}
                     <Image
                       src={item.img}
                       height={300}

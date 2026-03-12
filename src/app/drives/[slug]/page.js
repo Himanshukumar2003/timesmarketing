@@ -13,8 +13,11 @@ const allCards = [
   {
     title: "Geared motors",
     slug: "geared-motors",
-    description:
-      "Our geared motors are configured from a modular range of motors and gearboxes that are designed for a perfect match...",
+    description: [
+      "Our geared motors are built using a modular combination of motors and gearboxes that work perfectly together. This flexible system allows us to quickly create solutions that match your exact requirements in a cost-effective way.",
+      "By using standardized components, we can easily design different types of geared motors, including offset, angular, and helical models. This approach helps save valuable project engineering time and ensures that you get a reliable and well-designed solution.",
+      "At the same time, every module benefits from our strong design knowledge and real-world application experience, giving you a product you can trust for long-term performance.",
+    ],
     cards: [
       {
         id: 1,
@@ -42,8 +45,9 @@ const allCards = [
   {
     title: "motors",
     slug: "motors",
-    description:
+    description: [
       "Our motors perform a wide variety of industrial drive tasks. Reliably and effectively. For example, our type Z cylindrical-rotor brake motors – also as brake motors – offer high drive efficiency – also in continuous duty. They are specially designed to match our gearbox range and provide for simple project engineering. Our conical-rotor brake motors with outputs of up to 55 kW are used for stopping-and-starting drives or for direct line-fed travel applications. Thanks to their unique brake principle, they are the first choice wherever demanding requirements have to be met by the brake.",
+    ],
     cards: [
       {
         id: 4,
@@ -64,8 +68,12 @@ const allCards = [
   {
     title: " wheel range",
     slug: "wheel-range", // ✅ Fixed typo here
-    description:
-      "Our wheels and wheel block systems are designed and manufactured as modular solutions...",
+    description: [
+      "Our wheel and wheel block systems are designed as modular solutions to suit a wide variety of applications. They are widely used in many mobile machines and systems, either as individual components or as complete travel units.",
+      "These wheel systems are known for their high reliability and long service life, performing efficiently every day while requiring very little maintenance.",
+      "They are also designed for easy installation and alignment, with compact dimensions and multiple connection options. This makes them a cost-effective and flexible solution for many industrial applications.",
+      "Our product range supports wheel loads of up to 60 tonnes, making it suitable for both light and heavy-duty operations. You can explore the full performance details and benefits on the respective product pages.",
+    ],
     cards: [
       {
         id: 6,
@@ -122,9 +130,14 @@ export default function ProductPage({ params }) {
             {selectedItem.title}
           </h2>
           <div className="mx-auto mt-2 mb-6 h-1 w-12 bg-yellow-400"></div>
-          <p className="mx-auto max-w-3xl text-center text-gray-600 mb-10">
-            {selectedItem.description}
-          </p>
+          {selectedItem.description.map((des, index) => (
+            <p
+              className="mx-auto max-w-3xl text-center text-gray-600  mb-2"
+              key={index}
+            >
+              {des}
+            </p>
+          ))}
         </Container>
 
         <div className="section bg-gray-100">

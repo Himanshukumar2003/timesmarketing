@@ -19,29 +19,34 @@ const data = [
     slug: "offset-geared-motors",
     summary: {
       title: "Full drive performance, also in a small space",
-      description:
-        "Our offset geared motors are specially designed for space-saving drive solutions. The housing design offers good ground clearance for travel applications at ground level. The large center distance between the parallel gearbox shafts enable these units to be used in a central drive arrangement, e.g. when fitted with shaft ends on both sides. What else do they offer?",
-      benefits: [
-        "Wide range of transmission ratios",
-        "Cost-effective solutions with high efficiency",
-        "Practical designs for a variety of travel applications",
-        "9 gearbox sizes",
+      description: [
+        "Our offset geared motors are specially developed for space-saving drive solutions. Their compact housing design provides good ground clearance, making them ideal for travel applications at floor level.",
+        "The large center distance between the parallel gearbox shafts allows these motors to be used in central drive arrangements, for example when shaft ends are fitted on both sides.",
       ],
+      benefits: {
+        list: [
+          "Wide range of transmission ratios for flexible applications",
+          "Cost-effective solutions with high efficiency",
+          "Practical designs suitable for various travel applications",
+          "Available in 9 gearbox sizes to meet different performance needs",
+        ],
+      },
     },
     productInformation: {
       heading: "Maximum flexibility",
       tabHeading: "The benefits at a glance",
       maximumFlexibility: [
-        "9 gearboxes for torques from 160 to 13,800 Nm",
-        "Direct input or coupling connection",
-        "Drive shafts in 5 variants",
-        "5 housing designs",
+        " 9 gearbox sizes available for torques ranging from 160 to 13,800 Nm",
+        "Options for direct input or coupling connection",
+        "Five different drive shaft variants to suit various applications",
+        "Five housing designs for flexible installation and use",
       ],
 
       img: [
         {
           src: "/img/sraes/flachgetriebe.webp",
-          description: "Torque bracket type AM 10-40 / Universal type AU 20-90",
+          description:
+            "These brackets are designed to handle a lot of force. You can choose between our AM 10-40, which is a specific torque bracket, or the more flexible Universal AU 20-90, which adjusts to fit a wider range of setups.",
         },
         {
           src: "/img/sraes/Flachgetriebe2.webp",
@@ -50,15 +55,24 @@ const data = [
       ],
 
       onlineConfiguration: {
-        heading: "Convenient online configuration with Demag Drive Designer",
-        features: [
-          "View technical data",
-          "Design support with 2D/3D geometries in all standard formats",
-          "Electrical circuit diagrams",
-          "Delivery time indicator",
-          "Configuration transfer to Demag Shop",
+        subdatea: [
+          {
+            title: "Discover the Perfect Fit for Your Drive",
+            description: [
+              "Finding the right support has never been easier. Whether you need the precise, robust performance of our AM 10-40 Torque Bracket or the adaptable, flexible fit of the Universal AU 20-90, we have the solution ready for you.",
+              "See for yourself with the Demag Drive Designer—your online tool for a smooth, no-hassle planning experience.",
+            ],
+          },
         ],
-        link: "https://www.drives.demag-designer.com",
+        heading: "Everything you need, right at your fingertips:",
+        features: [
+          " Dive into the details: Explore complete technical data.",
+          "Build with confidence: Download 2D/3D models in all standard formats.",
+          "See the big picture: Access clear electrical circuit diagrams.",
+          "Plan with certainty: Check real-time delivery indicators.",
+          "Ready to go? Send your configuration directly to the Demag Shop.",
+        ],
+        link: "/",
       },
     },
     technicalData: {
@@ -185,25 +199,31 @@ const data = [
     summary: {
       title:
         "A compact solution tailored to meet your needs for every drive application",
-      description:
-        "Our angular geared motors feature an extremely compact design – which makes them suitable for a wide variety of applications. They enable efficient travel drive solutions to be implemented with ease, even with narrow track gauge dimensions. The basis is provided by outstanding parameters:",
-      benefits: [
-        "   large torque range from 120 to 12,000 Nm",
-        " wide range of transmission ratios",
-        " particularly smooth operation",
-        " bevel-wheel gearbox with high efficiency",
-        " 10 gearbox sizes.",
+      description: [
+        "Great things really do come in small packages. Our angular geared motors are engineered for applications where space is tight, but performance expectations are high.",
+        "Whether you're designing for narrow track gauges or complex drive systems, these compact powerhouses slide right in and get to work—quietly, efficiently, and reliably.",
       ],
+      benefits: {
+        heading: "What makes them stand out:",
+        list: [
+          " Serious torque, small space: A broad torque range from 120 to 12,000 Nm to handle the tough jobs.",
+          "Flexible speed control: A wide selection of transmission ratios to match your exact motion needs.",
+          "Exceptionally smooth: Engineered for quiet, vibration-free operation.",
+          "Efficiency built in: The bevel-wheel gearbox design maximizes every bit of energy.",
+          "Pick your size: Ten different gearbox sizes mean there's one for your project.",
+        ],
+        description: "Big capability. Tiny footprint. Ready to work.",
+      },
     },
 
     productInformation: {
-      heading: "Maximum flexibility",
+      heading: "Flexibility Where It Counts",
       tabHeading: "The benefits at a glance",
       maximumFlexibility: [
-        "10 gearbox sizes with torques from 120 to 12,000 Nm",
-        "Hypoid or bevel-wheel gearbox",
+        "10 gearbox sizes with torque from 120 to 12,000 Nm",
+        "Choose hypoid or bevel-wheel",
         "Direct input or coupling connection",
-        "Drive shafts in 5 variants",
+        "5 drive shaft variants",
         "4 housing designs",
       ],
 
@@ -220,24 +240,21 @@ const data = [
       ],
       list: [
         {
-          heading:
-            "W10 to W50 hypoid gearboxes for particularly smooth operation",
-          features: ["High transmission ratio in the hypoid stage"],
-        },
-        {
-          heading:
-            "W10 to W50 hypoid gearboxes for particularly smooth operation",
-          features: ["High transmission ratio in the hypoid stage"],
+          heading: "W10 to W50 hypoid gearboxes",
+          features: [
+            "Smooth and quiet by design. The hypoid stage delivers high transmission ratios—so you get more power in a compact package.",
+          ],
         },
       ],
       onlineConfiguration: {
-        heading: "Convenient online configuration with Demag Drive Designer",
+        heading: "Design your drive online it's that easy",
+        description: "The Demag Drive Designer puts you in control:",
         features: [
-          " View technical data",
-          " Design support by means of 2D and 3D geometries in all standard file formats",
-          " Provision of electrical circuit diagrams",
-          " Delivery time indicator",
-          " Transfer selected configuration to Demag Shop",
+          " Browse technical data",
+          "Download 2D and 3D models in any standard format",
+          "Access electrical circuit diagrams",
+          "Check delivery times at a glance",
+          "Send your configuration directly to the Demag Shop",
         ],
         link: "https://www.drives.demag-designer.com",
       },
@@ -406,27 +423,30 @@ const data = [
     product: "Helical geared motors",
     slug: "helical-geared-motors",
     summary: {
-      title: "Rugged drive solutions to meet your needs",
-      description:
-        "Above all, our helical geared motors offer one outstanding benefit: their rugged design. They enable high radial forces to be accommodated on the output shaft in a wide torque range. Other features:",
-      benefits: [
-        "Torque range from 90 to 550 Nm",
-        "Excellent efficiency",
-        "Coaxial design",
-        "5 gearbox sizes",
-        "3 housing designs",
+      title: "Rugged drives that don't quit",
+      description: [
+        "Sometimes you just need a motor that can take a punch. Our helical geared motors are built for exactly that—tough, reliable, and ready to handle high radial forces on the output shaft without breaking a sweat.",
       ],
+      benefits: {
+        heading: "What you get:",
+        list: [
+          "Torque from 90 to 550 Nm – solid range for real-world jobs",
+          "Excellent efficiency – more power where it counts",
+          "Coaxial design – clean, compact, and straightforward",
+          "5 gearbox sizes to choose from",
+          "3 housing designs to match your environment",
+        ],
+        description: "Built rugged. Built to last.",
+      },
     },
 
     productInformation: {
       heading: "Maximum flexibility",
       tabHeading: "The benefits at a glance",
       maximumFlexibility: [
-        "Gearboxes for torques from 90 to 550 Nm",
-        "Direct input or coupling connection",
-        "3 housing designs",
-        "Flange-mounted type DF / Foot-mounted type DG",
-        "Foot / flange-mounted type DU 11-41",
+        "Gearboxes covering 90 to 550 Nm",
+        "Direct input or coupling connection—whatever fits your layout",
+        "3 housing designs to match your space and environment",
       ],
 
       img: [
@@ -436,7 +456,7 @@ const data = [
         },
         {
           src: "/img/sraes/Strinradgetriebe_BF_3_links.png.webp",
-          description: "Foot / flange-mounted type DU 11-41",
+          description: "Foot / flange-mounted type DU 11-4",
         },
       ],
 
@@ -453,16 +473,17 @@ const data = [
       },
       driveOutput: ["Coaxial design", "Solid shaft with key"],
       onlineConfiguration: {
-        heading: "Customised braking performance",
+        heading: "Braking that's tuned to you",
+
         features: [
-          " Motors with a brake",
-          " Specified brake torques from 0.9 to 680 Nm",
-          " Two brake sizes available for each motor frame size",
-          " ZB cylindrical-rotor motors fitted with disc brakes (held by springs when no voltage is applied)",
-          " Finely graded brake torques by utilizing differing spring strengths and quantities",
-          "Various control modules for switching times to match application requirements",
+          " Sometimes you need a little stopping power. Sometimes you need a lot. With our motors with a brake, you get exactly the performance your application calls for.",
+          "Brake torques from 0.9 to 680 Nm – that's a wide range, so you're covered whether it's light duty or heavy lifting.",
+          "Two brake sizes per motor frame – because one size doesn't fit all.",
+          "Our ZB cylindrical-rotor motors come with disc brakes that engage automatically when power is off—springs hold them tight, so they're fail-safe by design.",
+          "Fine-tuning is easy. Different spring strengths and quantities let you dial in the exact brake torque you need.",
+          "Need specific switching times? We offer various control modules to match your application's rhythm.",
         ],
-        link: "http://www.drives.demag-designer.com/camosUtil/welcome.aspx?BASE=/camosUtil/DSI",
+        link: "https://www.drives.demag-designer.com",
       },
     },
 
@@ -649,16 +670,35 @@ const OffsetGearedMotors = ({ params }) => {
             {selectedItem.summary.title}
           </h2>
           <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
-          <p className=" text-gray-600 mb-10">
-            {selectedItem.summary.description}
-          </p>
-          <ul className="list-disc list-inside mt-2">
-            {selectedItem.summary.benefits.map((item, i) => (
-              <li key={i} className="text-lg">
-                {item}
-              </li>
-            ))}
-          </ul>
+
+          {selectedItem.summary.description.map((sub, si) => (
+            <p key={si} className="text-gray-600 text-lg mt-2">
+              {sub}
+            </p>
+          ))}
+          <div className="mt-4">
+            {selectedItem?.summary?.benefits?.heading && (
+              <h3 className="text-2xl font-bold text-[#676f77] mb-2">
+                {selectedItem.summary.benefits.heading}
+              </h3>
+            )}
+
+            {selectedItem?.summary?.benefits?.list && (
+              <ul className="list-disc list-inside mt-2">
+                {selectedItem.summary.benefits.list.map((item, i) => (
+                  <li key={i} className="text-lg">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {selectedItem?.summary?.benefits?.description && (
+              <p className="mt-3 text-gray-600">
+                {selectedItem.summary.benefits.description}
+              </p>
+            )}
+          </div>
 
           <div className="flex justify-center mt-4  flex-col items-center">
             <h4 className="text-3xl font-bold my-4 text-[#676f77]">
@@ -720,28 +760,68 @@ const OffsetGearedMotors = ({ params }) => {
             ))}
           </ul> */}
                 <div className="mt-4">
-                  <h3 className="text-2xl font-bold my-4 text-[#676f77] mb-4">
-                    {selectedItem.productInformation.onlineConfiguration &&
-                      selectedItem.productInformation.onlineConfiguration
-                        .heading}
-                  </h3>
-                  <ul className="list-disc list-inside">
-                    {selectedItem.productInformation.onlineConfiguration &&
-                      selectedItem.productInformation.onlineConfiguration.features.map(
-                        (item, i) => <li key={i}>{item}</li>
+                  {selectedItem?.productInformation?.onlineConfiguration?.subdatea?.map(
+                    (data, index) => (
+                      <div key={index} className="mb-4">
+                        <h3 className="text-xl font-bold text-[#676f77]">
+                          {data.title}
+                        </h3>
+
+                        {data.description?.map((desc, i) => (
+                          <p key={i} className="text-gray-600 mt-2">
+                            {desc}
+                          </p>
+                        ))}
+                      </div>
+                    )
+                  )}
+
+                  {selectedItem?.productInformation?.onlineConfiguration
+                    ?.heading && (
+                    <h3 className="text-2xl font-bold my-4 text-[#676f77]">
+                      {
+                        selectedItem.productInformation.onlineConfiguration
+                          .heading
+                      }
+                    </h3>
+                  )}
+
+                  {selectedItem?.productInformation?.onlineConfiguration
+                    ?.description && (
+                    <p className="mb-2">
+                      <b>
+                        {
+                          selectedItem.productInformation.onlineConfiguration
+                            .description
+                        }
+                      </b>
+                    </p>
+                  )}
+
+                  {selectedItem?.productInformation?.onlineConfiguration
+                    ?.features && (
+                    <ul className="list-disc list-inside">
+                      {selectedItem.productInformation.onlineConfiguration.features.map(
+                        (item, i) => (
+                          <li key={i}>{item}</li>
+                        )
                       )}
-                  </ul>
-                  <a
-                    href={
-                      selectedItem.productInformation.onlineConfiguration &&
-                      selectedItem.productInformation.onlineConfiguration.link
-                    }
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 underline"
-                  >
-                    www.drives.demag-designer.com
-                  </a>
+                    </ul>
+                  )}
+
+                  {selectedItem?.productInformation?.onlineConfiguration
+                    ?.link && (
+                    <a
+                      href={
+                        selectedItem.productInformation.onlineConfiguration.link
+                      }
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 underline"
+                    >
+                      www.drives.demag-designer.com
+                    </a>
+                  )}
                 </div>
               </section>
             </AccordionDetails>

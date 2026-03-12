@@ -44,7 +44,7 @@ export default function Home() {
                 the load handling attachment, the operator only needs one hand
                 to operate the hoist and guide the load. Further strengths:
               </p>
-              <ul className="list-disc list-inside mt-2 space-y-1">
+              <ul className="list-disc pl-10 mt-2 space-y-1">
                 <li>convenient operation and load guidance with one hand</li>
                 <li>
                   for all Manulift load handling attachments or specially

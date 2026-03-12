@@ -47,7 +47,7 @@ export default function Home() {
                 that have to be ordered and bought as extras elsewhere are
                 already integrated as standard. The result:
               </p>
-              <ul className="list-disc list-inside mt-2 space-y-1">
+              <ul className="list-disc pl-10 mt-2 space-y-1">
                 <li>all inclusive features at no extra cost</li>
                 <li>two lifting speeds as standard</li>
                 <li>

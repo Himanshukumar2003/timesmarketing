@@ -15,50 +15,54 @@ const data = {
   slug: "offset-geared-motors",
   summary: {
     title: "Perfectly engineered braking performance",
-    description:
-      "Our Z cylindrical-rotor motors perform a wide variety of industrial drive tasks – reliably and effectively. They are suitable for a broad range of applications, offering outstanding performance:",
+    description: [
+      "Our Z cylindrical-rotor motors are built to handle a wide range of industrial drive applications with reliability and efficiency. They are designed to deliver strong performance and work smoothly across many different operating conditions.",
+      "These motors are a dependable choice for industries that require consistent power and long-term performance.",
+    ],
     benefits: [
-      " motor output up to 45 kW",
-      " inverter-fed drives for travel applications, line-fed travel and continuous operation",
-      " specially designed to match our range of gearboxes",
-      " simple project engineering",
-      " high drive efficiency",
-      " software tools to calculate drive requirements according to specified physical characteristics,",
+      "Motor output up to 45 kW",
+      "Suitable for inverter-fed drives, travel applications, line-fed travel, and continuous operation",
+      "Specially designed to work perfectly with our gearbox range",
+      "Simple and quick project engineering",
+      "High drive efficiency for better performance",
+      "Advanced software tools to calculate drive requirements based on specific physical characteristics",
+    ],
+    subDescription: [
+      "With these features, our cylindrical-rotor motors help ensure efficient operation and easier system planning for industrial applications.",
     ],
   },
   productInformation: {
     description:
-      "For both motor output and braking capacity: you benefit from a range of outstanding advantages with our Z cylindrical-rotor motors.",
-    heading: "Strong motor output",
+      "Our Z cylindrical-rotor motors offer powerful performance and reliable braking capacity, making them suitable for a wide range of industrial applications. With strong motor output and efficient design, these motors deliver dependable performance even in demanding environments.",
+
+    heading: "Strong Motor Output",
+
     tabHeading: "The benefits at a glance",
+
     maximumFlexibility: [
-      "Motor output up to 45 kW",
-      "2, 4, 6 or 8 poles",
-      "Two-speed pole-changing motors",
-      "ZBA for travel applications with inverters",
-      "ZBF for line-fed travel applications",
-      "ZBE for continuous duty in energy efficiency class IE2",
-      "ZBP for continuous duty in energy efficiency class IE3",
+      "Motor output up to 45 kW",
+      "Available with 2, 4, 6, or 8 poles",
+      "Two-speed pole-changing motors for flexible operation",
+      "ZBA models designed for travel applications with inverters",
+      "ZBF models for line-fed travel applications",
+      "ZBE models for continuous duty with IE2 energy efficiency",
+      "ZBP models for continuous duty with IE3 energy efficiency",
     ],
 
-    accessories: {
-      heading:
-        "Many further options and accessories Optimum support for project engineering and design work",
-      features: [
-        "Optimum support for project engineering and design work – e.g. with CAD files in various formats – thanks to web-based planning tool www.drives.demag-designer.com",
-      ],
-      link: "https://www.drives.demag-designer.com",
-    },
-
     onlineConfiguration: {
-      heading: "Convenient online configuration with Demag Drive Designer",
+      heading: "Easy Configuration & Design Support",
+      description:
+        "For easier planning and engineering, the Demag Drive Designer online tool allows convenient motor configuration and provides helpful resources such as:",
       features: [
-        "View technical data",
-        "Design support with 2D/3D geometries in all standard formats",
+        "Access to complete technical data",
+        "2D and 3D CAD geometries in standard formats",
         "Electrical circuit diagrams",
-        "Delivery time indicator",
-        "Configuration transfer to Demag Shop",
+        "Delivery time indicators",
+        "Direct configuration transfer to Demag Shop",
+        "A wide range of options and accessories",
       ],
+      subDescription:
+        "This web-based planning tool also supports project engineering and design work by providing CAD files in multiple formats, making system planning faster and more efficient.",
       link: "https://www.drives.demag-designer.com",
     },
   },
@@ -67,14 +71,23 @@ const data = {
     combineData: [
       {
         heading: "Direct drive input",
-        description:
-          "Gearbox and Z cylindrical-rotor motor combinations using end caps",
+        subHeading:
+          "Gearbox and Z Cylindrical-Rotor Motor Combinations Using End Caps",
+        description: [
+          "Our gearbox and Z cylindrical-rotor motors can be easily combined using specially designed end caps. This setup creates a compact and efficient drive solution that ensures smooth power transmission between the motor and gearbox.",
+          "By using end-cap connections, the motor and gearbox fit perfectly together, reducing installation complexity and saving valuable engineering time. It also helps improve reliability and overall system performance.",
+          "These combinations are ideal for industrial drive systems where space-saving design, easy integration, and dependable operation are important. The modular design also allows flexible configurations to match different application requirements.",
+        ],
         img: "/img/chain-hoist/Direktantrieb_EN.jpg.webp",
       },
       {
         heading: "Coupling connection",
-        description:
-          "Gearbox and motor combinations with Demag coupling shaft end (Z cylindrical-rotor motors or KB conical-rotor brake motors) using intermediate flange and roller spider coupling",
+
+        description: [
+          "Gearbox and motor combinations can also be connected using a Demag coupling shaft end. This setup works with Z cylindrical-rotor motors as well as KB conical-rotor brake motors, providing a flexible and reliable drive solution.",
+          "In this configuration, the motor and gearbox are connected using an intermediate flange along with a roller spider coupling. This design ensures smooth power transmission while reducing vibration and mechanical stress.",
+          "The coupling connection also makes installation and maintenance easier, while allowing better alignment between the motor and gearbox. As a result, it helps improve overall performance, reliability, and service life of the drive system.",
+        ],
         img: "/img/chain-hoist/Kupplungsanbau_EN_0.jpg.webp",
       },
     ],
@@ -213,14 +226,24 @@ const OffsetGearedMotors = () => {
             {data.summary.title}
           </h2>
           <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
-          <p className=" text-gray-600 mb-10">{data.summary.description}</p>
-          <ul className="list-disc list-inside mt-2">
+
+          {data?.summary?.description?.map((des, index) => (
+            <p className="  text-gray-600 mb-4" key={index}>
+              {des}
+            </p>
+          ))}
+          <ul className="list-disc pl-10 mt-2">
             {data.summary.benefits.map((item, i) => (
               <li key={i} className="text-lg">
                 {item}
               </li>
             ))}
           </ul>
+          {data?.summary?.subDescription?.map((des, index) => (
+            <p className="  text-gray-600 mt-5" key={index}>
+              {des}
+            </p>
+          ))}
 
           <div className="flex justify-center mt-4  flex-col items-center">
             <h4 className="text-3xl font-bold my-4 text-[#676f77]">
@@ -245,7 +268,7 @@ const OffsetGearedMotors = () => {
                   {data.productInformation.heading}
                 </h2>
                 <p className="mb-4"> {data.productInformation.description}</p>
-                <ul className="list-disc list-inside">
+                <ul className="list-disc pl-10">
                   {data.productInformation.maximumFlexibility.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
@@ -257,12 +280,12 @@ const OffsetGearedMotors = () => {
                       <h4 className="text-xl font-bold mt-4 text-[#676f77] mb-4">
                         {item.heading}
                       </h4>
-                      <ul className="   list-disc list-inside">
+                      <ul className="   list-disc pl-10">
                         <li>{item.features}</li>
                       </ul>
                     </div>
                   ))}
-                {/* <ul className="list-disc list-inside">
+                {/* <ul className="list-disc pl-10">
             {data.productInformation.list.features.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
@@ -272,21 +295,25 @@ const OffsetGearedMotors = () => {
                     {data.productInformation.onlineConfiguration &&
                       data.productInformation.onlineConfiguration.heading}
                   </h3>
-                  <ul className="list-disc list-inside">
+                  {data.productInformation.onlineConfiguration.description && (
+                    <p className=" mb-4">
+                      {data.productInformation.onlineConfiguration.description}
+                    </p>
+                  )}
+                  <ul className="list-disc pl-10">
                     {data.productInformation.onlineConfiguration &&
                       data.productInformation.onlineConfiguration.features.map(
                         (item, i) => <li key={i}>{item}</li>
                       )}
                   </ul>
-                  <ul className="list-disc list-inside">
-                    <h4 className="text-xl font-bold my-4 text-[#676f77] mb-4">
-                      {data.productInformation.accessories.heading}
-                    </h4>
-                    {data.productInformation.accessories.features &&
-                      data.productInformation.accessories.features.map(
-                        (item, i) => <li key={i}>{item}</li>
-                      )}
-                  </ul>
+                  {data.productInformation.onlineConfiguration.description && (
+                    <p className=" my-4">
+                      {
+                        data.productInformation.onlineConfiguration
+                          .subDescription
+                      }
+                    </p>
+                  )}
                 </div>
               </section>
             </AccordionDetails>
@@ -309,7 +336,15 @@ const OffsetGearedMotors = () => {
                     <h4 className="text-xl font-bold my-4 text-[#676f77]">
                       {item.heading}
                     </h4>
-                    <p className="mb-4">{item.description}</p>
+                    <h6 className="text-lg  my-4 text-[#676f77]">
+                      {item.subHeading}
+                    </h6>
+
+                    {item.description.map((des, index) => (
+                      <p className=" text-gray-600 mb-" key={index}>
+                        {des}
+                      </p>
+                    ))}
                     <Image
                       src={item.img}
                       height={300}

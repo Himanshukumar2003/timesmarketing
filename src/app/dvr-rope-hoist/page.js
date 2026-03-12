@@ -60,106 +60,67 @@ export default function Home() {
             <div className=" p-4 lg:p-0">
               <div className="max-w-4xl mx-auto">
                 <div className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
-                  Versatile – this is the Demag DVR rope hoist
+                  Versatile – that&apos;s the Demag DVR rope hoist
                 </div>
                 <div className="flex justify-center">
                   <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
                 </div>
                 <p className="text-lg text-gray-700 mb-8 text-center">
-                  It offers high levels of efficiency and productivity. You
-                  benefit from its flexibility in all areas of application.
-                  Thanks to its extensive product portfolio, the DVR offers
-                  customisable solutions for the various requirements of crane
-                  and lifting technology. From the standard version to the smart
-                  high-end solution with intelligent safety functions, the DVR
-                  rope hoist meets the demands for economical and ergonomic
-                  lifting solutions.
+                  Efficient. Productive. And flexible enough to fit just about
+                  anywhere you need it.<br></br>
+                  With a wide product portfolio, the DVR adapts to you—not the
+                  other way around. Whether you need a straightforward standard
+                  version or a smart high-end solution with intelligent safety
+                  features, you get a lifting system that&apos;s economical,
+                  ergonomic, and ready to work.
                 </p>
 
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
                   The choice is yours
                 </h4>
 
-                <p className="text-lg text-gray-700 mt-6">
-                  DHR rope hoists fulfil almost any requirement:
+                <p className="text-lg text-gray-700 mt-2">
+                  Five sizes. Load capacities up to 80 tonnes. And plenty of
+                  ways to build it your way:
                 </p>
-                <ul>
-                  <li>Five sizes with load capacities of up to 80 tonnes</li>
-                  <li>
-                    Different application types: Foot-mounted hoist,
-                    low-headroom monorail hoist, double-rail crab and
-                    standard-headroom monorail hoist (with/without articulated
-                    trolley)
-                  </li>
-                  <li>
-                    Control system: conventional contactor control or provided
-                    by the customer
-                  </li>
-                  <li>Variable-speed or two-stage drive solutions</li>
-                  <li>
-                    Control concept exactly as required: cable-connected or
-                    radio control
-                  </li>
-                  <li>Wide range of options available</li>
-                  <li>
-                    Additional smart features can be integrated for safe and
-                    convenient load handling
-                  </li>
-                </ul>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                  <div>
-                    <p>
-                      With the DHR rope hoist, you have the choice for the first
-                      time: Proven lifting technology with steel ropes or with
-                      innovative synthetic ropes.
-                    </p>
-                    <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                      Features of the synthetic rope:
-                    </h4>
-                    <ul className="list-disc list-inside mt-2 space-y-1">
-                      <li>Made of high-modulus polyethylene fibres</li>
-                      <li>12-strand non-rotating structure</li>
-                      <li>Around 85% lighter than steel rope</li>
-                      <li>Suitable for indoor and outdoor use</li>
-                      <li>Temperature range: -10°C - +45°C</li>
-                      <li>No lubrication required</li>
-                      <li>No wear on rope drum and return sheaves</li>
-                      <li>One type of rope for all applications</li>
-                    </ul>
-                  </div>
-                  <Image
-                    height={100}
-                    width={100}
-                    layout="responsive"
-                    src="/img/dhr-rope-hoist2.webp"
-                    className="w-full h-auto"
-                    alt="DHR Rope Hoist"
-                  />
-                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                   <div>
-                    <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                      Dual Drive
-                    </h4>
-
-                    <p className="mb-4">
-                      For high traction, the DHR monorail hoist is equipped with
-                      a DualDrive two-wheel drive as standard. Two of the four
-                      wheels have a synchronised belt drive.
-                    </p>
-                    <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                      The benefits are:
-                    </h4>
-                    <ul className="list-disc list-inside space-y-1">
-                      <li>Reliable cross-travel motion and positioning</li>
-                      <li>
-                        Optionally available: Installation of a second
-                        cross-travel motor (DualDrive Plus), for particularly
-                        challenging ambient conditions (e.g. outdoor use, dirt
-                        accumulation on crane rail)
-                      </li>
-                    </ul>
+                    {" "}
+                    <div>
+                      <p className="my-2">
+                        <b>Pick your setup:</b>
+                      </p>
+                      <ul className="list-disc pl-10">
+                        <li>Foot-mounted hoist</li>
+                        <li>Low-headroom monorail hoist</li>
+                        <li>Double-rail crab</li>
+                        <li>
+                          Standard-headroom monorail hoist (with or without
+                          articulated trolley)
+                        </li>
+                      </ul>
+                      <h4 className="text-xl font-bold my-4 text-[#676f77]">
+                        Pick your control:
+                      </h4>
+                      <ul className="list-disc pl-10 mt-2 space-y-1">
+                        <li>Conventional contactor control</li>
+                        <li>Customer-provided control</li>
+                        <li>Variable-speed or two-stage drive solutions</li>
+                        <li>Cable-connected or radio control</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold my-4 text-[#676f77]">
+                        Add what you need:
+                      </h4>
+                      <ul className="list-disc pl-10 space-y-1">
+                        <li>Wide range of options available</li>
+                        <li>
+                          Smart features for safe, convenient load handling
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                   <Image
                     src="/img/dhr-rope-hoist3.webp"
@@ -173,42 +134,86 @@ export default function Home() {
 
                 <div className="mb-6">
                   <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                    Thrust rocker
+                    Steel or synthetic? Now you can choose
                   </h4>
                   <p className="mb-4">
-                    The DHR rope hoist has compact dimensions. It also impresses
-                    with a weight-optimised design of the hoist trolley: No
-                    counterweights are required because of the thrust rocker.
-                    These are available as an option.
+                    For the first time, you&apos;re not locked in. Stick with
+                    proven steel rope or go with our innovative synthetic
+                    rope—both get the job done.
                   </p>
-                  <p className="font-semibold mb-2">Key benefits:</p>
-                  <ul className="list-disc list-inside space-y-1">
-                    <li>Reduced deadweight</li>
-                    <li>Compact dimensions</li>
+                  <p className="font-semibold mb-2">
+                    Why the synthetic rope stands out:
+                  </p>
+                  <ul className="list-disc pl-10">
+                    <li>Made from high-modulus polyethylene fibres</li>
+                    <li>12-strand non-rotating construction</li>
+                    <li>Around 85% lighter than steel rope</li>
+                    <li>Works indoors and outdoors</li>
+                    <li>Handles temperatures from -10°C to +45°C</li>
+                    <li>No lubrication needed – ever</li>
+                    <li>No wear on the rope drum or return sheaves</li>
+                    <li>One rope type covers all applications</li>
                   </ul>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div>
-                    <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                      Blue safety light
-                    </h4>
-                    <p>
-                      Added safety: a blue dot of light is projected on the
-                      floor to indicate the hook position.
-                    </p>
+                <div>
+                  <h4 className="text-xl font-bold my-4 text-[#676f77]">
+                    DualDrive – built for grip and precision
+                  </h4>
+
+                  <p className="mb-3">
+                    The DHR monorail hoist comes standard with DualDrive, a
+                    two-wheel drive system where two of the four wheels are
+                    powered by a synchronised belt drive.
+                  </p>
+
+                  <p className="mb-3 font-semibold">What that means:</p>
+
+                  <ul className="list-disc pl-6 mb-4">
+                    <li>Smooth, reliable cross-travel and positioning</li>
+                    <li>
+                      Need extra muscle? Add a second cross-travel motor
+                      (DualDrive Plus) for tough conditions like outdoor use or
+                      heavy dirt on the rails
+                    </li>
+                  </ul>
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div>
+                      {" "}
+                      <h4 className="text-lg font-semibold mt-4">
+                        Thrust rocker – smart design, less weight
+                      </h4>
+                      <p className="mb-3">
+                        No counterweights needed. The DHR hoist trolley uses a
+                        thrust rocker to stay balanced, keeping things compact
+                        and lightweight. (Counterweights are still available as
+                        an option if you prefer.)
+                      </p>
+                      <p className="font-semibold">Key benefits:</p>
+                      <ul className="list-disc pl-6 mb-4">
+                        <li>Less deadweight</li>
+                        <li>Smaller, tighter dimensions</li>
+                      </ul>
+                      <h4 className="text-lg font-semibold mt-4">
+                        Blue safety light – know where the hook is
+                      </h4>
+                      <p>
+                        A small blue dot of light projects onto the floor,
+                        showing exactly where the hook is. Simple. Clear. Adds a
+                        layer of safety to every lift.
+                      </p>
+                    </div>
+
+                    <div>
+                      <Image
+                        src="/img/dhr-rope-hoist4.webp"
+                        height={100}
+                        width={100}
+                        alt="DHR rope hoist safety light"
+                        className="w-100"
+                      />
+                    </div>
                   </div>
-                  <div>
-                    {" "}
-                    <Image
-                      src="/img/dhr-rope-hoist4.webp"
-                      height={100}
-                      width={100}
-                      alt=""
-                      className="w-100"
-                    ></Image>
-                  </div>{" "}
-                  {/* Empty column for layout symmetry or future image if needed */}
                 </div>
 
                 <div>
@@ -232,62 +237,38 @@ export default function Home() {
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
+                      <div>
+                        <h4 className="text-xl font-bold my-4 text-[#676f77]">
+                          Rope guide
+                        </h4>
+
+                        <p className="mb-3">
+                          All-metal construction. Built to guide the rope
+                          precisely—with minimal wear.
+                        </p>
+
+                        <p className="font-semibold mb-2">
+                          Smart design touches:
+                        </p>
+
+                        <ul className="list-disc pl-6">
+                          <li>
+                            For sizes 10 (optional) and 20–40, a
+                            full-circumference rope guide comes as standard
+                          </li>
+                          <li>
+                            Handles diagonal pulls up to four degrees without
+                            the rope touching the guide
+                          </li>
+                          <li>
+                            Ropes are galvanised as standard for added
+                            durability
+                          </li>
+                        </ul>
+                      </div>
                       <ProductInformation></ProductInformation>
                     </AccordionDetails>
                   </Accordion>
-                  <Accordion>
-                    <AccordionSummary
-                      expandIcon={<ExpandMoreIcon />}
-                      aria-controls="panel2-content"
-                      id="panel2-header"
-                    >
-                      <Typography component="span">
-                        {" "}
-                        <span className="text-xl font-bold my-4 text-[#676f77]">
-                          Rope drum and guide
-                        </span>
-                      </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <div className="">
-                        <h5 className="font-bold my-2 text-lg text-[#676f77]">
-                          {" "}
-                          Rope drum
-                        </h5>
-                        <p>
-                          The basic DVR design includes a large diameter rope
-                          drum. The benefits are: High positioning accuracy and
-                          low rope wear thanks to appropriately dimensioned
-                          guide rollers. In addition, the approach dimensions
-                          are very small.
-                        </p>
-                        <p>
-                          The rope drum is manufactured in-house with high
-                          precision. Since only one jig arrangement is used for
-                          all production steps, its connection points are
-                          reproducibly positioned.
-                        </p>
-
-                        <h5 className="font-bold text-lg my-2 text-[#676f77]">
-                          Rope guide
-                        </h5>
-                        <p>
-                          The rope guide is made entirely of metal and guides
-                          the rope reliably and precisely with very little wear.
-                        </p>
-                        <p>
-                          For the larger sizes 10 (optional) and 20-40, rope
-                          guides that use the full circumference are installed
-                          as standard.
-                        </p>
-                        <p>
-                          The rope can be pulled diagonally by up to four
-                          degrees without touching the rope guide. The ropes are
-                          galvanised as standard.
-                        </p>
-                      </div>
-                    </AccordionDetails>
-                  </Accordion>
 
                   <Accordion>
                     <AccordionSummary
@@ -296,10 +277,9 @@ export default function Home() {
                       id="panel2-header"
                     >
                       <Typography component="span">
-                        {" "}
                         <span className="text-xl font-bold my-4 text-[#676f77]">
                           Hoist motor and brake
-                        </span>{" "}
+                        </span>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
@@ -307,20 +287,28 @@ export default function Home() {
                         Powerful and precise
                       </h5>
                       <p>
-                        The DVR rope hoist is driven by a two-stage cylindrical
-                        motor for precise lifting and lowering. It has a motor
-                        output of up to 35 kilowatts.
+                        At the heart of the DVR is a two-stage cylindrical motor
+                        built for smooth, accurate lifting and lowering. With
+                        output up to 35 kilowatts, it&apos;s got plenty of power
+                        when you need it.
                       </p>
-                      <p>
-                        Standard IP 55 classification, optionally also IP 66.
-                        All motor cables have plug-in connections for simple
-                        Plug & Play. The disc brake has a high braking torque
-                        and is designed for a service life of one million
-                        switching cycles.
-                      </p>
+                      <h5 className="font-bold text-lg my-2 text-[#676f77]">
+                        Built to last, simple to connect
+                      </h5>
+                      <ul className="list-disc list-inside text-gray-700">
+                        <li>
+                          Standard IP55 protection, with IP66 available as an
+                          option
+                        </li>
+                        <li>
+                          All motor cables use plug-in connections – true Plug &
+                          Play
+                        </li>
+                        <li>Disc brake delivers high braking torque</li>
+                        <li>Designed for one million switching cycles</li>
+                      </ul>
                     </AccordionDetails>
                   </Accordion>
-
                   <Accordion>
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon />}
@@ -328,31 +316,37 @@ export default function Home() {
                       id="panel3-header"
                     >
                       <Typography component="span">
-                        {" "}
                         <span className="text-xl font-bold my-4 text-[#676f77]">
                           ProHub
-                        </span>{" "}
+                        </span>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <h5 className="font-bold text-lg my-2 text-[#676f77]">
+                      <h5 className="text-lg font-bold my-2 text-[#676f77]">
                         Up to 100% more speed
                       </h5>
+                      <p>
+                        Need to move faster? The ProHub ASR and ProHub ESR motor
+                        variants are made for exactly that—higher lifting speeds
+                        that cut down process times and keep things moving.
+                      </p>
+                      <p>
+                        <strong>ProHub ASR (A-motor):</strong>
+                      </p>
                       <ul className="list-disc px-5">
-                        <li>
-                          The ProHub ASR and ProHubESR motor variants ensure
-                          even higher lifting speeds for handling processes.
-                          This shortens process times thanks to faster load
-                          handling
-                        </li>
-                        <li>
-                          Thanks to load-dependent speeds, ProHubASR with the
-                          A-motor offers up to 50% higher speeds with
-                          inverter-controlled speed monitoring. Maximum power
-                          with up to 100% higher speed is achieved with
-                          ProHubESR with an encoder-monitored S-motor.
-                        </li>
+                        <li>Load-dependent speeds</li>
+                        <li>Inverter-controlled speed monitoring</li>
+                        <li>Up to 50% higher speed</li>
                       </ul>
+                      <p>
+                        <strong>ProHub ESR (S-motor):</strong>
+                      </p>
+                      <ul className="list-disc px-5">
+                        <li>Encoder-monitored for precision</li>
+                        <li>Delivers maximum power</li>
+                        <li>Up to 100% higher speed</li>
+                      </ul>
+                      <p>Faster handling. Shorter cycles. Same reliability.</p>
                     </AccordionDetails>
                   </Accordion>
 
@@ -363,25 +357,26 @@ export default function Home() {
                       id="panel4-header"
                     >
                       <Typography component="span">
-                        {" "}
                         <span className="text-xl font-bold my-4 text-[#676f77]">
-                          Travel motor
-                        </span>{" "}
+                          Travel Motor
+                        </span>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <ul className=" px-5  list-disc">
+                      <ul className="list-disc px-5">
                         <li>
-                          Compact drive unit with two-stage speeds and low
-                          deadweight.
+                          Two-stage speeds in a compact package – low deadweight
+                          included
                         </li>
                         <li>
-                          Standard temperature monitoring and lubricated for
-                          life.
+                          Standard temperature monitoring, lubricated for life
+                          (no maintenance hassle)
                         </li>
-                        <li>High traction thanks to two-wheel drive.</li>
-                        <li>Suitable for indoor and outdoor use.</li>
-                        <li>Quadro drive optionally available for EZ-DVR.</li>
+                        <li>Two-wheel drive gives you solid traction</li>
+                        <li>
+                          Works indoors and outdoors – no need to special-order
+                        </li>
+                        <li>Quadro drive available as an option for EZ-DVR</li>
                       </ul>
                     </AccordionDetails>
                   </Accordion>
@@ -393,19 +388,17 @@ export default function Home() {
                       id="panel5-header"
                     >
                       <Typography component="span">
-                        {" "}
                         <span className="text-xl font-bold my-4 text-[#676f77]">
                           Housing
-                        </span>{" "}
+                        </span>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <ul className=" px-5  list-disc">
-                        <li>Weight-optimised and robust</li>
+                      <ul className="list-disc px-5">
+                        <li>Compact design keeps deadweight low</li>
                         <li>
-                          The compact design provides reduced deadweight. The
-                          DVR hoist housing weighs significantly less for each
-                          size than in comparable ranges.
+                          DVR hoist housing weighs significantly less than
+                          comparable models size for size
                         </li>
                       </ul>
                     </AccordionDetails>
@@ -418,28 +411,24 @@ export default function Home() {
                       id="panel6-header"
                     >
                       <Typography component="span">
-                        {" "}
                         <span className="text-xl font-bold my-4 text-[#676f77]">
                           Bottom block
-                        </span>{" "}
+                        </span>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <h5 className="text-xl font-bold my-4 text-[#676f77]">
-                        Bottom block
-                      </h5>
-                      <ul className=" px-5  list-disc">
+                      <ul className="list-disc px-5">
                         <li>
-                          HBC hook with recessed grip and finger guard as
-                          standard for all sizes up to DVR 10 4/1. DIN hooks are
-                          optional and available as standard for the larger
-                          sizes (DVR 20 and 40). The bottom blocks allow full
-                          360-degree hook rotation.
+                          HBC hook with recessed grip and finger guard –
+                          standard for all sizes up to DVR 10 4/1
                         </li>
                         <li>
-                          A lockable hook and a version with insulation are
-                          available as options.
+                          DIN hooks – optional, and standard for larger sizes
+                          (DVR 20 and 40)
                         </li>
+                        <li>Full 360° hook rotation</li>
+                        <li>Optional: lockable hook</li>
+                        <li>Optional: insulated version</li>
                       </ul>
                     </AccordionDetails>
                   </Accordion>
@@ -447,48 +436,57 @@ export default function Home() {
                   <Accordion>
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon />}
-                      aria-controls="panel6-content"
-                      id="panel6-header"
+                      aria-controls="panel7-content"
+                      id="panel7-header"
                     >
                       <Typography component="span">
-                        {" "}
                         <span className="text-xl font-bold my-4 text-[#676f77]">
                           Control
-                        </span>{" "}
+                        </span>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <h5 className="text-xl font-bold my-4 text-[#676f77]">
-                        Controllers
-                      </h5>
-                      <ul className=" px-5  list-disc">
+                      <p>
+                        <strong>
+                          Controllers – you choose how to run things
+                        </strong>
+                      </p>
+                      <p>
+                        We give you full freedom to pick the control that fits
+                        your work.
+                      </p>
+                      <ul className="list-disc px-5">
                         <li>
-                          When it comes to operation, we also offer our
-                          customers the greatest possible flexibility and
-                          individual freedom of choice between two control
-                          concepts.
+                          Wire-connected and ergonomic: DSB pendant controller –
+                          reliable, easy to use
                         </li>
-                        <li>Wire-connected and ergonomic</li>
                         <li>
-                          For control from the ground, you can choose between
-                          the DSB pendant controller or the optional extremely
-                          robust DST with up to nine control elements
+                          DST option – extremely robust, with up to nine control
+                          elements
                         </li>
                       </ul>
-
-                      <h4>Radio control: high performance</h4>
-                      <p className="mt-4">
-                        The powerful DRC D3 radio control system permits maximum
-                        freedom of movement and ease of control. The new
-                        generation of radio transmitters can be used for up to
-                        five days of uninterrupted operation. Three transmitters
-                        can be paired with each receiver for simple transfer of
-                        control at the press of a button. Up to 40 systems from
-                        our D3 generation of radio controls can be operated in
-                        close proximity to each other without any mutual
-                        interference. High safety standards are satisfied by
-                        frequency hopping and listen-before-talk operation.
+                      <p>
+                        <strong>Radio control – high performance:</strong>
                       </p>
+                      <ul className="list-disc px-5">
+                        <li>
+                          DRC D3 radio control system – maximum freedom of
+                          movement
+                        </li>
+                        <li>Runs up to five days of uninterrupted operation</li>
+                        <li>
+                          Three transmitters can pair with one receiver – easy
+                          to pass control at the press of a button
+                        </li>
+                        <li>
+                          Up to 40 D3 systems can operate nearby without
+                          interference
+                        </li>
+                        <li>
+                          Safety features: frequency hopping and
+                          listen-before-talk technology
+                        </li>
+                      </ul>
                       <Image
                         src="/img/dhr-rope-hoist78.webp"
                         height={300}
@@ -496,88 +494,84 @@ export default function Home() {
                         className="max-w-sm mx-auto"
                         alt=""
                         layout="responsive"
-                      ></Image>
+                      />
                     </AccordionDetails>
                   </Accordion>
 
                   <Accordion>
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon />}
-                      aria-controls="panel6-content"
-                      id="panel6-header"
+                      aria-controls="panel8-content"
+                      id="panel8-header"
                     >
                       <Typography component="span">
-                        {" "}
                         <span className="text-xl font-bold my-4 text-[#676f77]">
-                          Precisely tailored to the application
-                        </span>{" "}
+                          Precisely Tailored to the Application
+                        </span>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <p className="mb-2">
-                        A variety of options are available to equip the DVR rope
-                        hoist to meet your application needs. The DVR offers
-                        variable-speed drive solutions for lifting and travel
-                        motions by using different levels of technology. The
-                        advantages of the inverters are obvious:
+                      <p>
+                        The DVR rope hoist can be equipped to match exactly what
+                        you need. Variable-speed drive solutions are available
+                        for both lifting and travel motions, using different
+                        technology levels.
                       </p>
-                      <h5 className="text-xl font-bold my-4 text-[#676f77]">
-                        Controllers
-                      </h5>
-                      <ul className=" px-5  list-disc">
-                        <li>Variable speeds: 1:10, 1:25, ESR 1:37</li>
+                      <p className="my-2">
+                        <strong>Why variable speed makes sense:</strong>
+                      </p>
+                      <ul className="list-disc px-5">
                         <li>
-                          Less wear: Smooth travel start-up and lifting reduces
-                          the load on the crane system
+                          Variable speeds: Choose from 1:10, 1:25, or ESR 1:37
                         </li>
-                        <li>Longer motor/brake service life</li>
-                        <li>Significant energy savings of up to 50%</li>
+                        <li>
+                          Less wear: Smooth starts and stops mean less stress on
+                          your crane system
+                        </li>
+                        <li>Longer life: Motors and brakes last longer</li>
+                        <li>Energy savings: Up to 50% less power used</li>
                       </ul>
-
-                      <p className="font-semiblod mb-2">
-                        Load-dependent lifting speed for higher productivity:
-                      </p>
-
-                      <ul className=" px-5  list-disc">
-                        <li>High speed without load (up to 100%)</li>
+                      <h4 className="text-lg font-bold my-2 text-[#676f77]">
+                        Load-dependent lifting speed – automatic adjustment:
+                      </h4>
+                      <ul className="list-disc px-5">
+                        <li>High speed without load – up to 100% faster</li>
                         <li>Medium speed with partial load</li>
                         <li>Precise speed at full load</li>
                       </ul>
 
-                      <h4 className="text-xl font-bold my-4 text-[#676f77]">
+                      <h5 className="text-lg font-bold my-2 text-[#676f77]">
                         OWL
-                      </h4>
-
+                      </h5>
                       <Image
                         src="/img/dhr-rope-hoistAc1.webp"
                         height={300}
                         width={300}
-                        alt=""
                         className="max-w-lg mx-auto"
-                      ></Image>
-                      <p className="mt-4 mb-2">
-                        Compact unit for overload protection and status display
-                        for increased safety and predictive maintenance.
-                      </p>
-
-                      <ul className=" px-5  list-disc">
+                        alt=""
+                      />
+                      <ul className="list-disc px-5">
+                        <li>Compact overload protection and status display</li>
+                        <li>
+                          Keeps things safe and helps you stay ahead of
+                          maintenance
+                        </li>
                         <li>Overload protection for individual hoists</li>
                         <li>Simple condition monitoring</li>
-                        <li>Number of switching operations</li>
-                        <li>Operating time</li>
-                        <li>Number of braking operations</li>
-                        <li>Number of control actuations</li>
-
-                        <li>On-time</li>
-                        <li>Temperature index</li>
-                        <li>Number of operations with overload</li>
-                        <li>Can be used for SWP calculation</li>
+                        <li>
+                          Tracks number of switching operations, operating time,
+                          braking operations, control actuations
+                        </li>
+                        <li>
+                          Tracks on-time, temperature index, number of overload
+                          events
+                        </li>
+                        <li>Data can be used for SWP calculation</li>
                       </ul>
 
-                      <h4 className="text-xl font-bold my-4 text-[#676f77]">
+                      <h5 className="text-lg font-bold my-2 text-[#676f77]">
                         DMU
-                      </h4>
-
+                      </h5>
                       <Image
                         src="/img/dhr-rope-hoistAc2.webp"
                         height={300}
@@ -585,35 +579,33 @@ export default function Home() {
                         className="max-w-sm mx-auto"
                         alt=""
                         layout="responsive"
-                      ></Image>
-
-                      <p className="mb-2">
-                        Convenient monitoring unit with CAN bus functions for
-                        improved safety, extended brake service life and
-                        optimised maintenance intervals. Identifies training
-                        needs for operators.
-                      </p>
-                      <ul className=" px-5  list-disc">
+                      />
+                      <ul className="list-disc px-5">
+                        <li>Convenient monitoring unit with CAN bus</li>
+                        <li>
+                          Designed for better safety, longer brake life, and
+                          smarter maintenance
+                        </li>
+                        <li>Helps identify operator training needs</li>
                         <li>Overload protection</li>
-                        <li>Monitoring for sudden load increase</li>
+                        <li>Monitors sudden load increase</li>
                         <li>Temperature monitoring of motors</li>
                         <li>SWP elapsed operating time counter</li>
-                        <li>Monitoring of motor function</li>
+                        <li>Motor function monitoring</li>
                         <li>Motor start/stop by slow speed</li>
                         <li>Multi-hoisting tandem (up to five units)</li>
-                        <li>Design limits (warnings)</li>
+                        <li>Design limit warnings</li>
                         <li>Optional remote monitoring modem</li>
-                        <li>Smart features</li>
-                        <li>CAN bus functionalities</li>
+                        <li>Smart CAN bus features</li>
                       </ul>
 
-                      <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                        Further options for needs-based configuration
-                      </h4>
-                      <ul className=" px-5  list-disc">
+                      <h5 className="text-lg font-bold my-2 text-[#676f77]">
+                        More options – configure as needed
+                      </h5>
+                      <ul className="list-disc px-5">
                         <li>Second hoist brake for DVR 3, 5, 10</li>
                         <li>Drum brake for DVR 20 and 40</li>
-                        <li>Halogen- or silicone-free cables and/or wires</li>
+                        <li>Halogen-free or silicone-free cables/wires</li>
                         <li>Heating or cooling device for bridge housing</li>
                         <li>Crane lighting</li>
                         <li>Horn</li>
@@ -621,7 +613,7 @@ export default function Home() {
                         <li>Service platform</li>
                         <li>Stainless steel switchgear cabinets</li>
                         <li>Rain cover</li>
-                        <li>Explosion-proof design (DXR)</li>
+                        <li>Explosion-proof design (DXR) available</li>
                       </ul>
                     </AccordionDetails>
                   </Accordion>
@@ -629,20 +621,19 @@ export default function Home() {
                   <Accordion>
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon />}
-                      aria-controls="panel6-content"
-                      id="panel6-header"
+                      aria-controls="panel9-content"
+                      id="panel9-header"
                     >
                       <Typography component="span">
-                        {" "}
                         <span className="text-xl font-bold my-4 text-[#676f77]">
                           Protected
-                        </span>{" "}
+                        </span>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <p className="mb-2">
-                        An optional rain cover ensures the crane can operate
-                        outdoors.
+                      <p>
+                        Optional rain cover, let the crane operate outdoors
+                        without worry
                       </p>
                       <Image
                         src="/img/dhr-rope-hoist5.webp"
@@ -651,213 +642,147 @@ export default function Home() {
                         alt=""
                         layout="responsive"
                         className="w-100 max-w-sm"
-                      ></Image>
+                      />
                     </AccordionDetails>
                   </Accordion>
 
                   <Accordion>
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon />}
-                      aria-controls="panel2-content"
-                      id="panel2-header"
+                      aria-controls="panel10-content"
+                      id="panel10-header"
                     >
                       <Typography component="span">
-                        {" "}
                         <span className="text-xl font-bold my-4 text-[#676f77]">
                           Smart features
-                        </span>{" "}
+                        </span>
                       </Typography>
                     </AccordionSummary>
+
                     <AccordionDetails>
                       <Container maxWidth="lg">
-                        <div>
-                          <div className="space-y-6 py-6">
-                            {/* Anti-sway control */}
-                            <div className="flex items-start space-x-4">
-                              <Image
-                                src="/img/dhr-rope-hoist-icon1.webp"
-                                alt="Tandem Icon"
-                                height={50}
-                                width={50}
-                                className="w-13 h-13"
-                              />
-                              <div>
-                                <h3 className="text-lg font-semibold">
-                                  Anti-sway control
-                                </h3>
-                                <p className="text-sm text-gray-600">
-                                  Prevents increased load sway by active
-                                  counter-motions of the crane. Active system
-                                  based on rope angle measurement to detect and
-                                  dampen any existing load sway.
-                                </p>
-                              </div>
-                            </div>
-                            <hr />
+                        <div className="space-y-4">
+                          {/* Anti-sway control */}
+                          <div>
+                            <h3 className="text-lg font-semibold">
+                              Anti-sway control
+                            </h3>
+                            <ul className="list-disc pl-5 text-sm text-gray-600">
+                              <li>
+                                Prevents load sway through active
+                                counter-motions
+                              </li>
+                              <li>
+                                Uses rope angle measurement to detect and dampen
+                                movement
+                              </li>
+                            </ul>
+                          </div>
 
-                            {/* Slack-rope prevention */}
-                            <div className="flex items-start space-x-4">
-                              <Image
-                                height={50}
-                                width={50}
-                                src="/img/dhr-rope-hoist-icon1.webp"
-                                alt="Tandem Icon"
-                                className="w-10 h-10"
-                              />
-                              <div>
-                                <h3 className="text-lg font-semibold">
-                                  Slack-rope prevention
-                                </h3>
-                                <p className="text-sm text-gray-600">
-                                  Continuous monitoring of the rope tension: The
-                                  hoist drive automatically switches off when
-                                  the load has been lowered to its target
-                                  position or if the hook is accidentally
-                                  snagged. Reduces the risk of damage to the
-                                  load, crane and surrounding area.
-                                </p>
-                              </div>
-                            </div>
-                            <hr />
+                          {/* Slack-rope prevention */}
+                          <div>
+                            <h3 className="text-lg font-semibold">
+                              Slack-rope prevention
+                            </h3>
+                            <ul className="list-disc pl-5 text-sm text-gray-600">
+                              <li>Continuously monitors rope tension</li>
+                              <li>
+                                Automatically switches off hoist drive when load
+                                is lowered or hook is snagged
+                              </li>
+                              <li>
+                                Reduces risk of damage to load, crane, and
+                                surroundings
+                              </li>
+                            </ul>
+                          </div>
 
-                            {/* Area-specific load reduction */}
-                            <div className="flex items-start space-x-4">
-                              <Image
-                                src="/img/dhr-rope-hoist-icon3.webp"
-                                alt="Tandem Icon"
-                                height={50}
-                                width={50}
-                                className="w-10 h-10"
-                              />
-                              <div>
-                                <h3 className="text-lg font-semibold">
-                                  Area-specific load reduction
-                                </h3>
-                                <p className="text-sm text-gray-600">
-                                  Areas can be defined which the travelling
-                                  hoist may only enter if the load does not
-                                  exceed a reference value. This reduces the
-                                  load on the runway and building structure –
-                                  especially when several cranes operate on one
-                                  runway.
-                                </p>
-                              </div>
-                            </div>
-                            <hr />
+                          {/* Area-specific load reduction */}
+                          <div>
+                            <h3 className="text-lg font-semibold">
+                              Area-specific load reduction
+                            </h3>
+                            <ul className="list-disc pl-5 text-sm text-gray-600">
+                              <li>
+                                Define areas where hoist can only enter if load
+                                stays below a set limit
+                              </li>
+                              <li>
+                                Reduces stress on runway and building
+                                structure—especially with multiple cranes
+                              </li>
+                            </ul>
+                          </div>
 
-                            {/* Bypass control */}
-                            <div className="flex items-start space-x-4">
-                              <Image
-                                height={50}
-                                width={50}
-                                src="/img/dhr-rope-hoist-icon5.webp"
-                                alt="Tandem Icon"
-                                className="w-13 h-13"
-                              />
-                              <div>
-                                <h3 className="text-lg font-semibold">
-                                  Bypass control
-                                </h3>
-                                <p className="text-sm text-gray-600">
-                                  Areas to be blocked for the travelling hoist
-                                  can be specified. In this way, you can safely
-                                  by-pass high parts of machinery or zones that
-                                  are out of bounds.
-                                </p>
-                              </div>
-                            </div>
-                            <hr />
+                          {/* Bypass control */}
+                          <div>
+                            <h3 className="text-lg font-semibold">
+                              Bypass control
+                            </h3>
+                            <ul className="list-disc pl-5 text-sm text-gray-600">
+                              <li>
+                                Block specific areas for the travelling hoist
+                              </li>
+                              <li>
+                                Safely avoid machinery or out-of-bounds zones
+                              </li>
+                            </ul>
+                          </div>
 
-                            {/* Tandem control */}
-                            <div className="flex items-start space-x-4">
-                              <Image
-                                src="/img/dhr-rope-hoist-icon3.webp"
-                                alt="Tandem Icon"
-                                width={50}
-                                height={50}
-                                className="w-10 h-10"
-                              />
-                              <div>
-                                <h3 className="text-lg font-semibold">
-                                  Tandem control
-                                </h3>
-                                <p className="text-sm text-gray-600">
-                                  Loads can be safely transported by two DVR
-                                  rope hoists – via a single control unit.
-                                </p>
-                              </div>
-                            </div>
-                            <hr />
+                          {/* Tandem control */}
+                          <div>
+                            <h3 className="text-lg font-semibold">
+                              Tandem control
+                            </h3>
+                            <ul className="list-disc pl-5 text-sm text-gray-600">
+                              <li>
+                                Transport loads safely with two DVR rope hoists
+                              </li>
+                              <li>Operated from a single control unit</li>
+                            </ul>
+                          </div>
 
-                            {/* Section Title */}
-                            <h4 className="text-md font-semibold text-gray-800 mt-4">
-                              With DMC Demag Modular Control:
-                            </h4>
+                          <h2 className="text-xl font-semibold text-gray-700 mt-4">
+                            Demag Modular Control (DMC) features
+                          </h2>
 
-                            {/* Follow me */}
-                            <div className="flex items-start space-x-4">
-                              <Image
-                                src="/img/dhr-rope-hoist-icon5.webp"
-                                alt="Follow-me Icon"
-                                width={50}
-                                height={50}
-                                className="w-10 h-10"
-                              />
-                              <div>
-                                <h3 className="text-lg font-semibold">
-                                  Follow me
-                                </h3>
-                                <p className="text-sm text-gray-600">
-                                  Makes lifting operations much faster because
-                                  the crane can be moved above the load by
-                                  simply guiding the hook by hand. (Recommended
-                                  for cranes up to 10 t).
-                                </p>
-                              </div>
-                            </div>
-                            <hr />
+                          {/* Follow me */}
+                          <div>
+                            <h3 className="text-lg font-semibold">Follow me</h3>
+                            <ul className="list-disc pl-5 text-sm text-gray-600">
+                              <li>Guide the hook by hand—crane follows</li>
+                              <li>
+                                Faster lifting, recommended for cranes up to 10
+                                t
+                              </li>
+                            </ul>
+                          </div>
 
-                            {/* Hook Centering */}
-                            <div className="flex items-start space-x-4">
-                              <Image
-                                src="/img/dhr-rope-hoist-icon6.webp"
-                                alt="Hook Centering Icon"
-                                width={50}
-                                height={50}
-                                className="w-10 h-10"
-                              />
-                              <div>
-                                <h3 className="text-lg font-semibold">
-                                  Hook Centering
-                                </h3>
-                                <p className="text-sm text-gray-600">
-                                  Positions the crane hook automatically
-                                  directly over the load. The benefits: faster
-                                  load cycle times and ease of operation.
-                                </p>
-                              </div>
-                            </div>
-                            <hr />
+                          {/* Hook centering */}
+                          <div>
+                            <h3 className="text-lg font-semibold">
+                              Hook centering
+                            </h3>
+                            <ul className="list-disc pl-5 text-sm text-gray-600">
+                              <li>
+                                Automatically positions hook directly over the
+                                load
+                              </li>
+                              <li>Faster cycles, easier operation</li>
+                            </ul>
+                          </div>
 
-                            {/* Smart Tandem control */}
-                            <div className="flex items-start space-x-4">
-                              <Image
-                                src="/img/dhr-rope-hoist-icon7.webp"
-                                alt="Diagonal Pull Icon"
-                                width={50}
-                                height={50}
-                                className="w-10 h-10"
-                              />
-                              <div>
-                                <h3 className="text-lg font-semibold">
-                                  Smart Tandem control
-                                </h3>
-                                <p className="text-sm text-gray-600">
-                                  Two cranes with up to four rope hoists can
-                                  also be synchronized.
-                                </p>
-                              </div>
-                            </div>
+                          {/* Smart Tandem control */}
+                          <div>
+                            <h3 className="text-lg font-semibold">
+                              Smart Tandem control
+                            </h3>
+                            <ul className="list-disc pl-5 text-sm text-gray-600">
+                              <li>
+                                Synchronize two cranes with up to four rope
+                                hoists
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </Container>

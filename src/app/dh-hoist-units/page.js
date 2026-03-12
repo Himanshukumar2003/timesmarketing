@@ -61,75 +61,72 @@ export default function Home() {
           <div className="container mx-auto">
             <div className="max-w-4xl mx-auto">
               <div className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
-                Demag DH. The hoist unit: Beyond classic crane applications
+                Demag DH. More than just a hoist.
               </div>
               <div className="flex justify-center">
                 <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
               </div>
 
               <p className="text-lg text-gray-700 mb-8 text-center">
-                Demag DH hoist units can be used in a wide variety of
-                applications, both as travelling hoists on cranes or monorails
-                and as stationary solutions. These powerful hoist units offer a
-                number of special technical features that enable loads to be
-                handled reliably even under demanding requirements. More than
-                lifting: Installed as stationary or travelling units, they are
-                more than just hoists – thanks to gentle handling with high load
-                capacities up to 100 tons and flexible integration into almost
-                any design.
+                The Demag DH hoist unit fits where you need it—on cranes,
+                monorails, or as a stationary setup. It&apos;s built for
+                demanding work, handling loads up to 100 tonnes with care and
+                precision.
               </p>
-
+              <p>
+                But it&apos;s more than just lifting power. Installed as a
+                travelling or stationary unit, it integrates smoothly into
+                almost any design. Sometimes you barely notice it&apos;s
+                there—until it gets to work.
+              </p>
               <h4 className="text-xl  font-bold my-4 text-[#676f77]">
                 Built tough
               </h4>
               <p className="text-lg text-gray-700">
-                DH hoists are robust to ensure reliable operation even in the
-                toughest environments. Demag hoist units are designed for
-                demanding applications such as foundries or electroplating
-                plants with high ambient temperatures, high dust levels and
-                aggressive environments. They can also withstand the adverse
-                conditions typically encountered by rope hoists.
+                Some environments are just harsh. Foundries. Electroplating
+                plants. High heat. Dust. Aggressive air. The DH is built for
+                these places—rugged, reliable, and ready to withstand what comes
+                at it.
               </p>
               <h4 className="text-xl font-bold my-4 text-[#676f77]">
                 Versatile
               </h4>
               <p className="text-lg text-gray-700">
-                Their modular concept and flexible mounting arrangements enable
-                DH hoist units to be integrated into almost any structure with
-                ease. Their many variants and options facilitate an almost
-                unlimited range of applications. For example, you can find these
-                hoists in lifting stations, winch arrangements and architectural
-                applications – sometimes it takes a closer look to even discover
-                them.
+                The modular design and flexible mounting options make the DH
+                easy to fit into almost any structure. With plenty of variants
+                and options, the applications are nearly endless. Lifting
+                stations. Winch arrangements. Architectural installations.
+                Sometimes you have to look twice to spot them.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                 <div>
                   <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                    DH: Your benefits
+                    Your Benefits
                   </h4>
 
-                  <ul className="list-disc list-inside mt-2 space-y-1">
-                    <li>Rugged design – proven worldwide</li>
-                    <li>Easy integration into any design</li>
-                    <li>High switching frequencies and high duty cycles</li>
+                  <ul className="list-disc pl-10 mt-2 space-y-1">
+                    <li>Rugged design—proven around the world</li>
+                    <li>Easy integration into any setup</li>
+                    <li>
+                      Handles high switching frequencies and heavy duty cycles
+                    </li>
                     <li>
                       Precise positioning with mechanical microspeed or
                       frequency-controlled lifting
                     </li>
-                    <li>Load capacity up to 100 t</li>
-                    <li>Hook path up to 104 m</li>
+                    <li>Load capacity up to 100 tonnes</li>
+                    <li>Hook path up to 104 metres</li>
                   </ul>
                   <h4 className="text-xl font-bold my-4 text-[#676f77]">
                     Universal. Safe. Rugged.
                   </h4>
                   <p>
-                    Demag DH hoist units are based on perfectly matched and
-                    robustly designed components. This means that they offer
-                    optimum conditions for individual solutions, even for
-                    unusual applications. Demag DH hoist units are in operation
-                    all over the world and offer outstanding safety and
-                    reliability.
+                    Every DH hoist is built from perfectly matched, robust
+                    components. That means you get a solution that fits—even for
+                    the unusual applications. In operation all over the world,
+                    the Demag DH delivers safety and reliability, day in and day
+                    out.
                   </p>
                 </div>
                 <Image
@@ -167,39 +164,81 @@ export default function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start p-4">
                       {/* Content Section */}
                       <div className="md:col-span-8 space-y-6">
+                        <h3>Built for tough jobs and precise moves</h3>
+                        <p>
+                          The DH hoist handles high start/stop frequencies and
+                          heavy duty cycles without breaking a sweat. Thanks to
+                          mechanical microspeed and conical-rotor brake motors,
+                          it keeps performing—even in high ambient temperatures.
+                        </p>
+                        <p>
+                          <b>Positioning you can count on:</b>
+                        </p>
                         <ul className="list-disc px-4 space-y-1">
                           <li>
-                            High number of starts/stops and high duty factor
-                            thanks to mechanical microspeed and conical-rotor
-                            brake motors, also for high ambient temperatures
+                            1:10 mechanical microspeed for highly precise moves
                           </li>
                           <li>
-                            Highly precise positioning with 1:10 mechanical
-                            microspeed
+                            NEW: Frequency-controlled lifting now available as a
+                            standardised option
+                          </li>
+                        </ul>
+
+                        <p>
+                          <b>Flexible and reliable:</b>
+                        </p>
+                        <ul className="list-disc px-4 space-y-1">
+                          <li>Rope drums with multi-groove designs</li>
+                          <li>
+                            Geared limit switch monitors limit positions safely
+                            and reliably
                           </li>
                           <li>
-                            NEW: Frequency-controlled lifting as standardised
-                            option
+                            Torsionally rigid frame&mdash;bolt it on from any
+                            side
                           </li>
-                          <li>
-                            Rope drums available with multi-groove designs
-                          </li>
-                          <li>
-                            Safe and reliable monitoring of the limit positions
-                            by geared limit switch
-                          </li>
-                          <li>Simple integration into almost any design</li>
-                          <li>
-                            Torsionally rigid frame, for bolted connection on
-                            all sides
-                          </li>
-                          <li>Rope lead-off possible in any direction</li>
-                          <li>
-                            Rope reeving according to customer requirements
-                          </li>
+                          <li>Rope lead-off in any direction</li>
+                          <li>Rope reeving built to your specs</li>
                           <li>Wide range of lifting speeds</li>
-                          <li>Optionally with or without electric equipment</li>
-                          <li>Wide range of industry solutions available</li>
+                          <li>Choose with or without electric equipment</li>
+                          <li>Broad range of industry solutions available</li>
+                        </ul>
+
+                        <h3>
+                          <strong>Stationary or mobile? Your call.</strong>
+                        </h3>
+                        <p>
+                          <span>
+                            The DH adapts to you&mdash;whether fixed in place or
+                            travelling on a crane.
+                          </span>
+                        </p>
+
+                        <h3>
+                          <strong>Trolleys built to last</strong>
+                        </h3>
+                        <ul className="list-disc px-4 space-y-1">
+                          <li>
+                            Travel wheels made from high-strength
+                            spheroidal-graphite cast iron
+                          </li>
+                          <li>
+                            Gentle on the track and quiet
+                            running&mdash;effective vibration damping
+                          </li>
+                          <li>
+                            Self-lubricating effect from embedded nodular
+                            graphite means lower friction, higher wear
+                            resistance
+                          </li>
+                          <li>
+                            Special wheel shape distributes load evenly, keeping
+                            forces centred on the girder
+                          </li>
+                          <li>
+                            Generously sized anti-friction bearings for long
+                            service life
+                          </li>
                         </ul>
                       </div>
 
@@ -215,39 +254,6 @@ export default function Home() {
                         />
                       </div>
                     </div>
-                    <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                      Models
-                      <br />
-                      Stationary or mobile? Everything is possible.
-                    </h4>
-
-                    <h6 className="text-2sm font-bold my-4 text-[#676f77]">
-                      Trolleys
-                    </h6>
-
-                    <ul className="list-disc px-4 space-y-1">
-                      <li>
-                        Travel wheels made of high-strength spheroidal-graphite
-                        cast-iron
-                      </li>
-                      <li>
-                        Particularly gentle on the track, quiet running thanks
-                        to effective vibration damping
-                      </li>
-                      <li>
-                        Lower friction and high wear resistance due to
-                        self-lubrication effect of embedded nodular graphite
-                      </li>
-                      <li>
-                        Optimum load distribution thanks to special travel wheel
-                        shape, which transmits wheel contact forces close to the
-                        centre of the girder
-                      </li>
-                      <li>
-                        Generously dimensioned anti-friction bearings with long
-                        service life
-                      </li>
-                    </ul>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion>
@@ -265,12 +271,12 @@ export default function Home() {
                   </AccordionSummary>
                   <AccordionDetails>
                     <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                      Direct connection of Demag F-DH hoist units
+                      Demag F-DH hoist units – direct connection
                     </h4>
-                    <ul className="list-disc list-inside mt-2 space-y-1">
-                      <li>Square frame design can be mounted on any side.</li>
-                      <li>Load capacity: up to 100 t.</li>
-                    </ul>{" "}
+                    <ul className="list-disc pl-10 mt-2 space-y-1">
+                      <li>Square frame design—mount it on any side</li>
+                      <li>Load capacity: up to 100 tonnes</li>
+                    </ul>
                     <Image
                       height={100}
                       width={100}
@@ -282,10 +288,21 @@ export default function Home() {
                     <h4 className="text-xl font-bold my-4 text-[#676f77]">
                       EK-DH low-headroom monorail hoist
                     </h4>
-                    <ul className="list-disc list-inside mt-2 space-y-1">
-                      <li>Trolley with favourable C-dimension.</li>
-                      <li>Also available as an articulated trolley.</li>
-                      <li>Load capacity: up to 16 t</li>
+                    <ul className="list-disc pl-10 mt-2 space-y-1">
+                      <li>
+                        <strong>
+                          Trolley designed with a favourable
+                          C-dimension&mdash;fits in tight spaces
+                        </strong>
+                      </li>
+                      <li>
+                        <strong>
+                          Also available as an articulated trolley
+                        </strong>
+                      </li>
+                      <li>
+                        <strong>Load capacity: up to 16 tonnes</strong>
+                      </li>
                     </ul>{" "}
                     <Image
                       height={100}
@@ -298,14 +315,16 @@ export default function Home() {
                     <h4 className="text-xl font-bold my-4 text-[#676f77]">
                       EU-DH standard-headroom monorail hoist
                     </h4>
-                    <ul className="list-disc list-inside mt-2 space-y-1">
+                    <ul className="list-disc pl-10 mt-2 space-y-1">
+                      <li>Cost-effective solution for monorails</li>
                       <li>
-                        Cost-effective solution for monorails with infinitely
-                        variable flange width adjustment.
+                        Infinitely variable flange width adjustment&mdash;fits
+                        different beam sizes easily
                       </li>
-                      <li>Also as EUD-DH articulated trolley. </li>
+                      <li>Also available as EUD-DH articulated trolley</li>
                       <li>
-                        Load capacity: up to 16 t (optionally also up to 50 t).
+                        Load capacity: up to 16 tonnes (optionally up to 50
+                        tonnes)
                       </li>
                     </ul>{" "}
                     <Image
@@ -319,13 +338,16 @@ export default function Home() {
                     <h4 className="text-xl font-bold my-4 text-[#676f77]">
                       EZ-DH double-rail crab
                     </h4>
-                    <ul className="list-disc list-inside mt-2 space-y-1">
+                    <ul className="list-disc pl-10 mt-2 space-y-1">
                       <li>
-                        For higher load capacities on double-girder cranes;
-                        optimum use of space thanks to low-headroom design and
-                        favourable approach dimensions.{" "}
+                        Designed for higher load capacities on double-girder
+                        cranes
                       </li>
-                      <li>Load capacity: up to 100 t.</li>
+                      <li>
+                        Low-headroom design &ndash; makes efficient use of space
+                      </li>
+                      <li>Favourable approach dimensions</li>
+                      <li>Load capacity: up to 100 tonnes</li>
                     </ul>{" "}
                     <Image
                       height={100}
@@ -354,117 +376,72 @@ export default function Home() {
                   <AccordionDetails>
                     <Container maxWidth="lg">
                       <h4 className="text-xl font-bold  text-[#676f77]">
-                        Customised motions
+                        Customised motions – precise, rugged, high performance
                       </h4>
                       <p>
-                        Precise. Rugged. High performance. For our DH hoist
-                        range, we offer three different drive concepts that have
-                        proven themselves in a wide range of applications. Based
-                        on reliable series components, lifting solutions can be
-                        specifically configured for any requirement. With the
-                        “Made in Germany” seal of quality.
+                        Three drive concepts. One reliable foundation. All
+                        &ldquo;Made in Germany.&ldquo;
                       </p>
                       <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                        Drive with main lifting and creep lifting speeds{" "}
-                      </h4>
-                      <p>
-                        Our conical-rotor brake motors with outputs of up to 40
-                        kW are used as starting/stopping drives. The
-                        pole-changing motors have two speeds and work reliably
-                        even with extremely high switching frequencies. The
-                        mechanical connection between the conical brake and
-                        rotor creates a unique braking principle with high
-                        braking capacity. This makes these motors superior
-                        wherever the highest demands are placed on the brake.
-                        Separate control and additional switching elements are
-                        not required. The sliding-rotor motors are equipped with
-                        motor temperature monitoring as standard.
-                      </p>
-                      <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                        Drive for infinitely variable lifting speeds
-                      </h4>
-                      <p className="mb-2">
-                        The combination of our ZBA cylindrical-rotor brake
-                        motors with Dedrive Compact frequency inverters creates
-                        powerful lifting units with infinitely variable speeds.
-                        And they offer impressive performance:
-                      </p>
-
-                      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
-                        {/* Left Column: Text */}
-                        <div className="md:col-span-6 space-y-4">
-                          <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                            Drive Features
-                          </h4>
-
-                          {/* First UL */}
-                          <ul className="list-disc px-4 space-y-1">
-                            <li>
-                              High drive efficiency with motor outputs of up to
-                              40 kW
-                            </li>
-                            <li>
-                              Infinitely variable lifting speeds with
-                              inverter-controlled brake motor
-                            </li>
-                            <li>
-                              With external pulse generators for speed feedback
-                              to the frequency inverter
-                            </li>
-                            <li>
-                              Motor brake with adjustment monitoring and brake
-                              release monitoring
-                            </li>
-                            <li>Motor temperature monitoring as standard</li>
-                            <li>
-                              Also ready for customer drives and control
-                              solutions
-                            </li>
-                          </ul>
-
-                          {/* Second UL */}
-                          <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                            {" "}
-                            Main and creep lifting speeds with F6 pole-changing
-                          </h4>
-                          <ul className="list-disc px-4 space-y-1">
-                            <li>
-                              Proven Demag drive technology with Demag KBH
-                              squirrel-cage motors
-                            </li>
-                            <li>
-                              Reliable and efficient in starting/stopping
-                              applications – also with high duty factor
-                            </li>
-                          </ul>
-                        </div>
-
-                        {/* Right Column: Image */}
-                        <div className="md:col-span-6">
-                          <Image
-                            height={300}
-                            width={300}
-                            src="/img/dh-host-grapgh.webp"
-                            alt="Demag Drive Motor"
-                            className="w-full h-full  rounded-lg shadow"
-                          />
-                        </div>
-                      </div>
-                      <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                        Main and creep lifting speeds with F10 mechanical
-                        microspeed unit
+                        Drive with main and creep lifting speeds
                       </h4>
                       <ul className="list-disc px-4 space-y-1">
-                        <li>Demag KBH and KBA squirrel-cage motors</li>
                         <li>
-                          Separate motors for main and creep lifting motions
+                          Conical-rotor brake motors with outputs up to 40 kW
                         </li>
+                        <li>
+                          Pole-changing motors handle extremely high switching
+                          frequencies
+                        </li>
+                        <li>
+                          Mechanical connection between brake and rotor = high
+                          braking capacity, no extra controls needed
+                        </li>
+                        <li>Motor temperature monitoring comes standard</li>
+                      </ul>
+                      <h6 className="text-lg font-bold my-4 text-[#676f77]">
+                        Drive for infinitely variable lifting speeds
+                      </h6>
+                      <ul className="list-disc px-4 space-y-1">
+                        <li>
+                          ZBA cylindrical-rotor brake motors + Dedrive Compact
+                          frequency inverters
+                        </li>
+                        <li>Infinitely variable speeds, smooth and powerful</li>
+                      </ul>
+                      <h6 className="text-lg font-bold my-4 text-[#676f77]">
+                        Features:
+                      </h6>
+                      <ul className="list-disc px-4 space-y-1">
+                        <li>Motor outputs up to 40 kW</li>
+                        <li>Inverter-controlled brake motor</li>
+                        <li>External pulse generators for speed feedback</li>
+                        <li>Brake with adjustment and release monitoring</li>
+                        <li>Standard motor temperature monitoring</li>
+                        <li>Ready for customer drives and control solutions</li>
+                      </ul>
+                      <h6 className="text-lg font-bold my-4 text-[#676f77]">
+                        Main and creep lifting speeds with F6 pole-changing
+                      </h6>
+
+                      <ul className="list-disc px-4 space-y-1">
+                        <li>Proven Demag KBH squirrel-cage motors</li>
+                        <li>
+                          Reliable and efficient&mdash;even with high duty
+                          factor
+                        </li>
+                      </ul>
+                      <h6 className="text-lg font-bold my-4 text-[#676f77]">
+                        Main and creep lifting speeds with F10 mechanical
+                        microspeed
+                      </h6>
+                      <ul className="list-disc px-4 space-y-1">
+                        <li>Separate motors for main and creep motions</li>
                         <li>Particularly precise positioning</li>
                         <li>
-                          High braking capacity and reliable braking without any
-                          control devices when switching off or in the event of
-                          a power failure
+                          High braking capacity&mdash;even during power failure
                         </li>
+                        <li>No control devices needed for reliable braking</li>
                       </ul>
 
                       <RopeGuideSection />

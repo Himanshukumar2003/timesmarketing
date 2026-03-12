@@ -30,7 +30,8 @@ const data = [
     productInformation: {
       tabHeading: "The benefits at a glance",
       heading: "High-performance equipment",
-      benefits: [ // Corrected spelling
+      benefits: [
+        // Corrected spelling
         {
           label: "High-performance equipment",
           points: [
@@ -118,7 +119,7 @@ const OffsetGearedMotors = () => {
             {productData.summary.description}
           </p>
 
-          <ul className="list-disc list-inside mt-2">
+          <ul className="list-disc pl-10 mt-2">
             {productData.summary.benefits?.map((item, i) => (
               <li key={i} className="text-lg">
                 {item}
@@ -160,13 +161,14 @@ const OffsetGearedMotors = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <div className="space-y-8">
-                  {productData.productInformation.benefits.map( // Corrected spelling
+                  {productData.productInformation.benefits.map(
+                    // Corrected spelling
                     (item, index) => (
                       <div key={index} className="border-b pb-4">
                         <h3 className="text-xl font-semibold mb-2">
                           {item.label}
                         </h3>
-                        <ul className="list-disc list-inside space-y-1 text-gray-700">
+                        <ul className="list-disc pl-10 space-y-1 text-gray-700">
                           {item.points.map((point, i) => (
                             <li key={i}>{point}</li>
                           ))}
@@ -263,7 +265,7 @@ const OffsetGearedMotors = () => {
                   {productData.productInformation.technicalData.description
                     ?.length > 0 && (
                     <div className="mt-4">
-                      <ul className="list-disc list-inside text-gray-700 text-sm">
+                      <ul className="list-disc pl-10 text-gray-700 text-sm">
                         {productData.productInformation.technicalData.description.map(
                           (point, i) => (
                             <li key={i}>{point}</li>

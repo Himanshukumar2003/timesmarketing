@@ -6,57 +6,74 @@ import Image from "next/image";
 
 const allSections = [
   {
-    label: "High variability thanks to modular design",
+    label: "Rope guide",
+    img: "/img/dhr-rope-hoist4.webp",
     points: [
-      "Modular design for rope hoist configuration to meet your individual needs",
-      "Broad range of applications with one basic technology",
-      "More sizes with higher load capacities",
+      "All-metal construction. Built to guide the rope precisely—with minimal wear.",
+      "Smart design touches:",
+      "For sizes 10 (optional) and 20-40, a full-circumference rope guide comes as standard",
+      "Handles diagonal pulls up to four degrees without the rope touching the guide",
+      "Ropes are galvanised as standard for added durability",
+    ],
+  },
+  {
+    label: "High variability thanks to modular design",
+    img: "/img/dhr-rope-hoist4.webp",
+    points: [
+      "Modular design lets you configure the rope hoist to fit your needs",
+      "One basic technology works across a broad range of applications",
+      "More sizes available",
+      "Higher load capacities included",
     ],
   },
   {
     label: "Planning and application flexibility",
+    img: "/img/dhr-rope-hoist4.webp",
     points: [
-      "Application types: foot-mounted hoist, low-headroom monorail hoist, double-rail crab, standard-headroom monorail hoist",
-      "Smart interfaces for many freely selectable fittings and accessories",
-      "Contactor control or control system provided by the customer",
-      "Digital components for additional safety functions",
+      "Four application types: foot-mounted hoist, low-headroom monorail hoist, double-rail crab, standard-headroom monorail hoist",
+      "Smart interfaces – easy to add fittings and accessories",
+      "Control options: contactor control or customer-provided system",
+      "Digital components available for extra safety functions",
     ],
   },
   {
     label: "Other benefits",
+    img: "/img/dhr-rope-hoist4.webp",
     points: [
-      " Reliable mechanical components",
-      " Choice of smart features for more convenience and improved safety",
-      " Remote diagnostics in real time with the Demag StatusControl app",
+      "Reliable mechanical components you can count on",
+      "Smart features available—more convenience, better safety",
+      "Real-time remote diagnostics with the Demag StatusControl app",
     ],
   },
   {
     label: "Valuable cost savings",
+    img: "/img/dhr-rope-hoist4.webp",
     points: [
-      "Fast and simple installation and conversion",
-      "Reduced forces transmitted to superstructures for lighter, more cost-effective building design",
-      "Greater distances between suspensions and joints for fewer suspension fittings: additional steelwork largely unnecessary",
-      "Simple and cost-effective modification and extension to meet changing requirements",
+      "Fast and simple installation and conversion – saves time and money",
+      "Reduced forces on superstructures allow for lighter, more cost-effective building design",
+      "Greater distances between suspensions and joints mean fewer fittings needed – extra steelwork largely unnecessary",
+      "Easy and affordable to modify or extend as your needs change",
     ],
   },
   {
     label: "Proven system",
+    img: "/img/dhr-rope-hoist4.webp",
     points: [
-      "Continuously tested in our own test center and in external tests",
+      "Continuously tested – in our own test center and by external labs",
       "Quality made in Germany",
-      "Light crane system from the market leader with more than 50 years of experience",
+      "Light crane system from the market leader, backed by over 50 years of experience",
     ],
   },
   {
     label: "Professional planning support",
+    img: "/img/dhr-rope-hoist4.webp",
     points: [
-      "Free KBK Designer online tool for project engineering your KBK installations",
-      "Planning made easy: fast, self-explanatory configuration including static calculation, parts list, technical drawing and quotation price",
-      "Link to the Demag Shop order system for simple and reliable orders at the click of your mouse",
+      "Free KBK Designer online tool – helps you plan your KBK installation step by step",
+      "Planning made easy: fast, intuitive configuration with static calculation, parts list, technical drawing, and quotation price all included",
+      "Direct link to Demag Shop – order simply and reliably with just a few clicks",
     ],
   },
 ];
-
 function ProductInformation() {
   return (
     <section className="py-2">
@@ -93,7 +110,7 @@ export function HoistModels() {
       model: "F-DVR Foot-Mounted Hoist",
       application: "Stationary applications or special trolleys",
       features: [
-        "Four mounting positions with one lead-off direction each",
+        " Four mounting positions – each with its own lead-off direction",
         "Flexible installation options",
         "Load capacity: up to 80 tonnes",
       ],
@@ -103,8 +120,8 @@ export function HoistModels() {
     {
       model: "EU-DVR Standard-Headroom Monorail Hoist",
       features: [
-        "For use on monorails",
-        "EUD-DVR for rails with radius",
+        "Designed for use on monorails",
+        "EUD-DVR variant available for curved rails",
         "Load capacity: up to 40 tonnes",
       ],
       application: "Monorails (standard and radius rails)",
@@ -116,9 +133,9 @@ export function HoistModels() {
       model: "EK-DVR Low-Headroom Monorail Hoist",
       application: "Compact crane applications",
       features: [
-        "For crane applications with compact dimensions and reduced approach dimensions",
-        "Lift-off and derailment protection",
-        "Two driven wheels",
+        "Ideal for crane applications where space is tight – compact dimensions, reduced approach",
+        "Built-in lift-off and derailment protection",
+        "Two driven wheels for reliable travel",
         "Load capacity: up to 12.5 tonnes",
       ],
       loadCapacityTonnes: 12.5,
@@ -128,13 +145,13 @@ export function HoistModels() {
       model: "EZ-DVR Double-Rail Crab",
       application: "Double-rail cranes (narrow gauge from 900 mm)",
       features: [
-        " Narrow gauge track (from 900 mm)",
-        " Uniform distribution of wheel loads",
-        " Versatile designs (low, medium, high connection)",
-        " Two drive units (no open gears)",
-        " Service platform available as an option",
+        " Works with narrow gauge tracks (from 900 mm)",
+        "Even distribution of wheel loads",
+        " Versatile designs – low, medium, or high connection",
+        " Two drive units – no open gears",
+        " Optional service platform available",
         " Load capacity: up to 80 tonnes",
-        " Two hoists on one trolley available as an option",
+        " Optional: two hoists on one trolley",
       ],
       loadCapacityTonnes: 80,
       image: "/img/dvr-rope-hoist9.webp",
@@ -143,19 +160,18 @@ export function HoistModels() {
   return (
     <div className="p-6 space-y-6">
       {hoistModels.map((model, index) => (
-        <div
-          key={index}
-          className=""
-        >
-          <h2 className="text-xl font-bold my-4 text-[#676f77]">{model.model}</h2>
-        
+        <div key={index} className="">
+          <h2 className="text-xl font-bold my-4 text-[#676f77]">
+            {model.model}
+          </h2>
+
           {model.variants && (
             <p className="text-gray-600">
               <strong>Variant:</strong> {model.variants.join(", ")}
             </p>
           )}
           {model.features && (
-            <ul className="list-disc list-inside text-gray-700">
+            <ul className="list-disc pl-10 text-gray-700">
               {model.features.map((feature, idx) => (
                 <li key={idx}>{feature}</li>
               ))}
@@ -173,18 +189,27 @@ export function HoistModels() {
         </div>
       ))}
 
-      <h4 className="text-xl font-bold my-4 text-[#676f77]">Technical perfection down to the last detail</h4>
-      <p>As with all Demag products, the DVR rope hoist focuses on the needs of our customers. The desire for flexibility and productivity is anchored in the DVR, as is the desire for reliability and cost-effectiveness. As a result, the versatile rope hoist concept impresses down to the last technical detail.</p>
-    <h6 className="text-sm font-bold my-4 text-[#676f77]">Five sizes</h6>
-    
-    <Image
-            src="/img/dvr-rope-table.webp"
-            height={300}
-            width={400}
-            className="w-full"
-            alt=""
-            layout="responsive"
-          ></Image>
+      <h4 className="text-xl font-bold my-4 text-[#676f77]">
+        Technical perfection, right down to the details
+      </h4>
+      <p>
+        Like every Demag product, the DVR rope hoist starts with one question:
+        What do our customers actually need?<br></br>
+        The answer is built into every part of it. Flexibility. Productivity.
+        Reliability. Cost-effectiveness.<br></br>
+        From the big-picture concept down to the smallest technical detail, the
+        DVR is designed to deliver—without complication.
+      </p>
+      <h6 className="text-sm font-bold my-4 text-[#676f77]">Five sizes</h6>
+
+      <Image
+        src="/img/dvr-rope-table.webp"
+        height={300}
+        width={400}
+        className="w-full"
+        alt=""
+        layout="responsive"
+      ></Image>
     </div>
   );
 }

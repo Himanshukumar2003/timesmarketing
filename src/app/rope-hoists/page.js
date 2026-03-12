@@ -44,17 +44,31 @@ export default function KbkLight(params) {
         <section className="bg-gray-50 py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <div className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
-                Hoists to meet individual needs
+              <div className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6 capitalize">
+                A hoist that fits your work, not the other way around
               </div>
+              <p className="text-lg text-gray-700 mb-2 text-center">
+                Lifting heavy loads shouldn&apos;t be complicated. Whether you
+                need 100 kg or 100 tonnes, our Demag rope hoists are designed to
+                handle it—safely, efficiently, and without fuss.
+              </p>
+              <p className="text-lg text-gray-700 mb-2 text-center">
+                Fast and cost-effective – high handling rates keep things
+                moving, while low operating costs keep your budget happy.
+              </p>
+              <p className="text-lg text-gray-700 mb-2 text-center">
+                Built for your setup – maybe you&apos;re integrating a basic
+                hoist unit into existing machinery. Or perhaps you need a
+                smarter solution with electronic controls optimized for crane
+                applications. Either way, we&apos;ve got you covered.
+              </p>
+              <p className="text-lg text-gray-700 mb-2 text-center">
+                Safety you can count on – because when tonnes are in the air,
+                reliability isn&apos;t optional.
+              </p>
               <p className="text-lg text-gray-700 mb-8 text-center">
-                Demag rope hoists feature high handling rates, cost-effective
-                operation and maximum safety. As basic hoist units for
-                integration into plant and machinery or as lifting solutions
-                with electronic controls that are optimized for crane
-                applications, with our wide range of rope hoists we offer the
-                optimum solution to meet our customers specific requirements for
-                efficiently lifting loads weighing up to 100 tonnes.
+                Whatever your lifting challenge, we&apos;ll help you find the
+                right fit.
               </p>
             </div>
           </div>
@@ -62,113 +76,92 @@ export default function KbkLight(params) {
 
         <KbkCard />
         <div className="section bg-gray-100">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 max-w-5xl ">
             <div className="space-y-4 text-gray-600 text-center">
+              <h3 className="text-xl font-bold my-4 ">
+                <strong>Lifting has come a long way. So have we.</strong>
+              </h3>
               <p>
-                Demag rope hoists and hoist units feature high handling rates,
-                cost-effective operation and maximum safety. They can be used as
-                basic hoist units for integration into plant and machinery, as
-                components for a crane set or as lifting solutions with
-                electronic controls that are optimised for crane applications.
-                With our large portfolio of rope hoists and hoist units, we
-                offer the best possible solution for your specific needs:
-                cost-effective lifting equipment for loads up to 100 t.
-              </p>
-              <h2 className="text-xl font-semibold ">
-                Demag rope hoists and rope winches
-              </h2>
-              <p className="">
-                Demag electric rope hoists are a key element of our crane
-                installations. They are the result of decades of research and
-                development work at Demag. Our electric rope hoists impress with
-                their lifting force with load capacities of between 1 t and 100
-                t. Depending on your application and specific needs, you can
-                choose from a wide variety of models: from standard rope hoists
-                in the lower load capacity range to special rope hoist designs
-                with additional system components in the upper load capacity
-                range.
+                For over a century, Demag has been helping people lift
+                things&mdash;from a few hundred kilos to a hundred tonnes. What
+                started with the first motor winch in 1900 has grown into a full
+                portfolio of rope hoists and winches built for real-world work.
               </p>
               <p>
-                In addition, we offer various assemblies that can extend the
-                lifting height. This can be achieved by mounting the hoist unit
-                or rope winch on the side of the crane. The modular designs of
-                our electric rope hoists are hard to beat in terms of lifting
-                force, material quality and versatility – always with a view to
-                efficiency. Our crane trolleys, which reliably move the rope
-                winches and rope hoists, are also key. However, all rope hoist
-                types have one feature in common: maximum availability and
-                reliability in production operations and material flow.
+                Fast, safe, and efficient &ndash; whether you&apos;re moving
+                materials on a shop floor or servicing a wind turbine 180 metres
+                up, our hoists keep things moving without wasting time or
+                energy.
+              </p>
+              <h3 className="text-xl font-bold my-4 text-[#676f77]">
+                <strong>Rope hoists that fit your world</strong>
+              </h3>
+              <p>
+                Every job is different. That&apos;s why we offer more than just
+                a standard hoist.
+              </p>
+              <ul className="list-disc pl-10">
+                <li>
+                  Loads from 1 t to 100 t &ndash; from light lifting to
+                  heavy-duty
+                </li>
+                <li>
+                  Lifting heights up to 104 metres &ndash; and even higher with
+                  side-mounted winches
+                </li>
+                <li>
+                  Modular design &ndash; so you can add components, extend
+                  heights, and tailor the setup to your space
+                </li>
+                <li>
+                  Crane trolleys included &ndash; because moving the load is
+                  just as important as lifting it
+                </li>
+              </ul>
+              <p>
+                Our DH hoist unit comes in three sizes and delivers precise
+                positioning thanks to a mechanical microspeed unit. The
+                planetary gear is tucked neatly inside the drum&mdash;compact,
+                protected, and smart.
               </p>
               <p>
-                Our classic Demag DH hoist unit is available in three sizes. A
-                maximum load of 100 t can be lifted over a hook path of up to
-                104 metres. The electric rope hoist achieves particularly
-                precise positioning thanks to its mechanical microspeed unit.
-                Its space-saving planetary gear is protected inside the drum.
+                For extreme heights, our DS10 rope winches are built for onshore
+                and offshore use. They&apos;re a favourite in the wind industry
+                for hauling maintenance materials straight up into the
+                nacelle&mdash;quickly, safely, and reliably.
+              </p>
+              <h3 className="text-xl font-bold my-4 text-[#676f77]">
+                <strong>Built on 200 years of &#34;what if?&#34;</strong>
+              </h3>
+              <p>
+                We&apos;ve been in Wetter an der Ruhr for over two centuries,
+                constantly asking: <em>How can we make this better?</em> The
+                result is a hoist that&apos;s not just strong, but smart.
               </p>
               <p>
-                Our DS10 rope winches are designed for onshore and offshore
-                installations and primarily offer solutions for the wind power
-                industry. In wind turbines, for example, a winch can be used to
-                lift maintenance material and transport the load into the
-                nacelle with the appropriate lifting force. Using the electric
-                rope winch, great heights of up to 180 m can be overcome quickly
-                and efficiently without any problems.
+                Electric drive. Dynamic braking. Precise control. Whether
+                you&apos;re lifting, lowering, or moving sideways, everything
+                works together smoothly.
               </p>
+              <h3 className="text-xl font-bold my-4 text-[#676f77]">
+                <strong>So, why do you need a hoist?</strong>
+              </h3>
               <p>
-                Our combination of rope hoist and crane is optimised for your
-                needs. The hoist or winch, rope and lifting force create an
-                enormously efficient and reliable combination when used with our
-                cranes and trolleys. The electric drive combined with our
-                dynamic braking system ensures outstanding safety and
-                reliability. That is innovative strength from Wetter.
+                Same reason anyone does: to lift something heavy and move it
+                where it needs to go. Maybe it&apos;s raw material on a
+                production line. Maybe it&apos;s spare parts for a turbine.
+                Maybe it&apos;s something we haven&apos;t even thought of yet.
               </p>
-              <h2 className="text-xl font-semibold ">
-                Evolving innovations from Wetter
-              </h2>
+              <p>Whatever it is, we&apos;ve got a hoist for that.</p>
+              <h3 className="text-xl font-bold my-4 text-[#676f77]">
+                <strong>Let&apos;s find yours</strong>
+              </h3>
               <p>
-                Rope hoists and chain hoists have been used to transport goods
-                for over a century. The first motor winch was presented by Demag
-                in 1900. The year 1912 saw the market launch of a crane with a
-                separate electric drive for long-travel and lifting motions, and
-                with it the type A electric rope hoist. Ever since then, Demag
-                has continued to present innovative electric rope hoists and
-                rope winches. For over 200 years, the company has stood for
-                innovations from Wetter an der Ruhr. But why are hoist units
-                needed?
+                Browse our product pages for technical data, brochures, and
+                options. Need a price? Spare parts? Just want to talk it through
+                with someone who knows hoists inside and out?
               </p>
-              <p>
-                All hoists have the same task: lifting a load with the
-                appropriate lifting force. In combination with a trolley, the
-                hoist can finally also move the load. With an electric trolley,
-                the load can be very conveniently moved on the electric rope
-                hoist by the operator. This facilitates many work processes and
-                provides employees with enhanced ergonomics in their daily work.
-              </p>
-              <p>
-                At the end of the 19th century, cranes were still operated with
-                steam; since 1912, electric rope hoists or electric rope winches
-                have been used almost exclusively. The principle of lifting
-                remains the same: a load is suspended with its weight on a load
-                hook. The wire rope attached to the load hook is connected to an
-                electrically driven motor via a rope drum, thus obtaining its
-                lifting force. Depending on the size of the hoist unit, the
-                rating of the motor and the length of the rope, the maximum
-                lifting speed and lifting height as well as the maximum load
-                capacity can vary.
-              </p>
-              <h2 className="text-xl font-semibold ">
-                Your solution from Demag
-              </h2>
-              <p>
-                Take a look at our different rope hoist variants on the relevant
-                product pages. There you can find out about the many different
-                applications and see further material, such as our brochures and
-                technical data. If you have any questions about our electric
-                rope hoists and electric rope winches, need a price for the
-                hoist in question or are looking for spare parts or accessories,
-                please feel free to contact our crane experts.
-              </p>
+              <p>Get in touch. We&apos;re here to help.</p>
             </div>
           </div>
         </div>

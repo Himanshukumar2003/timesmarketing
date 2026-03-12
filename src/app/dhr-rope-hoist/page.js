@@ -57,21 +57,24 @@ export default function Home() {
           <div className="container mx-auto">
             <div className="max-w-4xl mx-auto">
               <div className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
-                Innovative. Smart. Lifting to the next level.
+                Lifting just got smarter
               </div>
               <div className="flex justify-center">
                 <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
               </div>
               <p className="text-lg text-gray-700 mb-8 text-center">
-                Innovative lifting solutions for safe and forward-looking
-                operation: The new DHR rope hoist offers a high level of
-                versatility and productivity. The DHR combines the powerful
-                features of its two predecessor generations: Reliability,
-                productivity and – thanks to numerous options – tailored
-                implementation to meet the requirements of many industries. From
-                simple lifting applications to high-performance rope hoists with
-                smart assistance and convenience features, the DHR meets all
-                demands for highly efficient load handling.
+                Meet the DHR rope hoist—the next step in how we lift. It takes
+                everything we learned from two generations before it and brings
+                it together in one powerful, flexible package. Reliable? Always.
+                Productive? You bet. But what really sets it apart is how
+                adaptable it is.<br></br>
+                Need a simple hoist for everyday lifting? The DHR handles that
+                with ease. Looking for something more advanced—with smart
+                features, assistance systems, and a little extra convenience? It
+                does that too.
+                <br></br>From basic tasks to high-performance lifting, the DHR
+                is built to move loads efficiently, safely, and without<br></br>
+                complication. Innovative. Smart. And ready to work.
               </p>
               <div className="flex justify-center mb-6 items-center">
                 {" "}
@@ -89,25 +92,28 @@ export default function Home() {
                 Compact
               </h4>
               <p className="text-lg text-gray-700">
-                DHR rope hoists with compact design and low deadweight stand out
-                due to their small external dimensions and a further reduced C
-                dimension. This makes the best possible use of the working space
-                for crane applications or stationary equipment.
+                Big performance, small footprint. The DHR rope hoist is designed
+                to fit where space is tight—without sacrificing power. Its slim
+                profile and reduced C dimension mean you get more usable working
+                space, whether it&apos;s on a crane or stationary equipment.
               </p>
               <h4 className="text-xl font-bold my-4 text-[#676f77]">
                 Innovative
               </h4>
               <p className="text-lg text-gray-700">
-                DHR rope hoists offer tailored solutions based on a single
-                platform. Additional hardware options and smart features make a
-                DHR rope hoist a smart hoist that is well equipped to meet
-                future requirements: Lifting to the next level.
+                One platform, endless possibilities. The DHR starts as a solid
+                base, then adapts to you. Add hardware options. Turn on smart
+                features. Upgrade as your needs grow. It&apos;s not just a hoist
+                for today—it&apos;s built for whatever comes next.
               </p>
               <h4 className="text-xl font-bold my-4 text-[#676f77]">Smart</h4>
               <p className="text-lg text-gray-700">
-                Demag DHR rope hoists offer smart features that make load
-                handling even safer and more efficient. And transparent at all
-                times thanks to the monitoring and remote monitoring tools.
+                Load handling that&apos;s safer, smoother, and easier to track.
+                Smart features keep an eye on performance, while remote
+                monitoring gives you transparency—so you always know what&apos;s
+                happening, even from afar.
+                <br />
+                Lifting just got a whole lot smarter.
               </p>
 
               <Image
@@ -120,40 +126,45 @@ export default function Home() {
               ></Image>
 
               <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                DHR highlights
+                DHR highlights – built for the way you work
               </h4>
 
               <p className="text-lg text-gray-700 mt-6">
-                DHR rope hoists fulfil almost any requirement:
+                The DHR rope hoist comes in two versions, so you can pick what
+                fits:
               </p>
-              <ul>
+              <ul className="list-disc pl-10">
                 <li>
-                  <strog>EK-DHR:</strog> monorail hoist, optimised for use on
-                  single-girder cranes or monorails
+                  <strong>EK-DHR:</strong> A monorail hoist, designed for
+                  single-girder cranes or monorail systems
                 </li>
                 <li>
-                  <strog>G-DHR: </strog>basic hoist for plant engineering
+                  <strong>G-DHR:</strong> A basic hoist for plant engineering
+                  and machinery integration
                 </li>
               </ul>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+              <div className="">
+                <h3 className="text-xl font-bold my-4 text-[#676f77]">
+                  Steel or synthetic? Now you can choose
+                </h3>
                 <div>
                   <p>
-                    With the DHR rope hoist, you have the choice for the first
-                    time: Proven lifting technology with steel ropes or with
-                    innovative synthetic ropes.
+                    For the first time, you&apos;re not locked in. Stick with
+                    proven steel rope or go with our innovative synthetic
+                    rope—both get the job done.
                   </p>
                   <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                    Features of the synthetic rope:
+                    Why the synthetic rope stands out:
                   </h4>
-                  <ul className="list-disc list-inside mt-2 space-y-1">
-                    <li>Made of high-modulus polyethylene fibres</li>
-                    <li>12-strand non-rotating structure</li>
+                  <ul className="list-disc pl-10 mt-2 space-y-1 mb-4">
+                    <li>Made from high-modulus polyethylene fibres</li>
+                    <li>12-strand non-rotating construction</li>
                     <li>Around 85% lighter than steel rope</li>
-                    <li>Suitable for indoor and outdoor use</li>
-                    <li>Temperature range: -10°C - +45°C</li>
-                    <li>No lubrication required</li>
-                    <li>No wear on rope drum and return sheaves</li>
-                    <li>One type of rope for all applications</li>
+                    <li>Works indoors and outdoors</li>
+                    <li>Handles temperatures from -10°C to +45°C</li>
+                    <li>No lubrication needed – ever</li>
+                    <li>No wear on the rope drum or return sheaves</li>
+                    <li>One rope type covers all applications</li>
                   </ul>
                 </div>
                 <Image
@@ -169,24 +180,23 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                 <div>
                   <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                    Dual Drive
+                    DualDrive – built for grip and precision
                   </h4>
 
                   <p className="mb-4">
-                    For high traction, the DHR monorail hoist is equipped with a
-                    DualDrive two-wheel drive as standard. Two of the four
-                    wheels have a synchronised belt drive.
+                    The DHR monorail hoist comes standard with DualDrive, a
+                    two-wheel drive system where two of the four wheels are
+                    powered by a synchronised belt drive.
                   </p>
                   <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                    The benefits are:
+                    What that means:
                   </h4>
-                  <ul className="list-disc list-inside space-y-1">
-                    <li>Reliable cross-travel motion and positioning</li>
+                  <ul className="list-disc pl-10 space-y-1">
+                    <li>Smooth, reliable cross-travel and positioning</li>
                     <li>
-                      Optionally available: Installation of a second
-                      cross-travel motor (DualDrive Plus), for particularly
-                      challenging ambient conditions (e.g. outdoor use, dirt
-                      accumulation on crane rail)
+                      Need extra muscle? You can add a second cross-travel motor
+                      (DualDrive Plus) for tough conditions like outdoor use or
+                      heavy dirt on the rails
                     </li>
                   </ul>
                 </div>
@@ -202,29 +212,34 @@ export default function Home() {
 
               <div className="mb-6">
                 <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                  Thrust rocker
+                  Thrust rocker – smart design, less weight
                 </h4>
                 <p className="mb-4">
                   The DHR rope hoist has compact dimensions. It also impresses
                   with a weight-optimised design of the hoist trolley: No
                   counterweights are required because of the thrust rocker.
-                  These are available as an option.
+                  These are available as an option.No counterweights needed. The
+                  DHR hoist trolley uses a thrust rocker to stay balanced,
+                  keeping things compact and lightweight. (Counterweights are
+                  still available as an option if you prefer.)
                 </p>
                 <p className="font-semibold mb-2">Key benefits:</p>
-                <ul className="list-disc list-inside space-y-1">
-                  <li>Reduced deadweight</li>
-                  <li>Compact dimensions</li>
+                <ul className="list-disc pl-10 space-y-1">
+                  <li>Less deadweight</li>
+                  <li>Smaller, tighter dimensions</li>
                 </ul>
               </div>
 
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div>
                   <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                    Blue safety light
+                    Blue safety light – know where the hook is
                   </h4>
                   <p>
                     Added safety: a blue dot of light is projected on the floor
-                    to indicate the hook position.
+                    to indicate the hook position.A small blue dot of light
+                    projects onto the floor, showing exactly where the hook is.
+                    Simple. Clear. Adds a layer of safety to every lift.
                   </p>
                 </div>
                 <div>
@@ -256,7 +271,7 @@ export default function Home() {
                       className="text-xl font-bold my-4 text-[#676f77]"
                     >
                       <span className="text-xl font-bold my-4 text-[#676f77]">
-                        Lifting capacity according to customer requirements
+                        Lifting Capacity according to customer requirements
                       </span>
                     </Typography>
                   </AccordionSummary>
@@ -289,27 +304,28 @@ export default function Home() {
                     id="panel2-header"
                   >
                     <Typography component="span">
-                      {" "}
                       <span className="text-xl font-bold my-4 text-[#676f77]">
-                        Smart features
-                      </span>{" "}
+                        Smart Features
+                      </span>
                     </Typography>
                   </AccordionSummary>
+
                   <AccordionDetails>
                     <Container maxWidth="lg">
-                      <div className=" ">
-                        <ul className="list-disc ">
-                          <li>Shorter cycle times</li>
-                          <li>More cost-effective</li>
-                          <li>Improved workplace safety</li>
+                      <div>
+                        <ul className="list-disc">
+                          <li>
+                            Shorter cycle times. More cost-effective. Improved
+                            workplace safety.
+                          </li>
                         </ul>
 
-                        <div className="space-y-6 py-6 ">
-                          {/* <!-- Tandem Control Card --> */}
+                        <div className="space-y-6 py-6">
+                          {/* Load sway reduction */}
                           <div className="flex items-start space-x-4">
                             <Image
                               src="/img/dhr-rope-hoist-icon1.webp"
-                              alt="Tandem Icon"
+                              alt="Load sway reduction"
                               height={50}
                               width={50}
                               className="w-13 h-13"
@@ -319,19 +335,22 @@ export default function Home() {
                                 Load-sway reduction
                               </h3>
                               <p className="text-sm text-gray-600">
-                                Prevents increased load sway by active
-                                counter-movements of the crane. Active system
-                                based on rope angle measurement.
+                                No more swinging loads. The system actively
+                                counter-moves the crane based on rope angle
+                                measurement to keep loads steady and under
+                                control.
                               </p>
                             </div>
                           </div>
                           <hr />
+
+                          {/* Slack rope protection */}
                           <div className="flex items-start space-x-4">
                             <Image
                               height={50}
                               width={50}
                               src="/img/dhr-rope-hoist-icon1.webp"
-                              alt="Tandem Icon"
+                              alt="Slack rope protection"
                               className="w-10 h-10"
                             />
                             <div>
@@ -339,17 +358,19 @@ export default function Home() {
                                 Slack rope protection
                               </h3>
                               <p className="text-sm text-gray-600">
-                                Continuous monitoring of rope tension: Automatic
-                                cut-off of the hoist motor when slack rope is
-                                detected.
+                                The hoist motor automatically switches off when
+                                slack rope is detected, preventing potential
+                                damage and unsafe operation.
                               </p>
                             </div>
                           </div>
                           <hr />
+
+                          {/* Area dependent load reduction */}
                           <div className="flex items-start space-x-4">
                             <Image
                               src="/img/dhr-rope-hoist-icon3.webp"
-                              alt="Tandem Icon"
+                              alt="Area dependent load reduction"
                               height={50}
                               width={50}
                               className="w-10 h-10"
@@ -359,18 +380,22 @@ export default function Home() {
                                 Area-dependent load reduction
                               </h3>
                               <p className="text-sm text-gray-600">
-                                Defined areas that the trolley may only enter
-                                when the load does not exceed a reference value.
+                                Specific zones can be defined where the trolley
+                                may only enter if the load stays below a preset
+                                limit, protecting sensitive areas and
+                                structures.
                               </p>
                             </div>
                           </div>
                           <hr />
+
+                          {/* By-pass control */}
                           <div className="flex items-start space-x-4">
                             <Image
                               height={50}
                               width={50}
                               src="/img/dhr-rope-hoist-icon5.webp"
-                              alt="Tandem Icon"
+                              alt="By-pass control"
                               className="w-13 h-13"
                             />
                             <div>
@@ -378,19 +403,21 @@ export default function Home() {
                                 By-pass control
                               </h3>
                               <p className="text-sm text-gray-600">
-                                Defined restricted areas (e.g. structures,
-                                machines) that must not be approached by the
-                                trolley.
+                                Restricted zones such as machines or structures
+                                can be defined so the trolley automatically
+                                avoids them.
                               </p>
                             </div>
                           </div>
                           <hr />
+
+                          {/* Tandem control */}
                           <div className="flex items-start space-x-4">
                             <Image
                               height={50}
                               width={50}
                               src="/img/dhr-rope-hoist-icon3.webp"
-                              alt="Tandem Icon"
+                              alt="Tandem control"
                               className="w-10 h-10"
                             />
                             <div>
@@ -398,25 +425,26 @@ export default function Home() {
                                 Tandem control
                               </h3>
                               <p className="text-sm text-gray-600">
-                                Loads can be transported safely with two DHR
-                                rope hoists – all from a single control unit.
+                                Two DHR rope hoists can operate together from a
+                                single control unit, enabling safe and
+                                coordinated handling of large loads.
                               </p>
                             </div>
                           </div>
+
                           <hr />
 
-                          {/* <!-- Section Title --> */}
                           <h4 className="text-md font-semibold text-gray-800 mt-4">
                             With Demag Modular Control:
                           </h4>
 
-                          {/* <!-- Follow-me Card --> */}
+                          {/* Follow me */}
                           <div className="flex items-start space-x-4">
                             <Image
                               width={50}
                               height={50}
                               src="/img/dhr-rope-hoist-icon5.webp"
-                              alt="Follow-me Icon"
+                              alt="Follow me"
                               className="w-10 h-10"
                             />
                             <div>
@@ -424,21 +452,22 @@ export default function Home() {
                                 Follow-me
                               </h3>
                               <p className="text-sm text-gray-600">
-                                Crane can be moved over the load by simply
-                                guiding the hook by hand. (Recommended for
-                                cranes up to 10 t).
+                                Simply guide the hook by hand and the crane
+                                follows the movement. Ideal for cranes with
+                                loads up to 10 t for precise positioning.
                               </p>
                             </div>
                           </div>
+
                           <hr />
 
-                          {/* <!-- Hook Centering Card --> */}
+                          {/* Hook centring */}
                           <div className="flex items-start space-x-4">
                             <Image
                               height={30}
                               width={30}
                               src="/img/dhr-rope-hoist-icon6.webp"
-                              alt="Hook Centering Icon"
+                              alt="Hook centring"
                               className="w-10 h-10"
                             />
                             <div>
@@ -446,20 +475,22 @@ export default function Home() {
                                 Hook centring
                               </h3>
                               <p className="text-sm text-gray-600">
-                                Automatically positions the crane hook directly
-                                above the load. The advantages: faster load
-                                cycles and improved ease of operation.
+                                Automatically positions the hook directly above
+                                the load, reducing positioning time and
+                                improving lifting efficiency.
                               </p>
                             </div>
                           </div>
+
                           <hr />
-                          {/* <!-- Diagonal Pull Prevention Card --> */}
+
+                          {/* Diagonal pull prevention */}
                           <div className="flex items-start space-x-4">
                             <Image
                               height={50}
                               width={50}
                               src="/img/dhr-rope-hoist-icon7.webp"
-                              alt="Diagonal Pull Icon"
+                              alt="Diagonal pull prevention"
                               className="w-10 h-10"
                             />
                             <div>
@@ -467,89 +498,67 @@ export default function Home() {
                                 Diagonal pull prevention
                               </h3>
                               <p className="text-sm text-gray-600">
-                                Rope angle monitoring, automatic cut-off in the
-                                event of diagonal pull (&gt; 4°) to avoid
-                                dangerous situations.
+                                The rope angle is continuously monitored. If
+                                diagonal pull exceeds 4°, the system
+                                automatically switches off to prevent unsafe
+                                lifting conditions.
                               </p>
                             </div>
                           </div>
                         </div>
 
-                        <div className="">
-                          <div>
-                            <h3 className="text-lg font-semibold text-gray-800">
-                              Diagonal pull prevention
-                            </h3>
-                            <p className="text-sm text-gray-600 pb-4">
-                              Rope angle monitoring, automatic cut-off in the
-                              event of diagonal pull (&gt; 4°) to avoid
-                              dangerous situations.
-                            </p>
+                        <div className="grid md:grid-cols-2 gap-6 items-start">
+                          {/* Left content */}
+                          <div className="space-y-4">
+                            <div>
+                              <h3 className="text-lg font-semibold text-gray-800">
+                                Full control – from anywhere:{" "}
+                                <a
+                                  href="#"
+                                  className="text-blue-600 hover:underline"
+                                >
+                                  Demag StatusControl 2.0
+                                </a>
+                              </h3>
+                              <p className="text-sm text-gray-600">
+                                Demag StatusControl 2.0 gives you real-time
+                                insight into your rope hoist. Monitor
+                                utilisation, usage patterns, potential downtime
+                                risks and service life for both standalone
+                                hoists and crane systems.
+                              </p>
+                            </div>
+
+                            <div>
+                              <h3 className="text-lg font-semibold text-gray-800">
+                                Real-time data in your hand:{" "}
+                                <a
+                                  href="#"
+                                  className="text-blue-600 hover:underline"
+                                >
+                                  Demag Equipment App (DEA)
+                                </a>
+                              </h3>
+                              <p className="text-sm text-gray-600">
+                                The Demag Equipment App allows you to access
+                                current operating data directly within radio
+                                range of the hoist. Data is clearly visualised
+                                on your device and trained users can adjust
+                                parameters instantly.
+                              </p>
+                            </div>
                           </div>
-                          <hr />
 
-                          <div className="grid md:grid-cols-2 gap-6 items-start">
-                            {/* <!-- Left Text Content --> */}
-                            <div className="space-y-4">
-                              <div>
-                                <h3 className="text-lg font-semibold text-gray-800">
-                                  Full control – from anywhere:
-                                  <a
-                                    href="#"
-                                    className="text-blue-600 hover:underline"
-                                  >
-                                    Demag StatusControl 2.0
-                                  </a>
-                                </h3>
-                                <p className="text-sm text-gray-600">
-                                  With Demag StatusControl 2.0, smart system
-                                  management, you have full control of your rope
-                                  hoist at all times and from anywhere. Our
-                                  remote monitoring system provides you with
-                                  up-to-date operating data and evaluations for
-                                  the DHR – as a solo component as well as in
-                                  crane applications. Full transparency on
-                                  utilisation, usage, risk of downtimes and
-                                  service life. Simply, reliably and at a
-                                  glance.
-                                </p>
-                              </div>
-
-                              {/* <!-- Real-time Operating Data --> */}
-                              <div>
-                                <h3 className="text-lg font-semibold text-gray-800">
-                                  Real-time operating data:
-                                  <a
-                                    href="#"
-                                    className="text-blue-600 hover:underline"
-                                  >
-                                    Demag Equipment App (DEA)
-                                  </a>
-                                </h3>
-                                <p className="text-sm text-gray-600">
-                                  Do you only find out the usage and user data
-                                  for your DHR rope hoist once a year during
-                                  inspection and maintenance? This is a thing of
-                                  the past with the Demag Equipment App. Within
-                                  the radio range of the hoist, you receive the
-                                  current data in real time and visually
-                                  displayed on your end device. Trained users
-                                  can also adjust DHR parameters.
-                                </p>
-                              </div>
-                            </div>
-
-                            {/* <!-- Right Image --> */}
-                            <div className="flex justify-center md:justify-end">
-                              <Image
-                                width={300}
-                                height={200}
-                                layout="responsive"
-                                src="/img/dhr-rope-hoist6.webp"
-                                alt="Status Control and DEA"
-                                className="max-w-full h-auto"
-                              />
-                            </div>
+                          {/* Right image */}
+                          <div className="flex justify-center md:justify-end">
+                            <Image
+                              width={300}
+                              height={200}
+                              layout="responsive"
+                              src="/img/dhr-rope-hoist6.webp"
+                              alt="Status Control and DEA"
+                              className="max-w-full h-auto"
+                            />
                           </div>
                         </div>
                       </div>

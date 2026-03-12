@@ -44,7 +44,7 @@ export default function Footer() {
               Looking for a reliable partner for your next industrial project?
             </p>
 
-            <ul className="list-disc list-inside mb-4">
+            <ul className="list-disc pl-10 mb-4">
               <li>Connect with Us for Expert Consultation</li>
               <li>Pan-India Service | Customized Solutions</li>
             </ul>
