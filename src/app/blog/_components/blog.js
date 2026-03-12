@@ -4,6 +4,7 @@ import { Calendar } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { baseUrl } from "@/lib/utils";
 import { FiChevronRight } from "react-icons/fi";
+import moment from "moment";
 
 async function getBlogs() {
   try {
@@ -28,11 +29,7 @@ export default async function Blogs() {
 
   const formatDate = (dateString) => {
     if (!dateString) return "N/A";
-    return new Date(dateString).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
+    return moment(dateString).format("MMMM D, YYYY");
   };
 
   const getReadingTime = (content) => {
