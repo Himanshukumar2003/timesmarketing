@@ -64,7 +64,7 @@ export default async function Blogs() {
                 {/* Date Badge */}
                 <div className="absolute top-4 right-4 flex items-center gap-1 bg-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full shadow-lg">
                   <Calendar className="h-3.5 w-3.5" />
-                  {formatDate(blog.date || blog.created_at)}
+                  {formatDate(blog.date)}
                 </div>
               </div>
 
