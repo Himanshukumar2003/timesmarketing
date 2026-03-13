@@ -11,7 +11,7 @@ import { Breadcrumb } from "@/componts/breadcrumb";
 import Navbar from "@/componts/nav";
 import Footer from "@/componts/footer";
 const data = {
-  product: "Strong motor output up to 45 kW",
+  product: "Cylindrical Rotor Motors",
   slug: "offset-geared-motors",
   summary: {
     title: "Perfectly engineered braking performance",
@@ -216,9 +216,9 @@ const OffsetGearedMotors = () => {
     <>
       <Navbar></Navbar>
       <Breadcrumb
-        title={data.product}
+        title={data.title}
         backgroundImage="/img/header1.webp"
-        items={[{ label: `${data.product}`, href: "/", isCurrent: true }]}
+        items={[{ label: `${data.slug}`, href: "/", isCurrent: true }]}
       />
       <div className="p-6">
         <Container maxWidth="md">
