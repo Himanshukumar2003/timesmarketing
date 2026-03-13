@@ -100,7 +100,7 @@ export default function KbkLight(params) {
                 Every job is different. That&apos;s why we offer more than just
                 a standard hoist.
               </p>
-              <ul className="list-disc pl-10">
+              <ul className=" pl-10">
                 <li>
                   Loads from 1 t to 100 t &ndash; from light lifting to
                   heavy-duty
