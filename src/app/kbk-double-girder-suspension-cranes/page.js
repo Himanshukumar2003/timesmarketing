@@ -59,17 +59,18 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-3xl md:text-3xl font-bold text-[#676f77] text-center mb-6">
-                Reliable transport also for large spans and high load capacities
+                Handling heavy loads across large spans — no problem
               </div>
               <div className="flex justify-center">
                 <div className=" mt-2 mb-6 text-center h-1 w-12 bg-yellow-400"></div>
               </div>
               <p className="text-lg text-gray-700 mb-8 text-center">
-                Double-girder suspension cranes from our KBK light crane system
-                enable goods of all kinds to be transported with ease. They
-                provide area-serving, overhead handling – and guarantee fast,
-                reliable and precise positioning even for heavy loads and large
-                span dimensions.
+                When you need to move heavy goods over large distances,
+                double-girder suspension cranes from our KBK light crane system
+                are built exactly for that. They cover your entire work area
+                from overhead, making it easy to transport all kinds of goods —
+                quickly, reliably, and with precise positioning every time, even
+                with heavy loads and wide span dimensions.
               </p>
               <div className="flex justify-center mb-6 items-center">
                 {" "}
@@ -84,20 +85,14 @@ export default function Home() {
               </div>
 
               <h3 className="text-xl font-semibold mb-4 text-[#676f77]">
-                What other successful characteristics do they offer?
+                Here&apos;s what else makes them a great choice:
               </h3>
-              <ul className="   list-disc text-lg ">
-                <li className="text-gray-700 ">
-                  Cost-effective implementation
-                </li>
-                <li className="text-gray-700 ">Modular system design</li>
-                <li className="text-gray-700 ">Smooth and reliable handling</li>
-                <li className="text-gray-700 ">
-                  Favorable installation dimensions
-                </li>
-                <li className="text-gray-700 ">
-                  Rated for loads weighing up to 3,200 kg
-                </li>
+              <ul className="   list-disc text-lg pl-10">
+                <li>Cost-effective to implement and run</li>
+                <li>Modular system design that adapts to your space</li>
+                <li>Smooth, reliable handling from start to finish</li>
+                <li>Compact, favourable installation dimensions</li>
+                <li>Handles loads of up to 3,200 kg with confidence</li>
               </ul>
             </div>
           </div>
@@ -144,8 +139,8 @@ export default function Home() {
                   <div className="container mx-auto ">
                     <div className="max-w-6xl mx-auto">
                       <h3 className="text-xl  font-bold mb-4 text-[#676f77]">
-                        Double-girder suspension cranes: maximum distances
-                        between supports, crane spans and girder lengths
+                        Double-girder suspension cranes: bigger spans, longer
+                        girders, more freedom
                       </h3>
                       <Image
                         src="/img/double-girde.webp"

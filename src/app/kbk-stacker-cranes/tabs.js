@@ -6,10 +6,10 @@ const allSections = [
   {
     label: "High flexibility",
     points: [
-      "Loads are precisely picked up and guided",
-      " Simple manual crane and trolley travel",
-      " Can be turned over a range of 360°",
-      " Unit loads, containers and pallets weighing up to 500 kg can be transported, sorted and stored with ease",
+      "Loads are picked up and guided with precision every time",
+      "Simple and effortless manual crane and trolley travel",
+      "Full 360° rotation gives you complete freedom of movement",
+      "Unit loads, containers, and pallets up to 500 kg can be transported, sorted, and stored with ease",
     ],
   },
 ];

@@ -44,11 +44,12 @@ export default function KbkSuspension() {
     <>
       <Navbar />
       <Breadcrumb
-        title="KBK single-girder suspension cranes"
+        title="KBK suspension monorails
+"
         backgroundImage="/img/header1.webp"
         items={[
           {
-            label: "KBK single-girder suspension cranes",
+            label: "KBK suspension monorails",
             href: "/",
             isCurrent: true,
           },
@@ -61,42 +62,39 @@ export default function KbkSuspension() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto">
               <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-6">
-                Perfect for linear overhead material handling
+                The smart choice for linear overhead material handling
               </div>
               <div className="flex justify-center">
                 <div className=" mt-2 mb-6 text-center h-1 w-12 bg-yellow-400"></div>
               </div>
 
               <p className="text-base md:text-lg text-gray-700 mb-8 text-center">
-                KBK suspension monorails from our KBK light crane system give
-                you the certainty of solutions tailored to meet your specific
-                requirements for linear, overhead handling. Their special
-                strengths are to be found in their many options:
+                When you need a reliable, overhead handling solution that runs
+                in a straight line, KBK suspension monorails from our KBK light
+                crane system are built exactly for that. They&apos;re flexible,
+                adaptable, and come with a wide range of options to match your
+                exact requirements.
               </p>
 
               <div className="bg-gray-50 rounded-lg border p-6">
                 <ul className="space-y-3 list-disc pl-5">
-                  <li className="text-sm md:text-base">
-                    Simple, manually operated straight sections – also possible
-                    with aluminum profile sections
+                  <li>
+                    Simple, manually operated straight sections — also available
+                    with lightweight aluminium profile sections
                   </li>
-                  <li className="text-sm md:text-base">
-                    Complex installations
+                  <li>Handles complex installations with ease</li>
+                  <li>Load capacities up to 3,200 kg</li>
+                  <li>
+                    Flexible routing using straight and curved sections, track
+                    switches, and turntables
                   </li>
-                  <li className="text-sm md:text-base">
-                    Load capacities up to 3,200 kg
+                  <li>
+                    Direct connection between pick-up and deposit points — works
+                    in reversing operation or as a closed circuit
                   </li>
-                  <li className="text-sm md:text-base">
-                    Flexible routing by means of straight and curved sections,
-                    track switches and turntables
-                  </li>
-                  <li className="text-sm md:text-base">
-                    Direct link between pick-up and deposit points in reversing
-                    operation or a closed circuit
-                  </li>
-                  <li className="text-sm md:text-base">
-                    Besides manual operation, semi- or fully automated designs
-                    also possible
+                  <li>
+                    Available in manual, semi-automated, or fully automated
+                    designs to suit your level of operation
                   </li>
                 </ul>
               </div>

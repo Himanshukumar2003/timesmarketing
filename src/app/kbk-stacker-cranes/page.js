@@ -37,22 +37,22 @@ export default function KbkSuspension() {
                 <div className=" mt-2 mb-6 text-center h-1 w-12 bg-yellow-400"></div>
               </div>
               <p className="text-base md:text-lg text-gray-700 mb-8 text-center">
-                Our KBK stacker cranes make it possible to complete all storage
-                and handling tasks in one operating cycle without the need for
-                ladders, order-picking trolleys or similar equipment. Unit
-                loads, containers or pallets weighing up to 500 kg can be safely
-                and reliably transported, sorted and stored.
+                With our KBK stacker cranes, you can handle every storage and
+                picking task in a single operating cycle — no ladders, no
+                order-picking trolleys, no extra hassle. Unit loads, containers,
+                or pallets weighing up to 500 kg can be transported, sorted, and
+                stored safely and reliably, all in one smooth motion.
               </p>
 
               <div className="bg-gray-50 rounded-lg border p-6">
                 <ul className="space-y-3 list-disc pl-5">
                   <li className="text-sm md:text-base">
-                    Combination of KBK double-girder suspension crane and
-                    special stacker trolley
+                    A smart combination of a KBK double-girder suspension crane
+                    and a specially designed stacker trolley
                   </li>
                   <li className="text-sm md:text-base">
-                    Load handling attachments to match the load – forks, prongs,
-                    grippers and other attachments can be supplied
+                    Load handling attachments matched to your load — forks,
+                    prongs, grippers, and other attachments are all available
                   </li>
                 </ul>
               </div>
@@ -106,9 +106,11 @@ export default function KbkSuspension() {
                         />
                       </div>
                       <p className="font-semibold text-gray-500 text-lg md:text-xl mb-6">
-                        A KBK stacker crane mainly consists of a KBK
-                        double-girder suspension crane combined with a special
-                        stacker trolley and a load handling attachment.
+                        A KBK stacker crane is built around three core
+                        components — a KBK double-girder suspension crane, a
+                        specially designed stacker trolley, and a load handling
+                        attachment. Together, they make a powerful and reliable
+                        handling solution.
                       </p>
                       <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm bg-white">
                         <div className="flex justify-evenly text-sm text-gray-500 p-4 bg-gray-100 border-b">
@@ -678,7 +680,7 @@ export default function KbkSuspension() {
                           </tbody>
                         </table>
                         <div className="p-4 bg-gray-50 text-sm text-gray-500 border-t">
-                          <p>2) Dimension f  for pivot center</p>
+                          <p>2) Dimension f for pivot center</p>
                         </div>
                       </div>
                     </div>

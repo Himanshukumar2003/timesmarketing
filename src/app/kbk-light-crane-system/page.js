@@ -5,13 +5,13 @@ import Container from "@mui/material/Container";
 import {
   ChevronLeft,
   ChevronRight,
-  Image,
   Maximize2,
   Play,
   Volume2,
 } from "lucide-react";
 import { FiChevronRight } from "react-icons/fi";
 import KbkCard from "./crads";
+import Image from "next/image";
 export const metadata = {
   title: "Demag KBK Light Crane System in India | Timeskrane",
   description:
@@ -52,7 +52,9 @@ export default function KbkLight(params) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full    items-center">
               <div>
                 <div className="rounded-lg">
-                  <img
+                  <Image
+                    width={300}
+                    height={500}
                     src="/img/kbk1.webp"
                     alt="Oil Sealed Vane Pump"
                     className="w-full h-100 rounded-lg shadow-lg h-auto object-contain"
@@ -126,8 +128,9 @@ export default function KbkLight(params) {
         </Container>
       </div>
 
-      <KbkCard />
-
+      <Container maxWidth="2xl">
+        <KbkCard />
+      </Container>
       <Footer></Footer>
     </>
   );

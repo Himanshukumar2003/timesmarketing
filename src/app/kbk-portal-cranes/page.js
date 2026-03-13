@@ -31,30 +31,32 @@ export default function KbkSuspension() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto">
               <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-6">
-                Mobile workplace units – load-bearing flexibility
+                Mobile workplace units — load-bearing flexibility wherever you
+                need it
               </div>
               <p className="text-base md:text-lg text-gray-700 mb-8 text-center">
-                Our KBK portal cranes are the ideal solution wherever a
-                permanent crane would be too complicated or cannot be installed.
-                They run on solid, even floors and can be easily maneuvered in
-                any direction. This makes them ideal for a wide variety of
-                loading and unloading operations in your factory as well as for
-                maintenance and repair work. What other benefits do they offer?
+                Not every workspace can have a permanent crane — and that&apos;s
+                exactly where our KBK portal cranes step in. They roll smoothly
+                on solid, even floors and can be moved in any direction with
+                ease. Whether you&apos;re loading, unloading, carrying out
+                maintenance, or tackling repair work, KBK portal cranes give you
+                the flexibility to get the job done anywhere in your facility.
+                Here&apos;s what else they offer:
               </p>
 
               <div className="bg-gray-50 rounded-lg border p-6">
                 <ul className="space-y-3 list-disc pl-5">
                   <li className="text-sm md:text-base">
-                    Load capacity up to 3,200 kg
+                    Handles load capacities up to 3,200 kg
                   </li>
                   <li className="text-sm md:text-base">
-                    Crane girder span can be adjusted over a wide range
+                    Crane girder span is adjustable across a wide range
                   </li>
                   <li className="text-sm md:text-base">
-                    Optimally suited for repair and assembly work
+                    Perfect for repair and assembly work of all kinds
                   </li>
                   <li className="text-sm md:text-base">
-                    Ideal for help in loading and unloading operations
+                    A great helping hand for loading and unloading operations
                   </li>
                 </ul>
               </div>

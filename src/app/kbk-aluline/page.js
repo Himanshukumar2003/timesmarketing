@@ -54,22 +54,38 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
-                Demag KBK Aluline Light Crane System
+                Demag KBK Aluline Light Crane System — Where Ergonomics Meets
+                Productivity
               </div>
               <div className="flex justify-center">
                 <div className=" mt-2 mb-6 text-center h-1 w-12 bg-yellow-400"></div>
               </div>
               <p className="text-lg text-gray-700 mb-8 text-center">
-                International studies prove that ergonomic workplace design has
-                an immediate impact on productivity. Benefit from the
-                productivity opportunities that KBK Aluline has to offer. We
-                have redefined smooth running characteristics for our KBK
-                Aluline light crane system. The result: one of the
-                smoothest-running systems on the market. For operating sequences
-                that are more ergonomic and convenient than ever before. And now
-                for loads weighing up to 2,000 kg.
+                The numbers don&apos;t lie. International studies consistently
+                show that better workplace ergonomics leads directly to higher
+                productivity. So the question isn&apos;t whether ergonomics
+                matters — it&apos;s whether your equipment is keeping up.
+                <br></br>
               </p>
-              <div className="flex justify-center mb-6 items-center">
+              <p className="text-lg text-gray-700    text-center mb-3">
+                <b>That&apos;s exactly where the KBK Aluline comes in.</b>
+              </p>
+              <p className="text-lg text-gray-700 mb-8 text-center">
+                We didn&apos;t just improve our light crane system — we
+                completely redefined what smooth running means. The result is
+                one of the smoothest-running systems on the market today, making
+                every movement easier, more controlled, and less physically
+                demanding for your operators.
+              </p>
+              <p>
+                The benefits speak for themselves. Your team gets more ergonomic
+                workflows, more convenient load handling, and a system that now
+                confidently handles loads of up to 2,000 kg. Whether you&apos;re
+                running an assembly line, a workshop, or a full production
+                facility, the KBK Aluline is built to help your people work
+                smarter — every single day.
+              </p>
+              <div className="flex justify-center my-6 items-center">
                 {" "}
                 <iframe
                   width="560"
@@ -80,18 +96,30 @@ export default function Home() {
                   allowFullScreen
                 ></iframe>
               </div>
-              <p className="text-lg text-gray-700">
-                With our optimised and modular KBK Aluline components, spatial
-                challenges and requirements are already taken into account
-                during the planning stage. Reduced approach dimensions and thus
-                improved utilisation of the available space are ensured by our
-                optimised trolleys. During the project engineering phase,
-                planners already gain more flexibility thanks to, for example,
-                larger distances between suspensions and the option of an
-                integrated conductor line, thus reducing installation work and
-                assembly costs.
+              <h3 className="text-xl font-semibold mb-4">
+                Smart Planning Starts with the Right System
+              </h3>
+              <p className="text-lg text-gray-700 mb-8 ">
+                <b>
+                  Every workspace is different — and the KBK Aluline is designed
+                  with that in mind.
+                </b>
               </p>
-
+              <p className="text-lg text-gray-700">
+                Our optimised and modular KBK Aluline components are built to
+                address spatial challenges right from the planning stage.
+                Nothing is left to chance. Our optimised trolleys reduce
+                approach dimensions, helping you make the most of every inch of
+                available space without compromise.
+              </p>
+              <p className="text-lg text-gray-700">
+                {" "}
+                And it doesn&apos;t stop there. During the project engineering
+                phase, planners get greater flexibility than ever before. Larger
+                distances between suspensions and the option of an integrated
+                conductor line mean less installation work, lower assembly
+                costs, and a smoother path from design to operation.
+              </p>
               <Image
                 src="/img/tablel.webp"
                 height={100}
@@ -100,11 +128,19 @@ export default function Home() {
                 className="my-6"
                 alt=""
               ></Image>
-              <p className="text-lg text-gray-700 mt-6">
-                Useful KBK additional components enable owners of installations
-                to respond to changing requirements at any time. Variable travel
-                path limitation, for example, makes it possible to limit travel
-                motions in just a few steps. Quick and easy to install.
+              <h3 className="text-xl font-semibold mb-4">
+                Ready for Change, Whenever It Comes
+              </h3>
+              <p className="text-lg text-gray-700 my-6">
+                Business needs evolve — and your crane system should be able to
+                keep up.<br></br>
+                That&lsquo;ss why KBK additional components are designed to give
+                installation owners the flexibility to adapt at any time. Take
+                variable travel path limitation, for example. It allows you to
+                restrict travel motions in just a few simple steps — no
+                complicated procedures, no lengthy downtime. Quick to install
+                and easy to adjust, it&apos;s the kind of practical solution
+                that makes a real difference on the ground.
               </p>
             </div>
           </div>
@@ -147,29 +183,31 @@ export default function Home() {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <section className=" bg-white">
-                  <div className="">
-                    <div className="">
+                <section className="bg-white">
+                  <div>
+                    <div>
                       <div className="mb-10">
                         <h3 className="text-xl font-semibold mb-4">
-                          Profile sections
+                          Profile Sections
                         </h3>
                         <ul className="space-y-2 mb-6">
                           <li className="flex items-start">
                             <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
                             <span>
-                              8 inside-running extruded profile sections in 5
-                              sizes, two of which feature integrated conductor
-                              lines
+                              8 inside-running extruded profile sections
+                              available in 5 sizes, two of which feature
+                              integrated conductor lines
                             </span>
                           </li>
+
                           <li className="flex items-start">
                             <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
                             <span>
-                              NEW: Demag KBK Aluline profile A28 for 50% larger
-                              hanging distances
+                              NEW: Demag KBK Aluline profile A28 offers 50%
+                              larger hanging distances
                             </span>
                           </li>
+
                           <li className="flex items-start">
                             <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
                             <span>
@@ -177,107 +215,92 @@ export default function Home() {
                               plates
                             </span>
                           </li>
+
                           <li className="flex items-start">
                             <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
                             <span>
-                              Extremely low deadweight for high rigidity
+                              Extremely low deadweight combined with high
+                              rigidity for reliable performance
                             </span>
                           </li>
+
                           <li className="flex items-start">
                             <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
                             <span>
-                              Can be combined with older installations via
-                              adapters
+                              Compatible with older installations via adapters
                             </span>
                           </li>
+
                           <li className="flex items-start">
                             <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
-                            <span>ITEM-compatible slots</span>
+                            <span>
+                              ITEM-compatible slots for added flexibility
+                            </span>
                           </li>
                         </ul>
                       </div>
 
                       <div className="mb-10">
-                        <h3 className="text-xl font-bold  text-[#676f77] mb-4">
-                          Profile sections at a glance
+                        <h3 className="text-xl font-bold text-[#676f77] mb-4">
+                          Profile Sections at a Glance
                         </h3>
+
                         <ul className="space-y-2">
-                          <li className="flex items-start">
-                            <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
-                            <span>
-                              KBK Aluline A12 (120 mm headroom dimension)
-                            </span>
-                          </li>
-                          <li className="flex items-start">
-                            <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
-                            <span>
-                              KBK Aluline A16 (160 mm headroom dimension)
-                            </span>
-                          </li>
-                          <li className="flex items-start">
-                            <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
-                            <span>
-                              KBK Aluline A18 (180 mm headroom dimension)
-                            </span>
-                          </li>
-                          <li className="flex items-start">
-                            <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
-                            <span>
-                              KBK Aluline A18-R with integrated conductor line
-                            </span>
-                          </li>
-                          <li className="flex items-start">
-                            <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
-                            <span>
-                              KBK Aluline A22 (220 mm headroom dimension)
-                            </span>
-                          </li>
-                          <li className="flex items-start">
-                            <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
-                            <span>
-                              KBK Aluline A22-R with integrated conductor line
-                            </span>
-                          </li>
-                          <li className="flex items-start">
-                            <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
-                            <span>
-                              KBK Aluline A28 (280 mm headroom dimension)
-                            </span>
-                          </li>
-                          <li className="flex items-start">
-                            <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
-                            <span>
-                              KBK Aluline A28-R with integrated conductor line
-                            </span>
-                          </li>
+                          {[
+                            "KBK Aluline A12 — 120 mm headroom dimension",
+                            "KBK Aluline A16 — 160 mm headroom dimension",
+                            "KBK Aluline A18 — 180 mm headroom dimension",
+                            "KBK Aluline A18-R — with integrated conductor line",
+                            "KBK Aluline A22 — 220 mm headroom dimension",
+                            "KBK Aluline A22-R — with integrated conductor line",
+                            "KBK Aluline A28 — 280 mm headroom dimension",
+                            "KBK Aluline A28-R — with integrated conductor line",
+                          ].map(function (item, index) {
+                            return (
+                              <li key={index} className="flex items-start">
+                                <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
+                                <span>{item}</span>
+                              </li>
+                            );
+                          })}
                         </ul>
                       </div>
 
                       <div>
-                        <h3 className="text-xl  mb-4  font-bold  text-[#676f77]">
-                          Suspension variants
+                        <h3 className="text-xl font-bold text-[#676f77] mb-4">
+                          Suspension Variants
                         </h3>
+
                         <ul className="space-y-2">
                           <li className="flex items-start">
                             <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
-                            <span>Articulated Classic suspensions</span>
-                          </li>
-                          <li className="flex items-start">
-                            <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
-                            <span>Rigid KBK Ergo suspensions</span>
-                          </li>
-                          <li className="flex items-start">
-                            <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
                             <span>
-                              Suspension from workshop ceilings or roof
-                              structures (without the need for additional
-                              columns to support the crane runway)
+                              Articulated Classic suspensions for flexible
+                              movement
                             </span>
                           </li>
+
                           <li className="flex items-start">
                             <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
                             <span>
-                              Height-adjustable with millimeter precision
+                              Rigid KBK Ergo suspensions for stable applications
+                            </span>
+                          </li>
+
+                          <li className="flex items-start">
+                            <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
+                            <span>
+                              Can be suspended directly from workshop ceilings
+                              or roof structures — no additional support columns
+                              required
+                            </span>
+                          </li>
+
+                          <li className="flex items-start">
+                            <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
+                            <span>
+                              Height-adjustable with millimetre precision for a
+                              perfect fit
                             </span>
                           </li>
                         </ul>

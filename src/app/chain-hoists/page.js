@@ -44,16 +44,18 @@ export default function KbkLight(params) {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
-                Demag chain hoists – high productivity, efficiency, safety and
-                reliability
+                Demag chain hoists – reliable, efficient, built to last
               </div>
-              <p className="text-lg text-gray-700 mb-8 text-center">
-                Demag chain hoists meet all the requirements of state-of-the-art
-                hoist units, such as high productivity, efficiency, safety and
-                reliability, and give you the certainty of a secure long-term
-                investment. We develop and produce materials handling solutions
-                for all industries and companies of all sizes, from small
-                workshops to major industrial corporations.
+              <p className="text-lg text-gray-700  text-center mb-4">
+                Demag chain hoists tick all the boxes: high productivity, solid
+                efficiency, and safety you can count on. They&apos;re a smart
+                long-term investment, plain and simple.
+              </p>
+
+              <p className="text-lg text-gray-700  text-center mb-8">
+                We design and build material handling solutions for everyone.
+                Small workshop. Major industrial corporation. If you move
+                materials, we&apos;ve got you covered.
               </p>
             </div>
           </div>

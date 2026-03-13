@@ -58,16 +58,17 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
-                Large overhang – constant or variable
+                Large overhang — fixed or flexible, your choice
               </div>
               <div className="flex justify-center">
                 <div className=" mt-2 mb-6 text-center h-1 w-12 bg-yellow-400"></div>
               </div>
               <p className="text-lg text-gray-700 mb-8 text-center">
-                Loads can also be moved beyond the crane runway using overhung
-                and extending cranes from our KBK light crane system. These
-                solutions offer greater room to maneuver – and facilitate
-                optimum utilization of the available space.
+                Sometimes you need to move loads beyond the crane runway — and
+                that&apos;s exactly where our overhung and extending cranes from
+                the KBK light crane system shine. They give you more room to
+                work with and help you make the most of every bit of available
+                space.
               </p>
               <div className="flex justify-center mb-6 items-center">
                 <iframe
@@ -81,20 +82,22 @@ export default function Home() {
               </div>
 
               <h3 className="mb-4">
-                Our solutions to meet specific requirements include:
+                Here&apos;s what we offer to meet your specific needs:
               </h3>
-              <ul className="mt-4  list-disc">
+              <ul className="mt-4  list-disc pl-10">
                 <li>
-                  Overhung cranes which are fitted with crane girders that
-                  extend beyond the width of the crane runway
+                  <b>Overhung cranes</b> — fitted with crane girders that reach
+                  out beyond the width of the crane runway, giving you extra
+                  coverage where you need it most
                 </li>
                 <li>
-                  Extending cranes that consist of a fixed section and a crane
-                  section that can extend in both directions
+                  <b>Extending cranes</b> — made up of a fixed section and a
+                  movable crane section that can extend in both directions for
+                  maximum flexibility
                 </li>
                 <li>
-                  Crane girders that extend up to 2,500 mm beyond the runway
-                  span
+                  <b>Extended crane girders</b> — can reach up to 2,500 mm
+                  beyond the runway span, opening up even more working area
                 </li>
               </ul>
             </div>
@@ -141,9 +144,9 @@ export default function Home() {
 
                       <div className="overflow-x-auto">
                         <p className="text-gray-500 mt-4">
-                          <b> Maximum permissible overhang dimensions </b>
-                          according to profile and crane type; also dependent on
-                          the payload{" "}
+                          <b>Maximum permissible overhang dimensions</b> vary
+                          depending on the profile and crane type — and are also
+                          influenced by the payload
                         </p>
                         <div className="overflow-x-auto mt-6">
                           <p className="font-semibold text-center mb-2">
@@ -217,9 +220,9 @@ export default function Home() {
                         </div>
 
                         <p className=" text-gray-500 mt-4">
-                          <b> Maximum permissible overhang dimensions </b>
-                          according to profile and crane type; also dependent on
-                          the payload{" "}
+                          <b>Maximum permissible overhang dimensions</b> vary
+                          depending on the profile and crane type — and are also
+                          influenced by the payload
                         </p>
 
                         <div className="overflow-x-auto mt-6">

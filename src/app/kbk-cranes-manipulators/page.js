@@ -54,33 +54,37 @@ export default function Home() {
             <div className=" mx-auto px-4">
               <div className=" mx-auto">
                 <div className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
-                  Ergonomic and efficient
+                  Ergonomic, efficient, and built around your needs
                 </div>
                 <div className="flex justify-center">
                   <div className=" mt-2 mb-6 text-center h-1 w-12 bg-yellow-400"></div>
                 </div>
                 <p className="text-lg text-gray-700 mb-8 text-center">
-                  Our KBK cranes for manipulators are an outstanding example for
-                  the versatility of our KBK light crane system. They can be
-                  designed to meet the exact needs of a wide variety of loads,
-                  processes and production conditions. They reliably accommodate
-                  kick-up forces with great positioning accuracy – and at high
-                  operating speeds. Further strengths include:
+                  When it comes to flexibility, our KBK cranes for manipulators
+                  are a perfect example of what the KBK light crane system can
+                  really do. They can be tailored to suit a wide range of loads,
+                  processes, and production environments — handling kick-up
+                  forces reliably while maintaining high positioning accuracy,
+                  even at fast operating speeds.
                 </p>
               </div>
 
-              <ul className="   list-disc text-lg ">
-                <li className="text-gray-700 ">
-                  optimum positioning of workpieces and sub-assemblies into the
-                  most favorable positions for the relevant process
+              <h4 className="text-xl font-bold my-4 text-[#676f77]">
+                Here&apos;s what else they bring to the table:
+              </h4>
+
+              <ul className="   list-disc text-lg pl-10">
+                <li>
+                  Workpieces and sub-assemblies can be positioned precisely into
+                  the best possible position for each process
                 </li>
-                <li className="text-gray-700 ">
-                  workplaces, machinery and installations can be served from
+                <li>
+                  Workplaces, machinery, and installations can be reached from
                   almost any direction
                 </li>
-                <li className="text-gray-700 ">
-                  installations can be built with steel or aluminum profile
-                  sections.
+                <li>
+                  Can be built using either steel or aluminium profile sections
+                  — whichever suits your setup best
                 </li>
               </ul>
               <div className="pt-10">

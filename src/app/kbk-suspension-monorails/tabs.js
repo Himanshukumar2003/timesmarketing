@@ -6,16 +6,16 @@ const allSections = [
   {
     label: "High flexibility",
     points: [
-      "The route can be precisely adapted to meet the structural requirements of any workshop thanks to a wide range of components",
-      "Transfer to adjacent suspension cranes also possible using latching devices",
+      "The route can be tailored precisely to your workshop layout — a wide range of components makes it easy to work around any structural requirement",
+      "Latching devices allow smooth transfer to adjacent suspension cranes when needed",
     ],
   },
   {
     label: "Great versatility",
     points: [
-      "Also suitable for use as equipment carriers (e.g. for test equipment, electric and compressed-air tools)",
-      "Reliable supply of media thanks to comprehensive KBK components (cable trolleys, hose clips, etc.) – for dedicated transport with fluids, compressed air and power supply systems for cranes and other mobile equipment",
-      "Double-rail tracks as carrier systems for rigid handling equipment, such as manipulators or lifting devices",
+      "Works great as an equipment carrier too — perfect for test equipment, electric tools, and compressed-air tools",
+      "Keeps media flowing reliably thanks to a comprehensive range of KBK components — including cable trolleys, hose clips, and more — for dedicated transport of fluids, compressed air, and power supply systems for cranes and mobile equipment",
+      "Double-rail tracks serve as carrier systems for rigid handling equipment such as manipulators and lifting devices",
     ],
   },
 ];

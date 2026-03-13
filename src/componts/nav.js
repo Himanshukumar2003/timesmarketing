@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useState } from "react";
+import { use, useState, useEffect } from "react"; // added useEffect
 import Link from "next/link";
 import { ChevronDown, Globe, Menu, Search, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -12,15 +12,39 @@ import eotCranesData from "@/app/apis/eot-cranes";
 import { craneCards } from "@/app/kbk-light-crane-system/crads";
 import MobileMenu from "./mobilemenu";
 import GetInTouch from "./getInqarry";
+
 export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState("EOT Cranes");
   const [contentType, setContentType] = useState("EOT Cranes");
   const [moblieNav, setMobilenav] = useState(false);
+
+  // ✅ Fix 3: Prevent background scroll when sidebar or mobile nav is open
+  useEffect(() => {
+    if (isSidebarOpen || moblieNav) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isSidebarOpen, moblieNav]);
+
+  // ✅ Fix 1: Toggle sidebar — close if same menu clicked again
   const toggleSubmenu = (menu) => {
-    setIsSidebarOpen(true);
-    setActiveSubmenu(menu);
-    setContentType(menu);
+    if (isSidebarOpen && activeSubmenu === menu) {
+      setIsSidebarOpen(false);
+    } else {
+      setIsSidebarOpen(true);
+      setActiveSubmenu(menu);
+      setContentType(menu);
+    }
+  };
+
+  // ✅ Fix 2: Close sidebar when product is clicked
+  const handleProductClick = () => {
+    setIsSidebarOpen(false);
   };
 
   const sidebarItems = [
@@ -50,12 +74,10 @@ export default function Navbar() {
         { title: "Certificates", href: "/about/#certificated" },
       ],
     },
-
     { title: "Cranes", hasSubmenu: true },
     { title: "Blogs", href: "/blog" },
     { title: "Gallery", href: "/gallery" },
     { title: "Contact", href: "/contact" },
-    // { title: "Services", hasSubmenu: true },
   ];
 
   const drive = [
@@ -105,10 +127,14 @@ export default function Navbar() {
       case "EOT Cranes":
       case "Cranes":
         return (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-center   overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-center overflow-hidden">
             {eotCranesData.map((item, index) => (
               <div key={index}>
-                <Link href={`/eot-cranes/${item.slug}`}>
+                {/* ✅ Fix 2: Close on product click */}
+                <Link
+                  href={`/eot-cranes/${item.slug}`}
+                  onClick={handleProductClick}
+                >
                   <div className="product-card">
                     <Image
                       src={item.mainImage}
@@ -132,7 +158,8 @@ export default function Navbar() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-center">
             {craneCards.slice(0, 6).map((item, index) => (
               <div key={index}>
-                <Link href={`${item.slug}`}>
+                {/* ✅ Fix 2: Close on product click */}
+                <Link href={`${item.slug}`} onClick={handleProductClick}>
                   <div className="product-card">
                     <Image
                       src={item.image}
@@ -157,13 +184,14 @@ export default function Navbar() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-center">
             {hoist.map((item, index) => (
               <div key={index}>
-                <Link href={`${item.slug}`}>
+                {/* ✅ Fix 2: Close on product click */}
+                <Link href={`${item.slug}`} onClick={handleProductClick}>
                   <div className="product-card">
                     <Image
                       src={item.image}
                       width={1000}
                       height={1000}
-                      className="w-100 h-100    aspect-video"
+                      className="w-100 h-100 aspect-video"
                       alt={item.title}
                     />
                     <h4 className="mt-2 font-medium">{item.title}</h4>
@@ -182,7 +210,8 @@ export default function Navbar() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-center">
             {drive.map((item, index) => (
               <div key={index}>
-                <Link href={`${item.slug}`}>
+                {/* ✅ Fix 2: Close on product click */}
+                <Link href={`${item.slug}`} onClick={handleProductClick}>
                   <div className="product-card">
                     <Image
                       src={item.image}
@@ -210,8 +239,8 @@ export default function Navbar() {
     <div className="relative">
       {/* Top Bar */}
       <div className="bg-[#003366] text-white p-1 lg:p-0">
-        <div className=" mx-auto flex flex-wrap justify-between items-center px-4 py-2">
-          <div className="  hidden md:flex items-center">
+        <div className="mx-auto flex flex-wrap justify-between items-center px-4 py-2">
+          <div className="hidden md:flex items-center">
             <Globe className="h-5 w-5 mr-2" />
             <span>English</span>
           </div>
@@ -222,18 +251,17 @@ export default function Navbar() {
             >
               <MdEmail className="text-blue-500 mr-2" /> Get in touch
             </Link>
-
             <GetInTouch></GetInTouch>
           </div>
         </div>
       </div>
 
       {/* Main Navigation */}
-      <div className="bg-header px-4 mx-auto flex justify-between ">
-        <div className="flex items-center bg-white pr-0   md:pr-[150px] custom-clip  ">
+      <div className="bg-header px-4 mx-auto flex justify-between">
+        <div className="flex items-center bg-white pr-0 md:pr-[150px] custom-clip">
           <button
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-            className="  hidden md:block  p-2 text-blue-900 border-1 border-blue-500 hover:bg-white"
+            className="hidden md:block p-2 text-blue-900 border-1 border-blue-500 hover:bg-white"
           >
             {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -243,14 +271,14 @@ export default function Navbar() {
           >
             {moblieNav ? <X size={24} /> : <Menu size={24} />}
           </button>
-          <Link href="/" className="py-4 pl-2 ">
-            <div className="flex pl-2  justify-center items-center">
+          <Link href="/" className="py-4 pl-2">
+            <div className="flex pl-2 justify-center items-center">
               <Image
                 src="/img/logo.png"
                 width={250}
                 height={200}
                 alt="Logo"
-                className="ml-7 bg-white  rounded-sm transform scale-120"
+                className="ml-7 bg-white rounded-sm transform scale-120"
               />
             </div>
           </Link>
@@ -285,9 +313,16 @@ export default function Navbar() {
                   </div>
                 </>
               ) : (
+                // ✅ Fix 1: Toggle on click
                 <button
                   onClick={() => toggleSubmenu(item.title)}
-                  className="px-4 py-6 border-b-4 border-[#0053a3] text-white font-semibold flex items-center hover:border-white"
+                  className={cn(
+                    "px-4 py-6 border-b-4 border-[#0053a3] text-white font-semibold flex items-center hover:border-white",
+                    {
+                      "border-white":
+                        isSidebarOpen && activeSubmenu === item.title,
+                    }
+                  )}
                 >
                   {item.title}
                   {item.hasSubmenu && <ChevronDown className="ml-1 h-4 w-4" />}
@@ -296,10 +331,6 @@ export default function Navbar() {
             </div>
           ))}
         </div>
-
-        {/* <button className="p-4">
-            <Search size={24} />
-          </button> */}
       </div>
 
       {/* Sidebar and Content */}
@@ -318,13 +349,13 @@ export default function Navbar() {
             {sidebarItems.map((item, index) => (
               <div key={index}>
                 {item.href ? (
+                  // ✅ Fix 2: Close on sidebar link click
                   <Link
                     href={`/${item.href}`}
+                    onClick={handleProductClick}
                     className={cn(
                       "w-full cursor-pointer text-left pl-[100px] pr-[80px] transition duration-300 font-bold text-lg py-6 flex hover:bg-[#0d477b] hover:pl-[130px] justify-between items-center",
-                      {
-                        "border-t-1 border-blue-900": index !== 0,
-                      }
+                      { "border-t-1 border-blue-900": index !== 0 }
                     )}
                   >
                     {item.title}
@@ -347,8 +378,6 @@ export default function Navbar() {
               </div>
             ))}
           </div>
-
-          {/* Mobile Menu (separate from sidebar) */}
 
           {/* Main Content Area */}
           <div className="flex-1 p-8 border-t-1 border-gray-200">

@@ -59,18 +59,18 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-3xl md:text-3xl font-bold text-gray-900 text-center mb-6">
-                Safe and reliable transport at high level
+                Safe, reliable, and built to keep things moving
               </div>
               <div className="flex justify-center">
                 <div className=" mt-2 mb-6 text-center h-1 w-12 bg-yellow-400"></div>
               </div>
               <p className="text-lg text-gray-700 mb-8 text-center">
                 Single-girder suspension cranes from our KBK light crane system
-                enable you to achieve fast and reliable area-serving overhead
-                handling and exact positioning of a wide variety of goods. With
-                our optimised and modular KBK components, spatial challenges and
-                requirements are already taken into account during the planning
-                stage.
+                make overhead handling fast, smooth, and precise — no matter
+                what you&apos;re moving or where. Whether you&apos;re dealing
+                with tricky spaces or specific layout requirements, our modular
+                KBK components are designed to handle it all from the very start
+                of the planning process.
               </p>
               <div className="flex justify-center mb-6 items-center">
                 <iframe
@@ -83,33 +83,37 @@ export default function Home() {
                 ></iframe>
               </div>
               <p className="text-lg text-gray-700">
-                Reduced approach dimensions and thus improved utilisation of the
-                available space are ensured by our optimised trolleys. During
-                the project engineering phase, planners already gain more
-                flexibility thanks to, for example, larger distances between
-                suspensions and the option of an integrated conductor line, thus
-                reducing installation work and assembly costs.
+                Our optimised trolleys reduce approach dimensions, so you get
+                more out of every inch of available space. During the planning
+                phase, engineers benefit from greater flexibility too — with
+                options like larger distances between suspensions and an
+                integrated conductor line that cuts down on installation work
+                and keeps assembly costs low.
               </p>
 
               <p className="text-lg text-gray-700 mt-6">
-                Useful KBK additional components enable owners of installations
-                to respond to changing requirements at any time. Variable travel
-                path limitation, for example, makes it possible to limit travel
-                motions in just a few steps. Quick and easy to install. What
-                qualities do our KBK single-girder suspension cranes offer?
+                And as your needs change over time? No problem. Useful KBK
+                add-on components let you adapt your system quickly and easily.
+                Variable travel path limitation, for example, allows you to
+                restrict travel motions in just a few simple steps — fast to set
+                up, easy to adjust.
               </p>
-              <ul className="mt-4  list-disc">
-                <li>Modular system design</li>
-                <li>Smooth and reliable handling</li>
-                <li>Smooth manual travel</li>
-                <li>Cost-effective implementation</li>
+              <h3 className="text-xl font-semibold my-4">
+                What makes our KBK single-girder suspension cranes stand out?
+              </h3>
+              <ul className="mt-4  list-disc pl-10">
+                <li> Modular system design that adapts to your space</li>
+                <li>Smooth and reliable load handling every time</li>
+                <li>Effortless manual travel</li>
+                <li>Cost-effective to implement and maintain</li>
+                <li>Configurable to meet your exact requirements</li>
                 <li>
-                  Customer-specific configuration to meet individual
-                  requirements
+                  Reduced approach dimensions for better space utilisation
                 </li>
-                <li>Reduced approach dimensions</li>
-                <li>Larger distances between suspensions</li>
-                <li>Lower assembly costs</li>
+                <li>
+                  Larger distances between suspensions for more layout freedom
+                </li>
+                <li>Lower assembly costs from day one </li>
               </ul>
             </div>
           </div>
@@ -330,7 +334,6 @@ export default function Home() {
                 </section>
               </AccordionDetails>
             </Accordion>
-
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -359,16 +362,16 @@ export default function Home() {
                         className="w-full max-w-md mx-auto"
                       />
                       <p className="text-justify leading-relaxed">
-                        The Demag KBK trolley limit stop improves the modularity
-                        of the light crane system. Buffers can be very easily
-                        installed at any time, which enables KBK Steel (I, II,
-                        II-H) and Aluline (I, 22) crane equipment to be buffered
-                        along the crane girder or crane runway. A temporary or
-                        long-term limit of the long and cross-travel motions can
-                        be installed in no time at all. The trolley limit stop
-                        is fitted with Demag cellular plastic buffers and can be
-                        installed under the rail. The benefit: The noise level
-                        in the event of unavoidable collisions can be reduced.
+                        The Demag KBK trolley limit stop makes your light crane
+                        system even more flexible and modular. Buffers can be
+                        added at any point along the crane girder or runway —
+                        quickly and without any hassle. It works with KBK Steel
+                        (I, II, II-H) and Aluline (I, 22) crane equipment, and
+                        lets you set temporary or permanent limits on long and
+                        cross-travel motions in no time. The trolley limit stop
+                        comes fitted with Demag cellular plastic buffers and
+                        installs neatly under the rail — helping to reduce noise
+                        levels when unavoidable contact does occur.
                       </p>
                     </div>
                   </div>
@@ -391,11 +394,12 @@ export default function Home() {
                   <div className="flex justify-center">
                     <div className="space-y-6 max-w-4xl">
                       <p className="text-justify leading-relaxed">
-                        Two variants of the trolley limit stop can be supplied.
-                        The difference lies in the time frame for use. Travel
-                        along the crane runway or girder can be limited in the
-                        long term using the bolted variant. They can be
-                        installed at variable positions along the rails.
+                        The trolley limit stop comes in two variants — the
+                        difference is how long you need them in place. For
+                        long-term use, the bolted variant keeps travel along the
+                        crane runway or girder firmly restricted. It can be
+                        installed at any position along the rails and stays
+                        securely fixed for as long as you need it.
                       </p>
 
                       {/* Image Row */}
@@ -422,9 +426,8 @@ export default function Home() {
                             width={300}
                             layout="responsive"
                             alt="Bolt & Lever Type"
-                            className="w-full max-w-md mx-auto "
+                            className="w-full max-w-md mx-auto"
                           />
-
                           <div className="text-sm italic">
                             Demag trolley limit stop with lever for temporary
                             installation.
@@ -433,23 +436,24 @@ export default function Home() {
                       </div>
 
                       <p>
-                        The variant with a lever is also suitable for variable
-                        installation, but it can be released and repositioned
-                        more quickly and easily thanks to the lever. Temporary
-                        limit stops for the long and cross-travel motions can be
-                        easily installed in this way. For example, this may be
-                        needed to close the end of a track, to fix a crane or
-                        trolley in position or to secure the crane for
-                        installation or service work.
+                        Need something more flexible? The lever variant is just
+                        as versatile — but it can be released and repositioned
+                        much more quickly and easily. It&apos;s perfect for
+                        setting up temporary travel limits for long and
+                        cross-travel motions. Use it to close off the end of a
+                        track, hold a crane or trolley in position, or keep
+                        things secure during installation or maintenance work.
                       </p>
 
                       {/* Technical Drawings and Part Numbers */}
-                      <div className="flex justify-center  items-center ">
-                        <div className="grid sm:grid-cols-1 md:grid-cols-2 justify-center  gap-6 text-center text-sm ">
+                      <div className="flex justify-center items-center">
+                        <div className="grid sm:grid-cols-1 md:grid-cols-2 justify-center gap-6 text-center text-sm">
                           <div>
-                            <img
+                            <Image
                               src="/img/singele-grider-chart.webp"
                               alt="Trolley Stop Bolt"
+                              width={300}
+                              height={300}
                               className="mx-auto"
                             />
                             <p className="mt-2">
@@ -459,9 +463,11 @@ export default function Home() {
                             </p>
                           </div>
                           <div>
-                            <img
+                            <Image
                               src="/img/singel-griderchart2.webp"
                               alt="Trolley Stop Lever"
+                              width={300}
+                              height={300}
                               className="mx-auto"
                             />
                             <p className="mt-2">

@@ -7,21 +7,21 @@ const allSections = [
   {
     label: "Optimum space utilization",
     points: [
-      " Overhead, area-serving load transport",
-      " Optimum utilization of space thanks to minimum approach dimensions",
-      " Suspension from existing workshop ceilings or roof structures",
-      " Require no additional supports for the crane runway",
+      "Overhead load transport that covers your entire work area",
+      "Makes the most of every bit of available space thanks to minimal approach dimensions",
+      "Suspends easily from existing workshop ceilings or roof structures",
+      "No extra supports needed for the crane runway — saving you time and cost",
     ],
   },
   {
     label: "Convenient handling",
     points: [
-      " Easily moved by hand",
-      " Smooth-running, snag-free operation thanks to articulated connections between the crane girders and trolleys",
-      " Low deadweight",
-      " Customer-specific and cost-effective solutions for workshops – also in limited sections",
-      " Versatile applications thanks to modular system design (e.g. latching arrangements with KBK suspension monorails for crane trolley transfer)",
-      " Cranes can also operate on runways that are not parallel",
+      "Light and easy to move by hand",
+      "Smooth, snag-free operation thanks to articulated connections between crane girders and trolleys",
+      "Low deadweight keeps things effortless to manage",
+      "Cost-effective, customer-specific solutions that work even in tight or limited spaces",
+      "Flexible applications thanks to a modular design — including latching arrangements with KBK suspension monorails for crane trolley transfer",
+      "Works on runways that aren't perfectly parallel — no problem at all",
     ],
   },
 ];

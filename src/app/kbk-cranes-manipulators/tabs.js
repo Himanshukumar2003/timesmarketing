@@ -7,17 +7,17 @@ const allSections = [
   {
     label: "Efficient workplace design",
     points: [
-      " Optimum ergonomic load handling",
-      " High operating speeds",
-      " Optimum positioning of workpieces and sub-assemblies",
-      " Range can be increased by performing operations also outside the suspension area",
-      " Also available with KBK Aluline for even lower deadweight",
+      "Ergonomic load handling that makes every lift more comfortable",
+      "High operating speeds to keep your workflow moving",
+      "Precise positioning of workpieces and sub-assemblies every time",
+      "Extended reach — operations can also be carried out outside the suspension area",
+      "Also available with KBK Aluline for an even lighter, low-deadweight solution",
     ],
   },
   {
     label: "Simple upgrade",
     points: [
-      "Existing KBK double-girder suspension cranes can be converted into manipulator cranes using KBK ergo components",
+      "Already have a KBK double-girder suspension crane? It can be easily converted into a manipulator crane using KBK ergo components — no need to start from scratch",
     ],
   },
 ];

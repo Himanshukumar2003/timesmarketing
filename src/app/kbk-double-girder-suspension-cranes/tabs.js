@@ -7,29 +7,29 @@ const allSections = [
   {
     label: "Optimum space utilization",
     points: [
-      "Overhead, area-serving load transport",
-      "Optimum utilization of space thanks to minimum approach dimensions",
-      "Suspension from existing workshop ceilings or roof structures",
-      "Require no additional supports for the crane runway",
+      "Overhead load transport that covers your entire work area",
+      "Makes the most of available space thanks to minimal approach dimensions",
+      "Suspends easily from existing workshop ceilings or roof structures",
+      "No extra supports needed for the crane runway — saving time and cost",
     ],
   },
   {
     label: "Convenient handling",
     points: [
-      " Simple, safe and reliable handling",
-      " Favorable installation dimensions",
-      " Customer-specific and cost-effective solutions for workshops – also in limited sections",
-      "Versatile applications thanks to modular system design (e.g. latching arrangements with KBK double suspension monorails for crane trolley transfer)",
-      " Can also be employed as manipulator cranes – optimum design for use in state-of-the-art handling systems.",
+      "Simple, safe, and reliable to operate every day",
+      "Compact installation dimensions that fit neatly into your space",
+      "Cost-effective, customer-specific solutions — even for tight or limited workshop sections",
+      "Flexible applications thanks to a modular design — including latching arrangements with KBK double suspension monorails for crane trolley transfer",
+      "Can also be used as manipulator cranes — perfectly suited for modern, high-performance handling systems",
     ],
   },
   {
     label: "Strong performance",
     points: [
-      "Rated for loads weighing up to 3,200 kg",
-      " Maximum possible hook paths by arranging the hoist between the crane girders",
-      " Maximum span dimensions by means of multiple suspensions (cranes operating on more than two runways) – to cover extensive storage and production areas",
-      " Modular system design",
+      "Handles loads of up to 3,200 kg with confidence",
+      "Maximum hook paths achieved by positioning the hoist between the crane girders",
+      "Wide span coverage through multiple suspensions — ideal for large storage and production areas running on more than two runways",
+      "Modular system design for easy adaptation and expansion",
     ],
   },
 ];

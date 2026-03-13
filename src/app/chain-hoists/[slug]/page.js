@@ -17,78 +17,72 @@ const data = [
     slug: "dc-pro-chain-hoist",
 
     summary: {
-      title: "The industry benchmark",
+      title: "The new benchmark",
       description:
-        "With our DC-Pro chain hoist, we meet our own high standards in terms of quality and innovation. The DC-Pro chain hoist is a fully featured, highly versatile chain hoist, which can be installed and put into service in minimum time. Many features that have to be ordered and bought as extras elsewhere are already integrated as standard. The result:",
+        "We designed the DC-Pro chain hoist to be the best in its class. It’s a versatile powerhouse that's incredibly easy to set up, getting you to work faster. Plus, we’ve included all the premium features that other companies charge extra for, right from the start.",
       benefits: [
-        "All inclusive features at no extra cost",
-        "Two lifting speeds as standard",
-        "Improved safety thanks to 24 V contactor control, operating limit switches and elapsed operating time counter as standard",
-        "Slipping clutch with automatic cut-out by means of speed monitoring",
-        "Optimum ergonomics and ease of service",
-        "Main components are maintenance-free for up to 10 years.",
+        "Everything included: Premium features come standard, with no hidden costs.",
+        "Precision control: Two lifting speeds are built-in for better handling.",
+        "Safety first: Includes 24 V control, limit switches, and a usage counter for peace of mind.",
+        "Smart protection: The slipping clutch automatically monitors speed to prevent overloads.",
+        "Built for you: Designed for comfort and easy maintenance, with main components that stay worry-free for up to 10 years.",
       ],
       video: ["/img/chain-hoist/02-DC-Pro-EN.gif"],
     },
     productInformation: {
       tabHeading: "The benefits at a glance",
-      heading: "High-performance equipment",
+      heading: "High-Performance Equipment",
       benefits: [
         {
           label: "High-performance equipment",
           points: [
-            '"All inclusive" features already as standard',
-            "Two lifting speeds as standard",
-            "24 V Contactor control",
-            "Operating limit switches (upper/lower)",
-            "Elapsed operating time counter",
-            "Aluminum housing components with powder coating",
-            "Duty factor: 60% (40/20), 360 starts/hour",
-            "Signals for applications with three motion axes",
-            "Suitable for tandem operation",
-            "Comprehensive selection of finely graded load capacities up to 5,000 kg",
-            "Suspension brackets for improved C dimension (for sizes DC 1–10)",
+            "Truly all-inclusive: The features you need are built-in, not added on.",
+            "Precision handling: Dual lifting speeds come standard.",
+            "Safety built-in: Includes 24 V contactor control, limit switches, and a usage counter.",
+            "Rugged design: Durable, powder-coated aluminum housing.",
+            "Reliable output: Ready for heavy use with a 60% duty factor and 360 starts per hour.",
+            "Smart versatility: Fully equipped for three-axis motion and tandem operation.",
+            "Flexible capacity: A wide range of options to handle loads up to 5,000 kg.",
+            "Compact design: Improved suspension brackets for better overhead clearance (DC 1–10).",
           ],
         },
         {
           label: "Long service life",
           points: [
-            "Gearbox, brake and slipping clutch are maintenance-free for up to 10 years (DC-Pro 10–25 brake for up to 5 years)",
-            "Low-wear brake thanks to regenerative braking",
-            "Brake adjustment is not necessary",
-            "No load dropping thanks to slipping clutch arranged in front of the brake in the load-bearing arrangement",
-            "Reduced chain wear thanks to 1/1 reeving for loads up to 1,000 kg",
-            "Robust cylindrical-rotor motor with fan and separate DC brake",
-            "No brake bonding thanks to double encapsulated brake",
+            "Low maintenance: The gearbox, brake, and clutch are maintenance-free for up to 10 years (DC-Pro 10–25 brake for up to 5 years).",
+            "Smart braking: Regenerative braking minimizes wear, so you never have to worry about manual brake adjustments.",
+            "Enhanced safety: The slipping clutch is positioned ahead of the brake, ensuring the load stays secure.",
+            "Reduced wear: 1/1 reeving for loads up to 1,000 kg helps your chain last much longer.",
+            "Built to last: A robust motor with a separate cooling fan and a double-encapsulated, non-bonding brake keeps things running smoothly in any environment.",
           ],
         },
         {
           label: "High operating reliability",
           points: [
-            "Standard requirements satisfied for functional safety",
-            "No continuous slipping thanks to slipping clutch with automatic cut-out",
-            '24 V contactor control with internal "tri-state" signal transfer',
-            "Chain hoist and travel drive feature IP 55 enclosure, insulation class F",
-            "Automatic braking if the control system fails",
+            "  Built-in safety: Meets all functional safety standards automatically.",
+            "Smart monitoring: Our slipping clutch includes an automatic cut-out to prevent continuous slipping.",
+            "Robust electronics: Features a 24 V control system with tri-state signal transfer for extra security.",
+            "Weather-ready: Fully IP 55 enclosed to protect against dust and moisture.",
+            "Fail-safe design: The system automatically brakes if the control signal is lost.",
           ],
         },
         {
           label: "Optimum ergonomics",
           points: [
-            "Height-adjustable DSC/DSC-S control pendants with low-fatigue actuation force",
-            "Control cable length and control pendant position can be adjusted to meet specific needs on site (without any need for wiring)",
-            "Pivoting suspension bracket enables the chain hoist to be attached when the trolley has been fitted",
+            "Comfort first: Height-adjustable control pendants designed to reduce fatigue.",
+            "Custom setup: Easily adjust cable length and control position on-site without any complex rewiring.",
+            "Easy attachment: The pivoting suspension bracket makes installation simple, even when the trolley is already fitted.",
           ],
         },
         {
           label: "Service-friendly",
           points: [
-            '"Plug & Lift" and "Plug & Drive" for all electrical connections',
-            "Elapsed operating time counter, status and error messages shown on display",
-            "Infrared diagnostic interface with IDAPSY software (to read out and manage specific data)",
-            "Service cover for rapid access to plug connections, strain relief arrangements, collector for 3 m control cable and chain drive",
-            "Chain lubrication through lubrication opening in the chain guide for improved lubrication between links (sizes DC 1–10)",
-            "Reduced downtimes as chain drive can be replaced without dismantling motor or gearbox parts",
+            `"Plug & Play": All electrical connections use simple "Plug & Lift" and "Plug & Drive" tech.`,
+            "Clear status updates: An onboard display shows operation hours and any error messages instantly.",
+            "Smart diagnostics: Manage and read data easily via our infrared IDAPSY software.",
+            "Quick access: The service cover lets you get to connections, cables, and the chain drive in seconds.",
+            "Built-in lubrication: A dedicated port (sizes DC 1–10) makes keeping your chain smooth and long-lasting a breeze.",
+            "Less downtime: Designed so you can replace the chain drive without having to take apart the motor or gearbox.",
           ],
         },
       ],
@@ -129,87 +123,87 @@ const data = [
     },
 
     summary: {
-      title: "An investment with added value",
+      title: "A hoist that pays for itself",
       description:
-        "Our DCS-Pro chain hoist offers high efficiency and reliability to ensure maximum precision in assembly operations – for gently and safely lifting, lowering and positioning valuable and sensitive parts. Thanks to almost double rated speed in the partial load range, lifting motions can be performed very quickly.",
+        "The DCS-Pro chain hoist is built for operations where precision really matters — gently and safely lifting, lowering, and positioning valuable or sensitive parts with confidence. It's efficient, reliable, and thanks to nearly double the rated speed in the partial load range, it keeps things moving fast when you need it most.",
       benefits: [
-        "Variable speed over the entire load spectrum",
-        "Exceptionally fine control at slow speed",
-        "Up to 90% higher speeds for reduced loads thanks to its Pro-Hub function",
+        "Variable speed across the full load range",
+        "Exceptionally fine control at slow speeds",
+        "Up to 90% higher speeds for lighter loads thanks to the Pro-Hub function",
         "Load capacities up to 3,200 kg",
       ],
       video: ["/img/chain-hoist/03-DCS-Pro-EN.gif"],
     },
     productInformation: {
-      tabHeading: "The benefits at a glance",
+      tabHeading: "Why the DCS-Pro works for you",
       benefits: [
         {
           label: "High-performance equipment",
           points: [
-            "All inclusive features already as standard",
+            "Comprehensive features included as standard — nothing extra needed",
             "Two lifting speeds as standard",
             "24 V contactor control",
-            "Operating limit switches (upper/lower)",
-            "Elapsed operating time counter",
-            "Aluminum housing components with powder coating",
+            "Operating limit switches for upper and lower positions",
+            "Elapsed operating time counter included",
+            "Aluminium housing components with powder coating",
             "Duty factor: 60% (40/20), 360 starts/hour",
-            "Signals for applications with three motion axes",
+            "Signal outputs for applications with three motion axes",
             "Suitable for tandem operation",
-            "Comprehensive selection of finely graded load capacities up to 5,000 kg",
-            "Suspension brackets for improved C dimension (for sizes DC 1–10)",
+            "Wide selection of finely graded load capacities up to 5,000 kg",
+            "Suspension brackets for improved C dimension — available for sizes DC 1–10",
           ],
         },
         {
           label: "High safety and reliability",
           points: [
-            "Standard requirements satisfied for functional safety",
+            "Meets standard requirements for functional safety",
             "No continuous slipping thanks to slipping clutch with automatic cut-out",
             '24 V contactor control with internal "tri-state" signal transfer',
             "Chain hoist and travel drive feature IP 55 enclosure, insulation class F",
-            "Automatic braking if the control system fails",
+            "Automatically brakes if the control system fails",
           ],
         },
         {
-          label: "Optimized safety",
+          label: "Optimised for easy service",
           points: [
-            "Installation and commissioning in a minimum of time",
-            "Fast and ergonomic height adjustment of the control pendant without the need for any additional wiring",
-            "Rapid access to all important plug-and-socket connections, height adjustment of the control pendant and chain lubrication thanks to pivoting service cover",
-            "Elapsed operating time counter and diagnosis interface",
-            "Interchangeable chain drive can be quickly and easily replaced without the need to remove motor or gearbox parts",
-            "High flexibility thanks to complete features",
-            "Gearbox, brake and slipping clutch are maintenance-free for up to 10 years",
+            "Quick to install and commission — minimal setup time needed",
+            "Fast, ergonomic height adjustment of the control pendant with no extra wiring required",
+            "Pivoting service cover gives rapid access to all plug-and-socket connections, pendant height adjustment, and chain lubrication",
+            "Elapsed operating time counter and diagnosis interface included",
+            "Interchangeable chain drive can be replaced quickly without removing the motor or gearbox",
+            "Full features give you flexibility right out of the box",
+            "Gearbox, brake, and slipping clutch are maintenance-free for up to 10 years",
           ],
         },
         {
-          label: "Long service life",
+          label: "Built to last",
           points: [
-            "Gearbox, brake and slipping clutch are maintenance-free for up to 10 years (DC-Pro 10–25 brake for up to 5 years)",
+            "Gearbox, brake, and slipping clutch maintenance-free for up to 10 years (DC-Pro 10–25 brake up to 5 years)",
             "Low-wear brake thanks to regenerative braking",
-            "Brake adjustment is not necessary",
-            "No load dropping thanks to slipping clutch arranged in front of the brake in the load-bearing arrangement",
+            "No brake adjustment needed — ever",
+            "Slipping clutch arranged in front of the brake prevents load dropping",
             "Reduced chain wear thanks to 1/1 reeving for loads up to 1,000 kg",
             "Robust cylindrical-rotor motor with fan and separate DC brake",
-            "No brake bonding thanks to double encapsulated brake",
+            "Double encapsulated brake prevents brake bonding",
           ],
         },
         {
-          label: "Service-friendly",
+          label: "Easy to service",
           points: [
-            "Plug-and-play connections to minimize setup time",
-            "Rapid access to all important plug-in connections",
+            "Plug-and-play connections keep setup time to a minimum",
+            "Quick access to all important plug-in connections",
             "Separate service panel with 3m pendant cable, gear and brake service cover",
             "Chain lubrication slot for easy service access",
-            "Chain drive and brake can be replaced quickly",
+            "Chain drive and brake can be replaced quickly when needed",
           ],
         },
         {
-          label: "Ergonomic operation",
+          label: "Comfortable to operate",
           points: [
-            "Simple commissioning and service thanks to plug-&-lift and plug-&-drive connections",
-            "Fatigue-free operation thanks to ergonomic, plug-in DSC-S control pendant",
-            "Flexibility as standard thanks to two sizes of suspension bracket",
-            "Fast and simple installation thanks to infinitely variable adjustment of trolleys to the flange width.",
+            "Simple commissioning and servicing via plug-&-lift and plug-&-drive connections",
+            "Fatigue-free operation with the ergonomic, plug-in DSC-S control pendant",
+            "Two sizes of suspension bracket give you flexibility as standard",
+            "Quick and easy trolley installation with infinitely variable adjustment to the flange width",
           ],
         },
       ],
@@ -420,53 +414,53 @@ const data = [
     product: "DCM-Pro Manulift",
     slug: "dcm-pro-manulift",
     summary: {
-      title: "Convenient operation and load handling with one hand",
+      title: "One hand. Total control. Zero hassle.",
       description:
-        "The DCM-Pro Manulift was developed for handling loads quickly and safely with only one hand. The DCM-Pro is based on the lifting unit of the DC-Pro chain hoist and the DSM-C control unit. Thanks to the control unit which is rigidly connected to the load handling attachment, the operator only needs one hand to operate the hoist and guide the load. Further strengths:",
+        "The DCM-Pro Manulift is designed for operators who need to move loads quickly and safely — with just one hand. Built on the lifting unit of the DC-Pro chain hoist and paired with the DSM-C control unit, the control unit connects directly to the load handling attachment. That means one hand does it all — operating the hoist and guiding the load at the same time. Here's what else makes it a great choice:",
       benefits: [
-        "Convenient operation and load guidance with one hand",
-        "For all Manulift load handling attachments or specially developed load handling attachments",
-        "Simple replacement thanks to quick-change coupling",
-        "Suitable for right-hand and left-hand operation",
+        "Effortless one-handed operation and load guidance",
+        "Compatible with all standard Manulift attachments or custom-developed load handling solutions",
+        "Quick and easy attachment swaps thanks to the quick-change coupling",
+        "Works comfortably for both right-handed and left-handed operators",
       ],
     },
     productInformation: {
-      tabHeading: "The benefits at a glance",
+      tabHeading: "Why the DCM-Pro works for you",
       benefits: [
         {
           label: "Versatile performance",
           points: [
-            "Two hoist speeds as standard",
-            "Versatile adaptability to any task",
-            "Simple exchange of the load handling device thanks to quick-change coupling",
-            "For right-hand and left-hand operation",
+            "Two hoist speeds included as standard",
+            "Adapts easily to a wide range of tasks",
+            "Quick-change coupling makes swapping load handling devices fast and simple",
+            "Suitable for both right-handed and left-handed use",
           ],
         },
         {
           label: "High operating quality",
           points: [
-            "Convenient single-handed handling and guidance of loads weighing up to 250 kg",
-            "Quick-change coupling for a variety of load handling attachments (load hooks, pantograph tongs, clamping and shaft grippers, parallel gripper systems, specifically developed load handling attachments)",
-            "Service-friendly thanks to diagnostics interface",
+            "Comfortable single-handed handling and guidance of loads up to 250 kg",
+            "Quick-change coupling supports a wide variety of attachments — load hooks, pantograph tongs, clamping and shaft grippers, parallel gripper systems, and custom solutions",
+            "Diagnostics interface keeps servicing quick and straightforward",
           ],
         },
         {
           label: "High safety and reliability",
           points: [
-            "24 V contactor control",
+            "24 V contactor control for safe, consistent operation",
             "FEM classification from 2m+ to 4m",
-            "Slipping clutch with speed monitoring",
-            "No brake adjustment",
-            "No load dropping thanks to slipping clutch arranged in front of the brake",
-            "Operating limit switches",
+            "Slipping clutch with speed monitoring for added protection",
+            "No brake adjustment needed — ever",
+            "Slipping clutch arranged in front of the brake prevents load dropping",
+            "Operating limit switches included as standard",
           ],
         },
         {
-          label: "Long service life",
+          label: "Built to last",
           points: [
-            "Gearbox, brake and slipping clutch maintenance-free for up to 10 years",
-            "Aluminum motor, gearbox and electrical cover parts provided with UV-resistant powder coating",
-            "Robust cylindrical-rotor motor with fan and separate DC brake beneath the electrical cover",
+            "Gearbox, brake, and slipping clutch are maintenance-free for up to 10 years",
+            "Aluminium motor, gearbox, and electrical cover parts finished with UV-resistant powder coating",
+            "Robust cylindrical-rotor motor with fan and a separate DC brake beneath the electrical cover",
           ],
         },
       ],
@@ -476,46 +470,46 @@ const data = [
     product: "DCMS-Pro Manulift",
     slug: "dcms-pro-manulift",
     summary: {
-      title: "Single-handed operation",
+      title: "One hand. Full control.",
       description:
-        "Our DCMS-Pro Manulift combines fast and reliable load handling with variable speed control and operation with only one hand. It is based on the lifting unit of our DCS-Pro chain hoist and our DSM-CS control unit. The wide range of performance offered by the DCMS-Pro:",
+        "The DCMS-Pro Manulift lets you handle loads quickly, safely, and precisely — all with just one hand. Built on the proven lifting unit of our DCS-Pro chain hoist and paired with the DSM-CS control unit, it gives you variable speed control and real confidence in every lift. Here's what makes it stand out:",
       benefits: [
-        "Chain hoist operation and load handling with one hand",
-        "Safe, reliable and precise positioning of sensitive goods and valuable products thanks to variable speed control",
-        "Fast lifting motions at almost double the rated speed in the partial load range",
-        "Quick-change coupling for a reliable hold",
-        "Simple replacement of the load handling attachment",
-        "Suitable for right-hand and left-hand operation",
+        "Full hoist operation and load handling with just one hand",
+        "Safe, precise positioning of sensitive or valuable goods thanks to variable speed control",
+        "Fast lifting at nearly double the rated speed when working with partial loads",
+        "Quick-change coupling for a secure, reliable hold every time",
+        "Load handling attachments can be swapped out quickly and easily",
+        "Works comfortably for both right-handed and left-handed operators",
       ],
       video: ["/img/chain-hoist/DCMS-Pro.gif"],
     },
     productInformation: {
-      tabHeading: "The benefits at a glance",
+      tabHeading: "Why the DCMS-Pro works for you",
       benefits: [
         {
-          label: "Maximum ease of operation",
+          label: "Effortless to operate",
           points: [
-            "Infinitely variable speed control for lifting and lowering motions over the entire load range",
-            "Exceptionally fine control at slow speed",
-            "Smooth starting and exact positioning",
-            "Creep lifting speed from 0.15 m/min",
-            "Lifting speed, acceleration and braking ramp can be simply modified via the control unit",
-            "Suitable for right-hand and left-hand operation",
+            "Infinitely variable speed control for lifting and lowering across the full load range",
+            "Exceptionally fine control at slow speeds — perfect for delicate work",
+            "Smooth starts and precise positioning every time",
+            "Creep lifting speed starting from just 0.15 m/min",
+            "Lifting speed, acceleration, and braking ramp are all easy to adjust via the control unit",
+            "Comfortable for both right-handed and left-handed users",
           ],
         },
         {
-          label: "Versatile performance",
+          label: "Versatile and adaptable",
           points: [
-            "The various Manulift load handling attachments can be changed with ease",
-            "Pro-Hub function for up to 90 per cent higher nominal speed for partial load or no-load operations",
-            "Automatic switchover to creep lifting speed before the upper/lower limit positions are reached – speed ratio 1:100",
+            "Manulift load handling attachments can be swapped out with ease",
+            "Pro-Hub function delivers up to 90% higher nominal speed during partial load or no-load operations",
+            "Automatically switches to creep lifting speed before reaching upper or lower limit positions — speed ratio 1:100",
           ],
         },
         {
           label: "High safety and reliability",
           points: [
-            "Motor temperature monitoring device",
-            "Acceleration and braking ramps to reduce load sway",
+            "Motor temperature monitoring keeps things running safely",
+            "Acceleration and braking ramps help reduce load sway during operation",
           ],
         },
       ],
@@ -621,62 +615,62 @@ const data = [
     },
 
     summary: {
-      title: "High quality for everyday needs",
+      title: "Reliable quality for everyday lifting needs",
       description:
-        "Our DC-Com chain hoist is the right choice for everyday needs: designed for applications with normal requirements – simplicity and reliability in proven Demag quality. DC-Com units can be integrated into the rails of our KBK light crane system or installed on I-beam girders – where our U 11–U 22 generation of trolleys provides smooth transport of your loads. And what else do they offer?",
+        "If you need a dependable chain hoist for everyday use, the DC-Com is built for exactly that. It's straightforward, reliable, and backed by the trusted Demag quality you can count on. The DC-Com fits neatly into KBK light crane system rails or mounts on I-beam girders — with U 11–U 22 trolleys keeping your loads moving smoothly. Here's what else it brings to the table:",
       benefits: [
-        "Simple commissioning",
-        "Ergonomic handling",
-        "Service-friendly",
-        "FEM classification from 2m",
-        "24 V contactor control",
-        "Two hoist speeds as standard",
+        "Quick and simple to commission",
+        "Comfortable and ergonomic to use",
+        "Easy to service when needed",
+        "FEM classification starting from 2m",
+        "24 V contactor control for safe operation",
+        "Two hoist speeds included as standard",
       ],
     },
     productInformation: {
-      tabHeading: "The benefits at a glance",
+      tabHeading: "Why the DC-Com works for you",
       benefits: [
         {
           label: "Reliable performance",
           points: [
-            "Various sizes with load capacities up to 2,000 kg",
-            "Standard 4-m hook path",
-            "Elapsed operating time counter and diagnosis interface",
+            "Multiple sizes available with load capacities up to 2,000 kg",
+            "Standard 4-m hook path right out of the box",
+            "Elapsed operating time counter and diagnosis interface included",
           ],
         },
         {
-          label: "Good availability and ease of operation",
+          label: "Easy to get and easy to use",
           points: [
-            "Available direct ex stock",
-            "Fast and simple commissioning thanks to plug connections",
-            "Ergonomic handling",
-            "Service-friendly",
+            "Available directly from stock — no long wait times",
+            "Plug connections make commissioning fast and straightforward",
+            "Ergonomic design for comfortable day-to-day operation",
+            "Designed to be serviced quickly and easily",
           ],
         },
         {
           label: "High safety and reliability",
           points: [
-            "High-quality powder-coated surfaces for improved protection and a longer service life",
-            "24 V contactor control",
-            "Slipping clutch with automatic cut-out by means of speed monitoring",
-            "IP 55 enclosure for chain hoist and trolley",
+            "High-quality powder-coated surfaces for better protection and a longer service life",
+            "24 V contactor control for safe and consistent operation",
+            "Slipping clutch with automatic cut-out via speed monitoring",
+            "IP 55 enclosure on both the chain hoist and trolley",
           ],
         },
         {
-          label: "Great versatility",
+          label: "Versatile and adaptable",
           points: [
-            "Two hoist speeds",
-            "Interface for electric travel",
-            "Optional operating limit switches up to 1,000 kg",
+            "Two hoist speeds to match your lifting needs",
+            "Interface ready for electric travel",
+            "Optional operating limit switches available up to 1,000 kg",
           ],
         },
         {
           label: "U 11–U 34 trolleys",
           points: [
-            "Push travel in three sizes",
-            "Fast and simple installation",
-            "Can be used on parallel and sloping flanges",
-            "Smooth travel and low travel resistance",
+            "Push travel available in three sizes",
+            "Quick and simple to install",
+            "Works on both parallel and sloping flanges",
+            "Smooth, low-resistance travel every time",
           ],
         },
       ],
@@ -723,7 +717,7 @@ const data = [
       title:
         "Demag double chain hoist: Two mechanically synchronised chain lead-offs for safely handling bulky loads",
       description:
-        "Double chain hoists are particularly suitable for handling long material or for operation with load bars. Demag offers solutions with two mechanically synchronised chain lead-offs that can lift and lower bulky loads in perfect balance. The load can also be asymmetrically distributed to meet special application needs.",
+        "When you're dealing with long materials or load bars, a double chain hoist is the smart choice. Demag's double chain hoists come with two mechanically synchronised chain lead-offs that lift and lower bulky loads in perfect balance — every time. And if your application calls for it, the load can even be distributed asymmetrically to suit your specific needs.",
 
       subdescription: [
         {
@@ -731,15 +725,15 @@ const data = [
             {
               title: "The right double chain hoist for your application",
               description: [
-                "LDC-D double chain hoists are suitable for higher speeds. The chain hoist can transport loads weighing up to 5,000 kg at 24 m/min. You can choose between a 2-stage or variable-speed control system and can use the chain hoist as a stationary, push or electric-travel unit, for example on our modular Demag KBK light crane system.",
-                "KLDC-D double chain hoists offer a short C dimension thanks to their low-headroom. This increases utilisation of the available space and loads weighing up to 2,000 kg can be lifted and lowered at 2-stage or variable speeds. KLDC-D chain hoists can also be operated as stationary units or with push or electric travel.",
+                "The LDC-D is built for speed. It can move loads of up to 5,000 kg at 24 m/min — making it a great fit for fast-paced operations. You can choose between 2-stage or variable-speed control, and run it as a stationary, push, or electric-travel unit — including on our modular Demag KBK light crane system.",
+                "The KLDC-D takes a different approach — its low-headroom design means a short C dimension, so you get more out of your available space. It handles loads up to 2,000 kg with 2-stage or variable speeds, and like the LDC-D, it works as a stationary unit or with push or electric travel.",
               ],
             },
             {
-              title: "Durable components for uncompromising cost-efficiency",
+              title: "Built to last, designed to save you money",
               description: [
-                "LDC-D double chain hoists are suitable for higher speeds. The chain hoist can transport loads weighing up to 5,000 kg at 24 m/min. You can choose between a 2-stage or variable-speed control system and can use the chain hoist as a stationary, push or electric-travel unit, for example on our modular Demag KBK light crane system.",
-                "The components installed in the DC chain hoist range are selected for their longevity. The generously specified gearbox allows for FEM classification up to 4m and, therefore, 6,300 hours of operation for demanding applications.",
+                "The LDC-D is built for speed and can move loads of up to 5,000 kg at 24 m/min. With 2-stage or variable-speed control and flexible mounting options — stationary, push or electric travel — it fits right into your existing setup, including the Demag KBK light crane system.",
+                "Every component in the DC chain hoist range is chosen with longevity in mind. The generously sized gearbox supports FEM classification up to 4m — delivering up to 6,300 hours of reliable operation, even in the most demanding conditions.",
               ],
             },
           ],
@@ -751,39 +745,39 @@ const data = [
       ],
 
       benefits: [
-        "Variable speed over the entire load spectrum",
-        "Exceptionally fine control at slow speed",
-        "Up to 90% higher speeds for reduced loads thanks to its Pro-Hub function",
+        "Variable speed across the full load range",
+        "Exceptionally fine control at slow speeds",
+        "Up to 90% faster speeds for lighter loads thanks to the Pro-Hub function",
         "Load capacities up to 3,200 kg",
       ],
       video: ["/img/chain-hoist/03-DCS-Pro-EN.gif"],
     },
     productInformation: {
-      tabHeading: "The benefits at a glance",
+      tabHeading: "Why these hoists work for you",
       benefits: [
         {
           label: "LDC-D benefits",
           points: [
-            "Suitable for higher speeds",
-            "Longer chain service life thanks to reduced polygon effect since there are no additional chain return sprockets",
+            "Built for higher speeds without compromising control",
+            "Longer chain service life thanks to a reduced polygon effect — no additional chain return sprockets needed",
             "Load capacities up to 5 t",
             "Hook center distances from 550 mm to 3,200 mm",
             "Lifting speeds up to 24 m/min",
             "Available with 2-stage or variable speeds",
-            "Possible variants: stationary, traveling, for operation with KBK and for articulated trolleys",
-            "Asymmetric load distribution permitted",
+            "Flexible variants: stationary, traveling, for KBK operation, and for articulated trolleys",
+            "Asymmetric load distribution supported",
           ],
         },
         {
           label: "KLDC-D benefits",
           points: [
-            " Low C dimension as for low-headroom design for optimum utilization of the available headroom",
+            "Low C dimension thanks to low-headroom design — makes the most of your available headroom",
             "2/4 lead-off position",
             "Load capacities up to 2 t",
             "Hook center distances from 400 mm to 4,600 mm",
             "Available with 2-stage or variable speeds",
-            "Possible variants: stationary, traveling, for operation with KBK and for articulated trolleys",
-            "Asymmetric load distribution permitted",
+            "Flexible variants: stationary, traveling, for KBK operation, and for articulated trolleys",
+            "Asymmetric load distribution supported",
           ],
         },
       ],
@@ -794,9 +788,9 @@ const data = [
     slug: "chain-hoist-kdc-low-headroom-travelling-hoist",
     summary: {
       title:
-        "Demag KDC low-headroom travelling hoist: Optimum utilization of space with particularly large C dimension",
+        "Demag KDC low-headroom travelling hoist: Make the most of every inch of space",
       description:
-        "The particularly compact KDC monorail travelling hoist offers extremely low headroom for optimum utilisation of the hook path. KDC hoists can be used with all trolley variants, for example in combination with KBK suspension cranes or KBK monorails. Therefore, you can easily move loads weighing up to 2,000 kg over any area or from point to point. You have the choice between 2-stage or variable lifting and cross-travel speeds.",
+        "Tight on headroom? The Demag KDC monorail travelling hoist is designed to work in exactly those conditions — delivering an exceptionally compact build that maximises your available hook path. It works with all trolley variants, including KBK suspension cranes and KBK monorails, making it easy to move loads of up to 2,000 kg anywhere across your workspace. Choose between 2-stage or variable lifting and cross-travel speeds to match the way you work.",
       video: ["/img/chain-hoist/KDC-42318-0-13.jpg"],
 
       subdescription: [
@@ -805,13 +799,13 @@ const data = [
             {
               title: "High safety and reliability",
               description: [
-                "All KDC units are equipped with operating limit switches for the highest and lowest hook position as standard, ensuring convenient lifting and lowering with the chain hoist at all times. Smooth cross-travel starting and braking motions of the trolley provide for low-sway load handling. The safety-related functions satisfy Performance Level c and Category 2 to EN ISO 13849-1 as a minimum requirement.",
+                "Every KDC unit comes with operating limit switches for the highest and lowest hook positions as standard — so lifting and lowering is always smooth and controlled. Cross-travel starts and stops gently, keeping load sway to a minimum. And you can count on the safety-related functions meeting at least Performance Level c and Category 2 to EN ISO 13849-1.",
               ],
             },
             {
-              title: "Durable components for uncompromising cost-efficiency",
+              title: "Built to last, designed to save you money",
               description: [
-                "The components installed in the DC chain hoist range are selected for their longevity. The generously specified gearbox allows for FEM classification up to 4m and, therefore, 6,300 hours of operation for demanding applications.",
+                "Every component in the DC chain hoist range is chosen with longevity in mind. The generously sized gearbox supports FEM classification up to 4m — meaning up to 6,300 hours of reliable operation, even under the most demanding conditions.",
               ],
             },
           ],
@@ -824,15 +818,15 @@ const data = [
       video: ["/img/chain-hoist/KDC-42318-0-13.jpg"],
     },
     productInformation: {
-      tabHeading: "The benefits at a glance",
+      tabHeading: "Why the KDC works for you",
       benefits: [
         {
           label: "Low-headroom traveling hoist",
           points: [
-            "Load capacity up to 2,000 kg",
-            "Optimized design for maximum utilization of the available height",
-            "Can be used for all trolley types",
-            "All KDC traveling hoists are equipped with operating limit switches for the highest and lowest hook position",
+            "Handles load capacities up to 2,000 kg",
+            "Smart, compact design makes the most of every bit of available height",
+            "Compatible with all trolley types",
+            "All KDC travelling hoists include operating limit switches for the highest and lowest hook positions",
             "Available with 2-stage or variable lifting speeds",
           ],
         },
@@ -846,22 +840,22 @@ const data = [
       title:
         "Demag KLDC travelling hoist for big bags: Extended hook lead-off and maximum lifting height",
       description:
-        "The combination of long load bars and a low lifting height can cause problems in some applications. KLDC travelling hoists for big bags combine the maximum lifting height of a Demag KDC low-headroom travelling hoist with an extended hook lead-off, which enables the load to be lifted to the highest hook position. This results in maximum utilisation of the C dimension for handling loads weighing up to 2,000 kg.",
+        "Long load bars and limited lifting height can be a real challenge in certain applications. The Demag KLDC travelling hoist for big bags solves this problem neatly — combining the maximum lifting height of a KDC low-headroom travelling hoist with an extended hook lead-off. This means your load can still reach the highest hook position without any compromise. The result? Maximum use of the C dimension for loads weighing up to 2,000 kg.",
       video: ["/img/chain-hoist/KDC-42318-0-13.jpg"],
 
       subdescription: [
         {
           benefits: [
             {
-              title: "Convenient load handling of bulky goods",
+              title: "Handling bulky loads — made easy",
               description: [
-                "Together with the modular Demag KBK light crane system, this creates a winning combination for the convenient handling also of bulky loads. KLDC travelling hoists for big bags are equipped with operating limit switches for the highest and lowest hook position and can be operated with 2-stage as well as variable lifting and travel speeds.",
+                "Pair the KLDC with the modular Demag KBK light crane system and you've got a powerful combination for moving even the bulkiest loads with ease. Operating limit switches for the highest and lowest hook positions come as standard, and you can choose between 2-stage or variable lifting and travel speeds to suit your workflow.",
               ],
             },
             {
-              title: "Durable components for uncompromising cost-efficiency",
+              title: "Built to last, designed to save you money",
               description: [
-                "The components installed in the DC chain hoist range feature reliability and a long service life. The generously specified gearbox allows for FEM classification up to 4m and, therefore, 6,300 hours of operation for demanding applications.",
+                "Every component in the DC chain hoist range is chosen for reliability and a long service life. The generously sized gearbox supports FEM classification up to 4m — delivering up to 6,300 hours of dependable operation, even in the most demanding conditions.",
               ],
             },
           ],
@@ -881,21 +875,21 @@ const data = [
       title:
         "Demag LDC-Q quadro chain hoist: Four mechanically synchronised chain lead-offs",
       description:
-        "Four attachment points are a good solution for transporting customised load handling attachments or loads weighing up to 3,200 kg that have a large surface area. With its LDC-Q quadro chain hoist, Demag can supply a chain hoist with four mechanically synchronised chain lead-offs that can lift and lower loads evenly and with high precision. Its special feature is a chain hoist that drives all four chain lead-offs. With high safety and reliability. LDC-Q units allow work to be performed under suspended loads according to accident prevention regulation BGV D8+.",
+        "When you're handling large, awkward loads or custom attachments weighing up to 3,200 kg, four attachment points make all the difference. The Demag LDC-Q quadro chain hoist delivers exactly that — four mechanically synchronised chain lead-offs that lift and lower loads evenly and with exceptional precision. One hoist drives all four chain lead-offs, keeping everything perfectly in sync. Safe, reliable, and built to perform. LDC-Q units even allow work to be carried out under suspended loads in line with accident prevention regulation BGV D8+.",
 
       subdescription: [
         {
           benefits: [
             {
-              title: "Precision engineering by Demag ",
+              title: "Precision engineering by Demag",
               description: [
-                "Smooth cross-travel starting and braking motions for low-sway load handling. A choice between 2-stage or variable lifting speeds rounds off a convenient and precise lifting solution with the Demag LDC-Q.",
+                "Travel starts and stops smoothly, keeping load sway to a minimum during cross-travel. And with the choice between 2-stage or variable lifting speeds, you get a lifting solution that's both comfortable to use and impressively precise — every single time.",
               ],
             },
             {
-              title: "Durable components for uncompromising cost-efficiency",
+              title: "Built to last, designed to save you money",
               description: [
-                "The components installed in the DC chain hoist range are selected for their longevity. The generously specified gearbox allows for FEM classification up to 4m and, therefore, 6,300 hours of operation for demanding applications.",
+                "Every component in the DC chain hoist range is chosen with longevity in mind. The generously sized gearbox supports FEM classification up to 4m — meaning up to 6,300 hours of reliable operation, even in the most demanding applications.",
               ],
             },
           ],
@@ -906,15 +900,15 @@ const data = [
       ],
     },
     productInformation: {
-      tabHeading: "The benefits at a glance",
+      tabHeading: "Why the LDC-Q works for you",
       benefits: [
         {
           label: "Low-headroom traveling hoist",
           points: [
-            "Load capacity up to 2,000 kg",
-            "Optimized design for maximum utilization of the available height",
-            "Can be used for all trolley types",
-            "All KDC traveling hoists are equipped with operating limit switches for the highest and lowest hook position",
+            "Handles load capacities up to 2,000 kg",
+            "Smart design makes the most of every bit of available height",
+            "Compatible with all trolley types",
+            "All KDC travelling hoists include operating limit switches for the highest and lowest hook positions",
             "Available with 2-stage or variable lifting speeds",
           ],
         },
@@ -927,7 +921,7 @@ const data = [
     summary: {
       title: "Quality. Performance. Demag DC-II chain hoist.",
       description:
-        "The Demag DC-II chain hoist meets high standards of quality and innovation. With its second generation, Demag is consistently following the DC path and once again defining the industry benchmark. Naturally made in Wetter.",
+        "The Demag DC-II chain hoist raises the bar — again. Building on everything that made the first generation great, this second-generation hoist brings fresh innovation while staying true to the high standards Demag is known for. Proudly made in Wetter.",
 
       subdescription: [
         {
@@ -935,7 +929,7 @@ const data = [
             {
               title: "Innovation from Wetter.",
               description: [
-                "Like its predecessor, the DC-II offers the most comprehensive standard equipment and also a wide-ranging option package, which underscores the flexible application possibilities of the hoist and its modular design.",
+                "Just like its predecessor, the DC-II comes loaded with a comprehensive set of standard features — plus a wide range of options that give you the flexibility to adapt it to almost any application. Its modular design makes customisation simple and straightforward.",
               ],
               video:
                 "https://www.youtube.com/embed/ba9Y2DxPdivc?si=BqmNg-7jL1C537aP",
@@ -943,44 +937,43 @@ const data = [
 
             {
               description: [
-                "The high-quality components of the chain hoist meet all the demands of 'made by Demag' quality. In-house gearbox production and assembly at the main plant in Wetter epitomise the expertise that has established the DC as an industry benchmark.",
+                "Every component inside the DC-II reflects the quality you'd expect from Demag. The gearbox is produced and assembled in-house at the Wetter plant — a clear sign of the expertise and craftsmanship that has made the DC a true industry benchmark.",
               ],
               //   img: "/img/chain-hoist/DC-II-Bauformen.webp",
             },
 
             {
               title:
-                "Second generation. Fully equipped instead of a list of extras.",
+                "Second generation. Everything included — no extras needed.",
               description: [
-                "The main components of the DC-II are maintenance-free for up to ten years. Easy adjustment options without the need for special tools and the Plug&Lift principle characterise the service-friendliness of this hoist.",
-                "Safety during operation is underlined by the slipping clutch with automatic cut-off through speed monitoring. In addition, 24 V contactor control, operating limit switches and elapsed operating time counter ensure safe operation with the DC-II.",
+                "The core components of the DC-II are maintenance-free for up to ten years. No special tools are needed for adjustments, and the Plug & Lift principle keeps servicing quick and hassle-free.",
+                "Safety is built in from the ground up — with a slipping clutch that features automatic cut-off via speed monitoring, 24 V contactor control, operating limit switches, and an elapsed operating time counter. You're covered at every step.",
               ],
             },
 
             {
               title: "Demag DC-II chain hoist",
               description: [
-                "From its inception, the DC-II is available in pre-configured variants with load capacities from 125 to 1,000 kg direct from stock. The basic DC-Com II variant and the high-end DC-Pro II variant differ in terms of their classification in the FEM / ISO group of mechanisms and their lifting speeds. Both variants of the DC-II have the same high level of equipment.",
+                "From day one, the DC-II is available straight from stock in pre-configured variants with load capacities from 125 to 1,000 kg. The DC-Com II is the solid everyday option, while the DC-Pro II steps things up with higher FEM / ISO mechanism group classification and faster lifting speeds. Both variants share the same high level of standard equipment — no compromises.",
               ],
               img: "/img/chain-hoist/DC-II-Bauformen.webp",
             },
 
             {
-              title: "Immediately available",
+              title: "Ready when you are",
               description: [
-                "With the market launch, Demag is offering three sizes (DC-II 1/2, DC-II 5 and DC-II 10) as pre-assembled chain hoists. The benefits for you are fast availability and perfect harmonisation of the tried-and-tested components. These chain hoists, which are available direct from stock, feature safe, low-wear and ergonomic 1/1 reeving. With the 2m to 4m groups of mechanisms, they can achieve up to 6,300 hours of service.",
+                "At launch, Demag is offering three sizes — DC-II 1/2, DC-II 5, and DC-II 10 — as fully pre-assembled chain hoists, available straight from stock. That means fast delivery and perfectly matched, tried-and-tested components right out of the box. These hoists feature safe, low-wear, ergonomic 1/1 reeving and can achieve up to 6,300 hours of service across the 2m to 4m mechanism groups.",
               ],
               highlight: [
                 {
-                  heading: "Your lifting heights",
-                  list: ["DC-Pro II 5 metres", "DC-Com II 4 metres"],
+                  heading: "Standard lifting heights",
+                  list: ["DC-Pro II — 5 metres", "DC-Com II — 4 metres"],
                 },
               ],
 
               subdescription: [
-                "With the two speed settings, you can select a high operating speed with the powerful V2 and a sensitive positioning speed with V1.",
-
-                "The transition of the existing chain hoist range to the new generation is ongoing. Once it is complete, the entire DC chain hoist range will be available in the new DC-II generation.",
+                "Two speed settings give you the best of both worlds — V2 for fast, efficient operation and V1 for precise, sensitive load positioning.",
+                "The full DC chain hoist range is being transitioned to the new DC-II generation. Once complete, every model in the lineup will benefit from the improvements this new generation brings.",
               ],
             },
           ],
@@ -998,9 +991,9 @@ const data = [
     slug: "dc-wind-chain-hoist",
     summary: {
       title:
-        "DC-Wind chain hoist: A great hoist for the maintenance of wind turbines",
+        "DC-Wind chain hoist: The go-to hoist for wind turbine maintenance",
       description:
-        "Our DC-Wind Demag chain hoists are used for the maintenance and service of wind turbines all over the world. Both in onshore and offshore applications, DC-Wind units can overcome adverse conditions. They can safely and reliably transport loads and tools weighing up to 1,500 kg to heights of up to 180 metres.",
+        "When it comes to maintaining wind turbines — whether onshore or offshore — the DC-Wind Demag chain hoist is trusted by teams around the world. Built to handle tough conditions, it safely lifts loads and tools weighing up to 1,500 kg to heights of up to 180 metres. Reliable, powerful, and ready for the job.",
 
       subdescription: [
         {
@@ -1008,23 +1001,23 @@ const data = [
             {
               title: "Safe. By Demag.",
               description: [
-                "Its high lifting speeds enable it to cut maintenance and downtimes to a minimum – making a valuable contribution towards its high availability and efficient operation. The DC-Wind chain hoist can be conveniently controlled and offers all the benefits of our DC chain hoist range as standard. Its high safety standard with a brake/coupling system and corrosion-protected brake with IP55 enclosure are just two of the benefits to improve workplace safety.",
+                "Fast lifting speeds mean less downtime and more productivity — keeping your turbines running at their best. The DC-Wind is easy to operate and comes packed with everything you'd expect from our trusted DC chain hoist range. A robust brake/coupling system and a corrosion-protected brake with IP55 enclosure help keep your team safe, even in the most demanding environments.",
               ],
             },
             {
-              title: "Fast installation, simple maintenance",
+              title: "Quick to set up, easy to maintain",
               description: [
-                "Our DC chain hoist can be quickly installed and put into service with Plug & Lift plug connectors. Its durable components are designed for reliable operation also under harsh conditions. The gearbox and the slipping clutch are maintenance-free for up to 10 years and we select the right components to meet the needs of different climate zones.",
+                "Getting started is simple — just use the Plug & Lift connectors and your hoist is ready to go in no time. The components are built tough and keep working reliably even in harsh conditions. The gearbox and slipping clutch are maintenance-free for up to 10 years, and we carefully select components to suit different climate zones around the world.",
               ],
               highlight: [
                 {
-                  heading: "Your lifting heights",
+                  heading: "What it can do for you",
                   list: [
-                    "Convenient operation",
-                    "High safety standard",
-                    "Simple transport of loads weighing up to 1,500 kg",
-                    "Hook paths up to 180 meters",
-                    "Variable attachment to a slewing arm or a traveling portal arrangement",
+                    "Easy and convenient to operate",
+                    "High safety standard you can count on",
+                    "Lifts loads up to 1,500 kg with confidence",
+                    "Hook paths reaching up to 180 metres",
+                    "Flexible mounting — attach to a slewing arm or a travelling portal arrangement",
                   ],
                 },
               ],
@@ -1038,46 +1031,46 @@ const data = [
     },
 
     productInformation: {
-      tabHeading: "The benefits at a glance",
+      tabHeading: "Why the DC-Wind stands out",
 
       benefits: [
         {
           label: "High safety standard",
           points: [
-            "Safe and reliable load handling thanks to its brake/coupling system and its corrosion-protected brake featuring IP 55 protection",
+            "Handles loads safely and reliably thanks to a robust brake/coupling system and a corrosion-protected brake with IP 55 protection — built for the harshest environments.",
           ],
         },
         {
-          label: "Can be adapted to meet customer requirements",
+          label: "Built around your needs",
           points: [
-            "Specification to suit individual needs, e.g. lifting height and chain collector design",
-            "Modification for different climate zones (e.g. cold climate versions), offshore operation and installation sites at great heights",
+            "Customisable to your specific requirements — from lifting height to chain collector design",
+            "Adapted for different climate zones (including cold climate versions), offshore use, and high-altitude installation sites",
           ],
         },
         {
-          label: "Convenient operation",
+          label: "Easy and comfortable to operate",
           points: [
-            "Fast main lifting speed",
-            "Precise positioning at creep lifting speed",
-            "Trolley can be simply locked with a handle",
-            "Ergonomic control pendant",
+            "Fast main lifting speed to get the job done quickly",
+            "Creep lifting speed for precise, careful positioning",
+            "Trolley locks easily with a simple handle",
+            "Ergonomic control pendant for comfortable, fatigue-free use",
           ],
         },
         {
-          label: "Fast installation and simple handling",
+          label: "Fast to install, simple to handle",
           points: [
-            "Simple commissioning and convenient service thanks to Plug & Lift connections",
-            "Long product service life and extremely low wear due to electrical braking and slip monitoring of the slipping clutch",
-            "Gearbox and slipping clutch maintenance-free for up to 10 years",
+            "Plug & Lift connections make commissioning and servicing quick and hassle-free",
+            "Long service life and very low wear thanks to electrical braking and slip monitoring",
+            "Gearbox and slipping clutch stay maintenance-free for up to 10 years",
           ],
         },
         {
           label: "Low-headroom traveling hoist",
           points: [
-            "Load capacity up to 2,000 kg",
-            "Optimized design for maximum utilization of the available height",
-            "Can be used for all trolley types",
-            "All KDC traveling hoists are equipped with operating limit switches for the highest and lowest hook position",
+            "Handles load capacities up to 2,000 kg",
+            "Smart design makes the most of every bit of available height",
+            "Compatible with all trolley types",
+            "All KDC travelling hoists include operating limit switches for the highest and lowest hook positions",
             "Available with 2-stage or variable lifting speeds",
           ],
         },
@@ -1127,25 +1120,25 @@ const data = [
     summary: {
       title: "Trolleys for DC chain hoists",
       description:
-        "Demag trolleys for chain hoists are a perfect match for DC chain hoists and ideal for installation on I-beam girders or on the modular KBK light crane system. For push travel or with electric positioning – these trolleys provide horizontal travel solutions tailored to meet specific requirements for our compact hoist units.",
+        "Looking for the perfect trolley to pair with your DC chain hoist? Demag trolleys are built to work hand-in-hand with DC chain hoists and fit neatly onto I-beam girders or the modular KBK light crane system. Whether you need simple push travel or precise electric positioning, there's a trolley here that's tailored to your exact needs.",
 
       subdescription: [
         {
           benefits: [
             {
               description: [
-                "All trolleys feature a low rolling resistance and smooth travel characteristics over their entire service life. The robust components are perfectly matched and can provide convenient transport solutions for your application needs.",
+                "Every trolley in the Demag range is built to roll smoothly and stay that way — right through its entire service life. The components are tough, well-matched, and designed to make load transport as easy and reliable as possible, no matter the application.",
               ],
               highlight: [
                 {
-                  heading: "Demag trolleys – the choice is yours:",
+                  heading: "Demag trolleys — find the one that fits:",
                   list: [
-                    "U type trolleys for manual travel",
-                    "E type trolleys for low-sway electric travel",
-                    "Click-fit trolleys that can be clicked into position",
-                    "Smooth-running KBK trolleys as system components",
-                    "Low-headroom travelling hoists for optimum utilisation of the available height",
-                    "Double chain hoist for mechanically synchronised lifting, e.g. for long material or large-volume components",
+                    "U type trolleys for straightforward manual travel",
+                    "E type trolleys for smooth, low-sway electric travel",
+                    "Click-fit trolleys that snap into place in seconds",
+                    "KBK trolleys designed as part of the KBK system",
+                    "Low-headroom travelling hoists to make the most of limited vertical space",
+                    "Double chain hoists for mechanically synchronised lifting — great for long materials or large components",
                   ],
                 },
               ],
@@ -1159,53 +1152,53 @@ const data = [
     },
 
     productInformation: {
-      tabHeading: "The benefits at a glance",
+      tabHeading: "Why these trolleys make a difference",
 
       benefits: [
         {
           label: "Click-fit trolleys",
           points: [
-            "Simple click-fit installation",
-            "Articulated trolleys (minimum curve radius: 800 mm)",
-            "Easily adaptable to standard-profile or parallel-flange sections",
-            "High safety and reliability thanks to integrated drop-stop and lift-off protection",
-            "Universal solutions for loads up to 550 kg",
-            "Flange widths from 50 to 91 mm",
+            "Snaps into place quickly — no complicated installation",
+            "Articulated design handles curves down to 800 mm radius",
+            "Easily adjusts to standard-profile or parallel-flange sections",
+            "Integrated drop-stop and lift-off protection for added peace of mind",
+            "Handles loads up to 550 kg — a versatile all-rounder",
+            "Works with flange widths from 50 to 91 mm",
           ],
         },
         {
           label: "U/RU push-travel trolleys",
           points: [
-            "Excellent travel characteristics",
-            "Fast and simple installation",
-            "Can be used on parallel and sloping flanges",
-            "Smooth travel, low travel resistance",
-            "Negotiate curves down to a minimum radius of 1,000 mm",
-            "Drop stop integrated into the side cheek",
-            "Extremely low girder wear",
-            "Designs with polyamide or steel rollers",
-            "Compact, state-of-the-art industrial design",
-            "Four sizes: U 11 up to 1,100 kg, U 22 up to 2,200 kg, U 34 up to 3,400 kg, RU 56 up to 5,600 kg",
+            "Excellent travel characteristics right out of the box",
+            "Quick and simple to install",
+            "Works on both parallel and sloping flanges",
+            "Smooth, low-resistance travel every time",
+            "Handles curves with a minimum radius of 1,000 mm",
+            "Drop stop built right into the side cheek",
+            "Extremely gentle on the girder — minimal wear over time",
+            "Available with polyamide or steel rollers",
+            "Compact, modern industrial design",
+            "Four sizes to choose from: U 11 up to 1,100 kg, U 22 up to 2,200 kg, U 34 up to 3,400 kg, RU 56 up to 5,600 kg",
           ],
         },
         {
           label: "E 11 to E 34 electric travel drives",
           points: [
-            "Smooth starting and braking",
-            "Low-sway load handling",
-            "Fast installation and commissioning",
-            "Designed for operation with DC-Pro chain hoists",
-            "Control via DSE 10-C/DSE 10-CS control pendants",
-            "Fast availability thanks to plug-&-drive: plug-in connection to DC-Pro chain hoists",
-            "Simple installation of the control pendant for long/cross travel",
-            "Optional accessory: cross-type limit switches for fast-to-slow and final limit-switch cut-off",
+            "Starts and stops smoothly — no jolts or sudden movements",
+            "Keeps load sway to a minimum during travel",
+            "Fast to install and get up and running",
+            "Designed specifically for use with DC-Pro chain hoists",
+            "Controlled via DSE 10-C or DSE 10-CS pendant controllers",
+            "Plug-&-drive connection makes setup with DC-Pro hoists incredibly quick",
+            "Easy pendant installation for long and cross travel",
+            "Optional cross-type limit switches available for fast-to-slow and final cut-off",
           ],
         },
         {
           label: "KBK trolleys",
           points: [
-            "E 22 fitted as standard with RF 125 friction-wheel travel drive for use with KBK light crane system",
-            "Particularly short approach dimensions for vertical mounting arrangement",
+            "E 22 comes standard with the RF 125 friction-wheel travel drive — ready for the KBK light crane system",
+            "Especially short approach dimensions thanks to the vertical mounting arrangement",
           ],
         },
       ],
@@ -1237,7 +1230,6 @@ const data = [
                 "",
                 "",
               ],
-
               [
                 "1,100",
                 "E 11",
@@ -1350,14 +1342,14 @@ const data = [
           },
         ],
         description: [
-          "¹) Possible by programming other parameters",
-          "²) Max. displaceable weight/max. gradient 1% > 1% on request",
-          "¹) Flange width for DC 16/25 = 90-310 mm",
-          "²) Steel travel wheels optional",
-          "³) Plastic travel wheels on request",
-          "⁴) Flange width for DC 16/25 = 90-200 mm",
-          "⁵) From flange width 106 mm",
-          "The specified curve radii apply for normal applications. Contact the manufacturer or his representative for frequent curve travel operation (e.g. automatic installations).",
+          "¹) Other parameters can be programmed to adjust this.",
+          "²) For gradients over 1%, please get in touch with us for a custom solution.",
+          "¹) For DC 16/25, the flange width is 90–310 mm.",
+          "²) Steel travel wheels are available as an option.",
+          "³) Plastic travel wheels are available on request.",
+          "⁴) For DC 16/25, the flange width is 90–200 mm.",
+          "⁵) Applies from a flange width of 106 mm.",
+          "The curve radii listed are based on standard use. For applications involving frequent curve travel — such as automated systems — please reach out to the manufacturer or your local representative.",
         ],
         img: "/img/chain-hoist/dcms-pro-table.webp",
       },
@@ -1368,17 +1360,17 @@ const data = [
     product: "DDC articulated trolley",
     slug: "ddc-articulated-trolley",
     summary: {
-      title: "DDC articulated monorail hoist for travel on curved track",
+      title: "DDC articulated monorail hoist — built for curved track travel",
       description:
-        "R/EUDDC (standard-headroom) and R/EKDDC (low-headroom) monorail travelling hoists with articulated trolleys are ideally suited for travel on curved tracks made of I-beam girders. DDC units are the solution for normal or low-headroom applications for a minimum curve radius of 800 mm. Their lateral guide rollers provide for quiet travel characteristics that are kind to the track.",
+        "When your workspace has curves, you need equipment that can keep up. The R/EUDDC (standard-headroom) and R/EKDDC (low-headroom) monorail hoists with articulated trolleys are designed specifically to glide smoothly along curved I-beam tracks. Whether you're working in a tight space or a normal-headroom setup, DDC units handle curve radii as tight as 800 mm with ease. And thanks to their lateral guide rollers, travel stays quiet and gentle on the track.",
 
       subdescription: [
         {
           benefits: [
             {
-              label: "Adapted to meet your needs",
+              label: "Built to fit your setup",
               description: [
-                "Demag geared motors can be installed as an option, making the trolley suitable for electric travel with even more convenient control via a radio or pendant controller. The installation of an angular gearbox also allows the unit to travel through narrow openings.",
+                "Need even more flexibility? You can add a Demag geared motor to make the trolley fully electric — then control it effortlessly using a radio remote or pendant controller. There's also an angular gearbox option that lets the unit squeeze through narrow openings without any hassle.",
               ],
               img: "/img/chain-hoist/10-Kurvenfahrten-EN.gif",
               video:
@@ -1390,16 +1382,16 @@ const data = [
     },
 
     productInformation: {
-      tabHeading: "The benefits at a glance",
+      tabHeading: "Why the DDC stands out",
 
       benefits: [
         {
           label: "DDC articulated trolley",
           points: [
-            " Suitable for travel on curved tracks with I-beam girders for curve radii of at least 800 mm",
-            "Lateral guide rollers for quiet operation and gentle on the runway",
-            "Travel motor can be optionally mounted on angular gearbox for travel through narrow openings",
-            "Available as standard or low-headroom variants",
+            "Travels smoothly on curved I-beam tracks with a minimum curve radius of just 800 mm",
+            "Lateral guide rollers keep movement quiet and easy on the runway",
+            "Optional angular gearbox lets the trolley travel through tight, narrow openings",
+            "Available in both standard and low-headroom versions to suit your space",
           ],
         },
       ],
@@ -1410,10 +1402,10 @@ const data = [
     product: "DCBS chain hoist",
     slug: "dcbs-chain-hoist",
     summary: {
-      title: "Demag chain hoist with balancer function",
-      subtitle: "Higher availability for greater efficiency",
+      title: "Demag chain hoist with a built-in balancer",
+      subtitle: "Work smarter, move loads easier",
       description:
-        "Intuitive load handling has never been so easy; and, at the same time, efficient. Based on our DC range, DCBS chain hoists include a balancer function that allows loads to be guided and precisely positioned with ease. DCBS units are available in two sizes with load capacities up to 250 kg. They are compatible with our comprehensive Demag KBK light crane system.",
+        "Imagine being able to lift, guide, and position heavy loads almost effortlessly — that's exactly what the DCBS chain hoist makes possible. Built on our trusted DC range, it comes with a smart balancer function that lets operators handle loads with precision and very little effort. It's available in two sizes and can handle loads up to 250 kg. Plus, it works seamlessly with our Demag KBK light crane system.",
       subdescription: [
         {
           benefits: [
@@ -1423,19 +1415,19 @@ const data = [
 
             {
               description: [
-                "DCBS units can easily travel on KBK profile section rails: on single-girder suspension cranes, suspension monorail systems or on slewing JIB  Cranes. If you want to implement an application with lifting masts, manipulators or your own load-handling attachments, the controller sensors can be installed in the load-bearing arrangement.",
+                "DCBS hoists move smoothly along KBK rail systems — whether that's a single-girder suspension crane, a monorail system, or a slewing jib crane. Need to use lifting masts, manipulators, or your own custom load attachments? No problem. The controller sensors can be fitted directly into your load-bearing setup.",
               ],
               highlight: [
                 {
-                  heading: "High safety and reliability",
-                  description: "DCBS core functions",
+                  heading: "Safe and reliable by design",
+                  description: "What the DCBS does at its core",
                   list: [
-                    "Lifting and lowering by manual force on the control handle",
-                    "Manipulating loads",
-                    "Protection against slack chain",
-                    "Protection against snatching loads",
-                    "Movements can be stopped if loads fluctua , te widely",
-                    "Monitoring/reducing load capacity",
+                    "Lift and lower loads using gentle manual force on the control handle",
+                    "Guide and position loads with ease",
+                    "Built-in protection against slack chain",
+                    "Prevents sudden load snatching",
+                    "Automatically stops movement if a load swings too much",
+                    "Monitors and limits load capacity when needed",
                   ],
                 },
               ],
@@ -1444,15 +1436,15 @@ const data = [
             {
               highlight: [
                 {
-                  heading: "High safety",
+                  heading: "Designed with safety in mind",
                   list: [
-                    "Low-wear brake thanks to regenerative braking",
-                    "No need to adjust the brake",
-                    "Brake arranged before slipping clutch in the drive arrangement (no load slipping)",
-                    "Automatic braking if a malfunction occurs",
-                    "Slipping clutch with automatic cut-out by means of speed monitoring (no continuous slipping)",
-                    "Gearbox, slipping clutch and brake maintenance-free for up to 10 years",
-                    "Safety-related functions satisfy at least Performance Level c and Category 2 to EN ISO 13849-1",
+                    "Regenerative braking means less wear on the brake over time",
+                    "No manual brake adjustments needed — ever",
+                    "Brake sits ahead of the slipping clutch, so loads never slip",
+                    "Automatically brakes if something goes wrong",
+                    "Slipping clutch has a built-in auto cut-out via speed monitoring — no continuous slipping",
+                    "Gearbox, slipping clutch, and brake are all maintenance-free for up to 10 years",
+                    "Safety functions meet at least Performance Level c and Category 2 per EN ISO 13849-1",
                   ],
                 },
               ],
@@ -1460,12 +1452,12 @@ const data = [
             {
               highlight: [
                 {
-                  heading: "Features",
+                  heading: "Key features you'll appreciate",
                   list: [
-                    "Operating limit switches (upper/lower)",
-                    "Elapsed operating time counter",
-                    "Installation transparency thanks to operating data interface (IDAPSY)",
-                    "External sensor in the load-bearing arrangement",
+                    "Upper and lower operating limit switches",
+                    "Built-in elapsed operating time counter",
+                    "Easy system visibility through the IDAPSY operating data interface",
+                    "External sensor option for the load-bearing arrangement",
                   ],
                 },
               ],
@@ -1474,11 +1466,11 @@ const data = [
             {
               highlight: [
                 {
-                  heading: "Applications",
+                  heading: "Where it works best",
                   list: [
-                    "lifting masts",
-                    "manipulators",
-                    "customer-specific load attachments",
+                    "Lifting masts",
+                    "Manipulators",
+                    "Custom load attachments",
                   ],
                 },
               ],
@@ -1492,36 +1484,36 @@ const data = [
     },
 
     productInformation: {
-      tabHeading: "Benefits at a glance",
+      tabHeading: "Why people love the DCBS",
       benefits: [
         {
           video:
             "https://www.youtube.com/embed/TEQI_hvKniM?si=2k64-NcrkzxnBQyz",
           label: "Grip control",
           points: [
-            "The load can be controlled very easily with the D-Grip Servo control handle.",
+            "The D-Grip Servo control handle makes it super easy to control the load — even in tight or tricky situations.",
           ],
         },
         {
           label: "Load positioning",
           points: [
-            "By switching over to “load positioning mode”, the operator can grasp and guide the load directly with light pressure.",
+            "Switch to 'load positioning mode' and you can literally grab the load and guide it by hand with just a light touch. It's that intuitive.",
           ],
         },
 
         {
           label: "Assembly mode",
           points: [
-            "High level of safety and precision for assembly operations, since any oscillation and uncontrolled load movements are suppressed.",
+            "Perfect for detailed assembly work. It keeps the load steady and suppresses any unwanted swinging or sudden movements, giving you more control and confidence.",
           ],
         },
 
         {
           label: "Load pick-up mode",
           points: [
-            "Load handling attachments can be lifted and pre-tensioned",
-            "Load can be removed without dropping or sudden upward pull",
-            "Protection for jigs and machinery. The balancer only lifts until a preset force is reached.",
+            "Gently lifts and pre-tensions load handling attachments",
+            "Removes loads cleanly — no dropping, no sudden upward jerk",
+            "Protects your jigs and machinery by only lifting until a preset force is reached",
           ],
           img: "/img/chain-hoist/chain-hoist-DCBS.webp",
         },

@@ -4,23 +4,22 @@ import { CheckCircle } from "lucide-react";
 
 const allSections = [
   {
-    label: "Three variants",
+    label: "Three variants to choose from",
     points: [
-      "  EVP-KBK single-girder full-portal crane – KBK II or KBK II-H crane girder",
-      " ZVP-KBK double-girder full-portal crane – KBK II or KBK II-H crane girders",
-      " D-IVP single-girder full-portal crane – I-beam section crane girder (with optional telescopic height adjustment)",
+      "EVP-KBK single-girder full-portal crane — available with KBK II or KBK II-H crane girder",
+      "ZVP-KBK double-girder full-portal crane — available with KBK II or KBK II-H crane girders",
+      "D-IVP single-girder full-portal crane — features an I-beam section crane girder with optional telescopic height adjustment",
     ],
   },
   {
-    label: "Practical applications",
+    label: "Built for real-world use",
     points: [
-      "Easy to maneuver",
-      "Can be simply dismantled for transport",
-      "Quickly re-erected at a new operating site",
+      "Easy to manoeuvre in any direction",
+      "Dismantles quickly and simply for hassle-free transport",
+      "Can be set up again at a new location in no time",
     ],
   },
 ];
-
 export default function ProductInformation() {
   return (
     <section className=" w-full">
