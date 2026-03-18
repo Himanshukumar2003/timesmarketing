@@ -1,9 +1,7 @@
-"use client";
-
 import Container from "@mui/material/Container";
 import Image from "next/image";
 // components/OffsetGearedMotors.js
-import { useState, useEffect, use } from "react";
+import { use } from "react";
 
 import * as React from "react";
 import Accordion from "@mui/material/Accordion";
@@ -17,6 +15,32 @@ const data = [
   {
     product: "Offset Geared Motors",
     slug: "offset-geared-motors",
+    metadata: {
+      title: "Offset Geared Motors in India | Timeskrane",
+      description:
+        "Find Offset Geared Motors in India with Timeskrane, designed for compact drive systems, smooth power transmission, and reliable industrial performance.",
+      keywords: [
+        "Demag Geared Motors",
+        "Offset geared motors in india price",
+        "Konecranes Offset Geared Motors for Industrial",
+        "Geared Motor Manufacturer",
+        "Gear Box Manufacturer",
+        "Demag Crane price in india",
+      ],
+      alternates: {
+        canonical:
+          "https://www.timeskrane.com/geared-motors/offset-geared-motors",
+      },
+      openGraph: {
+        title: "Offset Geared Motors in India | Timeskrane",
+        description:
+          "Find Offset Geared Motors in India with Timeskrane, designed for compact drive systems, smooth power transmission, and reliable industrial performance.",
+        url: "https://www.timeskrane.com/geared-motors/offset-geared-motors",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title: "Full drive performance, also in a small space",
       description: [
@@ -213,6 +237,35 @@ const data = [
           "Pick your size: Ten different gearbox sizes mean there's one for your project.",
         ],
         description: "Big capability. Tiny footprint. Ready to work.",
+      },
+    },
+    metadata: {
+      title: "Angular Geared Motors: Compact & High Torque Solutions",
+      description:
+        "Explore angular geared motors for space-saving, high torque performance. Ideal for cranes, conveyors & industrial applications. Reliable & efficient.",
+      keywords: [
+        "angular geared motors",
+        "right angle gear motors",
+        "industrial geared motors",
+        "crane gear motors",
+        "high torque motors",
+        "compact gear motor",
+        "bevel gear motor",
+        "hypoid gear motor",
+        "geared motor manufacturers India",
+      ],
+      alternates: {
+        canonical:
+          "https://www.timeskrane.com/geared-motors/angular-geared-motors",
+      },
+      openGraph: {
+        title: "Angular Geared Motors: Compact & High Torque Solutions",
+        description:
+          "Explore angular geared motors for space-saving, high torque performance. Ideal for cranes, conveyors & industrial applications. Reliable & efficient.",
+        url: "https://www.timeskrane.com/geared-motors/angular-geared-motors",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
       },
     },
 
@@ -422,6 +475,33 @@ const data = [
   {
     product: "Helical geared motors",
     slug: "helical-geared-motors",
+    metadata: {
+      title: "Helical Geared Motors for Industrial Applications India",
+      description:
+        "Explore high-efficiency helical geared motors for smooth power transmission. Ideal for conveyors, cranes & industrial machinery. Durable & reliable.",
+      keywords: [
+        "helical geared motors india",
+        "industrial helical gear motors",
+        "inline gear motor",
+        "high efficiency gear motor",
+        "conveyor gear motor",
+        "crane motor",
+        "gearbox motor",
+      ],
+      alternates: {
+        canonical:
+          "https://www.timeskrane.com/geared-motors/helical-geared-motors",
+      },
+      openGraph: {
+        title: "Helical Geared Motors for Industrial Applications India",
+        description:
+          "Explore high-efficiency helical geared motors for smooth power transmission. Ideal for conveyors, cranes & industrial machinery. Durable & reliable.",
+        url: "https://www.timeskrane.com/geared-motors/helical-geared-motors",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title: "Rugged drives that don't quit",
       description: [
@@ -587,6 +667,33 @@ const data = [
   {
     product: "FG microspeed units",
     slug: "fg-microspeed-units",
+    metadata: {
+      title: "FG Microspeed Units for High Precision Industrial Drives",
+      description:
+        "Explore FG microspeed units for precise positioning and wide speed ratios up to 500:1. Ideal for cranes, heavy loads & industrial drive systems.",
+      keywords: [
+        "FG microspeed units",
+        "microspeed drive units",
+        "industrial microspeed motors",
+        "high precision gear motor",
+        "crane microspeed drive",
+        "dual speed motor system",
+        "heavy load drive system",
+      ],
+      alternates: {
+        canonical:
+          "https://www.timeskrane.com/geared-motors/fg-microspeed-units",
+      },
+      openGraph: {
+        title: "FG Microspeed Units for High Precision Industrial Drives",
+        description:
+          "Explore FG microspeed units for precise positioning and wide speed ratios up to 500:1. Ideal for cranes, heavy loads & industrial drive systems.",
+        url: "https://www.timeskrane.com/geared-motors/fg-microspeed-units",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title: "Gearing up for wide speed ratios",
       description:
@@ -639,53 +746,67 @@ const data = [
   },
 ];
 
-const OffsetGearedMotors = ({ params }) => {
-  const { slug } = use(params);
-  const [selectedItem, setSelectedItem] = useState(null);
-  const [error, setError] = useState(null);
-  useEffect(() => {
-    const fetchInner = data.find((val) => val.slug === slug);
-    if (fetchInner) {
-      setSelectedItem(fetchInner);
-    } else {
-      setError("Item not found");
-    }
-  }, [slug]);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
 
-  if (error) return <p>{error}</p>;
-  if (!selectedItem) return <p>Loading...</p>;
+  const productData = data.find((item) => item.slug === slug);
+
+  if (!productData || !productData.metadata) {
+    return {
+      title: productData?.product,
+      description: productData?.summary?.description ?? "",
+    };
+  }
+
+  return {
+    title: productData.metadata.title,
+    description: productData.metadata.description,
+    keywords: productData.metadata.keywords,
+    alternates: productData.metadata.alternates,
+    openGraph: productData.metadata.openGraph,
+  };
+}
+
+export default function OffsetGearedMotors({ params }) {
+  const { slug } = use(params);
+
+  const productData = data.find((item) => item.slug === slug);
+
+  if (!productData) {
+    return <p className="text-center py-10 text-red-600">Item not found</p>;
+  }
   return (
     <>
       <Navbar></Navbar>
       <Breadcrumb
-        title={selectedItem.product}
+        title={productData.product}
         backgroundImage="/img/header1.webp"
         items={[
-          { label: `${selectedItem.product}`, href: "/", isCurrent: true },
+          { label: `${productData.product}`, href: "/", isCurrent: true },
         ]}
       />
       <div className="p-6">
         <Container maxWidth="md">
           <h2 className="  text-2xl lg:text-5xl font-bold text-gray-700">
-            {selectedItem.summary.title}
+            {productData.summary.title}
           </h2>
           <div className=" mb-6 text-center h-1 w-20 bg-yellow-400 mt-5"></div>
 
-          {selectedItem.summary.description.map((sub, si) => (
+          {productData.summary.description.map((sub, si) => (
             <p key={si} className="text-gray-600 text-lg mt-2">
               {sub}
             </p>
           ))}
           <div className="mt-4">
-            {selectedItem?.summary?.benefits?.heading && (
+            {productData?.summary?.benefits?.heading && (
               <h3 className="text-2xl font-bold text-[#676f77] mb-2">
-                {selectedItem.summary.benefits.heading}
+                {productData.summary.benefits.heading}
               </h3>
             )}
 
-            {selectedItem?.summary?.benefits?.list && (
+            {productData?.summary?.benefits?.list && (
               <ul className="list-disc list-inside mt-2">
-                {selectedItem.summary.benefits.list.map((item, i) => (
+                {productData.summary.benefits.list.map((item, i) => (
                   <li key={i} className="text-lg">
                     {item}
                   </li>
@@ -693,16 +814,16 @@ const OffsetGearedMotors = ({ params }) => {
               </ul>
             )}
 
-            {selectedItem?.summary?.benefits?.description && (
+            {productData?.summary?.benefits?.description && (
               <p className="mt-3 text-gray-600">
-                {selectedItem.summary.benefits.description}
+                {productData.summary.benefits.description}
               </p>
             )}
           </div>
 
           <div className="flex justify-center mt-4  flex-col items-center">
             <h4 className="text-3xl font-bold my-4 text-[#676f77]">
-              Product information
+              productDatainformation
             </h4>
             <div className=" mt-2 mb-6 text-center h-1 w-12 bg-yellow-400"></div>
           </div>
@@ -714,23 +835,23 @@ const OffsetGearedMotors = ({ params }) => {
               id="panel2-header"
             >
               <h2 className="text-2xl font-bold  text-[#676f77] mb-4">
-                {selectedItem.productInformation.tabHeading}
+                {productData.productInformation.tabHeading}
               </h2>
             </AccordionSummary>
             <AccordionDetails>
               <section className="">
                 <h2 className="text-xl font-bold  text-[#676f77] mb-4">
-                  {selectedItem.productInformation.heading}
+                  {productData.productInformation.heading}
                 </h2>
                 <ul className="list-disc list-inside">
-                  {selectedItem.productInformation.maximumFlexibility.map(
+                  {productData.productInformation.maximumFlexibility.map(
                     (item, i) => (
                       <li key={i}>{item}</li>
                     )
                   )}
                 </ul>
-                {selectedItem.productInformation.img &&
-                  selectedItem.productInformation.img.map((item, index) => (
+                {productData.productInformation.img &&
+                  productData.productInformation.img.map((item, index) => (
                     <div className="" key={index}>
                       <Image
                         src={item.src}
@@ -743,8 +864,8 @@ const OffsetGearedMotors = ({ params }) => {
                       <p className="font-semibold">{item.description}</p>
                     </div>
                   ))}
-                {selectedItem.productInformation.list &&
-                  selectedItem.productInformation.list.map((item, index) => (
+                {productData.productInformation.list &&
+                  productData.productInformation.list.map((item, index) => (
                     <div className="" key={index}>
                       <h4 className="text-xl font-bold mt-4 text-[#676f77] mb-4">
                         {item.heading}
@@ -755,12 +876,12 @@ const OffsetGearedMotors = ({ params }) => {
                     </div>
                   ))}
                 {/* <ul className="list-disc list-inside">
-            {selectedItem.productInformation.list.features.map((item, i) => (
+            {productData.productInformation.list.features.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
           </ul> */}
                 <div className="mt-4">
-                  {selectedItem?.productInformation?.onlineConfiguration?.subdatea?.map(
+                  {productData?.productInformation?.onlineConfiguration?.subdatea?.map(
                     (data, index) => (
                       <div key={index} className="mb-4">
                         <h3 className="text-xl font-bold text-[#676f77]">
@@ -776,32 +897,32 @@ const OffsetGearedMotors = ({ params }) => {
                     )
                   )}
 
-                  {selectedItem?.productInformation?.onlineConfiguration
+                  {productData?.productInformation?.onlineConfiguration
                     ?.heading && (
                     <h3 className="text-2xl font-bold my-4 text-[#676f77]">
                       {
-                        selectedItem.productInformation.onlineConfiguration
+                        productData.productInformation.onlineConfiguration
                           .heading
                       }
                     </h3>
                   )}
 
-                  {selectedItem?.productInformation?.onlineConfiguration
+                  {productData?.productInformation?.onlineConfiguration
                     ?.description && (
                     <p className="mb-2">
                       <b>
                         {
-                          selectedItem.productInformation.onlineConfiguration
+                          productData.productInformation.onlineConfiguration
                             .description
                         }
                       </b>
                     </p>
                   )}
 
-                  {selectedItem?.productInformation?.onlineConfiguration
+                  {productData?.productInformation?.onlineConfiguration
                     ?.features && (
                     <ul className="list-disc list-inside">
-                      {selectedItem.productInformation.onlineConfiguration.features.map(
+                      {productData.productInformation.onlineConfiguration.features.map(
                         (item, i) => (
                           <li key={i}>{item}</li>
                         )
@@ -809,11 +930,11 @@ const OffsetGearedMotors = ({ params }) => {
                     </ul>
                   )}
 
-                  {selectedItem?.productInformation?.onlineConfiguration
+                  {productData?.productInformation?.onlineConfiguration
                     ?.link && (
                     <a
                       href={
-                        selectedItem.productInformation.onlineConfiguration.link
+                        productData.productInformation.onlineConfiguration.link
                       }
                       target="_blank"
                       rel="noopener noreferrer"
@@ -834,19 +955,19 @@ const OffsetGearedMotors = ({ params }) => {
               id="panel1-header"
             >
               <h2 className="text-2xl font-bold my-4 text-[#676f77]">
-                {selectedItem.technicalData.tabHeading}
+                {productData.technicalData.tabHeading}
               </h2>{" "}
             </AccordionSummary>
             <AccordionDetails>
               <section className="my-4">
                 <h2 className="text-xl font-bold my-4 text-[#676f77]">
-                  {selectedItem.technicalData.heading}
+                  {productData.technicalData.heading}
                 </h2>
-                {/* <p>Unit: {selectedItem.technicalData.units}</p> */}
+                {/* <p>Unit: {productData.technicalData.units}</p> */}
                 <table className="table-auto w-full border border-gray-300 mt-4 text-sm text-left shadow-sm rounded-lg overflow-hidden">
                   <thead className="bg-gray-100 text-gray-700 uppercase tracking-wide">
                     <tr>
-                      {selectedItem.technicalData.tableHeadings.map(
+                      {productData.technicalData.tableHeadings.map(
                         (heading, index) => (
                           <th
                             key={index}
@@ -860,7 +981,7 @@ const OffsetGearedMotors = ({ params }) => {
                   </thead>
 
                   <tbody className="text-gray-800">
-                    {selectedItem.technicalData.gearboxes.map((g, i) => (
+                    {productData.technicalData.gearboxes.map((g, i) => (
                       <tr
                         key={i}
                         className={
@@ -893,8 +1014,8 @@ const OffsetGearedMotors = ({ params }) => {
 
                 <div className="mt-2">
                   <ul>
-                    {selectedItem.technicalData.housing &&
-                      Object.entries(selectedItem.technicalData.housing).map(
+                    {productData.technicalData.housing &&
+                      Object.entries(productData.technicalData.housing).map(
                         ([key, value]) => (
                           <li key={key} className="font-semibold">
                             {key}: {value}
@@ -905,9 +1026,9 @@ const OffsetGearedMotors = ({ params }) => {
                 </div>
 
                 <div>
-                  {selectedItem.technicalData.img && (
+                  {productData.technicalData.img && (
                     <Image
-                      src={selectedItem.technicalData.img}
+                      src={productData.technicalData.img}
                       alt=""
                       width={100}
                       height={100}
@@ -916,7 +1037,7 @@ const OffsetGearedMotors = ({ params }) => {
                     ></Image>
                   )}
                   <ul className="list-disc list-inside">
-                    {selectedItem.technicalData.description &&
+                    {productData.technicalData.description &&
                       data.technicalData.description.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
@@ -925,10 +1046,10 @@ const OffsetGearedMotors = ({ params }) => {
               </section>
             </AccordionDetails>
           </Accordion>
-          {/* Product Information */}
+          {/* productDataInformation */}
 
           {/* Technical Data */}
-          {selectedItem.featuresAndAccessories && (
+          {productData.featuresAndAccessories && (
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -936,13 +1057,13 @@ const OffsetGearedMotors = ({ params }) => {
                 id="panel2-header"
               >
                 <h4 className="text-2xl font-bold my-4 text-[#676f77]">
-                  {selectedItem.featuresAndAccessories.tabHeading}
+                  {productData.featuresAndAccessories.tabHeading}
                 </h4>{" "}
               </AccordionSummary>
               <AccordionDetails>
                 <section className="my-4">
                   <h4 className="text-xl font-bold my-4 text-[#676f77]">
-                    {selectedItem.featuresAndAccessories.heading}
+                    {productData.featuresAndAccessories.heading}
                   </h4>
                   <table className="table-auto w-full border border-gray-300 mt-6 text-sm text-left shadow-sm rounded-lg overflow-hidden">
                     <thead className="bg-gray-100 text-gray-700 uppercase tracking-wide">
@@ -951,7 +1072,7 @@ const OffsetGearedMotors = ({ params }) => {
                           Feature
                         </th>
                         {Object.keys(
-                          selectedItem.featuresAndAccessories.gearedMotors
+                          productData.featuresAndAccessories.gearedMotors
                             .compatibility
                         ).map((k) => (
                           <th
@@ -964,7 +1085,7 @@ const OffsetGearedMotors = ({ params }) => {
                       </tr>
                     </thead>
                     <tbody className="text-gray-800">
-                      {selectedItem.featuresAndAccessories.gearedMotors.options.map(
+                      {productData.featuresAndAccessories.gearedMotors.options.map(
                         (option, index) => (
                           <tr
                             key={index}
@@ -978,7 +1099,7 @@ const OffsetGearedMotors = ({ params }) => {
                               {option}
                             </td>
                             {Object.values(
-                              selectedItem.featuresAndAccessories.gearedMotors
+                              productData.featuresAndAccessories.gearedMotors
                                 .compatibility
                             ).map((gear, i) => (
                               <td
@@ -997,7 +1118,7 @@ const OffsetGearedMotors = ({ params }) => {
                   <div className="mt-2">
                     <ul className="list-disc list-inside">
                       {Object.entries(
-                        selectedItem.featuresAndAccessories.gearedMotors.notes
+                        productData.featuresAndAccessories.gearedMotors.notes
                       ).map(([k, v]) => (
                         <li key={k}>
                           <strong>{k}:</strong> {v}
@@ -1015,6 +1136,4 @@ const OffsetGearedMotors = ({ params }) => {
       <Footer></Footer>
     </>
   );
-};
-
-export default OffsetGearedMotors;
+}

@@ -13,6 +13,21 @@ import Footer from "@/componts/footer";
 
 import ProductInformation from "./information";
 import FeaturesSection from "./cads";
+
+export const metadata = {
+  title: "DC-Pro Chain Hoist in India | Timeskrane",
+
+  description:
+    "Upgrade your lifting system with DC-Pro Chain Hoists from Timeskrane, built for reliable performance, smooth handling, and long-lasting industrial use.",
+
+  keywords:
+    "Demag dc pro chain hoist in india, Dc pro chain hoist in india price, Demag chain hoist manual, Demag DC-Pro chain hoist manual, Electric Chain Hoist manufacturer in India, Demag DC Pro hoist",
+
+  alternates: {
+    canonical: "https://www.timeskrane.com/dc-pro-chain-hoist",
+  },
+};
+
 export default function Home() {
   return (
     <>

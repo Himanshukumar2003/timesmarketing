@@ -15,7 +15,31 @@ const data = [
   {
     product: "DC-Pro chain hoist",
     slug: "dc-pro-chain-hoist",
-
+    metadata: {
+      title: "DC-Pro Chain Hoist in India | Timeskrane",
+      description:
+        "Upgrade your lifting system with DC-Pro Chain Hoists from Timeskrane, built for reliable performance, smooth handling, and long-lasting industrial use.",
+      keywords: [
+        "Demag dc pro chain hoist in india",
+        "Dc pro chain hoist in india price",
+        "Demag chain hoist manual",
+        "Demag DC-Pro chain hoist manual",
+        "Electric Chain Hoist manufacturer in India",
+        "Demag DC Pro hoist",
+      ],
+      alternates: {
+        canonical: "https://www.timeskrane.com/chain-hoists/dc-pro-chain-hoist",
+      },
+      openGraph: {
+        title: "DC-Pro Chain Hoist in India | Timeskrane",
+        description:
+          "Upgrade your lifting system with DC-Pro Chain Hoists from Timeskrane, built for reliable performance, smooth handling, and long-lasting industrial use.",
+        url: "https://www.timeskrane.com/chain-hoists/dc-pro-chain-hoist",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title: "The new benchmark",
       description:
@@ -413,6 +437,33 @@ const data = [
   {
     product: "DCM-Pro Manulift",
     slug: "dcm-pro-manulift",
+
+    metadata: {
+      title: "DCM-Pro Manulift Chain Hoist in India | Timeskrane",
+      description:
+        "Timeskrane brings DCM-Pro Manulift chain hoists for quick, safe, and easy one-hand load handling, improving efficiency and reliability in industrial lifting tasks.",
+      keywords: [
+        "Demag DC-Pro chain hoist manual",
+        "Demag DC-Com chain hoist",
+        "Best Electric Chain Hoist",
+        "Demag hoist pendant cable",
+        "DC hoist motor",
+        "Demag DC Pro and DC Com Chain Hoists Supplier in India",
+        "Best Demag Chain Hoist Suppliers in India",
+      ],
+      alternates: {
+        canonical: "https://www.timeskrane.com/chain-hoists/dcm-pro-manulift",
+      },
+      openGraph: {
+        title: "DCM-Pro Manulift Chain Hoist in India | Timeskrane",
+        description:
+          "Timeskrane brings DCM-Pro Manulift chain hoists for quick, safe, and easy one-hand load handling, improving efficiency and reliability in industrial lifting tasks.",
+        url: "https://www.timeskrane.com/chain-hoists/dcm-pro-manulift",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title: "One hand. Total control. Zero hassle.",
       description:
@@ -469,6 +520,32 @@ const data = [
   {
     product: "DCMS-Pro Manulift",
     slug: "dcms-pro-manulift",
+
+    metadata: {
+      title: "DCMS-Pro Manulift Chain Hoist in India | Timeskrane",
+      description:
+        "Upgrade material handling with DCMS-Pro Manulift chain hoists from Timeskrane, offering smooth control, variable lifting speed, and safe industrial performance.",
+      keywords: [
+        "DCMS-Pro Manulift chain hoist",
+        "Demag DCMS-Pro Manulift",
+        "electric chain hoist India",
+        "industrial chain hoist supplier",
+        "material handling hoist India",
+        "Demag Chain Hoist DCMS-Pro Manulift",
+      ],
+      alternates: {
+        canonical: "https://www.timeskrane.com/chain-hoists/dcms-pro-manulift",
+      },
+      openGraph: {
+        title: "DCMS-Pro Manulift Chain Hoist in India | Timeskrane",
+        description:
+          "Upgrade material handling with DCMS-Pro Manulift chain hoists from Timeskrane, offering smooth control, variable lifting speed, and safe industrial performance.",
+        url: "https://www.timeskrane.com/chain-hoists/dcms-pro-manulift",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title: "One hand. Full control.",
       description:
@@ -713,6 +790,33 @@ const data = [
   {
     product: "LDC-D & KLDC-D Double chain hoists",
     slug: "ldc-d-and-kldc-d-double-chain-hoists",
+    metadata: {
+      title: "LDC-D & KLDC-D Double Chain Hoists | Timeskrane",
+      description:
+        "Find Timeskrane's LDC-D and KLDC-D double chain hoists, which are built for dependable handling of large industrial loads, smooth control, and balanced lifting.",
+      keywords: [
+        "LDC-D & KLDC-D Double chain hoists",
+        "Double chain hoists",
+        "Demag chain hoist manual",
+        "Demag low-headroom chain hoist",
+        "Demag hoist hook",
+        "Low profile Chain Hoist",
+        "Demag DC-Pro Chain Hoist Supplier",
+      ],
+      alternates: {
+        canonical:
+          "https://www.timeskrane.com/chain-hoists/ldc-d-and-kldc-d-double-chain-hoists",
+      },
+      openGraph: {
+        title: "LDC-D & KLDC-D Double Chain Hoists | Timeskrane",
+        description:
+          "Find Timeskrane's LDC-D and KLDC-D double chain hoists, which are built for dependable handling of large industrial loads, smooth control, and balanced lifting.",
+        url: "https://www.timeskrane.com/chain-hoists/ldc-d-and-kldc-d-double-chain-hoists",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title:
         "Demag double chain hoist: Two mechanically synchronised chain lead-offs for safely handling bulky loads",
@@ -786,6 +890,34 @@ const data = [
   {
     product: "Chain hoist with KDC low-headroom travelling hoist",
     slug: "chain-hoist-kdc-low-headroom-travelling-hoist",
+    metadata: {
+      title: "KDC Low Headroom Chain Hoist India | Timeskrane",
+      description:
+        "Find KDC low headroom travelling hoists at Timeskrane, designed for compact spaces, smooth load movement, and reliable performance in industrial lifting.",
+      keywords: [
+        "Low Headroom Electric Chain Hoist Price",
+        "Low headroom Chain block",
+        "Low headroom Electric Chain Hoist",
+        "Chain hoist with kdc low headroom travelling hoist manual",
+        "Chain hoist with kdc low headroom travelling hoist price",
+        "Demag chain hoist Manual",
+        "KLDC travelling hoist for big bags",
+        "Electric chain hoist low headroom version",
+      ],
+      alternates: {
+        canonical:
+          "https://www.timeskrane.com/chain-hoists/chain-hoist-kdc-low-headroom-travelling-hoist",
+      },
+      openGraph: {
+        title: "KDC Low Headroom Chain Hoist India | Timeskrane",
+        description:
+          "Find KDC low headroom travelling hoists at Timeskrane, designed for compact spaces, smooth load movement, and reliable performance in industrial lifting.",
+        url: "https://www.timeskrane.com/chain-hoists/chain-hoist-kdc-low-headroom-travelling-hoist",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title:
         "Demag KDC low-headroom travelling hoist: Make the most of every inch of space",
@@ -836,6 +968,32 @@ const data = [
   {
     product: "KLDC travelling hoist for big bags",
     slug: "kldc-traveling-hoist-big-bags",
+    metadata: {
+      title: "KLDC Traveling Hoist for Big Bags | Timeskrane",
+      description:
+        "Timeskrane provides KLDC traveling hoists for big bags that are made for safe handling of heavy industrial loads, smooth lifting, and extended hook reach.",
+      keywords: [
+        "LDC-D & KLDC-D Double Chain hoists",
+        "Kldc travelling hoist for big bags price list",
+        "Kldc travelling hoist for big bags price",
+        "DC-Com chain hoist",
+        "Demag DC Chain Hoist Assembly Guide",
+        "The Demag DC Chain Hoist Buyer's Guide",
+      ],
+      alternates: {
+        canonical:
+          "https://www.timeskrane.com/chain-hoists/kldc-traveling-hoist-big-bags",
+      },
+      openGraph: {
+        title: "KLDC Traveling Hoist for Big Bags | Timeskrane",
+        description:
+          "Timeskrane provides KLDC traveling hoists for big bags that are made for safe handling of heavy industrial loads, smooth lifting, and extended hook reach.",
+        url: "https://www.timeskrane.com/chain-hoists/kldc-traveling-hoist-big-bags",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title:
         "Demag KLDC travelling hoist for big bags: Extended hook lead-off and maximum lifting height",
@@ -871,6 +1029,32 @@ const data = [
   {
     product: "LDC-Q quadro chain hoist",
     slug: "ldc-q-quadro-chain-hoist",
+    metadata: {
+      title: "LDC-Q Quadro Chain Hoist in India | Timeskrane",
+      description:
+        "Find LDC-Q Quadro chain hoists at Timeskrane, designed with four synchronized hooks for precise, balanced lifting of large or bulky industrial loads.",
+      keywords: [
+        "LDC-Q quadro chain hoist",
+        "Ldc q quadro chain hoist manual",
+        "Demag chain hoist manual",
+        "Demag 5 ton hoist",
+        "Hand Chain Hoist Chain Bag Large",
+        "Demag DC Chain hoists",
+      ],
+      alternates: {
+        canonical:
+          "https://www.timeskrane.com/chain-hoists/ldc-q-quadro-chain-hoist",
+      },
+      openGraph: {
+        title: "LDC-Q Quadro Chain Hoist in India | Timeskrane",
+        description:
+          "Find LDC-Q Quadro chain hoists at Timeskrane, designed with four synchronized hooks for precise, balanced lifting of large or bulky industrial loads.",
+        url: "https://www.timeskrane.com/chain-hoists/ldc-q-quadro-chain-hoist",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title:
         "Demag LDC-Q quadro chain hoist: Four mechanically synchronised chain lead-offs",
@@ -918,6 +1102,31 @@ const data = [
   {
     product: "Demag DC-II chain hoist",
     slug: "dc-ii-chain-hoist",
+    metadata: {
+      title: "DC-II Chain Hoist in India | Timeskrane",
+      description:
+        "Find DC-II chain hoists with Timeskrane, built for smooth lifting, precise control, and reliable performance for safe and efficient industrial material handling.",
+      keywords: [
+        "Demag dc ii chain hoist in india",
+        "Best dc ii chain hoist in india",
+        "Electric Chain Hoist manufacturer in India",
+        "Chain Hoist 2 Ton",
+        "Electric Chain Hoist manufacturer in India",
+        "Chain Hoist 5 Ton",
+      ],
+      alternates: {
+        canonical: "https://www.timeskrane.com/chain-hoists/dc-ii-chain-hoist",
+      },
+      openGraph: {
+        title: "DC-II Chain Hoist in India | Timeskrane",
+        description:
+          "Find DC-II chain hoists with Timeskrane, built for smooth lifting, precise control, and reliable performance for safe and efficient industrial material handling.",
+        url: "https://www.timeskrane.com/chain-hoists/dc-ii-chain-hoist",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title: "Quality. Performance. Demag DC-II chain hoist.",
       description:
@@ -932,7 +1141,7 @@ const data = [
                 "Just like its predecessor, the DC-II comes loaded with a comprehensive set of standard features — plus a wide range of options that give you the flexibility to adapt it to almost any application. Its modular design makes customisation simple and straightforward.",
               ],
               video:
-                "https://www.youtube.com/embed/ba9Y2DxPdivc?si=BqmNg-7jL1C537aP",
+                "https://www.youtube.com/embed/ba9Y2DxPh1c?si=w_CM-Iqz_ymyLhrn",
             },
 
             {
@@ -989,6 +1198,35 @@ const data = [
   {
     product: "DC-Wind chain hoist",
     slug: "dc-wind-chain-hoist",
+    metadata: {
+      title: "DC-Wind Chain Hoist in India | Timeskrane",
+      description:
+        "Timeskrane provides DC-Wind chain hoists with high performance and long-lasting operation that are designed for safe, dependable lifting in wind turbine maintenance.",
+      keywords: [
+        "Demag wire rope hoist",
+        "Demag DC-Wind chain hoist",
+        "Wind Turbine Hoist Suppliers in India",
+        "DC-Wind chain hoist",
+        "Demag DC-Wind Electric Hoist",
+        "Electric Chain Hoist manufacturer in India",
+        "Dc wind chain hoist manual",
+        "DC Wind Chain Hoist for Wind Power Stations",
+        "electric chain hoist 1 ton",
+      ],
+      alternates: {
+        canonical:
+          "https://www.timeskrane.com/chain-hoists/dc-wind-chain-hoist",
+      },
+      openGraph: {
+        title: "DC-Wind Chain Hoist in India | Timeskrane",
+        description:
+          "Timeskrane provides DC-Wind chain hoists with high performance and long-lasting operation that are designed for safe, dependable lifting in wind turbine maintenance.",
+        url: "https://www.timeskrane.com/chain-hoists/dc-wind-chain-hoist",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title:
         "DC-Wind chain hoist: The go-to hoist for wind turbine maintenance",
@@ -1117,6 +1355,36 @@ const data = [
   {
     product: "Trolleys for DC chain hoists",
     slug: "trolleys-dc-chain-hoists",
+    metadata: {
+      title: "Demag DC Chain Hoist Trolleys India | Timeskrane",
+      description:
+        "Find trolleys for DC chain hoists at Timeskrane, designed for smooth travel, low resistance, and reliable load movement in industrial material handling.",
+      keywords: [
+        "Trolleys for DC chain hoists",
+        "Electric Chain Hoist manufacturer in India",
+        "Demag trolley manual",
+        "Demag DC-Pro hoist",
+        "Demag trolley",
+        "Chain Hoist 5 Ton",
+        "Demag DC-Pro chain hoist",
+        "Demag DC-Pro Chain Hoist Supplier",
+        "Demag Electric Hoists",
+        "LDC-D & KLDC-D Double chain hoists",
+      ],
+      alternates: {
+        canonical:
+          "https://www.timeskrane.com/chain-hoists/trolleys-dc-chain-hoists",
+      },
+      openGraph: {
+        title: "Demag DC Chain Hoist Trolleys India | Timeskrane",
+        description:
+          "Find trolleys for DC chain hoists at Timeskrane, designed for smooth travel, low resistance, and reliable load movement in industrial material handling.",
+        url: "https://www.timeskrane.com/chain-hoists/trolleys-dc-chain-hoists",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title: "Trolleys for DC chain hoists",
       description:
@@ -1359,6 +1627,35 @@ const data = [
   {
     product: "DDC articulated trolley",
     slug: "ddc-articulated-trolley",
+    metadata: {
+      title: "DDC Articulated Trolley Chain Hoist | Timeskrane",
+      description:
+        "Explore DDC articulated trolley chain hoists at Timeskrane, designed for smooth travel on curved tracks and reliable, precise material handling.",
+      keywords: [
+        "Ddc articulated trolley parts",
+        "Ddc articulated trolley manual",
+        "Demag trolley",
+        "Demag electric hoist catalogue",
+        "Demag hoist",
+        "Demag chain hoist manual",
+        "Trolley Hoists Price",
+        "Manufacturers & Suppliers",
+        "DCM-Pro Manulift",
+      ],
+      alternates: {
+        canonical:
+          "https://www.timeskrane.com/chain-hoists/ddc-articulated-trolley",
+      },
+      openGraph: {
+        title: "DDC Articulated Trolley Chain Hoist | Timeskrane",
+        description:
+          "Explore DDC articulated trolley chain hoists at Timeskrane, designed for smooth travel on curved tracks and reliable, precise material handling.",
+        url: "https://www.timeskrane.com/chain-hoists/ddc-articulated-trolley",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title: "DDC articulated monorail hoist — built for curved track travel",
       description:
@@ -1401,6 +1698,35 @@ const data = [
   {
     product: "DCBS chain hoist",
     slug: "dcbs-chain-hoist",
+    metadata: {
+      title: "DCBS Chain Hoist in India | Timeskrane",
+      description:
+        "Explore DCBS Chain Hoists with Timeskrane, designed for smooth load control, precise positioning, and safe, efficient material handling in modern industries.",
+      keywords: [
+        "Microsite Demag DCBS chain hoist",
+        "Demag dcbs chain hoist in india",
+        "Demag chain hoist",
+        "Electric Chain Hoist manufacturer in India",
+        "Chain Hoist 5 Ton",
+        "Chain Hoist parts",
+        "Electric Chain Hoist Manufacturer in India",
+        "1 ton electric chain hoist",
+        "hoist 1 ton electric",
+        "chain block 1 ton",
+      ],
+      alternates: {
+        canonical: "https://www.timeskrane.com/chain-hoists/dcbs-chain-hoist",
+      },
+      openGraph: {
+        title: "DCBS Chain Hoist in India | Timeskrane",
+        description:
+          "Explore DCBS Chain Hoists with Timeskrane, designed for smooth load control, precise positioning, and safe, efficient material handling in modern industries.",
+        url: "https://www.timeskrane.com/chain-hoists/dcbs-chain-hoist",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     summary: {
       title: "Demag chain hoist with a built-in balancer",
       subtitle: "Work smarter, move loads easier",

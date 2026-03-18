@@ -1,5 +1,3 @@
-"use client";
-
 import { use } from "react"; // Import React.use to handle promise unwrapping
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
@@ -13,6 +11,33 @@ const allCards = [
   {
     title: "Geared motors",
     slug: "geared-motors",
+    metadata: {
+      title: "Industrial Geared Motors in India | Timeskrane",
+      description:
+        "Explore Industrial Geared Motors in India with Timeskrane, designed for smooth power transmission, reliable performance, and efficient industrial drive solutions.",
+      keywords: [
+        "Parallel Shaft Geared Motors",
+        "AC Geared Motors",
+        "Planetary Geared Motors",
+        "motor with gearbox",
+        "geared motor price",
+        "geared electric motor",
+        "electric geared motor",
+        "gears for motor",
+      ],
+      alternates: {
+        canonical: "https://www.timeskrane.com/drives/geared-motors",
+      },
+      openGraph: {
+        title: "Industrial Geared Motors in India | Timeskrane",
+        description:
+          "Explore Industrial Geared Motors in India with Timeskrane, designed for smooth power transmission, reliable performance, and efficient industrial drive solutions.",
+        url: "https://www.timeskrane.com/drives/geared-motors",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     description: [
       "Our geared motors are built using a modular combination of motors and gearboxes that work perfectly together. This flexible system allows us to quickly create solutions that match your exact requirements in a cost-effective way.",
       "By using standardized components, we can easily design different types of geared motors, including offset, angular, and helical models. This approach helps save valuable project engineering time and ensures that you get a reliable and well-designed solution.",
@@ -45,6 +70,32 @@ const allCards = [
   {
     title: "motors",
     slug: "motors",
+    metadata: {
+      title: "Industrial Electric Motors for Cranes & Drive Systems",
+      description:
+        "Find high-performance electric motors for cranes and industrial drives. Designed for efficiency, durability & smooth operation in heavy-duty applications.",
+      keywords: [
+        "industrial electric motors",
+        "crane motors",
+        "electric motors for drives",
+        "heavy duty motors",
+        "industrial drive motors",
+        "energy efficient motors",
+        "crane drive systems India",
+      ],
+      alternates: {
+        canonical: "https://www.timeskrane.com/drives/motors",
+      },
+      openGraph: {
+        title: "Industrial Electric Motors for Cranes & Drive Systems",
+        description:
+          "Find high-performance electric motors for cranes and industrial drives. Designed for efficiency, durability & smooth operation in heavy-duty applications.",
+        url: "https://www.timeskrane.com/drives/motors",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     description: [
       "Our motors perform a wide variety of industrial drive tasks. Reliably and effectively. For example, our type Z cylindrical-rotor brake motors – also as brake motors – offer high drive efficiency – also in continuous duty. They are specially designed to match our gearbox range and provide for simple project engineering. Our conical-rotor brake motors with outputs of up to 55 kW are used for stopping-and-starting drives or for direct line-fed travel applications. Thanks to their unique brake principle, they are the first choice wherever demanding requirements have to be met by the brake.",
     ],
@@ -67,7 +118,34 @@ const allCards = [
   },
   {
     title: " wheel range",
-    slug: "wheel-range", // ✅ Fixed typo here
+    slug: "wheel-range",
+    metadata: {
+      title: "Industrial Wheel Range for Crane & Material Handling",
+      description:
+        "Find industrial wheel range systems for cranes & material handling. High load capacity, durable design & smooth travel performance for heavy-duty applications.",
+      keywords: [
+        "wheel range systems",
+        "crane wheel range",
+        "industrial wheel systems",
+        "wheel block systems",
+        "travel wheel systems",
+        "material handling wheels",
+        "heavy duty crane wheels",
+        "wheel range India",
+      ],
+      alternates: {
+        canonical: "https://www.timeskrane.com/drives/wheel-range",
+      },
+      openGraph: {
+        title: "Industrial Wheel Range for Crane & Material Handling",
+        description:
+          "Find industrial wheel range systems for cranes & material handling. High load capacity, durable design & smooth travel performance for heavy-duty applications.",
+        url: "https://www.timeskrane.com/drives/wheel-range",
+        siteName: "Timeskrane",
+        locale: "en_IN",
+        type: "website",
+      },
+    },
     description: [
       "Our wheel and wheel block systems are designed as modular solutions to suit a wide variety of applications. They are widely used in many mobile machines and systems, either as individual components or as complete travel units.",
       "These wheel systems are known for their high reliability and long service life, performing efficiently every day while requiring very little maintenance.",
@@ -106,6 +184,27 @@ const allCards = [
     ],
   },
 ];
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+
+  const product = allCards.find((item) => item.slug === slug);
+
+  if (!product || !product.metadata) {
+    return {
+      title: product?.product,
+      description: product?.summary?.description ?? "",
+    };
+  }
+
+  return {
+    title: product.metadata.title,
+    description: product.metadata.description,
+    keywords: product.metadata.keywords,
+    alternates: product.metadata.alternates,
+    openGraph: product.metadata.openGraph,
+  };
+}
 
 export default function ProductPage({ params }) {
   const { slug } = use(params); // Unwrap the `params` with `React.use()`
