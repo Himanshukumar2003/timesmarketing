@@ -6,9 +6,9 @@ export default function BlogContent({ title, content, img, className }) {
       {" "}
       <BlogHero img={img} />
       <div className="rounded-xl bg-white p-8 shadow-lg lg:col-span-2">
-        <h1 className="mb-6 text-2xl font-bold text-slate-900 md:text-4xl">
+        <h2 className="mb-6 text-2xl font-bold text-slate-900 md:text-4xl">
           {title}
-        </h1>
+        </h2>
         <div
           dangerouslySetInnerHTML={{ __html: content }}
           className="
