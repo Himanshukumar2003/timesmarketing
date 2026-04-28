@@ -9,7 +9,7 @@ import moment from "moment-timezone";
 async function getBlogs() {
   try {
     const res = await fetch(`${baseUrl}/blogs`, {
-      cache: "no-store",
+      next: { revalidate: 60 },
     });
 
     if (!res.ok) {

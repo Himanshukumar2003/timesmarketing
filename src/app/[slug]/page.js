@@ -3,28 +3,27 @@ import Footer from "@/componts/footer";
 
 import BlogContent from "../blog/[slug]/components/BlogContent.js";
 import BlogTOC from "../blog/[slug]/components/BlogTOC.js";
+import BlogFAQ from "../blog/[slug]/components/BlogFAQ.js"; // FAQ accordion component
 
 import axios from "axios";
+import { notFound } from "next/navigation";
 
 import {
   extractHeadings,
   addIdsToHeadings,
-  getReadingTime,
-  formatDate,
 } from "../blog/[slug]/utils/blogHelpers";
 import { Breadcrumb } from "@/componts/breadcrumb";
 import RecentPosts from "../blog/[slug]/components/relative-blog.js";
 import { baseUrl } from "@/lib/utils.js";
 
+// Fetch recent blogs excluding the current one
 export async function getRecentBlogs(currentSlug) {
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/city-blogs`, {
       cache: "no-store",
     });
 
-    if (!res.ok) {
-      throw new Error("Failed to fetch blogs");
-    }
+    if (!res.ok) throw new Error("Failed to fetch blogs");
 
     const data = await res.json();
 
@@ -35,13 +34,37 @@ export async function getRecentBlogs(currentSlug) {
 
     return blogs;
   } catch (error) {
-    console.error("Blog fetch error:", error);
+    console.error("Error fetching recent blogs:", error);
     return [];
   }
 }
+
+// Fetch a single blog by slug — returns null on failure instead of throwing
+const getBlog = async (slug) => {
+  try {
+    const { data } = await axios.get(
+      `${baseUrl}/city-blogs/get-by-slug/${slug}`
+    );
+    return data.data;
+  } catch (error) {
+    console.error("Error fetching blog:", error?.response?.status, slug);
+    return null;
+  }
+};
+
+// Generate page metadata from blog data
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const data = await getBlog(slug);
+
+  // Fallback metadata when blog is not found
+  if (!data) {
+    return {
+      title: "Page Not Found",
+      description: "The page you are looking for does not exist.",
+    };
+  }
+
   return {
     title: data?.meta_title ? data?.meta_title : data?.title,
     description: data?.meta_description,
@@ -58,14 +81,13 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const getBlog = async (slug) => {
-  const { data } = await axios.get(`${baseUrl}/city-blogs/get-by-slug/${slug}`);
-  return data.data;
-};
-
 export default async function BlogPage({ params }) {
   const { slug } = await params;
   const blog = await getBlog(slug);
+
+  // Trigger Next.js not-found page if blog doesn't exist
+  if (!blog) notFound();
+
   const recentBlogs = await getRecentBlogs(slug);
 
   const headings = extractHeadings(blog.content);
@@ -73,6 +95,11 @@ export default async function BlogPage({ params }) {
 
   return (
     <>
+      {/* LocalBusiness / Product JSON-LD schema from API */}
+      {blog?.jsonld_schema && (
+        <div dangerouslySetInnerHTML={{ __html: blog.jsonld_schema }} />
+      )}
+
       <Navbar />
 
       <Breadcrumb
@@ -88,20 +115,27 @@ export default async function BlogPage({ params }) {
       />
 
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 mb-12">
-        <div className="mx-auto  px-4 py-12">
+        <div className="mx-auto px-4 py-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 items-start gap-4">
+            {/* Table of Contents */}
             <BlogTOC
               headings={headings}
               className="order-2 lg:order-1 lg:col-span-3 w-full"
             />
 
-            <BlogContent
-              title={blog.title}
-              content={content}
-              img={blog.pictures[0]}
-              className="order-1 lg:order-2 lg:col-span-6"
-            />
+            {/* Main content + FAQ */}
+            <div className="order-1 lg:order-2 lg:col-span-6">
+              <BlogContent
+                title={blog.title}
+                content={content}
+                img={blog.pictures[0]}
+              />
 
+              {/* FAQ accordion rendered below the main content */}
+              {blog?.faq?.length > 0 && <BlogFAQ faqs={blog.faq} />}
+            </div>
+
+            {/* Recent / Related Posts */}
             <RecentPosts
               blogs={recentBlogs}
               href="/"
