@@ -231,11 +231,11 @@ export default function NotFound() {
           </p>
 
           <div className="nf-actions">
-            <Link href="/contact" className="nf-btn nf-btn-primary">
+            <Link href="/" className="nf-btn nf-btn-primary">
               ← Back to Homepage
             </Link>
 
-            <Link href="/blog" className="nf-btn nf-btn-secondary">
+            <Link href="/contact" className="nf-btn nf-btn-secondary">
               Contact us
             </Link>
           </div>
