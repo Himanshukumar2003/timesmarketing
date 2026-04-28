@@ -13,7 +13,7 @@ export const metadata = {
   authors: [
     {
       name: "Timeskrane",
-      url: "https://www.timeskrane.com/",
+      url: "Timeskrane",
     },
   ],
 
