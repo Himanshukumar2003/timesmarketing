@@ -138,7 +138,7 @@ export default function Footer() {
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-sm">+91 9810040296</p>
               <p className="text-sm">+91 9810901759</p>
-              <p className="text-sm">info@company.com</p>
+              <p className="text-sm">gauravmehta@timesmarketing.com</p>
             </div>
           </div>
 
