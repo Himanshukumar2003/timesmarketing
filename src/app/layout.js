@@ -12,8 +12,7 @@ export const metadata = {
 
   authors: [
     {
-      name: "Timeskrane",
-      url: "Timeskrane",
+      name: "Gian Parkash",
     },
   ],
 
