@@ -11,9 +11,9 @@ export default function RecentPosts({ blogs, className, href }) {
       </div>
 
       <div className="divide-y">
-        {blogs.map((blog) => (
+        {blogs.map((blog, index) => (
           <Link
-            key={blog.id}
+            key={index}
             href={href ? `${href}${blog.slug}` : `/blog/${blog.slug}`}
             className="flex gap-4 p-4 hover:bg-slate-50 transition"
           >
